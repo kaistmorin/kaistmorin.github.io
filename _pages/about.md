@@ -10,6 +10,7 @@ nav: false
   --morin-navy: #0b2d5c;
   --morin-blue: #1267d6;
   --morin-text: #14213d;
+  --morin-frame: min(1180px, calc(100% - 64px));
 }
 
 /* Hero outer wrapper */
@@ -21,7 +22,7 @@ nav: false
 
 /* Hero itself */
 .morin-hero {
-  width: min(100vw, 1600px);
+  width: var(--morin-frame);
   height: clamp(320px, 34vw, 520px);
   margin: 0 auto;
   position: relative;
@@ -34,7 +35,7 @@ nav: false
 /* Text overlay on hero */
 .morin-hero-content {
   position: absolute;
-  left: min(6vw, 90px);
+  left: clamp(28px, 5vw, 80px);
   top: 50%;
   transform: translateY(-50%);
   max-width: 620px;
@@ -69,16 +70,21 @@ nav: false
 
 /* Intro section */
 .morin-intro {
-  width: min(1180px, calc(100% - 48px));
+  width: var(--morin-frame);
   margin: 0 auto;
-  padding: 48px 0 54px;
+  padding: 44px 0 54px;
 }
 
 .morin-intro-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.85fr) minmax(230px, .65fr);
-  gap: 42px;
+  grid-template-columns: minmax(0, 700px) minmax(220px, 280px);
+  justify-content: center;
+  gap: 64px;
   align-items: center;
+}
+
+.morin-intro-text {
+  max-width: 700px;
 }
 
 .morin-intro-rule {
@@ -118,14 +124,17 @@ nav: false
 }
 
 .morin-logo-wrap img {
-  width: min(300px, 90%);
+  width: min(260px, 90%);
   height: auto;
   display: block;
 }
 
 @media (max-width: 900px) {
+  .morin-home {
+    --morin-frame: calc(100% - 32px);
+  }
+
   .morin-hero {
-    width: 100%;
     height: 300px;
     background-position: center center;
   }
@@ -139,6 +148,10 @@ nav: false
   .morin-intro-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .morin-intro-text {
+    max-width: none;
   }
 
   .morin-logo-wrap {
@@ -168,7 +181,7 @@ nav: false
 
   <section class="morin-intro">
     <div class="morin-intro-grid">
-      <div>
+      <div class="morin-intro-text">
         <div class="morin-intro-rule"></div>
         <h2>MORIN Lab at KAIST</h2>
 
