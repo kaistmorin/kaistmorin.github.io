@@ -10,46 +10,42 @@ nav: false
   --morin-navy: #0b2d5c;
   --morin-blue: #1267d6;
   --morin-text: #14213d;
-  --morin-frame: min(1180px, calc(100% - 64px));
 }
 
-/* Hero outer wrapper */
-.morin-hero-outer {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* Hero itself */
-.morin-hero {
-  width: var(--morin-frame);
-  height: clamp(320px, 34vw, 520px);
-  margin: 0 auto;
+/* Escape al-folio's narrow content column and center the hero in the viewport */
+.morin-hero-wrap {
+  width: min(1600px, 100vw);
+  margin-left: 50%;
+  transform: translateX(-50%);
   position: relative;
   overflow: hidden;
-  background:
-    linear-gradient(90deg, rgba(6, 23, 52, 0.52) 0%, rgba(6, 23, 52, 0.28) 32%, rgba(6, 23, 52, 0.10) 55%, rgba(6, 23, 52, 0.06) 100%),
-    url('{{ "/assets/img/morin-hero.png" | relative_url }}') center center / cover no-repeat;
 }
 
-/* Text overlay on hero */
+/* Keep the full image visible: no cover-cropping */
+.morin-hero-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text overlay */
 .morin-hero-content {
   position: absolute;
-  left: clamp(28px, 5vw, 80px);
+  left: clamp(36px, 6vw, 96px);
   top: 50%;
   transform: translateY(-50%);
-  max-width: 620px;
+  max-width: 680px;
   z-index: 2;
 }
 
 .morin-hero h1 {
   margin: 0;
-  color: #ffffff;
-  font-size: clamp(2.2rem, 4.2vw, 4.4rem);
+  color: #fff;
+  font-size: clamp(2.2rem, 4vw, 4.3rem);
   line-height: 1.06;
   font-weight: 700;
   letter-spacing: -0.03em;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.28);
+  text-shadow: 0 2px 10px rgba(0,0,0,.30);
 }
 
 .morin-hero-rule {
@@ -61,30 +57,25 @@ nav: false
 
 .morin-hero-tagline {
   margin: 0;
-  color: rgba(255,255,255,0.96);
-  font-size: clamp(1.1rem, 1.5vw, 1.45rem);
+  color: #fff;
+  font-size: clamp(1.05rem, 1.45vw, 1.42rem);
   line-height: 1.45;
-  max-width: 520px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.24);
+  text-shadow: 0 2px 8px rgba(0,0,0,.28);
 }
 
-/* Intro section */
+/* Intro */
 .morin-intro {
-  width: var(--morin-frame);
+  width: min(1080px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 44px 0 54px;
+  padding: 42px 0 56px;
 }
 
 .morin-intro-grid {
   display: grid;
   grid-template-columns: minmax(0, 700px) minmax(220px, 280px);
   justify-content: center;
-  gap: 64px;
+  gap: 56px;
   align-items: center;
-}
-
-.morin-intro-text {
-  max-width: 700px;
 }
 
 .morin-intro-rule {
@@ -108,10 +99,6 @@ nav: false
   margin: 0 0 17px;
 }
 
-.morin-contact {
-  margin-top: 24px !important;
-}
-
 .morin-contact a {
   color: var(--morin-blue);
   text-decoration: none;
@@ -130,28 +117,23 @@ nav: false
 }
 
 @media (max-width: 900px) {
-  .morin-home {
-    --morin-frame: calc(100% - 32px);
-  }
-
-  .morin-hero {
-    height: 300px;
-    background-position: center center;
-  }
-
   .morin-hero-content {
     left: 24px;
     right: 24px;
-    max-width: none;
+    max-width: 68%;
+  }
+
+  .morin-hero h1 {
+    font-size: clamp(1.65rem, 6vw, 2.8rem);
+  }
+
+  .morin-hero-tagline {
+    font-size: .95rem;
   }
 
   .morin-intro-grid {
     grid-template-columns: 1fr;
     gap: 24px;
-  }
-
-  .morin-intro-text {
-    max-width: none;
   }
 
   .morin-logo-wrap {
@@ -166,8 +148,9 @@ nav: false
 
 <div class="morin-home">
 
-  <section class="morin-hero-outer">
-    <div class="morin-hero">
+  <section class="morin-hero">
+    <div class="morin-hero-wrap">
+      <img src="{{ '/assets/img/morin-hero-dark.png' | relative_url }}" alt="MORIN Lab marine robotics">
       <div class="morin-hero-content">
         <h1>Mobile Robotics &amp;<br>Intelligence Laboratory</h1>
         <div class="morin-hero-rule"></div>
@@ -181,7 +164,7 @@ nav: false
 
   <section class="morin-intro">
     <div class="morin-intro-grid">
-      <div class="morin-intro-text">
+      <div>
         <div class="morin-intro-rule"></div>
         <h2>MORIN Lab at KAIST</h2>
 
