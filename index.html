@@ -9,6 +9,7 @@
   --morin-navy: #0b2d5c;
   --morin-blue: #1267d6;
   --morin-text: #14213d;
+  --morin-frame: min(1180px, calc(100% - 64px));
 }
 
 /* Hero outer wrapper */
@@ -20,7 +21,7 @@
 
 /* Hero itself */
 .morin-hero {
-  width: min(100vw, 1600px);
+  width: var(--morin-frame);
   height: clamp(320px, 34vw, 520px);
   margin: 0 auto;
   position: relative;
@@ -33,7 +34,7 @@
 /* Text overlay on hero */
 .morin-hero-content {
   position: absolute;
-  left: min(6vw, 90px);
+  left: clamp(28px, 5vw, 80px);
   top: 50%;
   transform: translateY(-50%);
   max-width: 620px;
@@ -68,16 +69,21 @@
 
 /* Intro section */
 .morin-intro {
-  width: min(1180px, calc(100% - 48px));
+  width: var(--morin-frame);
   margin: 0 auto;
-  padding: 48px 0 54px;
+  padding: 44px 0 54px;
 }
 
 .morin-intro-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.85fr) minmax(230px, .65fr);
-  gap: 42px;
+  grid-template-columns: minmax(0, 700px) minmax(220px, 280px);
+  justify-content: center;
+  gap: 64px;
   align-items: center;
+}
+
+.morin-intro-text {
+  max-width: 700px;
 }
 
 .morin-intro-rule {
@@ -117,14 +123,17 @@
 }
 
 .morin-logo-wrap img {
-  width: min(300px, 90%);
+  width: min(260px, 90%);
   height: auto;
   display: block;
 }
 
 @media (max-width: 900px) {
+  .morin-home {
+    --morin-frame: calc(100% - 32px);
+  }
+
   .morin-hero {
-    width: 100%;
     height: 300px;
     background-position: center center;
   }
@@ -140,6 +149,10 @@
     gap: 24px;
   }
 
+  .morin-intro-text {
+    max-width: none;
+  }
+
   .morin-logo-wrap {
     justify-content: flex-start;
   }
@@ -148,7 +161,7 @@
     width: 220px;
   }
 }
-</style> <div class="morin-home"> <section class="morin-hero-outer"> <div class="morin-hero"> <div class="morin-hero-content"> <h1>Mobile Robotics &amp;<br>Intelligence Laboratory</h1> <div class="morin-hero-rule"></div> <p class="morin-hero-tagline"> Intelligent autonomy for mobile systems<br> in complex and uncertain environments. </p> </div> </div> </section> <section class="morin-intro"> <div class="morin-intro-grid"> <div> <div class="morin-intro-rule"></div> <h2>MORIN Lab at KAIST</h2> <p> Mobile Robotics &amp; Intelligence Laboratory (MORIN Lab) conducts research on intelligent control, autonomy, and decision-making for vehicles and mobile robotic systems. </p> <p> Our work spans dynamics, guidance, navigation, control, estimation, and learning-based methods, with a particular emphasis on marine robotic systems and autonomous vehicles. </p> <p> We develop fundamental algorithms and practical technologies that enable mobile robots to operate safely, robustly, and intelligently in complex and uncertain environments. While much of our research is motivated by marine applications—including autonomous surface and underwater vehicles—the methods we develop are broadly applicable to ground, aerial, and other mobile robotic systems. </p> <p class="morin-contact"> For inquiries, please contact <a href="mailto:jinwhan@kaist.ac.kr">jinwhan@kaist.ac.kr</a>. </p> </div> <div class="morin-logo-wrap"> <img src="/assets/img/morin-logo.png" alt="MORIN Lab"> </div> </div> </section> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 MORIN Lab. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+</style> <div class="morin-home"> <section class="morin-hero-outer"> <div class="morin-hero"> <div class="morin-hero-content"> <h1>Mobile Robotics &amp;<br>Intelligence Laboratory</h1> <div class="morin-hero-rule"></div> <p class="morin-hero-tagline"> Intelligent autonomy for mobile systems<br> in complex and uncertain environments. </p> </div> </div> </section> <section class="morin-intro"> <div class="morin-intro-grid"> <div class="morin-intro-text"> <div class="morin-intro-rule"></div> <h2>MORIN Lab at KAIST</h2> <p> Mobile Robotics &amp; Intelligence Laboratory (MORIN Lab) conducts research on intelligent control, autonomy, and decision-making for vehicles and mobile robotic systems. </p> <p> Our work spans dynamics, guidance, navigation, control, estimation, and learning-based methods, with a particular emphasis on marine robotic systems and autonomous vehicles. </p> <p> We develop fundamental algorithms and practical technologies that enable mobile robots to operate safely, robustly, and intelligently in complex and uncertain environments. While much of our research is motivated by marine applications—including autonomous surface and underwater vehicles—the methods we develop are broadly applicable to ground, aerial, and other mobile robotic systems. </p> <p class="morin-contact"> For inquiries, please contact <a href="mailto:jinwhan@kaist.ac.kr">jinwhan@kaist.ac.kr</a>. </p> </div> <div class="morin-logo-wrap"> <img src="/assets/img/morin-logo.png" alt="MORIN Lab"> </div> </div> </section> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 MORIN Lab. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
