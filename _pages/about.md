@@ -148,11 +148,11 @@ nav: false
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 28px;
+  gap: 50px;
 }
 
 .morin-brand-stack .kaist-logo {
-  width: min(250px, 88%);
+  width: min(250px, 95%);
   height: auto;
   display: block;
 }
