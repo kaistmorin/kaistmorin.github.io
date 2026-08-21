@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: MORIN Lab
 permalink: /
 nav: false
 ---
