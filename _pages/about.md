@@ -1,8 +1,9 @@
 ---
 layout: default
-title: MORIN Lab
+title: Home
 permalink: /
-nav: false
+nav: true
+nav_order: 1
 ---
 
 <style>
