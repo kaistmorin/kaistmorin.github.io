@@ -39,16 +39,18 @@ nav_order: 6
 }
 .contact-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr);
-  gap: 46px;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+  gap: 32px;
+  width: 100%;
   border-top: 1px solid var(--morin-line);
-  padding-top: 26px;
+  padding-top: 24px;
 }
 .contact-block h2 {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   color: var(--morin-navy);
   font-size: 1.22rem;
   font-weight: 600;
+  line-height: 1.35;
 }
 .contact-block p {
   margin: 0 0 8px;
@@ -70,6 +72,11 @@ nav_order: 6
   .contact-page { width: calc(100% - 30px); }
   .contact-grid { grid-template-columns: 1fr; gap: 28px; }
 }
+
+.contact-block {
+  min-width: 0;
+}
+
 </style>
 
 <div class="contact-page">
