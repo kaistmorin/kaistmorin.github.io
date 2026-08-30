@@ -11,27 +11,15 @@
   --morin-text: #17233a;
   --morin-muted: #697586;
   --morin-line: #e5eaf0;
-
-  width: min(1180px, calc(100% - 48px));
+  width: min(1120px, calc(100% - 48px));
   margin: 0 auto;
   padding: 36px 0 72px;
-
-  /* Use the same font stack as the rest of the al-folio site. */
-  font-family: inherit;
-}
-
-.people-page h1,
-.people-page h2,
-.people-page h3,
-.people-page p,
-.people-page a {
-  font-family: inherit;
 }
 
 .people-page h1 {
   margin: 0 0 6px;
   color: var(--morin-navy);
-  font-size: 2.25rem;
+  font-size: 2.35rem;
   font-weight: 700;
 }
 
@@ -55,7 +43,7 @@
 .people-section-title h2 {
   margin: 0;
   color: var(--morin-navy);
-  font-size: 1.28rem;
+  font-size: 1.30rem;
   font-weight: 700;
 }
 
@@ -66,48 +54,39 @@
   background: var(--morin-line);
 }
 
-/* Three equal cards per row on desktop. */
+/* Student/postdoc/admin cards: 3 per row */
 .people-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 26px;
+  gap: 24px;
 }
 
-/* Faculty, postdoc, students and administrator all use the same card geometry. */
 .person-card {
   border: 1px solid var(--morin-line);
-  border-radius: 12px;
+  border-radius: 14px;
   background: #fff;
   overflow: hidden;
-  box-shadow: 0 3px 12px rgba(12, 39, 75, 0.035);
+  box-shadow: 0 4px 16px rgba(12, 39, 75, 0.04);
 }
 
-/*
-  Standard photo frame:
-  - same size for everyone
-  - white background
-  - any input image fills the frame automatically
-  - object-position favors faces near the top
-*/
 .person-photo {
-  width: 100%;
   aspect-ratio: 1 / 1;
-  background: #fff;
+  background: #f6f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
 .person-photo img {
   width: 100%;
   height: 100%;
+  object-fit: contain; /* keep original portrait proportions */
   display: block;
-  object-fit: cover;
-  object-position: center top;
-  background: #fff;
 }
 
 .person-info {
   padding: 18px 18px 20px;
-  background: #fff;
 }
 
 .person-name {
@@ -148,6 +127,31 @@
   color: var(--morin-blue);
 }
 
+/* Faculty is intentionally wider, but photo is not stretched */
+.faculty-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 610px);
+}
+
+.faculty-card {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+}
+
+.faculty-card .person-photo {
+  aspect-ratio: auto;
+  min-height: 220px;
+}
+
+.faculty-card .person-info {
+  padding: 26px;
+}
+
+.faculty-card .person-name {
+  font-size: 1.22rem;
+  margin-bottom: 4px;
+}
+
 @media (max-width: 900px) {
   .people-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -156,14 +160,18 @@
 
 @media (max-width: 620px) {
   .people-page {
-    width: min(100% - 30px, 1180px);
+    width: min(100% - 30px, 1120px);
   }
 
   .people-grid {
     grid-template-columns: 1fr;
   }
+
+  .faculty-card {
+    grid-template-columns: 150px 1fr;
+  }
 }
-</style> <div class="people-page"> <h1>People</h1> <p class="people-lead">Members of the Mobile Robotics &amp; Intelligence Laboratory at KAIST.</p> <section class="people-section"> <div class="people-section-title"><h2>Faculty</h2></div> <div class="people-grid"> <article class="person-card"> <div class="person-photo"> <img src="/assets/img/people/jinwhan-kim.jpg" alt="Jinwhan Kim"> </div> <div class="person-info"> <h3 class="person-name">Jinwhan Kim</h3> <div class="person-role">Professor</div> <p class="person-meta">Department of Mechanical Engineering, KAIST</p> <p class="person-meta"><strong>Research:</strong> Autonomous systems, guidance, navigation, control, estimation, and marine robotics</p> <a class="person-email" href="mailto:jinwhan@kaist.ac.kr">jinwhan@kaist.ac.kr</a> </div> </article> </div> </section> <section class="people-section"> <div class="people-section-title"><h2>Postdoctoral Researchers</h2></div> <div class="people-grid"> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/kyungseo-kim.jpg" alt="Kyungseo Kim"></div> <div class="person-info"> <h3 class="person-name">Kyungseo Kim</h3> <p class="person-meta"><strong>Ph.D.:</strong> KAIST</p> <a class="person-email" href="mailto:chalseokim@kaist.ac.kr">chalseokim@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/jinwook-park.jpg" alt="Jinwook Park"></div> <div class="person-info"> <h3 class="person-name">Jinwook Park</h3> <p class="person-meta"><strong>Ph.D.:</strong> KAIST</p> <a class="person-email" href="mailto:qkrwlsdnr10@kaist.ac.kr">qkrwlsdnr10@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/qianyi-zhang.jpg" alt="Qianyi Zhang"></div> <div class="person-info"> <h3 class="person-name">Qianyi Zhang</h3> <p class="person-meta"><strong>Ph.D.:</strong> KAIST</p> <a class="person-email" href="mailto:qianyizhang@kaist.ac.kr">qianyizhang@kaist.ac.kr</a> </div> </article> </div> </section> <section class="people-section"> <div class="people-section-title"><h2>Ph.D. Students</h2></div> <div class="people-grid"> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/sol-han.jpg" alt="Sol Han"></div> <div class="person-info"> <h3 class="person-name">Sol Han</h3> <p class="person-meta"><strong>B.S.:</strong> KAIST</p> <p class="person-meta"><strong>M.S.:</strong> KAIST</p> <p class="person-meta"><strong>Research:</strong> Computer Vision · Sensor Fusion</p> <a class="person-email" href="mailto:dream4future@kaist.ac.kr">dream4future@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/kiyong-park.jpg" alt="Kiyong Park"></div> <div class="person-info"> <h3 class="person-name">Kiyong Park</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:qkrrldyd777@kaist.ac.kr">qkrrldyd777@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/donghyun-kim.jpg" alt="Donghyun Kim"></div> <div class="person-info"> <h3 class="person-name">Donghyun Kim</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:rlaehdgusqwe@kaist.ac.kr">rlaehdgusqwe@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/hakmo-son.jpg" alt="Hakmo Son"></div> <div class="person-info"> <h3 class="person-name">Hakmo Son</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:gkrah12@kaist.ac.kr">gkrah12@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/jisu-jeon.jpg" alt="Jisu Jeon"></div> <div class="person-info"> <h3 class="person-name">Jisu Jeon</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:dun04047@kaist.ac.kr">dun04047@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/dongwook-lee.jpg" alt="Dongwook Lee"></div> <div class="person-info"> <h3 class="person-name">Dongwook Lee</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <p class="person-meta"><strong>Research:</strong> Deep Learning · UUV SLAM</p> <a class="person-email" href="mailto:dongwooklee1201@kaist.ac.kr">dongwooklee1201@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/jiyong-choi.jpg" alt="Jiyong Choi"></div> <div class="person-info"> <h3 class="person-name">Jiyong Choi</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:jiyongchoi0702@kaist.ac.kr">jiyongchoi0702@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/placeholder.png" alt="Minju Kang"></div> <div class="person-info"> <h3 class="person-name">Minju Kang</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:mkang@kaist.ac.kr">mkang@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/placeholder.png" alt="Keunhwan Kim"></div> <div class="person-info"> <h3 class="person-name">Keunhwan Kim</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:khgapa@kaist.ac.kr">khgapa@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/yeongha-shin.jpg" alt="Yeongha Shin"></div> <div class="person-info"> <h3 class="person-name">Yeongha Shin</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:yeongha.shin@kaist.ac.kr">yeongha.shin@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/placeholder.png" alt="Wonseok Oh"></div> <div class="person-info"> <h3 class="person-name">Wonseok Oh</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:ooww0123@kaist.ac.kr">ooww0123@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/kyeongmo-kang.jpg" alt="Kyeongmo Kang"></div> <div class="person-info"> <h3 class="person-name">Kyeongmo Kang</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:kmkang@kaist.ac.kr">kmkang@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/ju-hang-lee.jpg" alt="Ju Hang Lee"></div> <div class="person-info"> <h3 class="person-name">Ju Hang Lee</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:hangsul@kaist.ac.kr">hangsul@kaist.ac.kr</a> </div> </article> </div> </section> <section class="people-section"> <div class="people-section-title"><h2>Integrated M.S./Ph.D. Students</h2></div> <div class="people-grid"> </div> </section> <section class="people-section"> <div class="people-section-title"><h2>M.S. Students</h2></div> <div class="people-grid"> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/taewoo-lee.jpg" alt="TaeWoo Lee"></div> <div class="person-info"> <h3 class="person-name">TaeWoo Lee</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>Research:</strong> Model Predictive Control</p> <a class="person-email" href="mailto:aimer1@kaist.ac.kr">aimer1@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/kyeonghun-lee.jpg" alt="Kyeonghun Lee"></div> <div class="person-info"> <h3 class="person-name">Kyeonghun Lee</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <a class="person-email" href="mailto:rapael6696@kaist.ac.kr">rapael6696@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/sangwon-park.jpg" alt="SangWon Park"></div> <div class="person-info"> <h3 class="person-name">SangWon Park</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <a class="person-email" href="mailto:sangwon0730@kaist.ac.kr">sangwon0730@kaist.ac.kr</a> </div> </article> </div> </section> <section class="people-section"> <div class="people-section-title"><h2>Administration</h2></div> <div class="people-grid"> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/seonah-lee.jpg" alt="Seonah Lee"></div> <div class="person-info"> <h3 class="person-name">Seonah Lee</h3> <p class="person-meta">Room 4170, Practice Building (N9)</p> <a class="person-email" href="mailto:gusdl814@kaist.ac.kr">gusdl814@kaist.ac.kr</a> </div> </article> </div> </section> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 MORIN Lab. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+</style> <div class="people-page"> <h1>People</h1> <p class="people-lead">Members of the Mobile Robotics &amp; Intelligence Laboratory at KAIST.</p> <section class="people-section"> <div class="people-section-title"><h2>Faculty</h2></div> <div class="faculty-grid"> <article class="person-card faculty-card"> <div class="person-photo"> <img src="/assets/img/people/jinwhan-kim.jpg" alt="Jinwhan Kim"> </div> <div class="person-info"> <h3 class="person-name">Jinwhan Kim</h3> <div class="person-role">Professor</div> <p class="person-meta">Department of Mechanical Engineering, KAIST</p> <p class="person-meta"><strong>Research:</strong> Autonomous systems, guidance, navigation, control, estimation, and marine robotics</p> <a class="person-email" href="mailto:jinwhan@kaist.ac.kr">jinwhan@kaist.ac.kr</a> </div> </article> </div> </section> <section class="people-section"> <div class="people-section-title"><h2>Postdoctoral Researchers</h2></div> <div class="people-grid"> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/kyungseo-kim.jpg" alt="Kyungseo Kim"></div> <div class="person-info"> <h3 class="person-name">Kyungseo Kim</h3> <p class="person-meta"><strong>Ph.D.:</strong> KAIST</p> <a class="person-email" href="mailto:chalseokim@kaist.ac.kr">chalseokim@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/jinwook-park.jpg" alt="Jinwook Park"></div> <div class="person-info"> <h3 class="person-name">Jinwook Park</h3> <p class="person-meta"><strong>Ph.D.:</strong> KAIST</p> <a class="person-email" href="mailto:qkrwlsdnr10@kaist.ac.kr">qkrwlsdnr10@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/qianyi-zhang.jpg" alt="Qianyi Zhang"></div> <div class="person-info"> <h3 class="person-name">Qianyi Zhang</h3> <p class="person-meta"><strong>Ph.D.:</strong> KAIST</p> <a class="person-email" href="mailto:qianyizhang@kaist.ac.kr">qianyizhang@kaist.ac.kr</a> </div> </article> </div> </section> <section class="people-section"> <div class="people-section-title"><h2>Ph.D. Students</h2></div> <div class="people-grid"> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/sol-han.jpg" alt="Sol Han"></div> <div class="person-info"> <h3 class="person-name">Sol Han</h3> <p class="person-meta"><strong>B.S.:</strong> KAIST</p> <p class="person-meta"><strong>M.S.:</strong> KAIST</p> <p class="person-meta"><strong>Research:</strong> Computer Vision · Sensor Fusion</p> <a class="person-email" href="mailto:dream4future@kaist.ac.kr">dream4future@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/kiyong-park.jpg" alt="Kiyong Park"></div> <div class="person-info"> <h3 class="person-name">Kiyong Park</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:qkrrldyd777@kaist.ac.kr">qkrrldyd777@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/donghyun-kim.jpg" alt="Donghyun Kim"></div> <div class="person-info"> <h3 class="person-name">Donghyun Kim</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:rlaehdgusqwe@kaist.ac.kr">rlaehdgusqwe@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/hakmo-son.jpg" alt="Hakmo Son"></div> <div class="person-info"> <h3 class="person-name">Hakmo Son</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:gkrah12@kaist.ac.kr">gkrah12@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/jisu-jeon.jpg" alt="Jisu Jeon"></div> <div class="person-info"> <h3 class="person-name">Jisu Jeon</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:dun04047@kaist.ac.kr">dun04047@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/dongwook-lee.jpg" alt="Dongwook Lee"></div> <div class="person-info"> <h3 class="person-name">Dongwook Lee</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <p class="person-meta"><strong>Research:</strong> Deep Learning · UUV SLAM</p> <a class="person-email" href="mailto:dongwooklee1201@kaist.ac.kr">dongwooklee1201@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/jiyong-choi.jpg" alt="Jiyong Choi"></div> <div class="person-info"> <h3 class="person-name">Jiyong Choi</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:jiyongchoi0702@kaist.ac.kr">jiyongchoi0702@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/placeholder.png" alt="Minju Kang"></div> <div class="person-info"> <h3 class="person-name">Minju Kang</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:mkang@kaist.ac.kr">mkang@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/placeholder.png" alt="Keunhwan Kim"></div> <div class="person-info"> <h3 class="person-name">Keunhwan Kim</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:khgapa@kaist.ac.kr">khgapa@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/yeongha-shin.jpg" alt="Yeongha Shin"></div> <div class="person-info"> <h3 class="person-name">Yeongha Shin</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:yeongha.shin@kaist.ac.kr">yeongha.shin@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/placeholder.png" alt="Wonseok Oh"></div> <div class="person-info"> <h3 class="person-name">Wonseok Oh</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:ooww0123@kaist.ac.kr">ooww0123@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/kyeongmo-kang.jpg" alt="Kyeongmo Kang"></div> <div class="person-info"> <h3 class="person-name">Kyeongmo Kang</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:kmkang@kaist.ac.kr">kmkang@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/ju-hang-lee.jpg" alt="Ju Hang Lee"></div> <div class="person-info"> <h3 class="person-name">Ju Hang Lee</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>M.S.:</strong> —</p> <a class="person-email" href="mailto:hangsul@kaist.ac.kr">hangsul@kaist.ac.kr</a> </div> </article> </div> </section> <section class="people-section"> <div class="people-section-title"><h2>Integrated M.S./Ph.D. Students</h2></div> <div class="people-grid"> </div> </section> <section class="people-section"> <div class="people-section-title"><h2>M.S. Students</h2></div> <div class="people-grid"> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/taewoo-lee.jpg" alt="TaeWoo Lee"></div> <div class="person-info"> <h3 class="person-name">TaeWoo Lee</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <p class="person-meta"><strong>Research:</strong> Model Predictive Control</p> <a class="person-email" href="mailto:aimer1@kaist.ac.kr">aimer1@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/kyeonghun-lee.jpg" alt="Kyeonghun Lee"></div> <div class="person-info"> <h3 class="person-name">Kyeonghun Lee</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <a class="person-email" href="mailto:rapael6696@kaist.ac.kr">rapael6696@kaist.ac.kr</a> </div> </article> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/sangwon-park.jpg" alt="SangWon Park"></div> <div class="person-info"> <h3 class="person-name">SangWon Park</h3> <p class="person-meta"><strong>B.S.:</strong> —</p> <a class="person-email" href="mailto:sangwon0730@kaist.ac.kr">sangwon0730@kaist.ac.kr</a> </div> </article> </div> </section> <section class="people-section"> <div class="people-section-title"><h2>Administration</h2></div> <div class="people-grid"> <article class="person-card"> <div class="person-photo"><img src="/assets/img/people/seonah-lee.jpg" alt="Seonah Lee"></div> <div class="person-info"> <h3 class="person-name">Seonah Lee</h3> <p class="person-meta">Room 4170, Practice Building (N9)</p> <a class="person-email" href="mailto:gusdl814@kaist.ac.kr">gusdl814@kaist.ac.kr</a> </div> </article> </div> </section> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 MORIN Lab. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
