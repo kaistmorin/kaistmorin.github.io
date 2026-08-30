@@ -10,10 +10,13 @@
   --morin-text: #1f2937;
   --morin-muted: #667085;
   --morin-line: #e6ebf0;
-  width: calc(100% - 48px);
-  max-width: 1120px;
+  /* Fix width against the viewport, not the theme's parent container. */
+  width: min(1120px, calc(100vw - 48px));
+  max-width: none;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin-left: 50%;
+  margin-right: 0;
+  transform: translateX(-50%);
   padding: 44px 0 72px;
   font-family: inherit;
 }
@@ -67,7 +70,7 @@
   font-size: .9rem !important;
 }
 @media (max-width: 720px) {
-  .contact-page { width: calc(100% - 30px); }
+  .contact-page { width: calc(100vw - 30px); }
   .contact-grid { grid-template-columns: 1fr; gap: 28px; }
 }
 
