@@ -12,9 +12,11 @@ nav_order: 2
   --morin-text: #1f2937;
   --morin-line: #e6ebf0;
 
-  width: min(1120px, calc(100% - 48px));
+  width: calc(100% - 48px);
+  max-width: 1120px;
+  box-sizing: border-box;
   margin: 0 auto;
-  padding: 38px 0 72px;
+  padding: 44px 0 72px;
   font-family: inherit;
 }
 
@@ -26,7 +28,7 @@ nav_order: 2
 }
 
 .research-page h1 {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   color: inherit;
   font-size: 2.25rem;
   font-weight: 400;
@@ -35,7 +37,7 @@ nav_order: 2
 
 .research-intro {
   max-width: 900px;
-  margin: 0 0 34px;
+  margin: 0 0 36px;
   color: var(--morin-text);
   font-size: 1rem;
   line-height: 1.55;
@@ -90,7 +92,7 @@ nav_order: 2
 
 @media (max-width: 760px) {
   .research-page {
-    width: min(100% - 30px, 1120px);
+    width: calc(100% - 30px);
   }
 
   .research-item {
