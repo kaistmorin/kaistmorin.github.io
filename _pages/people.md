@@ -13,15 +13,27 @@ nav_order: 3
   --morin-text: #17233a;
   --morin-muted: #697586;
   --morin-line: #e5eaf0;
-  width: min(1120px, calc(100% - 48px));
+
+  width: min(1180px, calc(100% - 48px));
   margin: 0 auto;
   padding: 36px 0 72px;
+
+  /* Use the same font stack as the rest of the al-folio site. */
+  font-family: inherit;
+}
+
+.people-page h1,
+.people-page h2,
+.people-page h3,
+.people-page p,
+.people-page a {
+  font-family: inherit;
 }
 
 .people-page h1 {
   margin: 0 0 6px;
   color: var(--morin-navy);
-  font-size: 2.35rem;
+  font-size: 2.25rem;
   font-weight: 700;
 }
 
@@ -45,7 +57,7 @@ nav_order: 3
 .people-section-title h2 {
   margin: 0;
   color: var(--morin-navy);
-  font-size: 1.30rem;
+  font-size: 1.28rem;
   font-weight: 700;
 }
 
@@ -56,39 +68,48 @@ nav_order: 3
   background: var(--morin-line);
 }
 
-/* Student/postdoc/admin cards: 3 per row */
+/* Three equal cards per row on desktop. */
 .people-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  gap: 26px;
 }
 
+/* Faculty, postdoc, students and administrator all use the same card geometry. */
 .person-card {
   border: 1px solid var(--morin-line);
-  border-radius: 14px;
+  border-radius: 12px;
   background: #fff;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(12, 39, 75, 0.04);
+  box-shadow: 0 3px 12px rgba(12, 39, 75, 0.035);
 }
 
+/*
+  Standard photo frame:
+  - same size for everyone
+  - white background
+  - any input image fills the frame automatically
+  - object-position favors faces near the top
+*/
 .person-photo {
+  width: 100%;
   aspect-ratio: 1 / 1;
-  background: #f6f8fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #fff;
   overflow: hidden;
 }
 
 .person-photo img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* keep original portrait proportions */
   display: block;
+  object-fit: cover;
+  object-position: center top;
+  background: #fff;
 }
 
 .person-info {
   padding: 18px 18px 20px;
+  background: #fff;
 }
 
 .person-name {
@@ -129,31 +150,6 @@ nav_order: 3
   color: var(--morin-blue);
 }
 
-/* Faculty is intentionally wider, but photo is not stretched */
-.faculty-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 610px);
-}
-
-.faculty-card {
-  display: grid;
-  grid-template-columns: 190px 1fr;
-}
-
-.faculty-card .person-photo {
-  aspect-ratio: auto;
-  min-height: 220px;
-}
-
-.faculty-card .person-info {
-  padding: 26px;
-}
-
-.faculty-card .person-name {
-  font-size: 1.22rem;
-  margin-bottom: 4px;
-}
-
 @media (max-width: 900px) {
   .people-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -162,18 +158,15 @@ nav_order: 3
 
 @media (max-width: 620px) {
   .people-page {
-    width: min(100% - 30px, 1120px);
+    width: min(100% - 30px, 1180px);
   }
 
   .people-grid {
     grid-template-columns: 1fr;
   }
-
-  .faculty-card {
-    grid-template-columns: 150px 1fr;
-  }
 }
 </style>
+
 
 <div class="people-page">
 
@@ -182,8 +175,8 @@ nav_order: 3
 
   <section class="people-section">
     <div class="people-section-title"><h2>Faculty</h2></div>
-    <div class="faculty-grid">
-      <article class="person-card faculty-card">
+    <div class="people-grid">
+      <article class="person-card">
         <div class="person-photo">
           <img src="{{ '/assets/img/people/jinwhan-kim.jpg' | relative_url }}" alt="Jinwhan Kim">
         </div>
