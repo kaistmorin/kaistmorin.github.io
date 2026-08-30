@@ -37,16 +37,18 @@
 }
 .contact-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr);
-  gap: 46px;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+  gap: 32px;
+  width: 100%;
   border-top: 1px solid var(--morin-line);
-  padding-top: 26px;
+  padding-top: 24px;
 }
 .contact-block h2 {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   color: var(--morin-navy);
   font-size: 1.22rem;
   font-weight: 600;
+  line-height: 1.35;
 }
 .contact-block p {
   margin: 0 0 8px;
@@ -68,6 +70,11 @@
   .contact-page { width: calc(100% - 30px); }
   .contact-grid { grid-template-columns: 1fr; gap: 28px; }
 }
+
+.contact-block {
+  min-width: 0;
+}
+
 </style> <div class="contact-page"> <h1>Contact</h1> <p class="contact-intro">Contact information for the Mobile Robotics &amp; Intelligence Laboratory at KAIST.</p> <div class="contact-grid"> <section class="contact-block"> <h2>Mobile Robotics &amp; Intelligence Laboratory</h2> <p>Department of Mechanical Engineering, KAIST</p> <p>291 Daehak-ro, Yuseong-gu, Daejeon 305-701, Republic of Korea</p> <p style="margin-top:20px;"><span class="contact-label">Office</span>3105, Eureka Building (N27)</p> <p><span class="contact-label">Office</span>4170, Practice Building (N9)</p> <p><span class="contact-label">Student office</span>4170, Practice Building (N9)</p> </section> <section class="contact-block"> <h2>Contact</h2> <p><span class="contact-label">Phone</span>+82-42-350-1519</p> <p><span class="contact-label">Fax</span>+82-42-350-1510</p> <p><span class="contact-label">E-mail</span><a href="mailto:jinwhan@kaist.ac.kr">jinwhan@kaist.ac.kr</a></p> <p class="contact-note">The best and easiest way to reach me is by e-mail.</p> </section> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 MORIN Lab. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
