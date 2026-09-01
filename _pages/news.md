@@ -17,7 +17,7 @@ nav_order: 5
   max-width: 1120px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 44px 0 72px;
+  padding: 22px 0 72px;
   font-family: inherit;
 }
 .news-page h1,
