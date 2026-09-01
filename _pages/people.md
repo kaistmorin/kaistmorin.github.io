@@ -230,15 +230,10 @@ nav_order: 3
         <p><a href="mailto:jinwhan@kaist.ac.kr">jinwhan@kaist.ac.kr</a> · Tel. +82-42-350-1519 · Fax +82-42-350-1510</p>
 
         <h4>Education</h4>
-        <p>Ph.D. Aeronautics and Astronautics (with Ph.D. minor in Electrical Engineering), Stanford University</p>
+        <p>Ph.D. Aeronautics and Astronautics, Stanford University</p>
         <p>M.S. Aeronautics and Astronautics, Stanford University</p>
         <p>M.S. Naval Architecture and Ocean Engineering, Seoul National University</p>
         <p>B.S. Naval Architecture and Ocean Engineering, Seoul National University</p>
-
-        <h4>Experience</h4>
-        <p>2010–Present · Korea Advanced Institute of Science and Technology</p>
-        <p>2007–2010 · Optimal Synthesis Inc.</p>
-        <p>1995–2000 · Korea Research Institute of Ships and Ocean Engineering</p>
       </div>
     </div>
   </section>
