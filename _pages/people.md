@@ -227,14 +227,18 @@ nav_order: 3
         <p><strong>Professor</strong>, Department of Mechanical Engineering, KAIST</p>
         <p>Graduate School of Ocean Systems Engineering</p>
         <p>Robotics Program</p>
-        <p>Tel: +82-42-350-1519</p>
-        <p>Email: <a href="mailto:jinwhan@kaist.ac.kr">jinwhan@kaist.ac.kr</p>
-        
+        <p><a href="mailto:jinwhan@kaist.ac.kr">jinwhan@kaist.ac.kr</a> · Tel. +82-42-350-1519 · Fax +82-42-350-1510</p>
+
         <h4>Education</h4>
-        <p>Ph.D. Aeronautics and Astronautics, Stanford University</p>
+        <p>Ph.D. Aeronautics and Astronautics (with Ph.D. minor in Electrical Engineering), Stanford University</p>
+        <p>M.S. Aeronautics and Astronautics, Stanford University</p>
         <p>M.S. Naval Architecture and Ocean Engineering, Seoul National University</p>
         <p>B.S. Naval Architecture and Ocean Engineering, Seoul National University</p>
 
+        <h4>Experience</h4>
+        <p>2010–Present · Korea Advanced Institute of Science and Technology</p>
+        <p>2007–2010 · Optimal Synthesis Inc.</p>
+        <p>1995–2000 · Korea Research Institute of Ships and Ocean Engineering</p>
       </div>
     </div>
   </section>
@@ -339,6 +343,17 @@ nav_order: 3
           <h3 class="person-name">Dongwook Lee</h3>
           <p class="person-meta"><strong>B.S.:</strong> —</p>
           <p class="person-meta"><strong>M.S.:</strong> —</p>
+          <a class="person-email" href="mailto:dongwooklee1201@kaist.ac.kr">dongwooklee1201@kaist.ac.kr</a>
+        </div>
+      </article>
+
+      <article class="person-card">
+        <div class="person-photo"><img src="{{ '/assets/img/people/dongwook-lee.jpg' | relative_url }}" alt="Dongwook Lee"></div>
+        <div class="person-info">
+          <h3 class="person-name">Dongwook Lee</h3>
+          <p class="person-meta"><strong>B.S.:</strong> —</p>
+          <p class="person-meta"><strong>M.S.:</strong> —</p>
+          <p class="person-meta"><strong>Research:</strong> Deep Learning · UUV SLAM</p>
           <a class="person-email" href="mailto:dongwooklee1201@kaist.ac.kr">dongwooklee1201@kaist.ac.kr</a>
         </div>
       </article>
