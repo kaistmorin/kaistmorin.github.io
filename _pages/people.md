@@ -425,7 +425,7 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Ji Soo Kim"></div>
         <div class="person-info">
           <h3 class="person-name">Ji Soo Kim</h3>
-          <p class="person-affiliation">Currently with <a href="https://www.hd-hhi.com/" target="_blank" rel="noopener"><strong>HD KSOE</strong></p>
+          <p class="person-affiliation">Currently with <a href="https://www.hd-hhi.com/" target="_blank" rel="noopener"><strong>HD KSOE</strong></a></p>
           <p class="person-meta"><strong>M.S.</strong> Inha University</p>
           <p class="person-meta"><strong>B.S.</strong> Inha University</p>
           <a class="person-email">kimjjs100@kaist.ac.kr</a>
