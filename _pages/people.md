@@ -225,7 +225,7 @@ nav_order: 3
       <div>
         <h3>Jinwhan Kim</h3>
         <p><strong>Professor</strong>, Department of Mechanical Engineering, KAIST</p>        
-        <p>Jointly affilated with Graduate School of Ocean Systems Engineering and Robotics Program</p>
+        <p>Jointly affilated with Robotics Program & Graduate School of Ocean Systems Engineering</p>
         <p>Phone: +82-42-350-1519</p>
         <p>Email: jinwhan@kaist.ac.kr</p>
 
@@ -245,9 +245,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/kyungseo-kim.jpg' | relative_url }}" alt="Kyungseo Kim"></div>
         <div class="person-info">
           <h3 class="person-name">Kyungseo Kim</h3>
-          <p class="person-meta">Ph.D.:</strong> KAIST</p>
-          <p class="person-meta">M.S.:</strong> KAIST</p>
-          <p class="person-meta">B.S.:</strong> KAIST</p>
+          <p class="person-meta">Ph.D.: KAIST (2026)</p>
+          <p class="person-meta">M.S.: KAIST, (0000)</p>
+          <p class="person-meta">B.S.: KAIST, (0000)</p>
           <a class="person-email">chalseokim@kaist.ac.kr</a>
         </div>
       </article>
@@ -256,10 +256,10 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/jinwook-park.jpg' | relative_url }}" alt="Jinwook Park"></div>
         <div class="person-info">
           <h3 class="person-name">Jinwook Park</h3>
-          <p class="person-meta"><strong>Ph.D.:</strong> KAIST</p>
-          <p class="person-meta"><strong>M.S.:</strong> KAIST</p>
-          <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
-          <a class="person-email" href="mailto:qkrwlsdnr10@kaist.ac.kr">qkrwlsdnr10@kaist.ac.kr</a>
+          <p class="person-meta">Ph.D.: KAIST (2026)</p>
+          <p class="person-meta">M.S.: KAIST (0000)</p>
+          <p class="person-meta">B.S.: KAIST (0000)</p>
+          <a class="person-email">qkrwlsdnr10@kaist.ac.kr</a>
         </div>
       </article>
 
@@ -267,10 +267,10 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/qianyi-zhang.jpg' | relative_url }}" alt="Qianyi Zhang"></div>
         <div class="person-info">
           <h3 class="person-name">Qianyi Zhang</h3>
-          <p class="person-meta"><strong>Ph.D.:</strong> Harbin Engineering University</p>
-          <p class="person-meta"><strong>M.S.:</strong> Harbin Engineering University</p>
-          <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
-          <a class="person-email" href="mailto:qianyizhang@kaist.ac.kr">qianyizhang@kaist.ac.kr</a>
+          <p class="person-meta">Ph.D.: KAIST (2026)</p>
+          <p class="person-meta">M.S.: Harbin Engineering University (0000)</p>
+          <p class="person-meta">B.S.: Harbin Engineering University (0000)</p>
+          <a class="person-email">qianyizhang@kaist.ac.kr</a>
         </div>
       </article>
 
@@ -285,8 +285,8 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/sol-han.jpg' | relative_url }}" alt="Sol Han"></div>
         <div class="person-info">
         <h3 class="person-name">Sol Han</h3>        
-        <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
-        <a class="person-email" href="mailto:dream4future@kaist.ac.kr">dream4future@kaist.ac.kr</a>
+        <p class="person-meta">B.S.: KAIST (0000)</p>
+        <a class="person-email" >dream4future@kaist.ac.kr</a>
         </div>
       </article>
 
@@ -294,8 +294,8 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/kiyong-park.jpg' | relative_url }}" alt="Kiyong Park"></div>
         <div class="person-info">
         <h3 class="person-name">Kiyong Park</h3>
-        <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
-        <a class="person-email" href="mailto:qkrrldyd777@kaist.ac.kr">qkrrldyd777@kaist.ac.kr</a>
+        <p class="person-meta">B.S.: KAIST (0000)</p>
+        <a class="person-email">qkrrldyd777@kaist.ac.kr</a>
         </div>
       </article>
 
@@ -303,9 +303,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/donghyun-kim.jpg' | relative_url }}" alt="Donghyun Kim"></div>
         <div class="person-info">
         <h3 class="person-name">Donghyun Kim</h3>
-        <p class="person-meta"><strong>M.S.:</strong> KAIST</p>
-        <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
-        <a class="person-email" href="mailto:rlaehdgusqwe@kaist.ac.kr">rlaehdgusqwe@kaist.ac.kr</a>
+        <p class="person-meta">M.S.: KAIST (0000)</p>
+        <p class="person-meta">B.S.: KAIST (0000)</p>
+        <a class="person-email">rlaehdgusqwe@kaist.ac.kr</a>
         </div>
       </article>
 
@@ -313,8 +313,8 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/hakmo-son.jpg' | relative_url }}" alt="Hakmo Son"></div>
         <div class="person-info">
         <h3 class="person-name">Hakmo Son</h3>
-        <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
-        <a class="person-email" href="mailto:gkrah12@kaist.ac.kr">gkrah12@kaist.ac.kr</a>
+        <p class="person-meta">B.S.: KAIST (0000)</p>
+        <a class="person-email">gkrah12@kaist.ac.kr</a>
         </div>
       </article>
 
@@ -322,9 +322,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/jisu-jeon.jpg' | relative_url }}" alt="Jisu Jeon"></div>
         <div class="person-info">
         <h3 class="person-name">Jisu Jeon</h3>
-        <p class="person-meta"><strong>B.S.:</strong> Korea University</p>
-        <p class="person-meta"><strong>M.S.:</strong> Korea University</p>
-        <a class="person-email" href="mailto:dun04047@kaist.ac.kr">dun04047@kaist.ac.kr</a>
+        <p class="person-meta">M.S.: Korea University (0000)</p>
+        <p class="person-meta">B.S.: Korea University (0000)</p>
+        <a class="person-email">dun04047@kaist.ac.kr</a>
         </div>
       </article>
 
@@ -332,30 +332,89 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/dongwook-lee.jpg' | relative_url }}" alt="Dongwook Lee"></div>
         <div class="person-info">
           <h3 class="person-name">Dongwook Lee</h3>
-          <p class="person-meta"><strong>B.S.:</strong> —</p>
-          <p class="person-meta"><strong>M.S.:</strong> —</p>
-          <a class="person-email" href="mailto:dongwooklee1201@kaist.ac.kr">dongwooklee1201@kaist.ac.kr</a>
+          <p class="person-meta">M.S.: KAIST (0000)</p>
+          <p class="person-meta">B.S.: </p>
+          <a class="person-email">dongwooklee1201@kaist.ac.kr</a>
         </div>
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/dongwook-lee.jpg' | relative_url }}" alt="Dongwook Lee"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/jiyong-choi.jpg' | relative_url }}" alt="Jiyong Choi"></div>
         <div class="person-info">
-          <h3 class="person-name">Dongwook Lee</h3>
-          <p class="person-meta"><strong>B.S.:</strong> —</p>
-          <p class="person-meta"><strong>M.S.:</strong> —</p>
-          <p class="person-meta"><strong>Research:</strong> Deep Learning · UUV SLAM</p>
-          <a class="person-email" href="mailto:dongwooklee1201@kaist.ac.kr">dongwooklee1201@kaist.ac.kr</a>
+          <h3 class="person-name">Jiyong Choi</h3>
+          <p class="person-meta">B.S.: KAIST (0000)</p>
+          <a class="person-email">jiyongchoi0702@kaist.ac.kr</a>
         </div>
       </article>
 
-      <article class="person-card"><div class="person-photo"><img src="{{ '/assets/img/people/jiyong-choi.jpg' | relative_url }}" alt="Jiyong Choi"></div><div class="person-info"><h3 class="person-name">Jiyong Choi</h3><p class="person-meta"><strong>B.S.:</strong> —</p><p class="person-meta"><strong>M.S.:</strong> —</p><a class="person-email" href="mailto:jiyongchoi0702@kaist.ac.kr">jiyongchoi0702@kaist.ac.kr</a></div></article>
-      <article class="person-card"><div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Minju Kang"></div><div class="person-info"><h3 class="person-name">Minju Kang</h3><p class="person-meta"><strong>B.S.:</strong> —</p><p class="person-meta"><strong>M.S.:</strong> —</p><a class="person-email" href="mailto:mkang@kaist.ac.kr">mkang@kaist.ac.kr</a></div></article>
-      <article class="person-card"><div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Keunhwan Kim"></div><div class="person-info"><h3 class="person-name">Keunhwan Kim</h3><p class="person-meta"><strong>B.S.:</strong> —</p><p class="person-meta"><strong>M.S.:</strong> —</p><a class="person-email" href="mailto:khgapa@kaist.ac.kr">khgapa@kaist.ac.kr</a></div></article>
-      <article class="person-card"><div class="person-photo"><img src="{{ '/assets/img/people/yeongha-shin.jpg' | relative_url }}" alt="Yeongha Shin"></div><div class="person-info"><h3 class="person-name">Yeongha Shin</h3><p class="person-meta"><strong>B.S.:</strong> —</p><p class="person-meta"><strong>M.S.:</strong> —</p><a class="person-email" href="mailto:yeongha.shin@kaist.ac.kr">yeongha.shin@kaist.ac.kr</a></div></article>
-      <article class="person-card"><div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Wonseok Oh"></div><div class="person-info"><h3 class="person-name">Wonseok Oh</h3><p class="person-meta"><strong>B.S.:</strong> —</p><p class="person-meta"><strong>M.S.:</strong> —</p><a class="person-email" href="mailto:ooww0123@kaist.ac.kr">ooww0123@kaist.ac.kr</a></div></article>
-      <article class="person-card"><div class="person-photo"><img src="{{ '/assets/img/people/kyeongmo-kang.jpg' | relative_url }}" alt="Kyeongmo Kang"></div><div class="person-info"><h3 class="person-name">Kyeongmo Kang</h3><p class="person-meta"><strong>B.S.:</strong> —</p><p class="person-meta"><strong>M.S.:</strong> —</p><a class="person-email" href="mailto:kmkang@kaist.ac.kr">kmkang@kaist.ac.kr</a></div></article>
-      <article class="person-card"><div class="person-photo"><img src="{{ '/assets/img/people/ju-hang-lee.jpg' | relative_url }}" alt="Ju Hang Lee"></div><div class="person-info"><h3 class="person-name">Ju Hang Lee</h3><p class="person-meta"><strong>B.S.:</strong> —</p><p class="person-meta"><strong>M.S.:</strong> —</p><a class="person-email" href="mailto:hangsul@kaist.ac.kr">hangsul@kaist.ac.kr</a></div></article>
+      <article class="person-card">
+        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Minju Kang"></div>
+        <div class="person-info">
+          <h3 class="person-name">Minju Kang</h3>
+          <p class="person-meta">M.S.: KAIST (0000)</p>
+          <p class="person-meta">B.S.: KAIST (0000)</p>
+          <a class="person-email">mkang@kaist.ac.kr</a>
+        </div>
+      </article>
+
+      <article class="person-card">
+        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Keunhwan Kim"></div>
+        <div class="person-info">
+          <h3 class="person-name">Keunhwan Kim</h3>
+          <p class="person-meta">M.S.: KAIST (0000)</p>
+          <p class="person-meta">B.S.: Hanyang University (0000)</p>
+          <a class="person-email">mkang@kaist.ac.kr</a>
+        </div>
+      </article>
+
+      <article class="person-card">
+        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Yeongha Shin"></div>
+        <div class="person-info">
+          <h3 class="person-name">Yeongha Shin</h3>
+          <p class="person-meta">M.S.: KAIST (0000)</p>
+          <p class="person-meta">B.S.: Korea Maritime University (0000)</p>
+          <a class="person-email">yeongha.shin@kaist.ac.kr</a>
+        </div>
+      </article>
+
+      <article class="person-card">
+        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Wonseok Oh"></div>
+        <div class="person-info">
+          <h3 class="person-name">Wonseok Oh</h3>
+          <p class="person-meta">M.S.: KAIST (0000)</p>
+          <p class="person-meta">B.S.: KAIST (0000)</p>
+          <a class="person-email">ooww0123@kaist.ac.kr</a>
+        </div>
+      </article>
+
+      <article class="person-card">
+        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Kyeongmo Kang"></div>
+        <div class="person-info">
+          <h3 class="person-name">Kyeongmo Kang</h3>
+          <p class="person-meta">M.S.: KAIST (0000)</p>
+          <p class="person-meta">B.S.: KAIST (0000)</p>
+          <a class="person-email">kmkang@kaist.ac.kr</a>
+        </div>
+      </article>
+
+      <article class="person-card">
+        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Ju Hang Lee"></div>
+        <div class="person-info">
+          <h3 class="person-name">Ju Hang Lee</h3>          
+          <p class="person-meta">B.S.: Hanyang University (0000)</p>
+          <a class="person-email">hangsul@kaist.ac.kr</a>
+        </div>
+      </article>
+
+      <article class="person-card">
+        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Ji Soo Kim"></div>
+        <div class="person-info">
+          <h3 class="person-name">Ji Soo Kim</h3>          
+          <p class="person-meta">M.S.: Inha University (0000)</p>
+          <p class="person-meta">B.S.: Inha University (0000)</p>
+          <a class="person-email">kimjjs100@kaist.ac.kr</a>
+        </div>
+      </article>
 
     </div>
   </section>
@@ -365,17 +424,40 @@ nav_order: 3
     <div class="people-grid">
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/taewoo-lee.jpg' | relative_url }}" alt="TaeWoo Lee"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Tae Woo Lee"></div>
         <div class="person-info">
-          <h3 class="person-name">TaeWoo Lee</h3>
-          <p class="person-meta"><strong>B.S.:</strong> —</p>
-          <p class="person-meta"><strong>Research:</strong> Model Predictive Control</p>
-          <a class="person-email" href="mailto:aimer1@kaist.ac.kr">aimer1@kaist.ac.kr</a>
+          <h3 class="person-name">Tae Woo Lee</h3>
+          <p class="person-meta">B.S.: KAIST (0000)</p>
+          <a class="person-email">aimer1@kaist.ac.kr</a>
         </div>
       </article>
 
-      <article class="person-card"><div class="person-photo"><img src="{{ '/assets/img/people/kyeonghun-lee.jpg' | relative_url }}" alt="Kyeonghun Lee"></div><div class="person-info"><h3 class="person-name">Kyeonghun Lee</h3><p class="person-meta"><strong>B.S.:</strong> —</p><a class="person-email" href="mailto:rapael6696@kaist.ac.kr">rapael6696@kaist.ac.kr</a></div></article>
-      <article class="person-card"><div class="person-photo"><img src="{{ '/assets/img/people/sangwon-park.jpg' | relative_url }}" alt="SangWon Park"></div><div class="person-info"><h3 class="person-name">SangWon Park</h3><p class="person-meta"><strong>B.S.:</strong> —</p><a class="person-email" href="mailto:sangwon0730@kaist.ac.kr">sangwon0730@kaist.ac.kr</a></div></article>
+       <article class="person-card">
+        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Kyeonghun Lee"></div>
+        <div class="person-info">
+          <h3 class="person-name">Kyeonghun Lee</h3>
+          <p class="person-meta">B.S.: KAIST (0000)</p>
+          <a class="person-email">rapael6696@kaist.ac.kr</a>
+        </div>
+      </article>
+
+       <article class="person-card">
+        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Sang Won Park"></div>
+        <div class="person-info">
+          <h3 class="person-name">Sang Won Park</h3>
+          <p class="person-meta">B.S.: Hanyang University (0000)</p>
+          <a class="person-email">rapael6696@kaist.ac.kr</a>
+        </div>
+      </article>
+
+       <article class="person-card">
+        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Taeung Lee"></div>
+        <div class="person-info">
+          <h3 class="person-name">Taeung Lee</h3>
+          <p class="person-meta">B.S.: Korea University (0000)</p>
+          <a class="person-email">christy201@kaist.ac.kr</a>
+        </div>
+      </article>
 
     </div>
   </section>
@@ -387,9 +469,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/seonah-lee.jpg' | relative_url }}" alt="Seonah Lee"></div>
         <div class="person-info">
           <h3 class="person-name">Seonah Lee</h3>
-          <p class="person-meta">Room 4170, Practice Building (N9)</p>
-          <p class="person-meta">Tel. +82-42-350-1579</p>
-          <a class="person-email" href="mailto:gusdl814@kaist.ac.kr">gusdl814@kaist.ac.kr</a>
+          <p class="person-meta">Office: 4170, Practice Building (N9)</p>
+          <p class="person-meta">Phone: +82-42-350-1579</p>
+          <a class="person-email">Email: gusdl814@kaist.ac.kr</a>
         </div>
       </article>
     </div>
@@ -404,7 +486,7 @@ nav_order: 3
         </thead>
         <tbody>
           <tr><td>Hyunkuen Cho</td><td>2026, Ph.D.</td><td>Avikus Co.</td></tr>
-          <tr><td>Junwoo Park</td><td>2026, Master</td><td>—</td></tr>
+          <tr><td>Junwoo Park</td><td>2026, Master</td><td>Twinny</td></tr>
           <tr><td>Yonghoe Lee</td><td>2026, Master</td><td>Samsung Electronics</td></tr>
           <tr><td>Taekjoong Kwon</td><td>2026, Master</td><td>Republic of Korea Navy</td></tr>
           <tr><td>Haggi Do</td><td>2025, Ph.D.</td><td>Korea Institute of Machinery &amp; Materials</td></tr>
@@ -439,7 +521,7 @@ nav_order: 3
           <tr><td>Soohyun Nam</td><td>2017, Ph.D.</td><td>Samsung Electronics</td></tr>
           <tr><td>Jaeheon Choe</td><td>2017, Ph.D.</td><td>Korea Railroad Research Institute</td></tr>
           <tr><td>Yeonjoo Shim</td><td>2016, Master</td><td>Hyundai Mobis</td></tr>
-          <tr><td>Donghwan Kim</td><td>2016, Master</td><td>—</td></tr>
+          <tr><td>Donghwan Kim</td><td>2016, Master</td><td>Moais</td></tr>
           <tr><td>Minju Kang</td><td>2016, Master</td><td>Korea Research Institute of Ships and Ocean Engineering</td></tr>
           <tr><td>Jeonghong Park</td><td>2016, Ph.D.</td><td>Korea Research Institute of Ships and Ocean Engineering</td></tr>
           <tr><td>Sungchur Kwon</td><td>2015, Master</td><td>EDGE Group</td></tr>
