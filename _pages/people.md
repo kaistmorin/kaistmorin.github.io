@@ -469,9 +469,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/seonah-lee.jpg' | relative_url }}" alt="Seonah Lee"></div>
         <div class="person-info">
           <h3 class="person-name">Seonah Lee</h3>
-          <p class="person-meta">Office: 4170, Practice Building (N9)</p>
-          <p class="person-meta">Phone: +82-42-350-1579</p>
-          <a class="person-email">Email: gusdl814@kaist.ac.kr</a>
+          <p class="person-meta"><strong>Office</strong> 4170, Practice Building (N9)</p>
+          <p class="person-meta"><strong>Phone</strong> +82-42-350-1579</p>
+          <a class="person-email">gusdl814@kaist.ac.kr</a>
         </div>
       </article>
     </div>
