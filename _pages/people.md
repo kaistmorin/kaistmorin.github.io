@@ -224,14 +224,13 @@ nav_order: 3
       <img class="director-photo" src="{{ '/assets/img/people/jinwhan-kim.jpg' | relative_url }}" alt="Jinwhan Kim">
       <div>
         <h3>Jinwhan Kim</h3>
-        <p><strong>Professor</strong>, Department of Mechanical Engineering, KAIST</p>
-        <p>Graduate School of Ocean Systems Engineering</p>
-        <p>Robotics Program</p>
-        <p><a href="mailto:jinwhan@kaist.ac.kr">jinwhan@kaist.ac.kr</a> · Tel. +82-42-350-1519 · Fax +82-42-350-1510</p>
+        <p><strong>Professor</strong>, Department of Mechanical Engineering, KAIST</p>        
+        <p>Jointly affilated with Graduate School of Ocean Systems Engineering and Robotics Program</p>
+        <p>Tel: +82-42-350-1519</p>
+        <p>Email: <a href="mailto:jinwhan@kaist.ac.kr">jinwhan@kaist.ac.kr</a></p>
 
         <h4>Education</h4>
-        <p>Ph.D. Aeronautics and Astronautics, Stanford University</p>
-        <p>M.S. Aeronautics and Astronautics, Stanford University</p>
+        <p>Ph.D. Aeronautics and Astronautics (w/ Ph.D Minor in Electrical Eng.), Stanford University</p>
         <p>M.S. Naval Architecture and Ocean Engineering, Seoul National University</p>
         <p>B.S. Naval Architecture and Ocean Engineering, Seoul National University</p>
       </div>
