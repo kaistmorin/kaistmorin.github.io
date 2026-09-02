@@ -245,9 +245,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/kyungseo-kim.jpg' | relative_url }}" alt="Kyungseo Kim"></div>
         <div class="person-info">
           <h3 class="person-name">Kyungseo Kim</h3>
-          <p class="person-meta">Ph.D. KAIST '26</p>
-          <p class="person-meta">M.S. KAIST '00</p>
-          <p class="person-meta">B.S. KAIST '00</p>
+          <p class="person-meta"><strong>Ph.D.</strong> KAIST '26</p>
+          <p class="person-meta"><strong>M.S.</strong> KAIST '00</p>
+          <p class="person-meta"><strong>B.S.</strong> KAIST '00</p>
           <a class="person-email">chalseokim@kaist.ac.kr</a>
         </div>
       </article>
@@ -256,9 +256,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/jinwook-park.jpg' | relative_url }}" alt="Jinwook Park"></div>
         <div class="person-info">
           <h3 class="person-name">Jinwook Park</h3>
-          <p class="person-meta">Ph.D. KAIST '26'</p>
-          <p class="person-meta">M.S. KAIST '00'</p>
-          <p class="person-meta">B.S. KAIST '00</p>
+          <p class="person-meta"><strong>Ph.D.</strong> KAIST '26</p>
+          <p class="person-meta"><strong>M.S.</strong> KAIST '00'</p>
+          <p class="person-meta"><strong>B.S.</strong> KAIST '00</p>
           <a class="person-email">qkrwlsdnr10@kaist.ac.kr</a>
         </div>
       </article>
@@ -267,9 +267,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/qianyi-zhang.jpg' | relative_url }}" alt="Qianyi Zhang"></div>
         <div class="person-info">
           <h3 class="person-name">Qianyi Zhang</h3>
-          <p class="person-meta">Ph.D. KAIST '26</p>
-          <p class="person-meta">M.S.: Harbin Engineering University '00'</p>
-          <p class="person-meta">B.S.: Harbin Engineering University '00</p>
+          <p class="person-meta"><strong>Ph.D.</strong> KAIST '26</p>
+          <p class="person-meta"><strong>M.S.</strong>: Harbin Engineering Univ. '00</p>
+          <p class="person-meta"><strong>B.S.</strong>: Harbin Engineering Univ. '00</p>
           <a class="person-email">qianyizhang@kaist.ac.kr</a>
         </div>
       </article>
