@@ -118,6 +118,13 @@ nav_order: 3
   font-size: .88rem;
 }
 
+.person-affiliation {
+  margin: 0 0 8px;
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
 .person-meta,
 .person-email {
   margin: 0 0 5px;
@@ -246,7 +253,8 @@ nav_order: 3
         <div class="person-info">
           <h3 class="person-name">Kyungseo Kim</h3>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST (2026)</p>
-          <p class="person-meta"><strong>M.S. & B.S.</strong> KAIST</p>
+          <p class="person-meta"><strong>M.S.</strong> KAIST</p>
+          <p class="person-meta"><strong>B.S.</strong> KAIST</p>
           <a class="person-email">chalseokim@kaist.ac.kr</a>
         </div>
       </article>
@@ -256,7 +264,8 @@ nav_order: 3
         <div class="person-info">
           <h3 class="person-name">Jinwook Park</h3>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST (2026)</p>
-          <p class="person-meta"><strong>M.S. & B.S.</strong> KAIST</p>
+          <p class="person-meta"><strong>M.S.</strong> KAIST</p>
+          <p class="person-meta"><strong>B.S.</strong> KAIST</p>
           <a class="person-email">qkrwlsdnr10@kaist.ac.kr</a>
         </div>
       </article>
@@ -266,7 +275,8 @@ nav_order: 3
         <div class="person-info">
           <h3 class="person-name">Qianyi Zhang</h3>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST (2026)</p>
-          <p class="person-meta"><strong>M.S. & B.S.</strong>: Harbin Engineering Univ.</p>          
+          <p class="person-meta"><strong>M.S.</strong>: Harbin Engineering Univ.</p>
+          <p class="person-meta"><strong>B.S.</strong>: Harbin Engineering Univ.</p>
           <a class="person-email">qianyizhang@kaist.ac.kr</a>
         </div>
       </article>
@@ -282,6 +292,8 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/sol-han.jpg' | relative_url }}" alt="Sol Han"></div>
         <div class="person-info">
         <h3 class="person-name">Sol Han</h3>        
+        <p class="person-role">Ph.D. Student</p>
+        <p class="person-affiliation">HD Hyundai Heavy Industries</p>
         <p class="person-meta">B.S.: KAIST (0000)</p>
         <a class="person-email" >dream4future@kaist.ac.kr</a>
         </div>
