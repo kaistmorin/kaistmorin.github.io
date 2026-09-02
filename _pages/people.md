@@ -122,8 +122,16 @@ nav_order: 3
   font-size: .88rem;
 }
 
+.person-affiliation {
+  margin: 0 0 8px;
+  color: #4b5563;
+  font-size: .88rem;
+  line-height: 1.4;
+}
+
 .person-affiliation a {
   color: var(--morin-blue);
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -427,7 +435,7 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Ji Soo Kim"></div>
         <div class="person-info">
           <h3 class="person-name">Ji Soo Kim</h3>
-          <p class="person-affiliation">Currently with <a href="https://www.hd-ksoe.com/" target="_blank" rel="noopener"><strong>HD KSOE</strong></a></p>
+          <p class="person-affiliation">Currently with <a href="https://www.hd-ksoe.com/" target="_blank" rel="noopener">HD KSOE</a>
           <p class="person-meta"><strong>M.S.</strong> Inha University</p>
           <p class="person-meta"><strong>B.S.</strong> Inha University</p>
           <a class="person-email">kimjjs100@kaist.ac.kr</a>
