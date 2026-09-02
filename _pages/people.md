@@ -226,13 +226,13 @@ nav_order: 3
         <h3>Jinwhan Kim</h3>
         <p><strong>Professor</strong>, Department of Mechanical Engineering, KAIST</p>        
         <p>Jointly affilated with Robotics Program & Graduate School of Ocean Systems Engineering</p>
-        <p>Phone: +82-42-350-1519</p>
-        <p>Email: jinwhan@kaist.ac.kr</p>
+        <p><strong>Phone</strong>: +82-42-350-1519</p>
+        <p><strong>Email</strong>: jinwhan@kaist.ac.kr</p>
 
         <h4>Education</h4>
-        <p>Ph.D. Aeronautics and Astronautics (w/ Ph.D. Minor in Electrical Eng.), Stanford University</p>
-        <p>M.S. Naval Architecture and Ocean Engineering, Seoul National University</p>
-        <p>B.S. Naval Architecture and Ocean Engineering, Seoul National University</p>
+        <p><strong>Ph.D.</strong> Aeronautics and Astronautics (w/ Ph.D. Minor in Electrical Eng.), Stanford University</p>
+        <p><strong>M.S.</strong> Naval Architecture and Ocean Engineering, Seoul National University</p>
+        <p><strong>B.S.</strong> Naval Architecture and Ocean Engineering, Seoul National University</p>
       </div>
     </div>
   </section>
@@ -245,9 +245,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/kyungseo-kim.jpg' | relative_url }}" alt="Kyungseo Kim"></div>
         <div class="person-info">
           <h3 class="person-name">Kyungseo Kim</h3>
-          <p class="person-meta">Ph.D.: KAIST (2026)</p>
-          <p class="person-meta">M.S.: KAIST, (0000)</p>
-          <p class="person-meta">B.S.: KAIST, (0000)</p>
+          <p class="person-meta">Ph.D. KAIST '26</p>
+          <p class="person-meta">M.S. KAIST '00</p>
+          <p class="person-meta">B.S. KAIST '00</p>
           <a class="person-email">chalseokim@kaist.ac.kr</a>
         </div>
       </article>
@@ -256,9 +256,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/jinwook-park.jpg' | relative_url }}" alt="Jinwook Park"></div>
         <div class="person-info">
           <h3 class="person-name">Jinwook Park</h3>
-          <p class="person-meta">Ph.D.: KAIST (2026)</p>
-          <p class="person-meta">M.S.: KAIST (0000)</p>
-          <p class="person-meta">B.S.: KAIST (0000)</p>
+          <p class="person-meta">Ph.D. KAIST '26'</p>
+          <p class="person-meta">M.S. KAIST '00'</p>
+          <p class="person-meta">B.S. KAIST '00</p>
           <a class="person-email">qkrwlsdnr10@kaist.ac.kr</a>
         </div>
       </article>
@@ -267,9 +267,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/qianyi-zhang.jpg' | relative_url }}" alt="Qianyi Zhang"></div>
         <div class="person-info">
           <h3 class="person-name">Qianyi Zhang</h3>
-          <p class="person-meta">Ph.D.: KAIST (2026)</p>
-          <p class="person-meta">M.S.: Harbin Engineering University (0000)</p>
-          <p class="person-meta">B.S.: Harbin Engineering University (0000)</p>
+          <p class="person-meta">Ph.D. KAIST '26</p>
+          <p class="person-meta">M.S.: Harbin Engineering University '00'</p>
+          <p class="person-meta">B.S.: Harbin Engineering University '00</p>
           <a class="person-email">qianyizhang@kaist.ac.kr</a>
         </div>
       </article>
@@ -496,10 +496,10 @@ nav_order: 3
           <tr><td>Kunchul Hwang</td><td>2025, Ph.D.</td><td>Agency for Defense Development</td></tr>
           <tr><td>Dongha Chung</td><td>2024, Ph.D.</td><td>URobotics</td></tr>
           <tr><td>Youngbum Kim</td><td>2024, Ph.D.</td><td>HD Hyundai XiteSolution</td></tr>
-          <tr><td>Jonghwi Kim</td><td>2024, Ph.D.</td><td>Agency for Defense Development</td></tr>
+          <tr><td>Jonghwi Kim</td><td>2024, Ph.D.</td><td>Korea Aerospace University</td></tr>
           <tr><td>Eunghyun Kim</td><td>2024, Master</td><td>Samsung Electronics</td></tr>
           <tr><td>Uijong Kim</td><td>2023, Master</td><td>Agency for Defense Development</td></tr>
-          <tr><td>Jungwoo Han</td><td>2023, Master</td><td>Hyundai Motors</td></tr>
+          <tr><td>Jungwoo Han</td><td>2023, Master</td><td>Honda Research Institute</td></tr>
           <tr><td>Junwoo Jang</td><td>2023, Ph.D.</td><td>Inha University</td></tr>
           <tr><td>Jinsik Kim</td><td>2022, Master</td><td>GINT Co.</td></tr>
           <tr><td>Wonseok Oh</td><td>2022, Master</td><td>Twinny</td></tr>
@@ -519,7 +519,7 @@ nav_order: 3
           <tr><td>Sangwook Woo</td><td>2017, Master</td><td>Hyundai Construction Equipment</td></tr>
           <tr><td>Aleixo Cambeiro Barreiro</td><td>2017, Master</td><td>Fraunhofer Heinrich-Hertz-Institute</td></tr>
           <tr><td>Soohyun Nam</td><td>2017, Ph.D.</td><td>Samsung Electronics</td></tr>
-          <tr><td>Jaeheon Choe</td><td>2017, Ph.D.</td><td>Korea Railroad Research Institute</td></tr>
+          <tr><td>Jaeheon Choe</td><td>2017, Ph.D.</td><td>Incheon National University</td></tr>
           <tr><td>Yeonjoo Shim</td><td>2016, Master</td><td>Hyundai Mobis</td></tr>
           <tr><td>Donghwan Kim</td><td>2016, Master</td><td>Moais</td></tr>
           <tr><td>Minju Kang</td><td>2016, Master</td><td>Korea Research Institute of Ships and Ocean Engineering</td></tr>
@@ -527,7 +527,7 @@ nav_order: 3
           <tr><td>Sungchur Kwon</td><td>2015, Master</td><td>EDGE Group</td></tr>
           <tr><td>Hojang Lee</td><td>2014, Master</td><td>Defence Agency for Technology and Quality</td></tr>
           <tr><td>Hyungbae Lee</td><td>2013, Master</td><td>Hyundai Heavy Industries</td></tr>
-          <tr><td>Younghyun Kim</td><td>2012, Master</td><td>LIG Nex1</td></tr>
+          <tr><td>Younghyun Kim</td><td>2012, Master</td><td>LIG D&A</td></tr>
           <tr><td>Quoc Van Tran</td><td>Postdoctoral Researcher</td><td>Hanoi University of Science and Technology</td></tr>
           <tr><td>Mohan Santhakumar</td><td>Postdoctoral Researcher</td><td>Indian Institute of Technology Palakkad</td></tr>
           <tr><td>Armagan Elibol</td><td>Postdoctoral Researcher</td><td>Forschungzentrum Jülich</td></tr>
