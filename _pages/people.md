@@ -226,11 +226,11 @@ nav_order: 3
         <h3>Jinwhan Kim</h3>
         <p><strong>Professor</strong>, Department of Mechanical Engineering, KAIST</p>        
         <p>Jointly affilated with Graduate School of Ocean Systems Engineering and Robotics Program</p>
-        <p>Tel: +82-42-350-1519</p>
-        <p>Email: <a href="mailto:jinwhan@kaist.ac.kr">jinwhan@kaist.ac.kr</a></p>
+        <p>Phone: +82-42-350-1519</p>
+        <p>Email: jinwhan@kaist.ac.kr</p>
 
         <h4>Education</h4>
-        <p>Ph.D. Aeronautics and Astronautics (w/ Ph.D Minor in Electrical Eng.), Stanford University</p>
+        <p>Ph.D. Aeronautics and Astronautics (w/ Ph.D. Minor in Electrical Eng.), Stanford University</p>
         <p>M.S. Naval Architecture and Ocean Engineering, Seoul National University</p>
         <p>B.S. Naval Architecture and Ocean Engineering, Seoul National University</p>
       </div>
@@ -245,10 +245,10 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/kyungseo-kim.jpg' | relative_url }}" alt="Kyungseo Kim"></div>
         <div class="person-info">
           <h3 class="person-name">Kyungseo Kim</h3>
-          <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
-          <p class="person-meta"><strong>M.S.:</strong> KAIST</p>
-          <p class="person-meta"><strong>Ph.D.:</strong> KAIST</p>
-          <a class="person-email" href="mailto:chalseokim@kaist.ac.kr">chalseokim@kaist.ac.kr</a>
+          <p class="person-meta">Ph.D.:</strong> KAIST</p>
+          <p class="person-meta">M.S.:</strong> KAIST</p>
+          <p class="person-meta">B.S.:</strong> KAIST</p>
+          <a class="person-email">chalseokim@kaist.ac.kr</a>
         </div>
       </article>
 
@@ -256,9 +256,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/jinwook-park.jpg' | relative_url }}" alt="Jinwook Park"></div>
         <div class="person-info">
           <h3 class="person-name">Jinwook Park</h3>
-          <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
-          <p class="person-meta"><strong>M.S.:</strong> KAIST</p>
           <p class="person-meta"><strong>Ph.D.:</strong> KAIST</p>
+          <p class="person-meta"><strong>M.S.:</strong> KAIST</p>
+          <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
           <a class="person-email" href="mailto:qkrwlsdnr10@kaist.ac.kr">qkrwlsdnr10@kaist.ac.kr</a>
         </div>
       </article>
@@ -267,9 +267,9 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/qianyi-zhang.jpg' | relative_url }}" alt="Qianyi Zhang"></div>
         <div class="person-info">
           <h3 class="person-name">Qianyi Zhang</h3>
-          <p class="person-meta"><strong>B.S.:</strong> Harbin Engineering University</p>
+          <p class="person-meta"><strong>Ph.D.:</strong> Harbin Engineering University</p>
           <p class="person-meta"><strong>M.S.:</strong> Harbin Engineering University</p>
-          <p class="person-meta"><strong>Ph.D.:</strong> KAIST</p>
+          <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
           <a class="person-email" href="mailto:qianyizhang@kaist.ac.kr">qianyizhang@kaist.ac.kr</a>
         </div>
       </article>
@@ -284,9 +284,8 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/sol-han.jpg' | relative_url }}" alt="Sol Han"></div>
         <div class="person-info">
-        <h3 class="person-name">Sol Han</h3>
+        <h3 class="person-name">Sol Han</h3>        
         <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
-        <p class="person-meta"><strong>M.S.:</strong> KAIST</p>
         <a class="person-email" href="mailto:dream4future@kaist.ac.kr">dream4future@kaist.ac.kr</a>
         </div>
       </article>
@@ -296,7 +295,6 @@ nav_order: 3
         <div class="person-info">
         <h3 class="person-name">Kiyong Park</h3>
         <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
-        <p class="person-meta"><strong>M.S.:</strong> KAIST</p>
         <a class="person-email" href="mailto:qkrrldyd777@kaist.ac.kr">qkrrldyd777@kaist.ac.kr</a>
         </div>
       </article>
@@ -305,8 +303,8 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/donghyun-kim.jpg' | relative_url }}" alt="Donghyun Kim"></div>
         <div class="person-info">
         <h3 class="person-name">Donghyun Kim</h3>
-        <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
         <p class="person-meta"><strong>M.S.:</strong> KAIST</p>
+        <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
         <a class="person-email" href="mailto:rlaehdgusqwe@kaist.ac.kr">rlaehdgusqwe@kaist.ac.kr</a>
         </div>
       </article>
@@ -316,7 +314,6 @@ nav_order: 3
         <div class="person-info">
         <h3 class="person-name">Hakmo Son</h3>
         <p class="person-meta"><strong>B.S.:</strong> KAIST</p>
-        <p class="person-meta"><strong>M.S.:</strong> KAIST</p>
         <a class="person-email" href="mailto:gkrah12@kaist.ac.kr">gkrah12@kaist.ac.kr</a>
         </div>
       </article>
