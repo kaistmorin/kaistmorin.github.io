@@ -113,7 +113,11 @@ nav_order: 3
 }
 
 .person-role {
+  display: inline-block;
   margin: -3px 0 10px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background: #f3f4f6;
   color: var(--morin-blue);
   font-size: .88rem;
 }
