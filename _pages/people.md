@@ -139,6 +139,23 @@ nav_order: 3
   text-decoration: underline;
 }
 
+.person-name-affiliation {
+  margin-left: 6px;
+  color: #4b5563;
+  font-size: .88rem;
+  font-weight: 400;
+}
+
+.person-name-affiliation a {
+  color: var(--morin-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.person-name-affiliation a:hover {
+  text-decoration: underline;
+}
+
 .person-meta,
 .person-email {
   margin: 0 0 5px;
@@ -372,7 +389,7 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Minju Kang"></div>
         <div class="person-info">
           <h3 class="person-name">Minju Kang</h3>
-          <p class="person-affiliation">Currently with <a href="https://www.kriso.re.kr/" target="_blank" rel="noopener"><strong>KRISO</strong></a></p>
+          <p class="person-affiliation">Currently with <a href="https://www.kriso.re.kr/" target="_blank" rel="noopener">KRISO</a></p>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
           <p class="person-meta"><strong>B.S.</strong> KAIST</p>
           <a class="person-email">mkang@kaist.ac.kr</a>
@@ -383,7 +400,7 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Keunhwan Kim"></div>
         <div class="person-info">
           <h3 class="person-name">Keunhwan Kim</h3>
-          <p class="person-affiliation">Currently with <a href="https://www.keti.re.kr/" target="_blank" rel="noopener"><strong>KETI</strong></a></p>
+          <p class="person-affiliation">Currently with <a href="https://www.keti.re.kr/" target="_blank" rel="noopener">KETI</a></p>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
           <p class="person-meta"><strong>B.S.</strong> Hanyang University</p>
           <a class="person-email">mkang@kaist.ac.kr</a>
@@ -404,7 +421,7 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Wonseok Oh"></div>
         <div class="person-info">
           <h3 class="person-name">Wonseok Oh</h3>
-          <p class="person-affiliation">Currently with <a href="https://twinny.ai/" target="_blank" rel="noopener"><strong>Twinny</strong></a></p>
+          <p class="person-affiliation">Currently with <a href="https://twinny.ai/" target="_blank" rel="noopener">Twinny</a></p>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
           <p class="person-meta"><strong>B.S.</strong> KAIST</p>
           <a class="person-email">ooww0123@kaist.ac.kr</a>
@@ -415,7 +432,7 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Kyeongmo Kang"></div>
         <div class="person-info">
           <h3 class="person-name">Kyeongmo Kang</h3>
-          <p class="person-affiliation">Currently with <a href="https://www.navy.mil.kr/" target="_blank" rel="noopener"><strong>ROK Navy</strong></a></p>
+          <p class="person-affiliation">Currently with <a href="https://www.navy.mil.kr/" target="_blank" rel="noopener">ROK Navy</a></p>
           <p class="person-meta"><strong>M.S.</strong> Texas A&M University</p>
           <p class="person-meta"><strong>B.S.</strong> ROK Naval Academy</p>
           <a class="person-email">kmkang@kaist.ac.kr</a>
@@ -433,14 +450,26 @@ nav_order: 3
 
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Ji Soo Kim"></div>
+        
+        <h3 class="person-name">Ji Soo Kim
+        <span class="person-name-affiliation">
+          with
+          <a href="https://www.hd-ksoe.com/" target="_blank" rel="noopener">HD KSOE</a>
+        </span>
+        </h3>
+
+        <!--
         <div class="person-info">
-          <h3 class="person-name">Ji Soo Kim</h3>
+          <h3 class="person-name">Ji Soo Kim</h3>          
           <p class="person-affiliation">Currently with <a href="https://www.hd-ksoe.com/" target="_blank" rel="noopener">HD KSOE</a></p>
+        -->
+
           <p class="person-meta"><strong>M.S.</strong> Inha University</p>
           <p class="person-meta"><strong>B.S.</strong> Inha University</p>
           <a class="person-email">kimjjs100@kaist.ac.kr</a>
         </div>
       </article>
+      
 
     </div>
   </section>
