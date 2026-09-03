@@ -454,8 +454,9 @@ nav_order: 3
 
         <h3 class="person-name">Ji Soo Kim
         <span class="person-name-affiliation">
-          with
+          (with
           <a href="https://www.hd-ksoe.com/" target="_blank" rel="noopener">HD KSOE</a>
+          )
         </span>
         </h3>
 
