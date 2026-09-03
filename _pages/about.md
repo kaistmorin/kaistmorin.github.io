@@ -47,7 +47,8 @@ nav: false
   position: absolute;
   left: clamp(34px, 6vw, 96px);
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) scale(0.78);
+  transform-origin: left center;
   max-width: 650px;
   z-index: 5;
   opacity: 0;
