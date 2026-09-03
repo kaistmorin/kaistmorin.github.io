@@ -14,7 +14,7 @@ nav: false
 
 /* Full hero, centered in viewport, with fixed max width */
 .morin-hero-wrap {
-  width: min(1600px, 100vw);
+  width: min(1200px, 100vw);
   margin-left: 50%;
   transform: translateX(-50%);
   position: relative;
