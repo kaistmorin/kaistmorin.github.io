@@ -390,7 +390,7 @@ nav_order: 3
         <div class="person-info">
           <h3 class="person-name">Minju Kang
           <span class="person-name-affiliation">
-          (with
+          (w/
           <a href="https://www.kriso.re.kr/" target="_blank" rel="noopener">KRISO</a>
           )
           </span>
@@ -406,7 +406,7 @@ nav_order: 3
         <div class="person-info">
           <h3 class="person-name">Keunhwan Kim
           <span class="person-name-affiliation">
-          (with
+          (w/
           <a href="https://www.keti.re.kr/" target="_blank" rel="noopener">KETI</a>
           )
           </span>
@@ -432,7 +432,7 @@ nav_order: 3
         <div class="person-info">
           <h3 class="person-name">Wonseok Oh
           <span class="person-name-affiliation">
-          (with
+          (w/
           <a href="https://twinny.ai/" target="_blank" rel="noopener">Twinny</a>
           )
           </span>
@@ -448,7 +448,7 @@ nav_order: 3
         <div class="person-info">
           <h3 class="person-name">Kyeongmo Kang
           <span class="person-name-affiliation">
-          (with
+          (w/
           <a href="https://www.navy.mil.kr/" target="_blank" rel="noopener">ROK Navy</a>
           )
           </span>
@@ -473,7 +473,7 @@ nav_order: 3
         <div class="person-info">
           <h3 class="person-name">Ji Soo Kim
           <span class="person-name-affiliation">
-            (with
+            (w/
             <a href="https://www.hd-ksoe.com/" target="_blank" rel="noopener">HD KSOE</a>
             )
           </span>
