@@ -450,7 +450,8 @@ nav_order: 3
 
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Ji Soo Kim"></div>
-        
+        <div class="person-info">
+
         <h3 class="person-name">Ji Soo Kim
         <span class="person-name-affiliation">
           with
@@ -458,8 +459,7 @@ nav_order: 3
         </span>
         </h3>
 
-        <!--
-        <div class="person-info">
+        <!--        
           <h3 class="person-name">Ji Soo Kim</h3>          
           <p class="person-affiliation">Currently with <a href="https://www.hd-ksoe.com/" target="_blank" rel="noopener">HD KSOE</a></p>
         -->
