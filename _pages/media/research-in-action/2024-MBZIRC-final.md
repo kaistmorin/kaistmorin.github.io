@@ -58,7 +58,7 @@ nav: false
 
 <div class="media-detail">
   <a class="archive-back" href="{{ '/media/research-in-action/' | relative_url }}">← Back to Research in Action</a>
-  <h1>MORIN Lab Research in Action</h1>
+  <h1>MBZIRC Final Competition at Yas Island</h1>
   <p class="detail-date">Video</p>
   
   <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
