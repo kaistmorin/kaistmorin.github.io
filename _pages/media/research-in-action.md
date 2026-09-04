@@ -64,7 +64,7 @@ nav: false
   <article class="archive-card">
     <a href="{{ '/media/research-in-action/2026-RAL-DKim/' | relative_url }}">
       <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/research-in-action/2026-RAL-DKim.jpg' | relative_url }}" alt="Marine Field Experiment">
+        <img src="{{ '/assets/img/media/research-in-action/2026-RAL-DKim.jpg' | relative_url }}" alt="">
       </div>
       <div class="archive-meta">
         <p class="media-label">Video</p>
@@ -75,7 +75,7 @@ nav: false
   <article class="archive-card">
     <a href="{{ '/media/research-in-action/2024-MBZIRC-final/' | relative_url }}">
       <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/research-in-action/2024-MBZIRC-final.jpeg' | relative_url }}" alt="MORIN Lab Research in Action">
+        <img src="{{ '/assets/img/media/research-in-action/2024-MBZIRC-final.jpeg' | relative_url }}" alt="">
       </div>
       <div class="archive-meta">
         <p class="media-label">Video</p>
@@ -86,7 +86,7 @@ nav: false
   <article class="archive-card">
     <a href="{{ '/media/research-in-action/2019-Pohang-WAMV/' | relative_url }}">
       <div class="media-thumb">
-        <img src="{{ '/assets/img/media/research-in-action/2019-Pohang-WAMV.jpg' | relative_url }}" alt="Autonomous Marine Robotics Demonstration">
+        <img src="{{ '/assets/img/media/research-in-action/2019-Pohang-WAMV.jpg' | relative_url }}" alt="">
       </div>
       <div class="archive-meta">
         <p class="media-label">Photo</p>
