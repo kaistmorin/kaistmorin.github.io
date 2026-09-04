@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Autonomous Marine Robotics Demonstration
+title: Supplementary Video for RA-L Paper by Donghyun Kim
 permalink: /media/research-in-action/2026-RAL-DKim/
 nav: false
 ---
@@ -62,7 +62,7 @@ nav: false
   <p class="detail-date">Video</p>
   
   <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
-    <iframe src="https://www.youtube.com/watch?v=ED17maqhDR4" title="Autonomous Marine Robotics Demonstration" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/watch?v=ED17maqhDR4" title="Supplementary Video for RA-L Paper by Donghyun Kim" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   <div class="detail-body"><p>Example video item for autonomous marine robotics.</p><div class="detail-actions"><a href="https://www.youtube.com/watch?v=ED17maqhDR4" target="_blank" rel="noopener">Open on YouTube ↗</a></div></div>
 </div>

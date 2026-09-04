@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Marine Field Experiment
+title: Autonomous Navigation in Pohang Canal
 permalink: /media/research-in-action/2019-Pohang-WAMV/
 nav: false
 ---
