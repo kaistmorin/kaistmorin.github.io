@@ -203,15 +203,15 @@ nav: false
   <section class="morin-hero">
     <div class="morin-hero-wrap">
 
-      <div class="morin-hero-slide active" id="morin-slide-dark">
-        <img src="{{ '/assets/img/morin-hero-dark.png' | relative_url }}" alt="MORIN Lab marine robotics">
-      </div>
-
-      <div class="morin-hero-slide" id="morin-slide-light">
+      <div class="morin-hero-slide active" id="morin-slide-light">
         <img src="{{ '/assets/img/morin-hero-light.png' | relative_url }}" alt="MORIN Lab civilian marine robotics">
       </div>
-
-      <div class="morin-hero-content light-text active" id="morin-text-dark">
+      
+      <div class="morin-hero-slide" id="morin-slide-dark">
+        <img src="{{ '/assets/img/morin-hero-dark.png' | relative_url }}" alt="MORIN Lab marine robotics">
+      </div>
+      
+      <div class="morin-hero-content dark-text active" id="morin-text-light">
         <h1>Mobile Robotics &amp;<br>Intelligence Laboratory</h1>
         <div class="morin-hero-rule"></div>
         <p class="morin-hero-tagline">
@@ -220,7 +220,7 @@ nav: false
         </p>
       </div>
 
-      <div class="morin-hero-content dark-text" id="morin-text-light">
+      <div class="morin-hero-content light-text" id="morin-text-dark">
         <h1>Mobile Robotics &amp;<br>Intelligence Laboratory</h1>
         <div class="morin-hero-rule"></div>
         <p class="morin-hero-tagline">
@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const darkText = document.getElementById("morin-text-dark");
   const lightText = document.getElementById("morin-text-light");
 
-  let showingDark = true;
+  let showingDark = false;
 
   setInterval(function () {
     showingDark = !showingDark;
