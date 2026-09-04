@@ -1,7 +1,7 @@
 ---
 layout: default
-title: MORIN Lab Research in Action
-permalink: /media/research-in-action/featured-research-video/
+title: Marine Field Experiment
+permalink: /media/research-in-action/2019-Pohang-WAMV/
 nav: false
 ---
 
@@ -58,11 +58,8 @@ nav: false
 
 <div class="media-detail">
   <a class="archive-back" href="{{ '/media/research-in-action/' | relative_url }}">← Back to Research in Action</a>
-  <h1>MORIN Lab Research in Action</h1>
-  <p class="detail-date">Video</p>
-  
-  <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
-    <iframe src="https://www.youtube.com/embed/Ya1pfWYRMrc?start=214" title="MORIN Lab Research in Action" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-  <div class="detail-body"><p>A featured video demonstrating MORIN Lab research activities.</p><div class="detail-actions"><a href="https://www.youtube.com/watch?v=Ya1pfWYRMrc&t=214s" target="_blank" rel="noopener">Open on YouTube ↗</a></div></div>
+  <h1>Marine Field Experiment</h1>
+  <p class="detail-date">Photo</p>
+  <div class="detail-hero"><img src="{{ '/assets/img/media/research/2019-Pohang-WAMV.jpg' | relative_url }}" alt="Marine Field Experiment"></div>
+  <div class="detail-body"><p>A field experiment with marine robotic systems.</p></div>
 </div>
