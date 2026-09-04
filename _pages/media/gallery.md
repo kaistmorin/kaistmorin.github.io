@@ -96,50 +96,5 @@ nav: false
         <h3 class="media-title">MORIN Fall Hiking</h3>
       </div>
     </a>
-  </article>
-  <article class="archive-card">
-    <a href="{{ '/media/gallery/2019-07-26-morin-hero-joint-summer-workshop/' | relative_url }}">
-      <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-05.jpg' | relative_url }}" alt="MORIN-HERO Joint Summer Workshop"></div>
-      <div class="archive-meta">
-        <p class="media-label">2019-07-26</p>
-        <h3 class="media-title">MORIN-HERO Joint Summer Workshop</h3>
-      </div>
-    </a>
-  </article>
-  <article class="archive-card">
-    <a href="{{ '/media/gallery/2018-11-28-morin-winter-workshop/' | relative_url }}">
-      <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-06.jpg' | relative_url }}" alt="MORIN Winter Workshop"></div>
-      <div class="archive-meta">
-        <p class="media-label">2018-11-28</p>
-        <h3 class="media-title">MORIN Winter Workshop</h3>
-      </div>
-    </a>
-  </article>
-  <article class="archive-card">
-    <a href="{{ '/media/gallery/2017-05-04-morin-spring-hiking/' | relative_url }}">
-      <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-07.jpg' | relative_url }}" alt="MORIN Spring Hiking"></div>
-      <div class="archive-meta">
-        <p class="media-label">2017-05-04</p>
-        <h3 class="media-title">MORIN Spring Hiking</h3>
-      </div>
-    </a>
-  </article>
-  <article class="archive-card">
-    <a href="{{ '/media/gallery/2017-02-06-morin-winter-workshop/' | relative_url }}">
-      <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-08.jpg' | relative_url }}" alt="MORIN Winter Workshop"></div>
-      <div class="archive-meta">
-        <p class="media-label">2017-02-06</p>
-        <h3 class="media-title">MORIN Winter Workshop</h3>
-      </div>
-    </a>
-  </article>
-  <article class="archive-card">
-    <a href="{{ '/media/gallery/2016-01-26-morin-winter-workshop/' | relative_url }}">
-      <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-09.jpg' | relative_url }}" alt="MORIN Winter Workshop"></div>
-      <div class="archive-meta">
-        <p class="media-label">2016-01-26</p>
-        <h3 class="media-title">MORIN Winter Workshop</h3>
-      </div>
-    </a>
   </article></div>
 </div>
