@@ -1,0 +1,58 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> MORIN Winter Workshop | MORIN Lab </title> <meta name="author" content="MORIN Lab"> <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. "> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/helm.png?v=5d5dc4c1fd6ef20268d75e550fcb1e25"> <link rel="apple-touch-icon" href="/assets/img/helm.png?v=5d5dc4c1fd6ef20268d75e550fcb1e25"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://kaistmorin.github.io/media/gallery/2017-02-06-morin-winter-workshop/"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> MORIN Lab </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">Home </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">People </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/media/">Media <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/contact/">Contact </a> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <style>
+.media-page,.media-archive,.media-detail{
+  --morin-navy:#0b2d5c;
+  --morin-text:#1f2937;
+  --morin-muted:#667085;
+  --morin-line:#e6ebf0;
+  width:calc(100% - 48px);
+  max-width:1120px;
+  box-sizing:border-box;
+  margin:0 auto;
+  padding:11px 0 72px;
+  font-family:inherit;
+}
+.media-page h1,.media-archive h1,.media-detail h1{
+  margin:0 0 12px;font-size:2.25rem;font-weight:400;line-height:1.15;
+}
+.media-intro{max-width:860px;margin:0 0 30px;color:var(--morin-text);font-size:1rem;line-height:1.55}
+.media-section{margin-top:34px}
+.media-section-head{display:flex;align-items:center;gap:14px;margin:0 0 15px}
+.media-section-head h2{margin:0;color:var(--morin-navy);font-size:1.25rem;font-weight:600}
+.media-section-head::after{content:"";flex:1;height:1px;background:var(--morin-line)}
+.media-view-all{margin-left:auto;color:var(--morin-navy);font-size:.86rem;font-weight:600;text-decoration:none;white-space:nowrap}
+.media-view-all:hover,.archive-back:hover{text-decoration:underline}
+.media-featured-video,.media-card,.archive-card{
+  overflow:hidden;border:1px solid var(--morin-line);border-radius:8px;background:#fff;
+}
+.media-video-wrap{position:relative;width:100%;aspect-ratio:16/9;background:#000}
+.media-video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.media-featured-meta,.media-card-meta,.archive-meta{padding:12px 13px 14px}
+.media-label,.detail-date{margin:0 0 5px;color:var(--morin-muted);font-size:.78rem}
+.media-title{margin:0 0 5px;color:var(--morin-navy);font-size:1rem;font-weight:600;line-height:1.4}
+.media-desc{margin:0;color:var(--morin-muted);font-size:.88rem;line-height:1.5}
+.media-grid,.archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.media-card a,.archive-card a{display:block;color:inherit;text-decoration:none}
+.media-card a:hover .media-title,.archive-card a:hover .media-title{text-decoration:underline;text-underline-offset:2px}
+.media-thumb{position:relative;overflow:hidden;aspect-ratio:16/9;background:#f3f5f7}
+.media-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.media-play::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:42px;height:42px;display:grid;place-items:center;padding-left:3px;border-radius:50%;background:rgba(11,45,92,.88);color:#fff;font-size:15px}
+.archive-back{display:inline-block;margin:0 0 20px;color:var(--morin-navy);text-decoration:none;font-size:.9rem}
+.archive-grid{margin-top:22px}
+.detail-hero{overflow:hidden;border:1px solid var(--morin-line);border-radius:8px;margin:18px 0 24px}
+.detail-hero img{display:block;width:100%;max-height:620px;object-fit:cover}
+.detail-body{max-width:860px;color:var(--morin-text);font-size:.98rem;line-height:1.7}
+.detail-body p{margin:0 0 14px}
+.detail-actions{margin-top:18px}
+.detail-actions a{color:var(--morin-navy);font-weight:600;text-decoration:none}
+.detail-actions a:hover{text-decoration:underline}
+@media(max-width:850px){.media-grid,.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.media-page,.media-archive,.media-detail{width:calc(100% - 30px)}.media-grid,.archive-grid{grid-template-columns:1fr}}
+</style> <div class="media-detail"> <a class="archive-back" href="/media/gallery/">← Back to Gallery</a> <h1>MORIN Winter Workshop</h1> <p class="detail-date">2017-02-06</p> <div class="detail-hero"><img src="/assets/img/media/gallery/gallery-08.jpg" alt="MORIN Winter Workshop"></div> <div class="detail-body"><p>MORIN held a winter workshop at Phoenix Park, Pyeongchang.</p></div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 MORIN Lab. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> </body> </html>

@@ -3,7 +3,7 @@
     --max-content-width: 930px;
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/helm.png?v=5d5dc4c1fd6ef20268d75e550fcb1e25"> <link rel="apple-touch-icon" href="/assets/img/helm.png?v=5d5dc4c1fd6ef20268d75e550fcb1e25"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://kaistmorin.github.io/media/research-in-action/"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> MORIN Lab </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">Home </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">People </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/media/">Media <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/contact/">Contact </a> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <style>
-.media-page,.media-archive{
+.media-page,.media-archive,.media-detail{
   --morin-navy:#0b2d5c;
   --morin-text:#1f2937;
   --morin-muted:#667085;
@@ -15,149 +15,43 @@
   padding:11px 0 72px;
   font-family:inherit;
 }
-.media-page h1,.media-archive h1{
-  margin:0 0 12px;
-  font-size:2.25rem;
-  font-weight:400;
-  line-height:1.15;
+.media-page h1,.media-archive h1,.media-detail h1{
+  margin:0 0 12px;font-size:2.25rem;font-weight:400;line-height:1.15;
 }
-.media-intro{
-  max-width:850px;
-  margin:0 0 30px;
-  color:var(--morin-text);
-  font-size:1rem;
-  line-height:1.55;
-}
+.media-intro{max-width:860px;margin:0 0 30px;color:var(--morin-text);font-size:1rem;line-height:1.55}
 .media-section{margin-top:34px}
-.media-section-head{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  margin:0 0 15px;
-}
-.media-section-head h2{
-  margin:0;
-  color:var(--morin-navy);
-  font-size:1.25rem;
-  font-weight:600;
-}
-.media-section-head::after{
-  content:"";
-  flex:1;
-  height:1px;
-  background:var(--morin-line);
-}
-.media-view-all{
-  margin-left:auto;
-  color:var(--morin-navy);
-  font-size:.86rem;
-  font-weight:600;
-  text-decoration:none;
-  white-space:nowrap;
-}
-.media-view-all:hover{text-decoration:underline}
-
+.media-section-head{display:flex;align-items:center;gap:14px;margin:0 0 15px}
+.media-section-head h2{margin:0;color:var(--morin-navy);font-size:1.25rem;font-weight:600}
+.media-section-head::after{content:"";flex:1;height:1px;background:var(--morin-line)}
+.media-view-all{margin-left:auto;color:var(--morin-navy);font-size:.86rem;font-weight:600;text-decoration:none;white-space:nowrap}
+.media-view-all:hover,.archive-back:hover{text-decoration:underline}
 .media-featured-video,.media-card,.archive-card{
-  overflow:hidden;
-  border:1px solid var(--morin-line);
-  border-radius:8px;
-  background:#fff;
+  overflow:hidden;border:1px solid var(--morin-line);border-radius:8px;background:#fff;
 }
-.media-video-wrap{
-  position:relative;
-  width:100%;
-  aspect-ratio:16/9;
-  background:#000;
-}
-.media-video-wrap iframe{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  border:0;
-}
-.media-featured-meta,.media-card-meta,.archive-meta{
-  padding:12px 13px 14px;
-}
-.media-label{
-  margin:0 0 5px;
-  color:var(--morin-muted);
-  font-size:.78rem;
-}
-.media-title{
-  margin:0 0 5px;
-  color:var(--morin-navy);
-  font-size:1rem;
-  font-weight:600;
-  line-height:1.4;
-}
-.media-desc{
-  margin:0;
-  color:var(--morin-muted);
-  font-size:.88rem;
-  line-height:1.5;
-}
-.media-grid,.archive-grid{
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:18px;
-}
-.media-card a,.archive-card a{
-  display:block;
-  color:inherit;
-  text-decoration:none;
-}
-.media-card a:hover .media-title,
-.archive-card a:hover .media-title{
-  text-decoration:underline;
-  text-underline-offset:2px;
-}
-.media-thumb{
-  position:relative;
-  overflow:hidden;
-  aspect-ratio:16/9;
-  background:#f3f5f7;
-}
-.media-thumb img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-.media-play::after{
-  content:"▶";
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
-  width:42px;
-  height:42px;
-  display:grid;
-  place-items:center;
-  padding-left:3px;
-  border-radius:50%;
-  background:rgba(11,45,92,.88);
-  color:#fff;
-  font-size:15px;
-}
-.archive-back{
-  display:inline-block;
-  margin:0 0 20px;
-  color:var(--morin-navy);
-  text-decoration:none;
-  font-size:.9rem;
-}
-.archive-back:hover{text-decoration:underline}
+.media-video-wrap{position:relative;width:100%;aspect-ratio:16/9;background:#000}
+.media-video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.media-featured-meta,.media-card-meta,.archive-meta{padding:12px 13px 14px}
+.media-label,.detail-date{margin:0 0 5px;color:var(--morin-muted);font-size:.78rem}
+.media-title{margin:0 0 5px;color:var(--morin-navy);font-size:1rem;font-weight:600;line-height:1.4}
+.media-desc{margin:0;color:var(--morin-muted);font-size:.88rem;line-height:1.5}
+.media-grid,.archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.media-card a,.archive-card a{display:block;color:inherit;text-decoration:none}
+.media-card a:hover .media-title,.archive-card a:hover .media-title{text-decoration:underline;text-underline-offset:2px}
+.media-thumb{position:relative;overflow:hidden;aspect-ratio:16/9;background:#f3f5f7}
+.media-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.media-play::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:42px;height:42px;display:grid;place-items:center;padding-left:3px;border-radius:50%;background:rgba(11,45,92,.88);color:#fff;font-size:15px}
+.archive-back{display:inline-block;margin:0 0 20px;color:var(--morin-navy);text-decoration:none;font-size:.9rem}
 .archive-grid{margin-top:22px}
-
-@media(max-width:850px){
-  .media-grid,.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-@media(max-width:640px){
-  .media-page,.media-archive{width:calc(100% - 30px)}
-  .media-grid,.archive-grid{grid-template-columns:1fr}
-}
-</style> <div class="media-archive"> <a class="archive-back" href="/media/">← Back to Media</a> <h1>Research in Action</h1> <p class="media-intro">Videos and demonstrations of MORIN Lab research activities.</p> <div class="archive-grid"> <article class="archive-card"> <a href="#"> <div class="media-thumb media-play"> <img src="/assets/img/media/research/perception.jpg" alt="Maritime Perception"> </div> <div class="archive-meta"> <p class="media-label">Video</p> <h3 class="media-title">Maritime Perception</h3> </div> </a> </article> <article class="archive-card"> <a href="#"> <div class="media-thumb media-play"> <img src="/assets/img/media/research/planning.jpg" alt="Multi-Robot Planning"> </div> <div class="archive-meta"> <p class="media-label">Video</p> <h3 class="media-title">Multi-Robot Planning</h3> </div> </a> </article> <article class="archive-card"> <a href="#"> <div class="media-thumb media-play"> <img src="/assets/img/media/research/control.jpg" alt="Autonomous Control"> </div> <div class="archive-meta"> <p class="media-label">Video</p> <h3 class="media-title">Autonomous Control</h3> </div> </a> </article> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 MORIN Lab. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+.detail-hero{overflow:hidden;border:1px solid var(--morin-line);border-radius:8px;margin:18px 0 24px}
+.detail-hero img{display:block;width:100%;max-height:620px;object-fit:cover}
+.detail-body{max-width:860px;color:var(--morin-text);font-size:.98rem;line-height:1.7}
+.detail-body p{margin:0 0 14px}
+.detail-actions{margin-top:18px}
+.detail-actions a{color:var(--morin-navy);font-weight:600;text-decoration:none}
+.detail-actions a:hover{text-decoration:underline}
+@media(max-width:850px){.media-grid,.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.media-page,.media-archive,.media-detail{width:calc(100% - 30px)}.media-grid,.archive-grid{grid-template-columns:1fr}}
+</style> <div class="media-archive"> <a class="archive-back" href="/media/">← Back to Media</a> <h1>Research in Action</h1> <p class="media-intro">Photos, videos, and demonstrations of MORIN Lab research activities.</p> <div class="archive-grid"> <article class="archive-card"> <a href="/media/research-in-action/featured-research-video/"> <div class="media-thumb media-play"> <img src="/assets/img/media/research/field-experiment.jpeg" alt="MORIN Lab Research in Action"> </div> <div class="archive-meta"> <p class="media-label">Video</p> <h3 class="media-title">MORIN Lab Research in Action</h3> </div> </a> </article> <article class="archive-card"> <a href="/media/research-in-action/marine-field-experiment/"> <div class="media-thumb"> <img src="/assets/img/media/research/field-experiment.jpeg" alt="Marine Field Experiment"> </div> <div class="archive-meta"> <p class="media-label">Photo</p> <h3 class="media-title">Marine Field Experiment</h3> </div> </a> </article> <article class="archive-card"> <a href="/media/research-in-action/autonomous-marine-robotics-video/"> <div class="media-thumb media-play"> <img src="/assets/img/media/research/field-experiment.jpeg" alt="Autonomous Marine Robotics Demonstration"> </div> <div class="archive-meta"> <p class="media-label">Video</p> <h3 class="media-title">Autonomous Marine Robotics Demonstration</h3> </div> </a> </article> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 MORIN Lab. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
