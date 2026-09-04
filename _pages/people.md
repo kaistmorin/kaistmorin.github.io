@@ -295,8 +295,7 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/kyungseo-kim.jpg' | relative_url }}" alt="Kyungseo Kim"></div>
         <div class="person-info">
-          <h3 class="person-name">Kyungseo Kim
-            <a class="person-homepage" href="https://example.com" target="_blank" rel="noopener" aria-label="Kyungseo Kim homepage">↗</a>          
+          <h3 class="person-name">Kyungseo Kim <a class="person-homepage" href="https://example.com" target="_blank" rel="noopener">↗</a>
           </h3>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST (2026)</p>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
@@ -308,7 +307,7 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/jinwook-park.jpg' | relative_url }}" alt="Jinwook Park"></div>
         <div class="person-info">
-          <h3 class="person-name">Jinwook Park</h3>
+          <h3 class="person-name">Jinwook Park <a class="person-homepage" href="https://example.com" target="_blank" rel="noopener">↗</a>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST</p>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
           <p class="person-meta"><strong>B.S.</strong> KAIST</p>
@@ -319,7 +318,7 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/qianyi-zhang.jpg' | relative_url }}" alt="Qianyi Zhang"></div>
         <div class="person-info">
-          <h3 class="person-name">Qianyi Zhang</h3>
+          <h3 class="person-name">Qianyi Zhang <a class="person-homepage" href="https://example.com" target="_blank" rel="noopener">↗</a>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST</p>
           <p class="person-meta"><strong>M.S.</strong> Harbin Engineering University</p>
           <p class="person-meta"><strong>B.S.</strong> Harbin Engineering University</p>
