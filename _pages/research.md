@@ -133,7 +133,7 @@ nav_order: 2
 
     <section class="research-item">
       <div class="research-image">
-        <img src="{{ '/assets/img/research/mass.jpg' | relative_url }}" alt="Maritime autonomous surface ships">
+        <img src="{{ '/assets/img/research/fig2.png' | relative_url }}" alt="Maritime autonomous surface ships">
       </div>
       <div>
         <h2>Maritime Autonomous Surface Ships (MASS)</h2>
@@ -146,7 +146,7 @@ nav_order: 2
 
     <section class="research-item">
       <div class="research-image">
-        <img src="{{ '/assets/img/research/slam.jpg' | relative_url }}" alt="Navigation, mapping and SLAM">
+        <img src="{{ '/assets/img/research/fig3.png' | relative_url }}" alt="Navigation, mapping and SLAM">
       </div>
       <div>
         <h2>Navigation, Mapping &amp; SLAM in Challenging Environments</h2>
@@ -159,7 +159,7 @@ nav_order: 2
 
     <section class="research-item">
       <div class="research-image">
-        <img src="{{ '/assets/img/research/multi-robot.jpg' | relative_url }}" alt="Multi-robot coordination and mission planning">
+        <img src="{{ '/assets/img/research/fig4.png' | relative_url }}" alt="Multi-robot coordination and mission planning">
       </div>
       <div>
         <h2>Multi-Robot Coordination &amp; Mission Planning</h2>
