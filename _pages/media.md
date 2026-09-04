@@ -85,19 +85,19 @@ nav_order: 5
     <div class="media-grid">
       <article class="media-card">
         <a href="{{ '/media/research-in-action/2026-RAL-DKim/' | relative_url }}">
-          <div class="media-thumb media-play"><img src="{{ '/assets/img/media/research-in-action/2026-RAL-DKim.jpg' | relative_url }}" alt="MORIN Lab Research in Action"></div>
+          <div class="media-thumb media-play"><img src="{{ '/assets/img/media/research-in-action/2026-RAL-DKim.jpg' | relative_url }}" alt=""></div>
           <div class="media-card-meta"><p class="media-label">Video</p><h3 class="media-title">Supplementary Video for RA-L Paper by Donghyun Kim</h3></div>
         </a>
       </article>
       <article class="media-card">
         <a href="{{ '/media/research-in-action/2024-MBZIRC-final/' | relative_url }}">
-          <div class="media-thumb media-play"><img src="{{ '/assets/img/media/research-in-action/2024-MBZIRC-final.jpeg' | relative_url }}" alt="Marine Field Experiment"></div>
+          <div class="media-thumb media-play"><img src="{{ '/assets/img/media/research-in-action/2024-MBZIRC-final.jpeg' | relative_url }}" alt=""></div>
           <div class="media-card-meta"><p class="media-label">Video</p><h3 class="media-title">MBZIRC Final Competition at Yas Island, UAE</h3></div>
         </a>
       </article>
       <article class="media-card">
         <a href="{{ '/media/research-in-action/2019-Pohang-WAMV/' | relative_url }}">
-          <div class="media-thumb"><img src="{{ '/assets/img/media/research-in-action/2019-Pohang-WAMV.jpg' | relative_url }}" alt="Autonomous Marine Robotics Demonstration"></div>
+          <div class="media-thumb"><img src="{{ '/assets/img/media/research-in-action/2019-Pohang-WAMV.jpg' | relative_url }}" alt=""></div>
           <div class="media-card-meta"><p class="media-label">Photo</p><h3 class="media-title">Autonomous USV Navigation in Pohang Canal</h3></div>
         </a>
       </article></div>
