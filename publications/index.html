@@ -112,7 +112,2580 @@
 }
 </style> <div class="publications-page"> <h1>Publications</h1> <p class="publications-intro"> Publications of the Mobile Robotics &amp; Intelligence Laboratory. Select a publication type below to view the corresponding list. Publications are sorted by year, newest first.<br> <span class="publications-note">* denotes the corresponding author.</span> </p> <div class="publications-controls"> <select id="publication-filter" class="publications-select" aria-label="Select publication type"> <option value="International Journals">International Journals</option> <option value="International Conferences">International Conferences</option> <option value="Domestic Journals">Domestic Journals</option> <option value="Domestic Conferences">Domestic Conferences</option> </select> <p id="publication-count" class="publication-count"></p> </div> <div id="publication-list" class="publications-list"></div> </div> <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const publicationData = {"International Journals":[{title:"Motion State Estimation of Maritime Objects with Image-Derived Uncertainty Using a Monocular Camera on Unmanned Surface Vehicles", authors:"Yonghoon Cho, Jinwhan Kim and Jonghwi Kim*", venue:"IEEE Sensors Journal, In press, 2026.", year:"2026"},{title:"Turning Circle-Based Control Barrier Function for Efficient Collision Avoidance of Nonholonomic Vehicles", authors:"Changu Lee, Kiyong Park and Jinwhan Kim*", venue:"IEEE Transactions on Control Systems Technology, Vol. 34, No. 5, pp. 2813-2820, 2026.", year:"2026"},{title:"A Survey on Maritime Perception Datasets and Technologies for Autonomous Surface Vessels", authors:"Sol Han, Dongwook Lee, Jonghwi Kim and Jinwhan Kim*", venue:"Intelligent Service Robotics, Vol. 19, No. 25, 2026.", year:"2026"},{title:"Hierarchical Planning for Vehicle Routing and Scheduling in Marsupial Robotic Systems", authors:"Donghyun Kim and Jinwhan Kim*", venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 11, No. 1, pp. 362-369, 2026.", year:"2026"},{title:"ID(O): Mapping Data Quantization for Bathymetric Collaborative SLAM", authors:"Qianyi Zhang and Jinwhan Kim*", venue:"IEEE Transactions on Robotics, Vol. 42, pp. 525-544, 2025.", year:"2025"},{title:"Dbanet: a Dual Branch Aggregation Network for Real-Time Semantic Segmentation of Omnidirectional Images in Maritime Environments", authors:"Chenming Li, Chengtao Cai, Jinwhan Kim*, Wentao Zhou* and Renjie Qiao", venue:"The Journal of Supercomputing, Vol. 81, Art. 1363, 2025.", year:"2025"},{title:"Data Association Leveraging Extrinsic Parameter Consistency for Multi-Object Detection in Maritime Environment", authors:"Jonghwi Kim, Sol Han and Jinwhan Kim*", venue:"Mechatronics, Vol. 108, 2025.", year:"2025", note:"Jonghwi Kim and Sol Han contributed equally to this work"},{title:"Coordinated Informative Path Planning for Multi-Robot Search in Open Fields", authors:"Kyungseo Kim and Jinwhan Kim*", venue:"Journal of Intelligent & Robotic Systems, Vol. 111, No. 2, Art. 65, 2025.", year:"2025"},{title:"Optimized Area Partitioning for Cooperative Underwater Search Using Multiple Autonomous Underwater Vehicles", authors:"Kyungseo Kim, Junwoo Park and Jinwhan Kim*", venue:"International Journal of Control, Automation, and Systems, Vol. 23, pp. 392-404, 2025.", year:"2025"},{title:"Efficient Data Collection Strategy for Modeling the Dynamics of Floating Robotic Vehicles Using Neural Networks", authors:"Junwoo Jang, Haggi Do, Maani Ghaffari and Jinwhan Kim*", venue:"Journal of Intelligent & Robotic Systems, Vol. 110, No. 152, 2024.", year:"2024"},{title:"NV-LIOM: LiDAR-Inertial Odometry and Mapping Using Normal Vectors Towards Robust SLAM in Multifloor Environments", authors:"Dongha Chung and Jinwhan Kim*", venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 9, No. 11, pp. 9375-9382, 2024.", year:"2024"},{title:"Shape BoW: Generalized Bag of Words for Appearance-Based Loop Closure Detection in Bathymetric SLAM", authors:"Qianyi Zhang and Jinwhan Kim*", venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 9, No. 9, pp. 7405-7412, 2024.", year:"2024"},{title:"Safety-Guaranteed Ship Berthing Using Cascade Tube-Based Model Predictive Control", authors:"Changyu Lee, Quoc Van Tran and Jinwhan Kim*", venue:"IEEE Transactions on Control Systems Technology, Vol. 32, No. 4, pp. 1504-1511, 2024.", year:"2024"},{title:"Nonlinear Model Predictive Control with Obstacle Avoidance Constraints for Autonomous Navigation in a Canal Environment", authors:"Changyu Lee, Dongha Chung, Jonghwi Kim and Jinwhan Kim*", venue:"IEEE/ASME Transactions on Mechatronics, Vol. 29, No. 3, pp. 1985-1996, 2024.", year:"2024"},{title:"TTT SLAM: A Feature-Based Bathymetric SLAM Framework", authors:"Qianyi Zhang and Jinwhan Kim*", venue:"Ocean Engineering, Vol. 294, 2024.", year:"2024"},{title:"Field Experiment of Autonomous Ship Navigation in Canal and Surrounding Nearshore Environments", authors:"Jonghwi Kim, Changyu Lee, Dongha Chung, Yonghoon Cho, Jinwhan Kim*, Wangseok Jang and Saeyong Park", venue:"Journal of Field Robotics, Vol. 41, No. 2, pp. 470-489, 2023.", year:"2023"},{title:"Pohang Canal Dataset: A Multimodal Maritime Dataset for Autonomous Navigation in Restricted Waters", authors:"Dongha Chung, Jonghwi Kim, Changyu Lee and Jinwhan Kim*", venue:"International Journal of Robotics Research, Vol. 42, No. 12, pp. 1104-1114, 2023.", year:"2023"},{title:"Navigable Area Detection and Perception-Guided Model Predictive Control for Autonomous Navigation in Narrow Waterways", authors:"Jonghwi Kim, Changyu Lee, Dongha Chung and Jinwhan Kim*", venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 8, No. 9, pp. 5456-5463, 2023.", year:"2023", note:"Jonghwi Kim and Changyu Lee contributed equally to this work"},{title:"Autonomous Ship Collision Avoidance in Restricted Waterways Considering Maritime Navigation Rules", authors:"Yonghoon Cho, Jinwook Park, Jonghwi Kim and Jinwhan Kim*", venue:"IEEE Journal of Oceanic Engineering, Vol. 48, No. 4, pp. 1009-1018, 2023.", year:"2023"},{title:"A Learning-Based Approach to Surface Vehicle Dynamics Modeling for Robust Multistep Prediction", authors:"Junwoo Jang, Changyu Lee and Jinwhan Kim*", venue:"Autonomous Robots, Vol. 47, No. 6, pp. 797-808, 2023.", year:"2023"},{title:"K-Mixup: Data Augmentation for Offline Reinforcement Learning Using Mixup in a Koopman Invariant Subspace", authors:"Junwoo Jang, Jungwoo Han and Jinwhan Kim*", venue:"Expert Systems with Applications, Vol. 225, 2023.", year:"2023", note:"Junwoo Jang and Jungwoo Han contributed equally to the work"},{title:"Model Predictive Anti-Spin Thruster Control for Efficient Ship Propulsion in Irregular Waves", authors:"Changyu Lee and Jinwhan Kim*", venue:"Control Engineering Practice, Vol. 136, 2023.", year:"2023"},{title:"Robust Bearing-Based Formation Tracking Control of Underactuated Surface Vessels: an Output Regulation Approach", authors:"Quoc Van Tran, Changyu Lee, Jinwhan Kim and H. Q. Nguyen", venue:"IEEE Transactions on Control of Network Systems, Vol. 10, No. 4, 2023.", year:"2023"},{title:"Hydrodynamic Modeling of a Robotic Surface Vehicle Using Representation Learning for Long- Term Prediction", authors:"Junwoo Jang and Jinwhan Kim*", venue:"Ocean Engineering, Vol. 270, 2023.", year:"2023"},{title:"Urban Localization Based on Aerial Imagery by Correcting Projection Distortion", authors:"Jonghwi Kim, Yonghoon Cho and Jinwhan Kim*", venue:"Autonomous Robots, Vol. 47, No. 3, pp. 299-312, 2023.", year:"2023"},{title:"Three-Dimensional Visual Mapping of Underwater Ship Hull Surface Using Image Stitching Geometry", authors:"Seonghun Hong and Jinwhan Kim", venue:"Ocean Engineering, Vol. 269, 2023.", year:"2023"},{title:"Underwater Visual Mapping of Curved Ship Hull Surface Using Stereo Vision", authors:"Dongha Chung and Jinwhan Kim*", venue:"Autonomous Robots, Vol. 47, pp. 109-120, 2023.", year:"2023"},{title:"Robust Underwater Localization Using Acoustic Image Alignment for Autonomous Intervention Systems", authors:"Jisung Park and Jinwhan Kim*", venue:"IEEE Access, Vol. 10, pp. 58447-58457, 2022.", year:"2022"},{title:"Underwater Localization Using an Optic and Acoustic Stereo Imaging System for Autonomous Intervention Robots", authors:"Jisung Park and JInwhan Kim*", venue:"Electronics Letters, Vol. 58, No. 15, 2022.", year:"2022"},{title:"Robust Task Allocation for Multiple Cooperative Robotic Vehicles Considering Node Position Uncertainty", authors:"Sukmin Yoon, Haggi Do and Jinwhan Kim*", venue:"Journal of Intelligent & Robotic Systems, Vol. 106, No. 23, 2022.", year:"2022"},{title:"Ambiguity Resolution Between Constant Velocity and Coordinated Turn Models for Multimodel Target Tracking", authors:"Junwoo Jang, Changyu Lee and Jinwhan Kim*", venue:"IEEE Sensors Letters, Vol. 6, No. 5, 2022.", year:"2022"},{title:"Topographic SLAM Using a Single Terrain Altimeter in GNSS-Restricted Environment", authors:"Junwoo Jang and Jinwhan Kim*", venue:"IEEE Access, Vol. 10, pp. 10806-10815, 2022.", year:"2022"},{title:"Bearing-Constrained Formation Tracking Control of Nonholonomic Agents without Inter-Agent Communication", authors:"Quoc Van Tran* and Jinwhan Kim", venue:"IEEE Control Systems Letters (L-CSS), Vol. 6, pp. 2401-2406, 2022.", year:"2022"},{title:"Intent Inference-Based Ship Collision Avoidance in Encounters with Rule-Violating Vessels", authors:"Yonghoon Cho, Jonghwi Kim and Jinwhan Kim*", venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 7, No. 1, pp. 518-525, 2022.", year:"2022"},{title:"Robust Data Association for Multi-Object Detection in Maritime Environments Using Camera and Radar Measurements", authors:"Keunhwan Kim, Jonghwi Kim and Jinwhan Kim*", venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 6, No. 3, pp. 5865-5872, 2021.", year:"2021"},{title:"Sensor Fusion of Two Sonar Devices for Underwater 3D Mapping with an AUV", authors:"Hangil Joe, Hyeonwoo Cho, Minsung Sung, Jinwhan Kim and Son-cheol Yu*", venue:"Autonomous Robots, Vol. 45, pp. 543-569, 2021.", year:"2021"},{title:"Icevaning Control of an Arctic Offshore Vessel and Its Experimental Validation", authors:"Young-Shik Kim and Jinwhan Kim*", venue:"International Journal of Naval Architecture and Ocean Engineering, Vol. 13, pp. 208-222, 2021.", year:"2021"},{title:"Enhanced Target Ship Tracking with Geometric Parameter Estimation for Unmanned Surface Vehicles", authors:"Jungwook Han*, Sun-Young Kim and Jinwhan Kim", venue:"IEEE Access, Vol. 9, pp. 39864-39872, 2021.", year:"2021"},{title:"Intent Inference of Ship Collision Avoidance Behavior under Maritime Traffic Rules", authors:"Yonghoon Cho, Jonghwi Kim and Jinwhan Kim*", venue:"IEEE Access, Vol. 9, pp. 5598-5608, 2021.", year:"2021"},{title:"Efficient COLREG-Compliant Collision Avoidance in Multi-Ship Encounter Situations", authors:"Yonghoon Cho, Jungwook Han and Jinwhan Kim*", venue:"IEEE Transactions on Intelligent Transportation Systems, Vol. 23, pp. 1899-1911, 2020.", year:"2020"},{title:"Robust Loop Closure Method for Multi-Robot Map Fusion by Integration of Consistency and Data Similarity", authors:"Haggi Do, Seonghun Hong and Jinwhan Kim*", venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 5, No. 4, pp. 5701-5708, 2020.", year:"2020"},{title:"Semantic Segmentation of Urban Scenes Using Spatial Contexts", authors:"Jeonghyeon Wang and Jinwhan Kim*", venue:"IEEE Access, Vol. 8, pp. 55254-55268, 2020.", year:"2020"},{title:"Autonomous Collision Detection and Avoidance for ARAGON USV: Development and Field Tests", authors:"Jungwook Han, Yonghoon Cho, Jonghwi Kim, Jinwhan Kim*, Nam-sun Son and Sun Young Kim", venue:"Journal of Field Robotics, Vol. 37, No. 6, pp. 987-1002, 2020.", year:"2020"},{title:"Collaborative Mission and Route Planning of Multi-Vehicle Systems for Autonomous Search in Marine Environment", authors:"Sukmin Yoon, Haggi Do and Jinwhan Kim*", venue:"International Journal of Control, Automation, and Systems, Vol. 18, No. 3, pp. 546-555, 2020.", year:"2020"},{title:"Three-Dimensional Visual Mapping of Underwater Ship Hull Surface Using Piecewise-Planar SLAM", authors:"Seonghun Hong and Jinwhan Kim*", venue:"International Journal of Control, Automation, and Systems, Vol. 18, No. 3, pp. 564-574, 2020.", year:"2020"},{title:"Model-Referenced Pose Estimation Using Monocular Vision for Autonomous Intervention Tasks", authors:"Jisung Park, Taeyun Kim and Jinwhan Kim*", venue:"Autonomous Robots, Vol. 44, No. 2, pp. 205-216, 2020.", year:"2020"},{title:"AUV-based Multi-View Scanning Method for 3-D Reconstruction of Underwater Object Using Forward Scan Sonar", authors:"Byeongjin Kim, Jason Kim, Hyeonwoo Cho, Jinhwan Kim and Son-Cheol Yu", venue:"IEEE Sensors Journal, Vol. 20, No. 3, pp. 1592-1606, 2019.", year:"2019"},{title:"Automatic Waterline Detection and 3D Reconstruction in Model Ship Tests Using Stereo Vision", authors:"Seonghun Hong, Jinwhan Kim* and Seunghyun Hwang", venue:"Electronics Letters, Vol. 55, No. 9, pp. 527-529, 2019.", year:"2019"},{title:"Selective Image Registration for Efficient Visual SLAM on Planar Surface Structures in Underwater Environment", authors:"Seonghun Hong and Jinwhan Kim*", venue:"Autonomous Robots, Vol. 43, No. 7, pp. 1665-1679, 2019.", year:"2019"},{title:"Coastal SLAM with Marine Radar for USV Operation in GPS-Restricted Situations", authors:"Jungwook Han, Yonghoon Cho and Jinwhan Kim*", venue:"IEEE Journal of Oceanic Engineering, Vol. 44, No. 2, pp. 300-309, 2019.", year:"2019"},{title:"Probabilistic Modeling of Ship Powering Performance Using Full-Scale Operational Data", authors:"Byunghyun Yoo and Jinwhan Kim*", venue:"Applied Ocean Research, Vol. 82, pp. 1-9, 2019.", year:"2019"},{title:"In-Water Visual Ship Hull Inspection Using a Hover-Capable Underwater Vehicle with Stereo Vision", authors:"Seonghun Hong, Dongha Chung, Jinwhan Kim*, Youngji Kim, Ayoung Kim and Hyeon Kyu Yoon", venue:"Journal of Field Robotics, Vol. 36, No. 3, pp. 531-546, 2019.", year:"2019"},{title:"Precise Localization and Mapping in Indoor Parking Structures Via Parameterized SLAM", authors:"Jungwook Han, Jinwhan Kim* and David Hyunchul Shim", venue:"IEEE Transactions on Intelligent Transportation Systems, Vol. 20, No. 12, pp. 4415-4426, 2018.", year:"2018"},{title:"Three-Dimensional Reconstruction of a Marine Floating Structure with an Unmanned Surface Vessel", authors:"Jungwook Han and Jinwhan Kim*", venue:"IEEE Journal of Oceanic Engineering, Vol. 44, No. 4, pp. 984-996, 2018.", year:"2018"},{title:"A Comparison of Nonlinear Filter Algorithms for Terrain-Referenced Underwater Navigation", authors:"Taeyun Kim and Jinwhan Kim*", venue:"International Journal of Control, Automation and Systems, 2018, 2018.", year:"2018"},{title:"Trajectory Design of Underwater Gliders for Maximum Advance Speed in Finite-Depth Water", authors:"Sukmin Yoon and Jinwhan Kim*", venue:"Journal of Guidance, Control and Dynamics, Vol. 41, No. 3, pp. 742-750, 2018.", year:"2018"},{title:"A Quadratic-Cost Dual Control-Based Approach for Optimal Trajectory Planning under Uncertainty", authors:"Jinwhan Kim, Jung-Su Ha and Han-Lim Choi*", venue:"International Journal of Control, Automation, and Systems, Vol. 15, No. 5, pp. 2253-2261, 2017.", year:"2017"},{title:"Predictive Evaluation of Ship Collision Risk Using the Concept of Probability Flow", authors:"Jeonghong Park and Jinwhan Kim*", venue:"IEEE Journal of Oceanic Engineering, Vol. 42, No. 4, pp. 836-845, 2017.", year:"2017"},{title:"Development of an Unmanned Surface Vehicle System for the 2014 Maritime RobotX Challenge", authors:"Jeonghong Park, Minju Kang, Taeyun Kim, Sungchur Kwon, Jungwook Han, Jeonghyeon Wang, Sukmin Yoon, Byunghyun Yoo, Seonghun Hong, Yeonjoo Shim, Jisung Park and Jinwhan Kim*", venue:"Journal of Field Robotics, Vol. 34, No. 4, pp. 644-665, 2017.", year:"2017"},{title:"Fast Underwater Image Mosaicing Through Submapping", authors:"Armagan Elibol*, Jinwhan Kim, Nuno Gracias and Rafael Garcia", venue:"Journal of Intelligent & Robotic Systems, Vol. 85, No. 1, pp. 167-187, 2017.", year:"2017"},{title:"Coordinated Weathervaning Control of Two Surface Vessels in a Tandem Configuration", authors:"Young-Shik Kim, Hyungbae Lee and Jinwhan Kim*", venue:"Ocean Engineering, Vol. 130, pp. 142-155, 2017.", year:"2017"},{title:"Nano Carbon/Fluoroelastomer Composite Bipolar Plate for a Vanadium Redox Flow Battery", authors:"Soohyun Nam, Dongyoung Lee, Dai Gil Lee* and Jinwhan Kim*", venue:"Composite Structures, Vol. 159, pp. 220-227, 2017.", year:"2017"},{title:"Shape Optimization of the Corrugated Composite Bipolar Plate for Vanadium Redox Flow Batteries", authors:"Jaeheon Choe, Dongyoung Lee, Jinwhan Kim* and Dai Gil Lee*", venue:"Composite Structures, Vol. 158, pp. 333-339, 2016.", year:"2016"},{title:"A Microwave Foaming Method for Fabricating Glass Fiber Reinforced Phenolic Foam", authors:"Jaeheon Choe, Minkook Kim, Jinwhan Kim and Dai Gil Lee*", venue:"Composite Structures, Vol. 152, pp. 239-246, 2016.", year:"2016"},{title:"A Robust Loop-Closure Method for Visual SLAM in Unstructured Seafloor Environments", authors:"Seonghun Hong, Jinwhan Kim*, Juhyun Pyo and Son-Cheol Yu", venue:"Autonomous Robots, Vol. 40, No. 6, pp. 1095-1109, 2016.", year:"2016"},{title:"Online Underwater Optical Mapping for Trajectories with Gaps", authors:"Armagan Elibol*, Hyunjung Shim, Seonghun Hong, Jinwhan Kim, Nuno Gracias and Rafael Garcia", venue:"Intelligent Service Robotics, Vol. 9, No. 3, pp. 217-229, 2016.", year:"2016"},{title:"Path Optimization for Marine Vehicles in Ocean Currents Using Reinforcement Learning", authors:"Byunghyun Yoo and Jinwhan Kim*", venue:"Journal of Marine Science and Technology, Vol. 21, No. 2, pp. 334-343, 2016.", year:"2016"},{title:"Development of a Fluoroelastomer/Glass Fiber Composite Flow Frame for a Vanadium Redox Flow Battery", authors:"Soohyun Nam, Dongyoung Lee, Jinwhan Kim and Dai Gil Lee*", venue:"Composite Structures, Vol. 145, pp. 113-118, 2016.", year:"2016"},{title:"Mobile Robot Navigation Using Grid Line Patterns Via Probabilistic Measurement Modeling", authors:"Taeyun Kim, Jinwhan Kim* and Hyun-Taek Choi", venue:"Intelligent Service Robotics, Vol. 9, No. 2, pp. 141-151, 2016.", year:"2016"},{title:"An Explicit Data Assimilation Scheme for a Nonlinear Wave Prediction Model Based on a Pseudo-Spectral Method", authors:"Seongjin Yoon, Jinwhan Kim and Wooyoung Choi*", venue:"IEEE Journal of Oceanic Engineering, Vol. 41, No. 1, pp. 112-122, 2016.", year:"2016"},{title:"Constrained Motion Planning for Robot Manipulators Using Local Geometric Information", authors:"Jeonghyeon Wang, Jujang Lee and Jinwhan Kim*", venue:"Advanced Robotics, Vol. 29, No. 24, pp. 1611-1623, 2015.", year:"2015"},{title:"Durability of Graphite Coated Carbon Composite Bipolar Plates for Vanadium Redox Flow Batteries", authors:"Jaeheon Choe, Jun Woo Lim, Jinwhan Kim and Dai Gil Lee*", venue:"Composite Structures, Vol. 134, pp. 106-113, 2015.", year:"2015"},{title:"Development of the Light Weight Carbon Composite Tie Bar", authors:"Soohyun Nam, Dongyoung Lee, Jinwhan Kim and Dai Gil Lee*", venue:"Composite Structures, Vol. 134, pp. 124-131, 2015.", year:"2015"},{title:"Coordinated Motion Control in Task Space of an Autonomous Underwater Vehicle-Manipulator System", authors:"M. Santhakumar and Jinwhan Kim*", venue:"Ocean Engineering, Vol. 104, pp. 155-167, 2015.", year:"2015"},{title:"Passive Target Tracking of Marine Traffic Ships Using an Onboard Monocular Camera for an Unmanned Surface Vessel", authors:"Jeonghong Park, Jinwhan Kim* and Nam-sun Son", venue:"Electronics Letters, Vol. 51, No. 13, pp. 987-989, 2015.", year:"2015"},{title:"Integral Sliding Mode Controller for Precise Maneuvering of Autonomous Underwater Vehicle in the Presence of Unknown Environmental Disturbances", authors:"Minsung Kim, Hangil Joe, Jinwhan Kim and Son-Cheol Yu*", venue:"International Journal of Control, Vol. 88, No. 10, pp. 1-43, 2015.", year:"2015"},{title:"Precision Navigation and Mapping under Bridges with an Unmanned Surface Vehicle", authors:"Jungwook Han, Jeonghong Park, Taeyun Kim and Jinwhan Kim*", venue:"Autonomous Robots, Vol. 38, No. 4, pp. 349-362, 2015.", year:"2015"},{title:"Efficient Image Mosaicing for Multi-Robot Visual Underwater Mapping", authors:"A. Elibol, Jinwhan Kim*, N. Gracias and R. Garcia", venue:"Pattern Recognition Letters, Vol. 46, pp. 20-26, 2014.", year:"2014"},{title:"DOTS: A Propagation Delay-Aware Opportunistic MAC Protocol for Mobile Underwater Networks", authors:"Youngtae Noh, Uichin Lee, Seongwon Han, P. Wang, D. Torres, Jinwhan Kim and M. Gerla*", venue:"IEEE Transactions on Mobile Computing, Vol. 13, No. 4, pp. 766-782, 2014.", year:"2014"},{title:"Task Space-Based Control of an Underwater Robotic System for Position Keeping in Ocean Currents", authors:"Yonghyun Kim, M. Santhakumar and Jinwhan Kim*", venue:"Advanced Robotics, Vol. 28, pp. 1109-1119, 2014.", year:"2014"},{title:"Graph Theory Approach for Match Reduction in Image Mosaicing", authors:"A. Elibol, Jinwhan Kim*, N. Gracias and R. Garcia", venue:"Journal of the Optical Society of America, Vol. 31, No. 4, pp. 773-782, 2014.", year:"2014"},{title:"Robust Adaptive Tracking Control of Autonomous Underwater Vehicle-Manipulator Systems", authors:"M. Santhakumar and Jinwhan Kim*", venue:"ASME Journal of Dynamic Systems, Measurement and Control, Vol. 136, pp. 054502, 2014.", year:"2014"},{title:"Armless Underwater Manipulation Using a Small Deployable Agent Vehicle Connected by a Smart Cable", authors:"Son-Cheol Yu, Junku Yuh and Jinwhan Kim*", venue:"Ocean Engineering, Vol. 70, pp. 149-159, 2013.", year:"2013"},{title:"Indirect Adaptive Control of an Autonomous Underwater Vehicle-Manipulator System for Underwater Manipulation Tasks", authors:"M. Santhakumar and Jinwhan Kim*", venue:"Ocean Engineering, Vol. 54, No. v, pp. 233-243, 2012.", year:"2012"},{title:"Modeling Air-Traffic Service Time Uncertainties for Queuing Network Analysis", authors:"Jinwhan Kim*, M. Tandale and P.K. Menon", venue:"IEEE Transactions on Aerospace and Electronic Systems, Vol. 48, pp. 525-541, 2012.", year:"2012"},{title:"Comparison Between Nonlinear Filtering Techniques for Spiraling Ballistic Missile State Estimation", authors:"Jinwhan Kim*, S.S. Vaddi, P.K. Menon and E.J. Ohlmeyer", venue:"IEEE Transactions on Aerospace and Electronic Systems, Vol. 48, pp. 313-328, 2012.", year:"2012"},{title:"Terrain-Based Localization Using Particle Filter for Underwater Navigation", authors:"Jinwhan Kim* and Taeyun Kim", venue:"International Journal of Ocean System Engineering, Vol. 1, pp. 89-94, 2011.", year:"2011"},{title:"Particle Filter for Ballistic Target Tracking with Glint Noise", authors:"Jinwhan Kim*, M. Tandale and P.K. Menon", venue:"Journal of Guidance, Control and Dynamics, Vol. 33, No. 6, pp. 1918-1921, 2010.", year:"2010"},{title:"Rapid Estimation of Impaired-Aircraft Aerodynamic Parameters", authors:"Jinwhan Kim*, K. Palaniappan and P.K. Menon", venue:"Journal of Aircraft, Vol. 47, No. 4, pp. 1216-1228, 2010.", year:"2010"},{title:"Feedback Dual Controller Design and Its Application to Monocular Vision-Based Docking", authors:"Jinwhan Kim and S.M. Rock*", venue:"Journal of Guidance, Control and Dynamics, Vol. 32, No. 4, pp. 1134-1142, 2009.", year:"2009"}],"International Conferences":[{title:"Data-Driven Modeling of Surface Vehicle Dynamics Using Deep Koopman Networks", authors:"Jiyong Choi and Jinwhan Kim*", venue:"IFAC World Congress, Busan, Korea, Aug. 2026.", year:"2026"},{title:"ID(O): Mapping Data Quantization for Bathymetric Collaborative SLAM", authors:"Qianyi Zhang and Jinwhan Kim*", venue:"IEEE International Conference on Robotics and Automation (ICRA), Vienna, Austria, Jun. 2026 (TRO-paper).", year:"2026"},{title:"Hierarchical Planning for Vehicle Routing and Scheduling in Marsupial Robotic Systems", authors:"Donghyun Kim and Jinwhan Kim*", venue:"IEEE International Conference on Robotics and Automation (ICRA), Vienna, Austria, Jun. 2026 (RA-L paper).", year:"2026"},{title:"Enhancing Navigational Scene Understanding Using Integrated Language Models in Maritime Environments", authors:"Yeongha Shin and Jinwhan Kim*", venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Hangzhou, China, Oct. 2025.", year:"2025"},{title:"Efficient Routing and Scheduling for Marsupial USV-AUV System", authors:"Donghyun Kim and Jinwhan Kim*", venue:"IEEE International Symposium on Multi-Robot & Multi-Agent Systems (MRS), Singapore, Dec. 2025.", year:"2025"},{title:"Optimizing Coverage Path Planning for Underwater Surveys with Mother Ship-Deployed AUVs", authors:"Kyungseo Kim and Jinwhan Kim*", venue:"International Conference on Ubiquitous Robots (UR), 2025.", year:"2025"},{title:"Robust Trajectory Tracking for Surface Vehicles Via L1-Augmented Model Predictive Control", authors:"Kiyong Park, Changyu Lee and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Brest, France, Jun. 2025.", year:"2025"},{title:"Branch Augmented Neural Network for Marine Vessel Re-Identification Using LiDAR Point Cloud", authors:"Dongwook Lee and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Brest, France, Jun. 2025.", year:"2025"},{title:"An Efficient Solution to the Multi-Depot Vehicle Routing Problem Using Reinforcement Learning", authors:"Hakmo Son, Haggi Do and Jinwhan Kim*", venue:"Robot Intelligence Technology and Applications (RITA), Ulsan, Korea, Dec. 2024.", year:"2024"},{title:"AnytimeFusion: Parameter-Free RGB Camera-Radar Sensor Fusion Algorithm in Complex Maritime Situations", authors:"Yeongha Shin, Hanguen Kim and Jinwhan Kim*", venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Abu Dhabi, UAE, Oct. 2024.", year:"2024"},{title:"Experimental Validation of an Intent-Inference-based Ship Collision Avoidance Algorithm", authors:"Jinwook Park, Jiyong Choi, Jeonghong Park, Dongjin Yeo and Jinwhan Kim*", venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), Blacksburg, VA, USA, Sep. 2024.", year:"2024"},{title:"An Efficient Method for Solving Routing Problems with Energy Constraints Using Reinforcement Learning", authors:"H. Do, H. Son and J. Kim", venue:"International Conference on Ubiquitous Robots (UR), New York, NY, USA, Jun. 2024.", year:"2024"},{title:"Feature-Based Global Localization for Underwater Terrain Aided Navigation Using Bag of Words", authors:"Qianyi Zhang and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Singapore, Apr. 2024.", year:"2024"},{title:"Parameter-Varying Koopman Operator for Nonlinear System Modeling and Control", authors:"Changyu Lee, Kiyong Park and Jinwhan Kim*", venue:"62nd IEEE Conference on Decision and Control (CDC), Singapore, Dec. 2023.", year:"2023"},{title:"Robust Ship Berthing Control with Wind Disturbance Compensation Using Reachability Analysis", authors:"Jinwook Park, Changyu Lee and Jinwhan Kim*", venue:"IFAC World Congress, Yokohama, Japan, Jul. 2023.", year:"2023"},{title:"Robust Path Tracking and Obstacle Avoidance of Autonomous Ship Using Stochastic Model Predictive Control", authors:"Kiyong Park, Changyu Lee and Jinwhan Kim*", venue:"International Conference on Ubiquitous Robots (UR), Hawaii, USA, Jun. 2023.", year:"2023"},{title:"Multi-Target Tracking Considering the Uncertainty of Deep Learning-Based Object Detection of Marine Radar Images", authors:"Eunghyun Kim, Jonghwi Kim and Jinwhan Kim*", venue:"International Conference on Ubiquitous Robots (UR), Hawaii, USA, Jun. 2023.", year:"2023"},{title:"Marine Radar-Based Coastal SLAM with Occupancy Grid Mapping", authors:"Hyunkeun Cho and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Limerick, Ireland, Jun. 2023.", year:"2023"},{title:"Mission Planning for Collaborative Operations of Autonomous Marine Systems", authors:"Donghyun Kim and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Limerick, Ireland, Jun. 2023.", year:"2023"},{title:"Data Augmentation of Selective Subspace to Improve the Performance of Offline Reinforcement Learning", authors:"Jungwoo Han and Jinwhan Kim*", venue:"22th International Conference on Control, Automation and Systems (ICCAS 2022), Busan, Korea, Nov. 2022.", year:"2022"},{title:"Robust Path Tracking and Obstacle Avoidance Using Tube-Based Model Predictive Control for Surface Vehicles", authors:"Changyu Lee, Quoc Van Tran and Jinwhan Kim*", venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Copenhagen, Denmark, Sep. 2022.", year:"2022"},{title:"Hydrodynamics Modeling of a Surface Robotic Vehicle Using Computationally-Efficient Variations of Gaussian Processes", authors:"Junwoo Jang and Jinwhan Kim*", venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Copenhagen, Denmark, Sep. 2022.", year:"2022"},{title:"Direction-Only Orientation Alignment of Leader-Follower Networks", authors:"Quoc Van Tran*, Hyo-Sung Ahn and Jinwhan Kim", venue:"American Control Conference (ACC), Atlanta, USA, Jun. 2022.", year:"2022"},{title:"Path Optimization for Cooperative Mapping Using Multiple Robots with Limited Sensing Capabilities", authors:"Kyungseo Kim and Jinwhan Kim*", venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Prague, Czech Republic, Sep. 2021.", year:"2021"},{title:"Robust Data Association for Multi-Object Detection in Maritime Environments Using Camera and Radar Measurements", authors:"Keunhwan Kim, Jonghwi Kim and Jinwhan Kim*", venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Prague, Czech Republic, Sep. 2021.", year:"2021"},{title:"Energy Efficient Control for Electric Ship Propulsion Considering Thrust Fluctuation in Regular Waves", authors:"Changyu Lee and Jinwhan Kim*", venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Oldenburg, Germany, Sep. 2021.", year:"2021"},{title:"COLREG-compliant Ship Collision Avoidance in Narrow Channels Using Curvilinear Coordinates", authors:"Yonghoon Cho, Jonghwi Kim and Jinwhan Kim*", venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Oldenburg, Germany, Sep. 2021.", year:"2021"},{title:"Robust Loop Closure Method for Multi-Robot Map Fusion by Integration of Consistency and Data Similarity", authors:"Haggi Do, Seonghun Hong and Jinwhan Kim*", venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Las Vegas, Nevada, Oct. 2020.", year:"2020"},{title:"Probabilistic Intent Inference for Predicting the Compliance with COLREGs Between Two Surface Ships", authors:"Yonghoon Cho, Jonghwi Kim and Jinwhan Kim*", venue:"IFAC World Congress, Jul. 2020.", year:"2020"},{title:"Autonomous Docking of an Unmanned Surface Vehicle Based on Reachability Analysis", authors:"Jinwook Park and Jinwhan Kim*", venue:"20th International Conference on Control, Automation and Systems (ICCAS 2020), Busan, Korea, Oct. 2020.", year:"2020"},{title:"Robust Loop Closure Method for Multi-Robot Map Fusion by Integration of Consistency and Data Similarity", authors:"Haggi Do, Seonghun Hong and Jinwhan Kim*", venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Las Vegas, Nevada, Oct. 2020.", year:"2020"},{title:"Automatic Target Tracking with Time-Delayed Measurements for Unmanned Surface Vehicles", authors:"Jungwook Han, Nam-sun Son and Jinwhan Kim*", venue:"SPIE Future Sensing Technologies, Tokyo, Japan, Nov. 2019.", year:"2019"},{title:"Fusing Lidar Data and Aerial Imagery with Perspective Correction for Precise Localization in Urban Canyons", authors:"Jonghwi Kim and Jinwhan Kim*", venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Macau, China, Nov. 2019.", year:"2019"},{title:"Robust Loop Closure Selection for Multi-Robot Mapping under Perceptual Aliasing", authors:"Haggi Do and Jinwhan Kim*", venue:"19th International Conference on Control, Automation and Systems (ICCAS 2019), Jeju, Korea, 2019.", year:"2019"},{title:"Efficient Fleet Size Optimization for Task Allocation of Multiple Unmanned Vehicles", authors:"Sukmin Yoon and Jinwhan Kim*", venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Daejeon, Korea, Sep. 2019.", year:"2019"},{title:"Experimental Validation of a Velocity Obstacle Based Collision Avoidance Algorithm for Unmanned Surface Vehicles", authors:"Yonghoon Cho, Jungwook Han, Jinwhan Kim*, Philyeob Lee and Shin-Bae Park", venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Daejeon, Korea, Sep. 2019.", year:"2019"},{title:"Three-Dimensional Visual Mapping of Underwater Ship Hull Surface Using View-Based Piecewise- Planar Measurements", authors:"Seonghun Hong and Jinwhan Kim*", venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Daejeon, Korea, Sep. 2019.", year:"2019"},{title:"Nonlinear Model Predictive Control of an Autonomous Underwater Vehicle for Terrain Profile Tracking", authors:"Changyu Lee and Jinwhan Kim*", venue:"International Conference on Ubiquitous Robots (UR), Jeju, Korea, Jun. 2019.", year:"2019"},{title:"Semantic Segmentation of Marine Radar Images Using Convolutional Neural Networks", authors:"Keunhwan Kim and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Marseille, France, Jun. 2019.", year:"2019"},{title:"Weighted Grid Partitioning for Panel-Based Bathymetric SLAM", authors:"Junwoo Jang and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Marseille, France, Jun. 2019.", year:"2019"},{title:"Dynamic Grid Adaptation for Panel-Based Bathymetric SLAM", authors:"Junwoo Jang and Jinwhan Kim*", venue:"IEEE/OES International Symposium on Underwater Technology (UT), Kaohsiung, Taiwan, Apr. 2019.", year:"2019"},{title:"Fleet Size Optimization and Collaborative Route Planning for Multi-Vehicle Task Allocation", authors:"Sukmin Yoon and Jinwhan Kim*", venue:"AIAA Scitech Forum, San Deigo, USA, Jan. 2019.", year:"2019"},{title:"Informative Path Planning for Efficient Scalar Field Reconstruction", authors:"Thorsteinn Jonsson, Jeonghyeon Wang and Jinwhan Kim*", venue:"AIAA Scitech Forum, San Deigo, USA, Jan. 2019.", year:"2019"},{title:"Intent Inference of Ship Maneuvering for Automatic Ship Collision Avoidance", authors:"Yonghoon Cho, Jungwook Han and Jinwhan Kim*", venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), Opatija, Croatia, Sep. 2018.", year:"2018"},{title:"Pose Estimation Considering an Uncertainty Model of Stereo Vision for In-Water Ship Hull Inspection", authors:"Dongha Chung and Jinwhan Kim*", venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), Opatija, Croatia, Sep. 2018.", year:"2018"},{title:"Vehicle Localization in Urban Environment Using a 2D Online Map with Building Outlines", authors:"Jonghwi Kim, Yonghoon Cho and Jinwhan Kim*", venue:"International Conference on Ubiquitous Robots (UR), Hawaii, USA, 2018.", year:"2018"},{title:"Ship Route Optimization Considering on-Time Arrival Probability under Environmental Uncertainty", authors:"Byunghyun Yoo and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Kobe, Japan, May 2018.", year:"2018"},{title:"Semantic Segmentation of Urban Scenes with a Location Prior Map Using Lidar Measurements", authors:"Jeonghyeon Wang and Jinwhan Kim*", venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Vancouver, CAN, Sep. 2017.", year:"2017"},{title:"A Novel Terrain Information Measure for Terrain-Referenced Underwater Navigation", authors:"Taeyun Kim and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Anchorage, USA, Sep. 2017.", year:"2017"},{title:"Development of a Hover-Capable AUV System for Automated Visual Ship-Hull Inspection and Mapping", authors:"Seonghun Hong, Dongha Chung and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Anchorage, USA, Sep. 2017.", year:"2017"},{title:"Powering Performance Analysis of Full-Scale Ships under Environmental Disturbances", authors:"Byunghyun Yoo and Jinwhan Kim*", venue:"IFAC World Congress, Toulouse, France, Jul. 2017.", year:"2017"},{title:"Efficient Task Allocation for Collaborative Route Planning with Multiple Unmanned Vehicles", authors:"Sukmin Yoon and Jinwhan Kim*", venue:"IFAC World Congress, Toulouse, France, Jul. 2017.", year:"2017"},{title:"Persistent Automatic Tracking of Multiple Surface Vessels by Fusing Radar and Lidar", authors:"Jungwook Han, Jinwhan Kim* and Nam-sun Son", venue:"MTS/IEEE OCEANS, Scotland, UK, Jun. 2017.", year:"2017"},{title:"Collision Probability Assessment Between Surface Ships Considering Maneuvering Intentions", authors:"Yonghoon Cho and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Scotland, UK, Jun. 2017.", year:"2017"},{title:"Scalar Field Reconstruction Based on the Gaussian Process and Adaptive Sampling", authors:"Thorsteinn B. Jonsson, Jeonghyeon Wang and Jinwhan Kim*", venue:"14th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Jeju, Korea, Jun. 2017.", year:"2017"},{title:"Lidar-Guided Autonomous Landing of an Aerial Vehicle on a Ground Vehicle", authors:"Jonghwi Kim, Sangwook Woo and Jinwhan Kim*", venue:"14th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Jeju, Korea, Jun. 2017.", year:"2017"},{title:"3D Reconstruction of Underwater Objects Using a Wide-Beam Imaging Sonar", authors:"Sungchur Kwon, Jisung Park and Jinwhan Kim*", venue:"IEEE/OES International Symposium on Underwater Technology (UT), Busan, Korea, Feb. 2017.", year:"2017"},{title:"Panel-Based Bathymetric SLAM with a Multibeam Echosounder", authors:"Taeyun Kim and Jinwhan Kim*", venue:"IEEE/OES International Symposium on Underwater Technology (UT), Busan, Korea, Feb. 2017.", year:"2017"},{title:"Underwater Pose Estimation Relative to Planar Hull Surface Using Stereo Vision", authors:"Dongha Chung, Seonghun Hong and Jinwhan Kim*", venue:"IEEE/OES International Symposium on Underwater Technology (UT), Busan, Korea, Feb. 2017.", year:"2017"},{title:"Efficient Visual SLAM Using Selective Image Registration for Autonomous Inspection of Underwater Structures", authors:"Seonghun Hong and Jinwhan Kim*", venue:"IEEE/OES Autonomous Underwater Vehicles (AUV), Tokyo, Japan, Nov. 2016.", year:"2016"},{title:"High-Precision Underwater Navigation Using Model-Referenced Pose Estimation with Monocular Vision", authors:"Jisung Park and Jinwhan Kim*", venue:"IEEE/OES Autonomous Underwater Vehicles (AUV), Tokyo, Japan, Nov. 2016.", year:"2016"},{title:"Probabilistic Quantification of Ship Collision Risk Considering Trajectory Uncertainties", authors:"Jeonghong Park, Jungwook Han, Jinwhan Kim* and Nam-sun Son", venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), Trondheim, Norway, Sep. 2016.", year:"2016"},{title:"GPS-less Coastal Navigation Using Marine Radar for USV Operation", authors:"Jungwook Han, Jeonghong Park, Jinwhan Kim* and Nam-sun Son", venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), Trondheim, Norway, Sep. 2016.", year:"2016"},{title:"Semantic Segmentation of Urban Scenes with Enhanced Spatial Contexts", authors:"Jeonghyeon Wang and Jinwhan Kim*", venue:"13th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Xian, China, Aug. 2016.", year:"2016"},{title:"Visual SLAM with Keyframe Selection for Underwater Structure Inspection Using an Autonomous Underwater Vehicle", authors:"Seonghun Hong and Jinwhan Kim*", venue:"13th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Xian, China, Aug. 2016.", year:"2016"},{title:"Longitudinal Trajectory Optimization of an Underwater Glider in Finite Depth Water", authors:"Sukmin Yoon and Jinwhan Kim*", venue:"AIAA Guidance, Navigation, and Control Conference, San Diego, USA, Jan. 2016.", year:"2016"},{title:"Three-Dimensional Reconstruction of a Semi-Submersible Offshore Platform with an Unmanned Surface Vehicle", authors:"Jungwook Han, Minju Kang, Jeonghyeon Wang and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Shanghai, China, Apr. 2016.", year:"2016"},{title:"Autonomous Detection and Tracking of a Surface Ship Using Onboard Monocular Vision", authors:"Yonghoon Cho, Jeonghong park, Minju Kang and Jinwhan Kim*", venue:"12th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Goyang city, Korea, 2015.", year:"2015"},{title:"Planar SLAM under a Semi-Submersible Offshore Platform with an Unmanned Surface Vehicle", authors:"Jungwook Han, Minju Kang, Yonghoon Cho and Jinwhan Kim*", venue:"12th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Goyang city, Korea, Oct. 2015.", year:"2015"},{title:"Optimization of Fish-Like Locomotion Using Hierarchical Reinforcement Learning", authors:"Jeonghyeon Wang and Jinwhan Kim*", venue:"12th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Goyang city, Korea, Oct. 2015.", year:"2015"},{title:"Relative Navigation with Passive Underwater Acoustic Sensing", authors:"Yeonjoo Shim, Jisung Park and Jinwhan Kim*", venue:"12th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Goyang city, Korea, 2015.", year:"2015"},{title:"Autonomous Collision Avoidance for Unmanned Surface Ships Using Onboard Monocular Vision", authors:"Jeonghong Park, Yonghoon Cho, Byunghyun Yoo and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Washington DC, USA, 2015.", year:"2015"},{title:"Development of USV Autonomy for the 2014 Maritime RobotX Challenge", authors:"Minju Kang, Sungchur Kwon, Jeonghong Park, Taeyun Kim, Jungwook Han, Jeonghyeon Wang, Seonghun Hong, Yeonjoo Shim, Sukmin Yoon, Byunghyun Yoo and Jinwhan Kim*", venue:"10th IFAC Conference on Manoeuvring and Control of Marine Craft (MCMC), Copenhagen, Denmark, 2015.", year:"2015"},{title:"Underwater Visual SLAM with Loop-Closure Using Image-to-Image Link Recovery", authors:"Seonghun Hong, Taeyun Kim and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Genova, Italy, May 2015.", year:"2015"},{title:"A Robust Task Space Position Tracking Control of an Underwater Vehicle Manipulator System", authors:"M. Santhakumar*, Jinwhan Kim and Yogesh Singh", venue:"Advances in Robotics, Goa, India, 2015.", year:"2015"},{title:"Robust Nonlinear Proportional Integral Derivative Control for Position Tracking of an Underwater Manipulator", authors:"M. Santhakumar and Jinwhan Kim*", venue:"IEEE/ASME International Conference of Advances in Mechatronics (AIM), Busan, Korea, 2015.", year:"2015"},{title:"Disturbance Observer Based Terminal Sliding Mode Control of an Underwater Manipulator", authors:"V. Vinoth, M. Santhakumar and Jinwhan Kim*", venue:"International Conference on Control, Automation, Robotics & Vision, Marina Bay Sands, Singapore, 2014.", year:"2014"},{title:"Three-Dimensional Reconstruction of Bridge Structures Above the Waterline with an Unmanned Surface Vehicle", authors:"Jungwook Han, Jeonghong Park and Jinwhan Kim*", venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Chicago, USA, Sep. 2014.", year:"2014"},{title:"Nonlinear Filtering for Terrain-Referenced Underwater Navigation with an Acoustic Altimeter", authors:"Taeyun Kim and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Taipei, Taiwan, 2014.", year:"2014"},{title:"Towards Automatic Identification of Mismatched Image Pairs Through Loop Constraints", authors:"A. Elibol, Jinwhan Kim*, N. Gracias and R. Garcia", venue:"IS&T/SPIE Intelligent Robots and Computer Vision XXXI: Algorithms and Techniques, Vol. 9025, 2014.", year:"2014"},{title:"Beaconless Navigation for Mobile Robots Using Grid Line Pattern", authors:"Taeyun Kim and Jinwhan Kim*", venue:"10th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Jeju, Korea, 2013.", year:"2013"},{title:"Navigation of an Unmanned Surface Vessel under Bridges", authors:"Jungwook Han and Jinwhan Kim*", venue:"10th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Jeju, Korea, Oct. 2013.", year:"2013"},{title:"A Robust Dynamic Positioning Control Algorithm and Its Validation Through Experiment and Numerical Simulation", authors:"Young-Shik Kim, Yun-Ho Kim, Hong-Gun Sung and Jinwhan Kim*", venue:"International Offshore and Polar Engineering Conference (ISOPE), Alaska, 2013.", year:"2013"},{title:"Match Elimination Using Cycle Basis in Underwater Optical Mapping", authors:"A. Elibol, Jinwhan Kim*, Son-Cheol Yu, N. Gracias and R. Garcia", venue:"MTS/IEEE OCEANS, Bergen, Norway, Jun. 2013.", year:"2013"},{title:"Indirect Adaptive Control for Autonomous Underwater Vehicle-Manipulator Systems", authors:"M. Santhakumar and Jinwhan Kim*", venue:"International Offshore and Polar Engineering Conference (ISOPE), Rhodes, Greece, 2012.", year:"2012"},{title:"A Nonlinear Task Space Tracking Control of an Underactuated Underw Ater Vehicle", authors:"M. Santhakumar and Jinwhan Kim*", venue:"9th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Daejeon, Korea, 2012.", year:"2012"},{title:"A Null Space Control of an Underactuated Underwater Vehicle-Manipulator System under Ocean Currents", authors:"M. Santhakumar, Jinwhan Kim* and Yonghyun Kim", venue:"MTS/IEEE OCEANS, Yeosu, Korea, 2012.", year:"2012"},{title:"An Inviscid Model of Vortex Shedding Flow Around an Oscillating Flat Plate", authors:"Sungyeop Lim, Wooyoung Choi and Jinwhan Kim*", venue:"MTS/IEEE OCEANS, Yeosu, Korea, 2012.", year:"2012"},{title:"On Data Assimilation in a Pseudo-Spectral Wave Prediction Model Using a Kalman Filter", authors:"Seongjin Yoon, Jinwhan Kim and Wooyoung Choi*", venue:"MTS/IEEE OCEANS, Yeosu, Korea, 2012.", year:"2012"},{title:"Analytical Criteria for Collision Avoidance Between Two Encountering Ships", authors:"Jeonghong Park, Jinwhan Kim* and Nam-sun Son", venue:"International Marine Simulator Forum (MARSIM), Singapore, 2012.", year:"2012"},{title:"An Optimal Control Formulation for Dual Control Problems", authors:"Jinwhan Kim* and Sungmoon Joo", venue:"International Conference on Control, Automation and Systems (ICCAS), Goyang, Korea, 2011.", year:"2011"},{title:"Modelling, Simulation and Model Reference Adaptive Control of Autonomous Underwater Vehicle-Manipulator Systems", authors:"M. Santhakumar and Jinwhan Kim*", venue:"International Conference on Control, Automation and Systems (ICCAS), Goyang, Korea, 2011.", year:"2011"},{title:"An Approach Towards Online Bathymetric SLAM", authors:"Jinwhan Kim* and Hun Sang Jung", venue:"MTS/IEEE OCEANS, Kona, Hawaii, 2011.", year:"2011"},{title:"Particle Filter for Ballistic Target Tracking with Glint Noise", authors:"Jinwhan Kim*, M, Tandale, P.K. Menon and E.J. Ohlmeyer", venue:"AIAA Guidance, Navigation, and Control Conference, Toronto, Canada, 2010.", year:"2010"},{title:"Motion Models for Use with the Maneuvering Ballistic Missile Tracking Estimators", authors:"Jinwhan Kim*, P.K. Menon and E.J. Ohlmeyer", venue:"AIAA Guidance, Navigation, and Control Conference, Toronto, Canada, 2010.", year:"2010"},{title:"Tracking of Spiraling Reentry Vehicles with Varying Frequency Using the Unscented Kalman Filter", authors:"E.J. Ohlmeyer*, P.K. Menon and Jinwhan Kim", venue:"AIAA Guidance, Navigation, and Control Conference, Toronto, Canada, 2010.", year:"2010"},{title:"A Framework for Stochastic Air Traffic Flow Modeling and Analysis", authors:"P.K. Menon*, M. Tandale, Jinwhan Kim and P. Sengupta", venue:"AIAA Guidance, Navigation, and Control Conference, Toronto, Canada, 2010.", year:"2010"},{title:"Air-Traffic Uncertainty Models for Queuing Analysis", authors:"Jinwhan Kim*, M. Tandale and P.K. Menon", venue:"AIAA Aviation Technology, Integration, and Operations Conference (ATIO), Hilton Head, South Carolina, 2009.", year:"2009"},{title:"Queuing Models for Analyzing the Impact of Trajectory Uncertainties on the NAS Flow Efficiency", authors:"P. Sengupta*, M. Tandale, Jinwhan Kim and P.K. Menon", venue:"AIAA Aviation Technology, Integration, and Operations Conference (ATIO), Hilton Head, South Carolina, 2009.", year:"2009"},{title:"Nonlinear Fileter Formulation for Rapid Estimation of Damaged Aircraft Performance", authors:"Jinwhan Kim*, K. Palaniappan and P.K. Menon", venue:"AIAA Guidance, Navigation, and Control Conference, Chicago, Illinois, 2009.", year:"2009"},{title:"Trajectory Uncertainty Modeling for Queuing Analysis of the National Airspace System", authors:"Jinwhan Kim*, K. Palaniappan, P.K. Menon, M. Nag and K. Subbarao", venue:"AIAA Aviation Technology, Integration, and Operations Conference (ATIO), Anchorage, Alaska, 2008.", year:"2008"},{title:"Comparison Between Three Spiraling Ballistic Missile State Estimators", authors:"Jinwhan Kim*, S.S. Vaddi and P.K. Menon", venue:"AIAA Guidance, Navigation, and Control Conference, Honolulu, Hawaii, 2008.", year:"2008"},{title:"Stochastic Feedback Controller Design Considering the Dual Effect", authors:"Jinwhan Kim and Stephen Rock*", venue:"AIAA Guidance, Navigation, and Control Conference, Keystone, Colorade, 2006.", year:"2006"}],"Domestic Journals":[{title:"국제해상규칙이 반영된 속도장애물 기반 제어장벽함수를 활용한 선박 충돌회피 알고리즘", authors:"박진욱, 이찬규, 최지용, 김진환*", venue:"제어로봇시스템학회 논문지, Vol. 31, No. v, pp. 1271-1276, 2025.", year:"2025"},{title:"자율운항선박을 위한 인식 및 센싱 기술", authors:"김종휘, 김진환*", venue:"제어로봇시스템학회 논문지, Vol. 30, No. v, pp. 383-393, 2024.", year:"2024"},{title:"Trajectory Optimization for Autonomous Berthing of a Twin-Propeller Twin-Rudder Ship", authors:"이찬규, 김진환*", venue:"한국해양공학회 논문지, Vol. 37, No. 3, pp. 122-128, 2023.", year:"2023"},{title:"HNS 광역 탐지 및 모니터링을 위한 부유식 무인시스템의 실험적 성능 검증", authors:"박진욱, 김진식, 김진환*, 김용명, 이문진", venue:"해양환경안전학회지, Vol. 28, No. S, pp. 11-17, 2022.", year:"2022"},{title:"딥러닝 기반 객체 탐지 결과의 불확실성을 고려한 자동 선박 탐지 및 추적", authors:"김종휘, 조용훈, 한솔, 김진환*", venue:"제어로봇시스템학회 논문지, Vol. 28, No. 6, pp. 529-535, 2022.", year:"2022"},{title:"해양 무인 이동체 기반의 수중 탐사를 위한 임무 계획", authors:"장준우, 도학기, 김진환*", venue:"한국해양공학회 논문지, Vol. 36, pp. 41-49, 2022.", year:"2022"},{title:"인공지능 기술에 기반한 자율운항선박의 새로운 상황인식 시스템의 설계와 초기 결과", authors:"최현택*, 박정홍, 최진우, 강민주, 이영준, 정종대, 김종휘, 권혁준, 김진환, 윤국진, 김한근, 박상태", venue:"제어로봇시스템학회 논문지, Vol. 27, No. 8, 2021.", year:"2021"},{title:"곡선좌표계 변환에 기반한 협수로에서 선박 자율 충돌회피", authors:"조용훈, 김종휘, 김진환*", venue:"대한조선학회 논문집, Vol. 58, No. 3, 2021.", year:"2021"},{title:"자율 수중 작업 및 선체 검사 자동화를 위한 AUV 기술", authors:"박지성, 정동하, 김진환*", venue:"대한조선학회지, Vol. 57, No. 3, pp. 7-11, 2020.", year:"2020"},{title:"확률 모델예측제어 알고리즘을 이용한 작동기 수가 부족한 무인잠수정 운동 제어", authors:"이찬규, 장준우, 김진환*", venue:"제어로봇시스템학회 논문지, Vol. 26, No. 5, pp. 373-378, 2020.", year:"2020"},{title:"다중 로봇 시스템 지도통합을 위한 최대 가중 클릭 기반 강인한 루프 폐쇄 기법", authors:"도학기, 윤석민, 김진환*", venue:"제어로봇시스템학회 논문지, Vol. 26, No. 3, pp. 177-183, 2020.", year:"2020"},{title:"지구 물리정보를 이용한 무인잠수정의 복합 항법 기술", authors:"장준우, 조현근, 김진환*, 변승우", venue:"한국로봇학회 논문지, Vol. 15, No. 1, pp. 24-31, 2020.", year:"2020"},{title:"운용자와 자율 무인선 상호 작용을 고려한 행위 기반의 제어 알고리즘", authors:"조용훈, 김종휘, 김진환*, 조용진, 유재관", venue:"한국해양공학회 논문지, Vol. 33, pp. 620-626, 2019.", year:"2019"},{title:"무인선 기술 동향 및 전망", authors:"한정욱, 조용훈, 김진환*", venue:"제어로봇시스템학회 논문지, Vol. 25, No. 2, pp. 43-52, 2019.", year:"2019"},{title:"해상 장애물 추적을 위한 다중센서 융합 방법에 따른 성능비교", authors:"한정욱, 조용훈, 김진환*, 이필엽", venue:"제어로봇시스템학회 논문지, Vol. 25, pp. 551-556, 2019.", year:"2019"},{title:"국제해상충돌예방규칙을 고려한 확률적 속도 장애물 기반의 선박 충돌회피 알고리즘", authors:"조용훈, 한정욱, 김진환*, 이필엽", venue:"대한조선학회 논문집, Vol. 56, pp. 75-81, 2019.", year:"2019"},{title:"극지해양구조물 성능평가를 위한 스펙트럼 기반 시간역 빙하중 생성에 관한 연구", authors:"김영식, 김진하, 강국진, 한소령, 김진환*", venue:"한국해양공학회 논문지, Vol. 32, pp. 411-418, 2018.", year:"2018"},{title:"노드 위치의 불확실성을 고려한 다수 운동체의 강인한 작업 할당 알고리즘", authors:"윤석민, 김진환*", venue:"제어로봇시스템학회 논문지, Vol. 24, No. 10, pp. 962-968, 2018.", year:"2018"},{title:"GPS 사용 제한 조건에서의 무인선 레이다를 활용한 연안항법", authors:"한정욱, 김진환*, 손남선", venue:"제어로봇시스템학회 논문지, Vol. 24, No. 8, pp. 736-741, 2018.", year:"2018"},{title:"사전위치정보를 이용한 도심 영상의 의미론적 분할", authors:"왕정현, 김진환*", venue:"한국로봇학회 논문지, Vol. 12, No. 3, pp. 249-257, 2017.", year:"2017"},{title:"무인수상선의 자율운항을 위한 단안카메라 기반의 근거리 선박 자동 탐지", authors:"박정홍, 한정욱, 김진환*, 손남선, 김선영", venue:"제어로봇시스템학회 논문지, Vol. 23, No. 6, pp. 416-423, 2017.", year:"2017"},{title:"쌍동형 무인선의 동적위치제어에 관한 연구", authors:"강민주, 김태윤, 김진환*", venue:"한국로봇학회 논문지, Vol. 11, No. 4, pp. 217-225, 2016.", year:"2016"},{title:"단안 카메라를 이용한 수중 정밀 항법을 위한 모델 기반 포즈 추정", authors:"박지성, 김진환*", venue:"한국로봇학회 논문지, Vol. 11, No. 4, pp. 226-234, 2016.", year:"2016"},{title:"영상 모자이킹을 통한 수중 검사를 위한 호버링 타입 AUV 시스템 개발", authors:"홍성훈, 박정홍, 김태윤, 윤석민, 김진환*", venue:"한국해양공학회 논문지, Vol. 28, No. 9, pp. 194-200, 2016.", year:"2016"},{title:"수심 제한을 고려한 수중 글라이더 경로 최적화", authors:"윤석민, 김진환*", venue:"한국해양공학회 논문지, Vol. 28, No. 9, pp. 560-565, 2014.", year:"2014"},{title:"국소 집단 최적화 기법을 적용한 비정형 해저면 환경에서의 비주얼 SLAM", authors:"홍성훈, 김진환*", venue:"한국로봇학회 논문지, Vol. 9, No. 4, pp. 197-205, 2014.", year:"2014"},{title:"라오 - 블랙웰라이즈드 입자필터를 이용한 지형참조 수중항법", authors:"김태윤, 김진환*, 최현택", venue:"제어로봇시스템학회 논문지, Vol. 19, No. 8, pp. 682-687, 2013.", year:"2013"}],"Domestic Conferences":[{title:"대형 언어 모델과 시각 언어 모델을 활용한 해양 상황 인지 알고리즘", authors:"신영하, 김진환*", venue:"2025 한국항해항만학회 추계학술대회, Nov. 2025.", year:"2025"},{title:"GPS 사용이 불가능한 상황에서의 레이더 - 측심기 융합을 통한 해군함정 위치추정", authors:"권택중, 김진환*", venue:"한국군사과학기술학회 종합학술대회, Jun. 2025.", year:"2025"},{title:"무인 수상 플랫폼 상 무인기 이착륙을 위한 로봇팔 영상 기반 제어기의 설계", authors:"이용회, 김진환*", venue:"제어로봇시스템학회, Jun. 2025.", year:"2025"},{title:"잔디깎이 패턴 기반의 커버리지 경로 계획을 위한 효율적인 다각형 분할 기법", authors:"박준우, 김진환*", venue:"제어로봇시스템학회, Jun. 2025.", year:"2025"},{title:"다중 이동 모드 수중 로봇을 이용한 해저 탐사를 위한 커버리지 경로 계획", authors:"전지수, 김진환*", venue:"한국해양과학기술협의회 공동학술대회, May 2025.", year:"2025"},{title:"비선형 외란 관측기 기반 모델 예측 제어기를 이용한 무인 수상선의 강인한 경로 추종", authors:"박기용, 이찬규, 김진환*", venue:"한국로봇종합학술대회, Feb. 2025.", year:"2025"},{title:"쿠프만 심층 신경망을 활용한 수상선의 데이터 기반 모델링", authors:"최지용, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2025.", year:"2025"},{title:"라이다 포인트 클라우드 기반 선박 재식별을 위한 경로 증강 신경망", authors:"이동욱, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2025.", year:"2025"},{title:"불법 선박 탐지 및 재식별을 위한 인식 알고리즘", authors:"한솔, 이동욱, 김진환*", venue:"제어로봇시스템학회, Jul. 2024.", year:"2024"},{title:"평탄화 작업을 위한 모터 그레이더 블레이드 자세 제어", authors:"전지수, 홍대희, 김진환*", venue:"제어로봇시스템학회, Jul. 2024.", year:"2024"},{title:"다개체 시스템의 탐색 임무 수행을 위한 효율적인 영역 분할", authors:"김경서, 유찬우, 김진환*", venue:"한국군사과학기술학회 종합학술대회, Jun. 2024.", year:"2024"},{title:"GNSS 사용이 불가능한 환경에서의 해상 레이더 기반 위치 추정 기법 및 실험적 검증", authors:"조현근, 김진환*", venue:"한국해양과학기술협의회 공동학술대회, May 2024.", year:"2024"},{title:"자율 무인선의 목표 선박 접근 제어 및 식별 전략에 관한 실험적 연구", authors:"박기용, 이동욱, 한솔, 조현근, 김진환*", venue:"한국해양과학기술협의회 공동학술대회, May 2024.", year:"2024"},{title:"다개체 시스템의 효율적인 탐색 임무 수행을 위한 임무계획기 기반 영역 할당 알고리즘", authors:"김경서, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2024.", year:"2024"},{title:"해양 무인 이동체 시스템의 효율적 임무 수행을 위한 계층적 계획 전략", authors:"김동현, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2024.", year:"2024"},{title:"혼잡한 보행자 공간에서 운용되는 모바일 로봇 자율주행을 위한 경로계획", authors:"김응현, 이찬규, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2024.", year:"2024"},{title:"해상 레이다와 카메라 기반 탐지 결과의 정보 상관 알고리즘", authors:"김종휘, 한솔, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2024.", year:"2024"},{title:"해양 복합 무인 시스템의 자율 운용을 위한 효율적 임무 계획", authors:"김동현, 김진환*", venue:"한국해양공학회 추계학술대회, Oct. 2023.", year:"2023"},{title:"가항영역 탐지를 통한 운하 환경에서의 자율 경로 생성", authors:"김종휘, 정동하, 이찬규, 김진환*", venue:"한국해양과학기술협의회 공동학술대회, May 2023.", year:"2023"},{title:"자율운항 연구를 위한 다중 센서 데이터 소개", authors:"정동하, 김종휘, 이찬규, 김진환*", venue:"한국해양과학기술협의회 공동학술대회, May 2023.", year:"2023"},{title:"해양 복합 무인 시스템 자율 운용을 위한 PDDL 기반의 모델 적응형 임무 계획기 설계", authors:"김동현, 장준우, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2023.", year:"2023"},{title:"수중 운동체와 협업 중인 무인 수상선의 행위기반 제어", authors:"김의종, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2023.", year:"2023"},{title:"비선형 모델 예측 제어 기법을 이용한 두 개의 전방향 추진기를 갖는 선박의 자동 접안", authors:"박기용, 이찬규, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2023.", year:"2023"},{title:"해상 레이더 영상의 의미론적 분할을 이용한 다중 표적 추적", authors:"김응현, 김종휘, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2023.", year:"2023"},{title:"수중운동체 운용 지원을 위한 무인수상선의 행위기반 제어", authors:"김의종, 김진환*, 유찬우", venue:"한국군사과학기술학회 추계학술대회, Nov. 2022.", year:"2022"},{title:"HNS 광역 탐지 및 모니터링 부유식 무인이동체 운용 시나리오의 실험적 검증", authors:"박진욱, 김진식, 김진환*, 김용명, 이문진", venue:"( 사 ) 해양환경안전학회 추계학술발표회, Nov. 2022.", year:"2022"},{title:"의도추론 기반 선박 충돌회피 알고리즘의 실험적 검증 및 성능 분석", authors:"박진욱, 박기용, 김진환*", venue:"대한조선학회 추계학술대회, Nov. 2022.", year:"2022"},{title:"자율 해양 무인이동체 시스템을 이용한 효율적 기뢰 탐색", authors:"김경서, 김진환*", venue:"한국군사과학기술학회 추계학술대회, Nov. 2022.", year:"2022"},{title:"대수심 영역을 포함한 환경에서의 강인한 지형참조항법 시스템", authors:"조현근, 김진환*", venue:"한국해양공학회 추계학술대회, Oct. 2022.", year:"2022"},{title:"PDDL 기반의 해양 복합 무인체계의 자율운용 임무계획기 설계", authors:"장준우, 김동현, 김진환*", venue:"한국해양공학회 추계학술대회, Oct. 2022.", year:"2022"},{title:"딥 러닝 기반의 중력축 정렬 오차 보정을 통한 관성 항법 성능개선", authors:"김진식, 김진환*", venue:"제어로봇시스템학회, Jun. 2022.", year:"2022"},{title:"다수의 자율수중이동체를 이용한 효율적 기뢰 탐색을 위한 행동 시퀀스 계획 알고리즘 개발", authors:"김경서, 김진환*", venue:"제어로봇시스템학회, Jun. 2022.", year:"2022"},{title:"다중 로봇 시스템의 협동적 임무계획을 위한 랑데부 위치 최적화", authors:"도학기, 장준우, 김진환*", venue:"제어로봇시스템학회, Jun. 2022.", year:"2022"},{title:"선박을 위한 강인한 모델예측제어기반 경로 추종 및 장애물 회피", authors:"이찬규, 김진환*", venue:"제어로봇시스템학회, Jun. 2022.", year:"2022"},{title:"HNS 광역 탐지 및 모니터링 부유식 무인이동체 운용을 위한 시스템 안정화 및 시나리오 설계", authors:"박진욱, 김진식, 김진환*, 서동민, 이문진", venue:"한국해양과학기술협의회 공동학술대회, Jun. 2022.", year:"2022"},{title:"불규칙파 중 전기추진선박의 에너지 효율 향상을 위한 모델예측제어", authors:"이찬규, 김진환*", venue:"한국해양과학기술협의회 공동학술대회, Jun. 2022.", year:"2022"},{title:"재난 후 실내 환경에서의 수색 임무를 위한 다중 에이전트 슬램 및 경로 계획", authors:"한솔, 한정우, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, May 2022.", year:"2022"},{title:"HNS 광역 탐지 모니터링 부유식 무인이동체 운용 검증 및 결과", authors:"박진욱, 오원석, 김진환*, 서동민, 이문진", venue:"( 사 ) 해양환경안전학회 추계학술발표회, Nov. 2021.", year:"2021"},{title:"포항 운하에서의 자율 운항 실험을 위한 최적 경로 추종", authors:"이찬규, 정동하, 김종휘, 조용훈, 김진환*, 최휘용, 이준식", venue:"대한조선학회 추계학술대회, Nov. 2021.", year:"2021"},{title:"포항 운하에서의 자율 운항 실험을 위한 다중 센서 융합", authors:"김종휘, 정동하, 이찬규, 조용훈, 김진환*, 장왕석, 박세용", venue:"한국해양공학회 추계학술대회, Oct. 2021.", year:"2021"},{title:"불확실성 수렴도 예측을 통한 다개체 시스템의 협력적 매핑", authors:"김경서, 김진환*", venue:"제어로봇시스템학회, Jun. 2021.", year:"2021"},{title:"도달 가능성 분석 기반의 PID/SMC 제어기 전환을 통한 선박 자동 접안", authors:"박진욱, 김진환*", venue:"제어로봇시스템학회, Jun. 2021.", year:"2021"},{title:"HNS 광역 탐지 및 모니터링 부유식 무인이동체 운용을 위한 시스템 고도화", authors:"박진욱, 오원석, 김진환*, 서동민, 이문진", venue:"( 사 ) 해양환경안전학회 춘계학술발표회, Jun. 2021.", year:"2021"},{title:"파랑 중 전기추진선박의 에너지 효율 향상을 위한 모델예측제어", authors:"이찬규, 김진환*", venue:"한국해양과학기술협의회 공동학술대회, May 2021.", year:"2021"},{title:"지구물리정보의 하향 연속 오차를 고려한 수중 항법 기술", authors:"조현근, 김진환*", venue:"한국해양과학기술협의회 공동학술대회, May 2021.", year:"2021"},{title:"평활도 제약조건을 고려한 수중 3 차원 곡면 복원 기법", authors:"정동하, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, May 2021.", year:"2021"},{title:"자가학습기반 단일 카메라 깊이 추정 알고리즘의 해상환경 적용", authors:"장준우, 김종휘, 김진환*", venue:"한국해양공학회 추계학술대회 , 강릉, Dec. 2020.", year:"2020"},{title:"강화학습을 이용한 예인선 지원 선박의 자율 접안", authors:"홍승조, 김진환*", venue:"한국해양공학회 추계학술대회, Dec. 2020.", year:"2020"},{title:"강화학습 기반 예인선 제어방법에 의한 선박 자율 접안", authors:"홍승조, 김진환*", venue:"한국해군과학기술학회 추계학술대회, Nov. 2020.", year:"2020"},{title:"베이지안 최적화 기반 HNS 광역 탐지 및 모니터링 운용 알고리즘 개발", authors:"왕정현, 박진욱, 김진환*, 황태현, 이문진", venue:"( 사 ) 해양환경안전학회 추계학술발표회, Nov. 2020.", year:"2020"},{title:"해류 중에서의 수상선 경로 추종을 위한 추적 유도법칙의 안정성 해석", authors:"조현근, 김진환*, 변승우", venue:"한국로봇학회 한국로봇종합학술대회, Aug. 2020.", year:"2020"},{title:"수중환경에서의 강인한 지도통합을 위한 루프 폐쇄 기법", authors:"도학기, 홍성훈, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Aug. 2020.", year:"2020"},{title:"무인선을 이용한 포항 운하 라이다 지도 작성", authors:"전승훈, 김종휘, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Aug. 2020.", year:"2020"},{title:"군집 무인선의 행위 기반 대형 제어", authors:"김종휘, 조용훈, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Aug. 2020.", year:"2020"},{title:"해상 통항 규칙 준수 여부 예측을 위한 의도 추론 모델의 성능평가", authors:"조용훈, 한정욱, 김종휘, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, Aug. 2020.", year:"2020"},{title:"HNS 광역 탐지 및 모니터링 부유식 무인이동체 통합 시스템 개발 및 검증", authors:"왕정현, 박진욱, 김진환*, 황태현, 이문진", venue:"한국해양과학기술협의회 공동학술대회, Jul. 2020.", year:"2020"},{title:"쌍축 쌍타 선박의 자동접안을 위한 모델예측제어", authors:"이찬규, 김진환*", venue:"한국해양과학기술협의회 공동학술대회, Jul. 2020.", year:"2020"},{title:"선박 자동 탐지 및 추적을 위한 딥러닝 기반의 인스턴스 단위 분할 적용", authors:"김종휘, 조용훈, 한솔, 김진환*", venue:"한국해양과학기술협의회 공동학술대회, Jul. 2020.", year:"2020"},{title:"두 개의 수중청음기를 이용한 음원 위치 탐지를 위한 협업 경로 계획 .", authors:"김경서, 김진환*.", venue:"제어로봇시스템학회, Jul. 2020.", year:"2020"},{title:"GPS 사용 제한 조건에서 무인선의 레이다를 활용한 동시적 위치추정 및 지도작성", authors:"한정욱, 김진환*", venue:"한국해양공학회 추계학술대회 , 김해, Oct. 2019.", year:"2019"},{title:"HNS 광역 탐지 및 모니터링을 위한 부유식 무인이동체 개발 및 검증", authors:"왕정현, 박진욱, 김진환*, 황태현, 이문진", venue:"추게해양환경안전학회 학술발표회, Nov. 2019.", year:"2019"},{title:"재난 환경에서의 자율 탐색을 위한 무인 시스템의 선단 최적화", authors:"윤석민, 도학기, 김진환*", venue:"대한조선학회 추계학술대회, Oct. 2019.", year:"2019"},{title:"표적 운동 추정 과정에서의 다중모델 기반 필터의 모호성 해결", authors:"장준우, 이찬규, 김진환*", venue:"제어로봇시스템학회, May 2019.", year:"2019"},{title:"합성곱 신경망을 이용한 해상 레이다 영상의 의미론적 분할", authors:"김근환, 김진환*", venue:"한국해양공학회 춘계학술대회, May 2019.", year:"2019"},{title:"HNS 광역 탐지 및 모니터링을 위한 해상용 무인기 운용기법 기초 연구", authors:"왕정현, 김진환*, 황태현, 이문진", venue:", Apr. 2019.", year:"2019"},{title:"토폴로지 제어를 이용한 분산형 다수 무인 시스템의 경로계획", authors:"도학기, 윤석민, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Jan. 2019.", year:"2019"},{title:"격자 기반 필터를 이용한 수중 지자기 항법", authors:"장준우, 김태윤, 김진환*, 변승우", venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Jan. 2019.", year:"2019"},{title:"해양 재난 사고 대응을 위한 다수 자율 이동체의 임무 계획", authors:"윤석민, 도학기, 김진환*", venue:"한국해양공학회 추계학술대회, Nov. 2018.", year:"2018"},{title:"단안 카메라 영상을 이용한 합성곱 신경망 기반 선박 탐지 및 추적", authors:"김종휘, 김근환, 이찬규, 김진환*, 이필엽", venue:"한국해양공학회 추계학술대회, Nov. 2018.", year:"2018"},{title:"무인선의 자율운항을 위한 다중센서 융합 기반 장애물 인식", authors:"한정욱, 조용훈, 김종휘, 김진환*, 손남선", venue:"대한조선학회 추계학술대회, Nov. 2018.", year:"2018"},{title:"위치 불확실성을 고려한 다수 운동체의 작업 할당 알고리즘", authors:"윤석민, 김진환*", venue:"제어로봇시스템학회, May 2018.", year:"2018"},{title:"속도 좌표계에서의 두 선박의 충돌확률 평가", authors:"조용훈, 한정욱, 김진환*, 이필엽", venue:"한국해양과학기술협의회 공동학술대회, May 2018.", year:"2018"},{title:"부유식 무인이동체 기반 HNS 광역 탐지 및 모니터링 시스템 설계 구현", authors:"왕정현, Thorsteinn B. Jonsson, 김진환*, 황태현, 이문진", venue:"한국해양과학기술협의회 공동학술대회, May 2018.", year:"2018"},{title:"단안 카메라를 이용한 수중 선체 표면의 3 차원 모자이킹", authors:"홍성훈, 김진환*", venue:"한국해양과학기술협의회 공동학술대회, May 2018.", year:"2018"},{title:"지형참조항법을 위한 지형 정보량 정량화 방법", authors:"김태윤, 김진환*", venue:"한국항공우주학회 춘계학술대회, Apr. 2018.", year:"2018"},{title:"무인선의 자율운항을 위한 COLREGs 기반의 충돌회피 알고리즘", authors:"조용훈, 한정욱, 김진환*, 이필엽", venue:"한국로봇학회 한국로봇종합학술대회 , 횡성, Jan. 2018.", year:"2018"},{title:"수중 선체 상대 항법을 위한 스테레오 영상 기반의 선체 표면 상대 포즈 추정", authors:"정동하, 홍성훈, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회 , 횡성, Jan. 2018.", year:"2018"},{title:"시간적 상황 정보를 이용한 도심 영상의 의미론적 분할", authors:"왕정현, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회 , 횡성, Jan. 2018.", year:"2018"},{title:"스칼라장의 효율적인 재구성을 위한 정보적 경로계획", authors:"왕정현, Thorsteinn Baldvin Jonsson, 김진환*, 황태현, 이문진", venue:"해양환경안전학회 추계학술발표회 , 부산, Nov. 2017.", year:"2017"},{title:"무인선의 센서융합을 통한 다중물체 추적", authors:"한정욱, 조용훈, 김종휘, 김진환*, 손남선", venue:"대한조선학회 추계학술대회 , 여수, Nov. 2017.", year:"2017"},{title:"환경 외란의 불확실성을 고려한 선박 항로 최적화 기법 연구", authors:"유병현, 김진환*", venue:"한국항해항만학회 추계학술대회 , 부산, Nov. 2017.", year:"2017"},{title:"무인선 - 무인기 협업 기반 스칼라장 복원을 위한 경로계획", authors:"우상욱, 김진환*", venue:"한국해양공학회 추계학술대회 , 거제, Oct. 2017.", year:"2017"},{title:"해양 탐색을 위한 다수 자율 이동체의 운용 대수 최적화 및 임무 계획", authors:"윤석민, 우상욱, 김진환*", venue:"한국해양공학회 추계학술대회 , 거제, Oct. 2017.", year:"2017"},{title:"비활성 운동체 제약조건을 고려한 효율적인 작업할당 알고리즘", authors:"윤석민, 김진환*", venue:"제어로봇시스템학회, May 2017.", year:"2017"},{title:"확률론적 충돌 위험도 평가를 통한 무인 선박 간의 충돌회피", authors:"박정홍, 김진환*, 최진우, 최현택", venue:"제어로봇시스템학회, May 2017.", year:"2017"},{title:"실내 주차장 환경에서 무인자동차의 측위 및 매핑을 위한 형상정보 기반의 SLAM", authors:"한정욱, 김진환*, 심현철", venue:"제어로봇시스템학회, May 2017.", year:"2017"},{title:"HNS 광역탐지 및 모니터링을 위한 적응적 샘플링 기반 스칼라장 재구성 기법 연구", authors:"왕정현, Thorsteinn B. Jonsson, 김진환*, 황태현, 이문진", venue:"한국해양과학기술협의회 공동학술대회, Apr. 2017.", year:"2017"},{title:"선체 수중검사 자동화 시스템 개발 및 기초 실험", authors:"홍성훈, 정동하, 김진환*, 정찬익, 안성준, 이정우", venue:"한국해양과학기술협의회 공동학술대회, Apr. 2017.", year:"2017"},{title:"가도달성 분석 기반의 확률론적 운동체간 충돌위험성 평가", authors:"조용훈, 우상욱, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Feb. 2017.", year:"2017"},{title:"수중 로봇의 선체 상대 항법을 위한 스테레오 영상 기반의 선체 표면 법선 벡터 추정", authors:"정동하, 홍성훈, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Feb. 2017.", year:"2017"},{title:"상대위치모델을 이용한 도심 이미지의 의미론적 분할", authors:"왕정현, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Feb. 2017.", year:"2017"},{title:"HNS 광역탐지 및 모니터링을 위한 무인이동체 시스템 설계 및 운용 기법 연구", authors:"왕정현, 박지성, 김진환*, 황태현, 이문진", venue:"해양환경안전학회 추계학술발표회 , 부산, Nov. 2016.", year:"2016"},{title:"기계학습 기법을 이용한 실선 추진성능의 확률 모델 개발", authors:"유병현, 김진환*", venue:"한국해양공학회 추계학술대회 , 부산, Nov. 2016.", year:"2016"},{title:"해양 자율 탐색을 위한 다수 이종 무인시스템의 임무계획", authors:"윤석민, 김진환*", venue:"한국해양공학회 추계학술대회 , 부산, Nov. 2016.", year:"2016"},{title:"가우시안 프로세스를 이용한 해양 스칼라장의 효과적 표현 기법 연구", authors:"김동환, 왕정현, 김진환*, 이문진", venue:"한국해양공학회 추계학술대회 , 부산, Nov. 2016.", year:"2016"},{title:"수중 구조물 검사를 위한 포즈 기반 정합 기법이 적용된 영상 모자이킹", authors:"홍성훈, 김진환*", venue:"한국해양공학회 추계학술대회 , 부산, Nov. 2016.", year:"2016"},{title:"무인 수상선의 자율운항을 위한 확률론적 충돌위험 평가", authors:"박정홍, 김진환*", venue:"한국해양공학회 추계학술대회 , 부산, Nov. 2016.", year:"2016"},{title:"해양 재난사고 대응을 위한 다수 무인시스템의 협업운용기술 개발", authors:"윤석민, 우상욱, 김진환*, 김선영", venue:"한국항해항만학회 추계학술대회 , 여수, Nov. 2016.", year:"2016"},{title:"HNS 사고 긴급대응을 위한 무인이동체 시스템 개발", authors:"박지성, 김진환*", venue:"한국위험물학회 , 용인, Aug. 2016.", year:"2016"},{title:"GPS 사용이 제한되는 지역에서 무인선의 펄스레이더를 활용한 연안항법", authors:"한정욱, 김진환*", venue:"한국군사과학기술학회 종합학술대회 , 제주, Jun. 2016.", year:"2016"},{title:"무인이동체 시스템을 이용한 HNS 광역탐지 운용 개념 연구", authors:"왕정현, 박지성, 김진환*, 황태현, 이문진", venue:"한국해양환경 에너지학회 , 부산, May 2016.", year:"2016"},{title:"지형참조 수중항법의 항법 성능 평가를 위한 지형 정보량 지표 연구", authors:"김태윤, 김진환*", venue:"한국군사과학기술학회 종합학술대회 , 제주, Jun. 2016.", year:"2016"},{title:"실선운항기록을 이용한 환경외란 중에서의 선박추진성능 해석", authors:"유병현, 김진환*, 김정중, 안영태", venue:"대한조선학회 춘계학술대회 , 부산, May 2016.", year:"2016"},{title:"무인선의 자율운항을 위한 적외선 영상 기반의 선박 자동 탐지 및 추적", authors:"조용훈, 박정홍, 김진환*, 손남선", venue:"대한조선학회 춘계학술대회 , 부산, May 2016.", year:"2016"},{title:"무인선의 레이더와 라이다 정보를 활용한 영상기반 다중 물체 경로 추정", authors:"박정홍, 한정욱, 김진환*, 손남선", venue:"대한조선학회 춘계학술대회 , 부산, May 2016.", year:"2016"},{title:"무인선의 펄스 레이더를 이용한 다중물체 추적", authors:"한정욱, 박정홍, 김진환*, 손남선", venue:"대한조선학회 춘계학술대회 , 부산, May 2016.", year:"2016"},{title:"수중 구조물 자율 검사를 위한 키프레임 선택 기법이 적용된 영상기반 SLAM", authors:"홍성훈, 김진환*", venue:"한국해양공학회 춘계학술대회 , 부산, May 2016.", year:"2016"},{title:"쿼터니언 피드백을 이용한 무인 수중 잠수정의 자세제어", authors:"정동하, 김진환*", venue:"한국해양공학회 춘계학술대회 , 부산, May 2016.", year:"2016"},{title:"쌍동형 무인선의 동적위치제어에 대한 연구", authors:"강민주, 김종휘, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Jan. 2016.", year:"2016"},{title:"수중 자율 작업을 위한 모델 기반 포즈 추정", authors:"박지성, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Jan. 2016.", year:"2016"},{title:"HNS 원격 탐지를 위한 무인 시스템 운용 개념 연구", authors:"박지성, 왕정현, 김진환*, 황태현, 이문진", venue:"해양환경안전학회 , 통영, Nov. 2015.", year:"2015"},{title:"해저지형기반 수중운동체의 동시 위치추정 및 지도작성", authors:"김태윤, 김진환*", venue:"한국군사과학기술학회 추계학술대회 , 대전, Nov. 2015.", year:"2015"},{title:"무인수상선의 자율 임무활용 기술개발", authors:"김진환*, 박정홍, 한정욱, 김태윤, 강민주", venue:"한국군사과학기술학회 추계학술대회 , 대전, Nov. 2015.", year:"2015"},{title:"무인선의 자율운항을 위한 영상기반 선박 충돌 회피 및 추종", authors:"박정홍, 강민주, 조용훈, 김진환*", venue:"대한조선학회 추계학술대회 , 거제, Nov. 2015.", year:"2015"},{title:"무인선을 활용한 반잠수식 해양 구조물 3 차원 형상 복원", authors:"한정욱, 강민주, 김진환*", venue:"대한조선학회 추계학술대회 , 거제, Nov. 2015.", year:"2015"},{title:"카메라 기반 수중 검사를 위한 호버링 타입 AUV 시스템 개발", authors:"홍성훈, 박정홍, 김태윤, 윤석민, 김진환*", venue:"한국해양공학회 추계학술대회 , 대전, Oct. 2015.", year:"2015"},{title:"하이드로폰을 이용한 해양운동체와 수중 음원 위치 동시 추정", authors:"심연주, 박지성, 김진환*", venue:"한국해양공학회 추계학술대회 , 대전, Oct. 2015.", year:"2015"},{title:"강화학습을 이용한 물고기의 유영 패턴 최적화", authors:"왕정현, 김진환*", venue:"한국해양공학회 춘계학술대회 , 제주, May 2015.", year:"2015"},{title:"무인선의 펄스레이더를 이용한 장애물 자동탐지", authors:"한정욱, 김진환*, 손남선", venue:"대한조선학회 춘계학술대회, 제주, 2015.", year:"2015"},{title:"무인선의 단안카메라를 이용한 상대 선박의 경로추정", authors:"박정홍, 김진환*, 손남선", venue:"대한조선학회 춘계학술대회, 제주, 2015.", year:"2015"},{title:"쌍축쌍타선의 추력분배에 대한 도식적 접근", authors:"강민주, 김진환*", venue:"한국해양공학회 춘계학술대회, 제주, 2015.", year:"2015"},{title:"스캐닝 소나를 이용한 수중 구조물의 3 차원 형상복원", authors:"권성철, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, 대전, 2015.", year:"2015"},{title:"방향 모호성을 고려한 수중 음원 위치 추정 기법", authors:"심연주, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회, 대전, 2015.", year:"2015"},{title:"불연속 영상 링크 복원을 통한 루프 - 폐쇄 기법이 적용된 수중 비주얼 슬램", authors:"홍성훈, 김진환*", venue:"한국해양공학회 추계학술대회 , 제주, Oct. 2014.", year:"2014"},{title:"조위 변동을 고려한 지형참조 수중항법", authors:"김태윤, 김진환*", venue:"제 10 회 해양무기 학술대회, 진해, 2014.", year:"2014"},{title:"직렬배치된 해양구조물의 운동 제어에 대한 연구", authors:"김영식, 성홍근, 홍장표, 김진환*", venue:"한국해양과학기술협의회 공동학술대회, 부산, 2014.", year:"2014"},{title:"수심제한을 고려한 수중글라이더 경로최적화", authors:"윤석민, 김진환*", venue:"한국해양공학회 춘계학술대회 , 부산, May 2014.", year:"2014"},{title:"무인선의 표적기동분석을 위한 영상기반 추적필터 설계", authors:"박정홍, 김태윤, 김진환*, 손남선", venue:"대한조선학회 춘계학술대회, 부산, 2014.", year:"2014"},{title:"국소 형상 정보를 이용한 제약조건 하의 매니퓰레이터 경로 계획", authors:"왕정현, 이주장, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회 , 부여, Jun. 2014.", year:"2014"},{title:"국소 집단 최적화 기법을 적용한 비정형 해저면 환경에서의 비주얼 SLAM", authors:"홍성훈, 김진환*", venue:"한국로봇학회 한국로봇종합학술대회 , 부여, Jun. 2014.", year:"2014"},{title:"무인선의 삼차원 라이다를 이용한 장애물 자율 탐지 기법에 관한 연구", authors:"한정욱, 김진환*, 손남선", venue:"대한조선학회 춘계학술대회, 부산, 2014.", year:"2014"},{title:"수중 환경에서의 물체 자유 감지 및 회수를 위한 기초연구", authors:"박지성, 김진환*", venue:"한국해양공학회 춘계학술대회, 부산, 2014.", year:"2014"},{title:"선박 추진용 외부장형 전자기유체 추진기에 관한 기초연구", authors:"이호장, Hiromichi Akimoto, 김진환*", venue:"대한조선학회 추계학술대회, 울산, 2013.", year:"2013"},{title:"기계학습 기법을 이용한 실선 운항성능 분석 및 모델링", authors:"유병현, 김진환*, 김희정, 김정중", venue:"대한조선학회 추계학술대회, 울산, 2013.", year:"2013"},{title:"무인선 센서 융합을 통한 교량 구조물의 3 차원 형상 복원", authors:"한정욱, 박정홍, 김태윤, 김진환*", venue:"한국해양공학회 추계학술대회, 서울, 2013.", year:"2013"},{title:"전역 정렬 과정에서의 스케일링 효과를 고려한 수중 영상 모자이킹", authors:"홍성훈, A. Elibol, 김진환*", venue:"한국해양공학회 추계학술대회 , 서울, Oct. 2013.", year:"2013"},{title:"천수용 수중 글라이더 시스템 설계 및 경로 최적화", authors:"윤석민, 김진환*", venue:"한국해양공학회 추계학술대회 , 서울, Oct. 2013.", year:"2013"},{title:"단안 카메라 영상을 이용한 무인선의 장애물 탐지 및 추적", authors:"박정홍, 김진환*, 손남선", venue:"대한조선학회 춘계학술대회, 제주, 2013.", year:"2013"},{title:"FPSO 와 셔틀 탱커간 탠덤 하역 운전을 위한 작업공간 기반 동적 위치 제어", authors:"이형배, 김영식, 김진환*", venue:"한국해양공학회 춘계학술대회, 제주, 2013.", year:"2013"},{title:"조류 영향을 고려한 강화학습 기반 해양운동체 경로 최적화", authors:"유병현, 김진환*", venue:"대한조선학회 추계학술대회, 창원, 2012.", year:"2012"},{title:"작업공간에서의 피드백 선형화를 이용한 수중 운동체의 웨더베이닝", authors:"김영현, 김진환*", venue:"한국해양공학회 추계학술대회, 부산, 2012.", year:"2012"},{title:"Rao-Blackwellized 입자 필터를 이용한 지형참조 수중항법", authors:"김태윤, 김진환*", venue:"한국해양공학회 추계학술대회, 부산, 2012.", year:"2012"},{title:"해양환경에서의 영상기반 물체탐지 및 추적 기법 연구", authors:"박정홍, 김진환*, 손남선", venue:"대한조선학회 춘계학술대회, 대구, 2012.", year:"2012"},{title:"Underactuated AUV 의 모델링 및 동적위치 제어", authors:"김영현, 김진환*", venue:"한국수중로봇기술연구회, 부산, 2011.", year:"2011"},{title:"교항하는 두 선박간의 충돌회피에 관한 해석적 접근", authors:"박정홍, 김진환*", venue:"한국항해항만학회 추계학술대회, 부산, 2011.", year:"2011"},{title:"시불변 불균일 스칼라장에서의 항법을 위한 실시간 필터 알고리듬", authors:"김진환", venue:"한국해양공학회 춘계학술대회, 부산, 2011.", year:"2011"}]};
+  const publicationData = {
+  "International Journals": [
+    {
+      title:"Motion State Estimation of Maritime Objects with Image-Derived Uncertainty Using a Monocular Camera on Unmanned Surface Vehicles",
+      authors:"Yonghoon Cho, Jinwhan Kim and Jonghwi Kim*",
+      venue:"IEEE Sensors Journal, In press, 2026.",
+      year:"2026"
+    },
+
+    {
+      title:"Turning Circle-Based Control Barrier Function for Efficient Collision Avoidance of Nonholonomic Vehicles",
+      authors:"Changu Lee, Kiyong Park and Jinwhan Kim*",
+      venue:"IEEE Transactions on Control Systems Technology, Vol. 34, No. 5, pp. 2813-2820, 2026.",
+      year:"2026"
+    },
+
+    {
+      title:"A Survey on Maritime Perception Datasets and Technologies for Autonomous Surface Vessels",
+      authors:"Sol Han, Dongwook Lee, Jonghwi Kim and Jinwhan Kim*",
+      venue:"Intelligent Service Robotics, Vol. 19, No. 25, 2026.",
+      year:"2026"
+    },
+
+    {
+      title:"Hierarchical Planning for Vehicle Routing and Scheduling in Marsupial Robotic Systems",
+      authors:"Donghyun Kim and Jinwhan Kim*",
+      venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 11, No. 1, pp. 362-369, 2026.",
+      year:"2026"
+    },
+
+    {
+      title:"ID(O): Mapping Data Quantization for Bathymetric Collaborative SLAM",
+      authors:"Qianyi Zhang and Jinwhan Kim*",
+      venue:"IEEE Transactions on Robotics, Vol. 42, pp. 525-544, 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"Dbanet: a Dual Branch Aggregation Network for Real-Time Semantic Segmentation of Omnidirectional Images in Maritime Environments",
+      authors:"Chenming Li, Chengtao Cai, Jinwhan Kim*, Wentao Zhou* and Renjie Qiao",
+      venue:"The Journal of Supercomputing, Vol. 81, Art. 1363, 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"Data Association Leveraging Extrinsic Parameter Consistency for Multi-Object Detection in Maritime Environment",
+      authors:"Jonghwi Kim, Sol Han and Jinwhan Kim*",
+      venue:"Mechatronics, Vol. 108, 2025.",
+      year:"2025",
+      note:"Jonghwi Kim and Sol Han contributed equally to this work"
+    },
+
+    {
+      title:"Coordinated Informative Path Planning for Multi-Robot Search in Open Fields",
+      authors:"Kyungseo Kim and Jinwhan Kim*",
+      venue:"Journal of Intelligent & Robotic Systems, Vol. 111, No. 2, Art. 65, 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"Optimized Area Partitioning for Cooperative Underwater Search Using Multiple Autonomous Underwater Vehicles",
+      authors:"Kyungseo Kim, Junwoo Park and Jinwhan Kim*",
+      venue:"International Journal of Control, Automation, and Systems, Vol. 23, pp. 392-404, 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"Efficient Data Collection Strategy for Modeling the Dynamics of Floating Robotic Vehicles Using Neural Networks",
+      authors:"Junwoo Jang, Haggi Do, Maani Ghaffari and Jinwhan Kim*",
+      venue:"Journal of Intelligent & Robotic Systems, Vol. 110, No. 152, 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"NV-LIOM: LiDAR-Inertial Odometry and Mapping Using Normal Vectors Towards Robust SLAM in Multifloor Environments",
+      authors:"Dongha Chung and Jinwhan Kim*",
+      venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 9, No. 11, pp. 9375-9382, 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"Shape BoW: Generalized Bag of Words for Appearance-Based Loop Closure Detection in Bathymetric SLAM",
+      authors:"Qianyi Zhang and Jinwhan Kim*",
+      venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 9, No. 9, pp. 7405-7412, 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"Safety-Guaranteed Ship Berthing Using Cascade Tube-Based Model Predictive Control",
+      authors:"Changyu Lee, Quoc Van Tran and Jinwhan Kim*",
+      venue:"IEEE Transactions on Control Systems Technology, Vol. 32, No. 4, pp. 1504-1511, 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"Nonlinear Model Predictive Control with Obstacle Avoidance Constraints for Autonomous Navigation in a Canal Environment",
+      authors:"Changyu Lee, Dongha Chung, Jonghwi Kim and Jinwhan Kim*",
+      venue:"IEEE/ASME Transactions on Mechatronics, Vol. 29, No. 3, pp. 1985-1996, 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"TTT SLAM: A Feature-Based Bathymetric SLAM Framework",
+      authors:"Qianyi Zhang and Jinwhan Kim*",
+      venue:"Ocean Engineering, Vol. 294, 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"Field Experiment of Autonomous Ship Navigation in Canal and Surrounding Nearshore Environments",
+      authors:"Jonghwi Kim, Changyu Lee, Dongha Chung, Yonghoon Cho, Jinwhan Kim*, Wangseok Jang and Saeyong Park",
+      venue:"Journal of Field Robotics, Vol. 41, No. 2, pp. 470-489, 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Pohang Canal Dataset: A Multimodal Maritime Dataset for Autonomous Navigation in Restricted Waters",
+      authors:"Dongha Chung, Jonghwi Kim, Changyu Lee and Jinwhan Kim*",
+      venue:"International Journal of Robotics Research, Vol. 42, No. 12, pp. 1104-1114, 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Navigable Area Detection and Perception-Guided Model Predictive Control for Autonomous Navigation in Narrow Waterways",
+      authors:"Jonghwi Kim, Changyu Lee, Dongha Chung and Jinwhan Kim*",
+      venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 8, No. 9, pp. 5456-5463, 2023.",
+      year:"2023",
+      note:"Jonghwi Kim and Changyu Lee contributed equally to this work"
+    },
+
+    {
+      title:"Autonomous Ship Collision Avoidance in Restricted Waterways Considering Maritime Navigation Rules",
+      authors:"Yonghoon Cho, Jinwook Park, Jonghwi Kim and Jinwhan Kim*",
+      venue:"IEEE Journal of Oceanic Engineering, Vol. 48, No. 4, pp. 1009-1018, 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"A Learning-Based Approach to Surface Vehicle Dynamics Modeling for Robust Multistep Prediction",
+      authors:"Junwoo Jang, Changyu Lee and Jinwhan Kim*",
+      venue:"Autonomous Robots, Vol. 47, No. 6, pp. 797-808, 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"K-Mixup: Data Augmentation for Offline Reinforcement Learning Using Mixup in a Koopman Invariant Subspace",
+      authors:"Junwoo Jang, Jungwoo Han and Jinwhan Kim*",
+      venue:"Expert Systems with Applications, Vol. 225, 2023.",
+      year:"2023",
+      note:"Junwoo Jang and Jungwoo Han contributed equally to the work"
+    },
+
+    {
+      title:"Model Predictive Anti-Spin Thruster Control for Efficient Ship Propulsion in Irregular Waves",
+      authors:"Changyu Lee and Jinwhan Kim*",
+      venue:"Control Engineering Practice, Vol. 136, 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Robust Bearing-Based Formation Tracking Control of Underactuated Surface Vessels: an Output Regulation Approach",
+      authors:"Quoc Van Tran, Changyu Lee, Jinwhan Kim and H. Q. Nguyen",
+      venue:"IEEE Transactions on Control of Network Systems, Vol. 10, No. 4, 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Hydrodynamic Modeling of a Robotic Surface Vehicle Using Representation Learning for Long- Term Prediction",
+      authors:"Junwoo Jang and Jinwhan Kim*",
+      venue:"Ocean Engineering, Vol. 270, 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Urban Localization Based on Aerial Imagery by Correcting Projection Distortion",
+      authors:"Jonghwi Kim, Yonghoon Cho and Jinwhan Kim*",
+      venue:"Autonomous Robots, Vol. 47, No. 3, pp. 299-312, 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Three-Dimensional Visual Mapping of Underwater Ship Hull Surface Using Image Stitching Geometry",
+      authors:"Seonghun Hong and Jinwhan Kim",
+      venue:"Ocean Engineering, Vol. 269, 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Underwater Visual Mapping of Curved Ship Hull Surface Using Stereo Vision",
+      authors:"Dongha Chung and Jinwhan Kim*",
+      venue:"Autonomous Robots, Vol. 47, pp. 109-120, 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Robust Underwater Localization Using Acoustic Image Alignment for Autonomous Intervention Systems",
+      authors:"Jisung Park and Jinwhan Kim*",
+      venue:"IEEE Access, Vol. 10, pp. 58447-58457, 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"Underwater Localization Using an Optic and Acoustic Stereo Imaging System for Autonomous Intervention Robots",
+      authors:"Jisung Park and JInwhan Kim*",
+      venue:"Electronics Letters, Vol. 58, No. 15, 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"Robust Task Allocation for Multiple Cooperative Robotic Vehicles Considering Node Position Uncertainty",
+      authors:"Sukmin Yoon, Haggi Do and Jinwhan Kim*",
+      venue:"Journal of Intelligent & Robotic Systems, Vol. 106, No. 23, 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"Ambiguity Resolution Between Constant Velocity and Coordinated Turn Models for Multimodel Target Tracking",
+      authors:"Junwoo Jang, Changyu Lee and Jinwhan Kim*",
+      venue:"IEEE Sensors Letters, Vol. 6, No. 5, 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"Topographic SLAM Using a Single Terrain Altimeter in GNSS-Restricted Environment",
+      authors:"Junwoo Jang and Jinwhan Kim*",
+      venue:"IEEE Access, Vol. 10, pp. 10806-10815, 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"Bearing-Constrained Formation Tracking Control of Nonholonomic Agents without Inter-Agent Communication",
+      authors:"Quoc Van Tran* and Jinwhan Kim",
+      venue:"IEEE Control Systems Letters (L-CSS), Vol. 6, pp. 2401-2406, 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"Intent Inference-Based Ship Collision Avoidance in Encounters with Rule-Violating Vessels",
+      authors:"Yonghoon Cho, Jonghwi Kim and Jinwhan Kim*",
+      venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 7, No. 1, pp. 518-525, 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"Robust Data Association for Multi-Object Detection in Maritime Environments Using Camera and Radar Measurements",
+      authors:"Keunhwan Kim, Jonghwi Kim and Jinwhan Kim*",
+      venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 6, No. 3, pp. 5865-5872, 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"Sensor Fusion of Two Sonar Devices for Underwater 3D Mapping with an AUV",
+      authors:"Hangil Joe, Hyeonwoo Cho, Minsung Sung, Jinwhan Kim and Son-cheol Yu*",
+      venue:"Autonomous Robots, Vol. 45, pp. 543-569, 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"Icevaning Control of an Arctic Offshore Vessel and Its Experimental Validation",
+      authors:"Young-Shik Kim and Jinwhan Kim*",
+      venue:"International Journal of Naval Architecture and Ocean Engineering, Vol. 13, pp. 208-222, 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"Enhanced Target Ship Tracking with Geometric Parameter Estimation for Unmanned Surface Vehicles",
+      authors:"Jungwook Han*, Sun-Young Kim and Jinwhan Kim",
+      venue:"IEEE Access, Vol. 9, pp. 39864-39872, 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"Intent Inference of Ship Collision Avoidance Behavior under Maritime Traffic Rules",
+      authors:"Yonghoon Cho, Jonghwi Kim and Jinwhan Kim*",
+      venue:"IEEE Access, Vol. 9, pp. 5598-5608, 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"Efficient COLREG-Compliant Collision Avoidance in Multi-Ship Encounter Situations",
+      authors:"Yonghoon Cho, Jungwook Han and Jinwhan Kim*",
+      venue:"IEEE Transactions on Intelligent Transportation Systems, Vol. 23, pp. 1899-1911, 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"Robust Loop Closure Method for Multi-Robot Map Fusion by Integration of Consistency and Data Similarity",
+      authors:"Haggi Do, Seonghun Hong and Jinwhan Kim*",
+      venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 5, No. 4, pp. 5701-5708, 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"Semantic Segmentation of Urban Scenes Using Spatial Contexts",
+      authors:"Jeonghyeon Wang and Jinwhan Kim*",
+      venue:"IEEE Access, Vol. 8, pp. 55254-55268, 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"Autonomous Collision Detection and Avoidance for ARAGON USV: Development and Field Tests",
+      authors:"Jungwook Han, Yonghoon Cho, Jonghwi Kim, Jinwhan Kim*, Nam-sun Son and Sun Young Kim",
+      venue:"Journal of Field Robotics, Vol. 37, No. 6, pp. 987-1002, 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"Collaborative Mission and Route Planning of Multi-Vehicle Systems for Autonomous Search in Marine Environment",
+      authors:"Sukmin Yoon, Haggi Do and Jinwhan Kim*",
+      venue:"International Journal of Control, Automation, and Systems, Vol. 18, No. 3, pp. 546-555, 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"Three-Dimensional Visual Mapping of Underwater Ship Hull Surface Using Piecewise-Planar SLAM",
+      authors:"Seonghun Hong and Jinwhan Kim*",
+      venue:"International Journal of Control, Automation, and Systems, Vol. 18, No. 3, pp. 564-574, 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"Model-Referenced Pose Estimation Using Monocular Vision for Autonomous Intervention Tasks",
+      authors:"Jisung Park, Taeyun Kim and Jinwhan Kim*",
+      venue:"Autonomous Robots, Vol. 44, No. 2, pp. 205-216, 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"AUV-based Multi-View Scanning Method for 3-D Reconstruction of Underwater Object Using Forward Scan Sonar",
+      authors:"Byeongjin Kim, Jason Kim, Hyeonwoo Cho, Jinhwan Kim and Son-Cheol Yu",
+      venue:"IEEE Sensors Journal, Vol. 20, No. 3, pp. 1592-1606, 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Automatic Waterline Detection and 3D Reconstruction in Model Ship Tests Using Stereo Vision",
+      authors:"Seonghun Hong, Jinwhan Kim* and Seunghyun Hwang",
+      venue:"Electronics Letters, Vol. 55, No. 9, pp. 527-529, 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Selective Image Registration for Efficient Visual SLAM on Planar Surface Structures in Underwater Environment",
+      authors:"Seonghun Hong and Jinwhan Kim*",
+      venue:"Autonomous Robots, Vol. 43, No. 7, pp. 1665-1679, 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Coastal SLAM with Marine Radar for USV Operation in GPS-Restricted Situations",
+      authors:"Jungwook Han, Yonghoon Cho and Jinwhan Kim*",
+      venue:"IEEE Journal of Oceanic Engineering, Vol. 44, No. 2, pp. 300-309, 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Probabilistic Modeling of Ship Powering Performance Using Full-Scale Operational Data",
+      authors:"Byunghyun Yoo and Jinwhan Kim*",
+      venue:"Applied Ocean Research, Vol. 82, pp. 1-9, 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"In-Water Visual Ship Hull Inspection Using a Hover-Capable Underwater Vehicle with Stereo Vision",
+      authors:"Seonghun Hong, Dongha Chung, Jinwhan Kim*, Youngji Kim, Ayoung Kim and Hyeon Kyu Yoon",
+      venue:"Journal of Field Robotics, Vol. 36, No. 3, pp. 531-546, 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Precise Localization and Mapping in Indoor Parking Structures Via Parameterized SLAM",
+      authors:"Jungwook Han, Jinwhan Kim* and David Hyunchul Shim",
+      venue:"IEEE Transactions on Intelligent Transportation Systems, Vol. 20, No. 12, pp. 4415-4426, 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"Three-Dimensional Reconstruction of a Marine Floating Structure with an Unmanned Surface Vessel",
+      authors:"Jungwook Han and Jinwhan Kim*",
+      venue:"IEEE Journal of Oceanic Engineering, Vol. 44, No. 4, pp. 984-996, 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"A Comparison of Nonlinear Filter Algorithms for Terrain-Referenced Underwater Navigation",
+      authors:"Taeyun Kim and Jinwhan Kim*",
+      venue:"International Journal of Control, Automation and Systems, 2018, 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"Trajectory Design of Underwater Gliders for Maximum Advance Speed in Finite-Depth Water",
+      authors:"Sukmin Yoon and Jinwhan Kim*",
+      venue:"Journal of Guidance, Control and Dynamics, Vol. 41, No. 3, pp. 742-750, 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"A Quadratic-Cost Dual Control-Based Approach for Optimal Trajectory Planning under Uncertainty",
+      authors:"Jinwhan Kim, Jung-Su Ha and Han-Lim Choi*",
+      venue:"International Journal of Control, Automation, and Systems, Vol. 15, No. 5, pp. 2253-2261, 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Predictive Evaluation of Ship Collision Risk Using the Concept of Probability Flow",
+      authors:"Jeonghong Park and Jinwhan Kim*",
+      venue:"IEEE Journal of Oceanic Engineering, Vol. 42, No. 4, pp. 836-845, 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Development of an Unmanned Surface Vehicle System for the 2014 Maritime RobotX Challenge",
+      authors:"Jeonghong Park, Minju Kang, Taeyun Kim, Sungchur Kwon, Jungwook Han, Jeonghyeon Wang, Sukmin Yoon, Byunghyun Yoo, Seonghun Hong, Yeonjoo Shim, Jisung Park and Jinwhan Kim*",
+      venue:"Journal of Field Robotics, Vol. 34, No. 4, pp. 644-665, 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Fast Underwater Image Mosaicing Through Submapping",
+      authors:"Armagan Elibol*, Jinwhan Kim, Nuno Gracias and Rafael Garcia",
+      venue:"Journal of Intelligent & Robotic Systems, Vol. 85, No. 1, pp. 167-187, 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Coordinated Weathervaning Control of Two Surface Vessels in a Tandem Configuration",
+      authors:"Young-Shik Kim, Hyungbae Lee and Jinwhan Kim*",
+      venue:"Ocean Engineering, Vol. 130, pp. 142-155, 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Nano Carbon/Fluoroelastomer Composite Bipolar Plate for a Vanadium Redox Flow Battery",
+      authors:"Soohyun Nam, Dongyoung Lee, Dai Gil Lee* and Jinwhan Kim*",
+      venue:"Composite Structures, Vol. 159, pp. 220-227, 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Shape Optimization of the Corrugated Composite Bipolar Plate for Vanadium Redox Flow Batteries",
+      authors:"Jaeheon Choe, Dongyoung Lee, Jinwhan Kim* and Dai Gil Lee*",
+      venue:"Composite Structures, Vol. 158, pp. 333-339, 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"A Microwave Foaming Method for Fabricating Glass Fiber Reinforced Phenolic Foam",
+      authors:"Jaeheon Choe, Minkook Kim, Jinwhan Kim and Dai Gil Lee*",
+      venue:"Composite Structures, Vol. 152, pp. 239-246, 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"A Robust Loop-Closure Method for Visual SLAM in Unstructured Seafloor Environments",
+      authors:"Seonghun Hong, Jinwhan Kim*, Juhyun Pyo and Son-Cheol Yu",
+      venue:"Autonomous Robots, Vol. 40, No. 6, pp. 1095-1109, 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"Online Underwater Optical Mapping for Trajectories with Gaps",
+      authors:"Armagan Elibol*, Hyunjung Shim, Seonghun Hong, Jinwhan Kim, Nuno Gracias and Rafael Garcia",
+      venue:"Intelligent Service Robotics, Vol. 9, No. 3, pp. 217-229, 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"Path Optimization for Marine Vehicles in Ocean Currents Using Reinforcement Learning",
+      authors:"Byunghyun Yoo and Jinwhan Kim*",
+      venue:"Journal of Marine Science and Technology, Vol. 21, No. 2, pp. 334-343, 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"Development of a Fluoroelastomer/Glass Fiber Composite Flow Frame for a Vanadium Redox Flow Battery",
+      authors:"Soohyun Nam, Dongyoung Lee, Jinwhan Kim and Dai Gil Lee*",
+      venue:"Composite Structures, Vol. 145, pp. 113-118, 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"Mobile Robot Navigation Using Grid Line Patterns Via Probabilistic Measurement Modeling",
+      authors:"Taeyun Kim, Jinwhan Kim* and Hyun-Taek Choi",
+      venue:"Intelligent Service Robotics, Vol. 9, No. 2, pp. 141-151, 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"An Explicit Data Assimilation Scheme for a Nonlinear Wave Prediction Model Based on a Pseudo-Spectral Method",
+      authors:"Seongjin Yoon, Jinwhan Kim and Wooyoung Choi*",
+      venue:"IEEE Journal of Oceanic Engineering, Vol. 41, No. 1, pp. 112-122, 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"Constrained Motion Planning for Robot Manipulators Using Local Geometric Information",
+      authors:"Jeonghyeon Wang, Jujang Lee and Jinwhan Kim*",
+      venue:"Advanced Robotics, Vol. 29, No. 24, pp. 1611-1623, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Durability of Graphite Coated Carbon Composite Bipolar Plates for Vanadium Redox Flow Batteries",
+      authors:"Jaeheon Choe, Jun Woo Lim, Jinwhan Kim and Dai Gil Lee*",
+      venue:"Composite Structures, Vol. 134, pp. 106-113, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Development of the Light Weight Carbon Composite Tie Bar",
+      authors:"Soohyun Nam, Dongyoung Lee, Jinwhan Kim and Dai Gil Lee*",
+      venue:"Composite Structures, Vol. 134, pp. 124-131, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Coordinated Motion Control in Task Space of an Autonomous Underwater Vehicle-Manipulator System",
+      authors:"M. Santhakumar and Jinwhan Kim*",
+      venue:"Ocean Engineering, Vol. 104, pp. 155-167, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Passive Target Tracking of Marine Traffic Ships Using an Onboard Monocular Camera for an Unmanned Surface Vessel",
+      authors:"Jeonghong Park, Jinwhan Kim* and Nam-sun Son",
+      venue:"Electronics Letters, Vol. 51, No. 13, pp. 987-989, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Integral Sliding Mode Controller for Precise Maneuvering of Autonomous Underwater Vehicle in the Presence of Unknown Environmental Disturbances",
+      authors:"Minsung Kim, Hangil Joe, Jinwhan Kim and Son-Cheol Yu*",
+      venue:"International Journal of Control, Vol. 88, No. 10, pp. 1-43, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Precision Navigation and Mapping under Bridges with an Unmanned Surface Vehicle",
+      authors:"Jungwook Han, Jeonghong Park, Taeyun Kim and Jinwhan Kim*",
+      venue:"Autonomous Robots, Vol. 38, No. 4, pp. 349-362, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Efficient Image Mosaicing for Multi-Robot Visual Underwater Mapping",
+      authors:"A. Elibol, Jinwhan Kim*, N. Gracias and R. Garcia",
+      venue:"Pattern Recognition Letters, Vol. 46, pp. 20-26, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"DOTS: A Propagation Delay-Aware Opportunistic MAC Protocol for Mobile Underwater Networks",
+      authors:"Youngtae Noh, Uichin Lee, Seongwon Han, P. Wang, D. Torres, Jinwhan Kim and M. Gerla*",
+      venue:"IEEE Transactions on Mobile Computing, Vol. 13, No. 4, pp. 766-782, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"Task Space-Based Control of an Underwater Robotic System for Position Keeping in Ocean Currents",
+      authors:"Yonghyun Kim, M. Santhakumar and Jinwhan Kim*",
+      venue:"Advanced Robotics, Vol. 28, pp. 1109-1119, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"Graph Theory Approach for Match Reduction in Image Mosaicing",
+      authors:"A. Elibol, Jinwhan Kim*, N. Gracias and R. Garcia",
+      venue:"Journal of the Optical Society of America, Vol. 31, No. 4, pp. 773-782, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"Robust Adaptive Tracking Control of Autonomous Underwater Vehicle-Manipulator Systems",
+      authors:"M. Santhakumar and Jinwhan Kim*",
+      venue:"ASME Journal of Dynamic Systems, Measurement and Control, Vol. 136, pp. 054502, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"Armless Underwater Manipulation Using a Small Deployable Agent Vehicle Connected by a Smart Cable",
+      authors:"Son-Cheol Yu, Junku Yuh and Jinwhan Kim*",
+      venue:"Ocean Engineering, Vol. 70, pp. 149-159, 2013.",
+      year:"2013"
+    },
+
+    {
+      title:"Indirect Adaptive Control of an Autonomous Underwater Vehicle-Manipulator System for Underwater Manipulation Tasks",
+      authors:"M. Santhakumar and Jinwhan Kim*",
+      venue:"Ocean Engineering, Vol. 54, No. v, pp. 233-243, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"Modeling Air-Traffic Service Time Uncertainties for Queuing Network Analysis",
+      authors:"Jinwhan Kim*, M. Tandale and P.K. Menon",
+      venue:"IEEE Transactions on Aerospace and Electronic Systems, Vol. 48, pp. 525-541, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"Comparison Between Nonlinear Filtering Techniques for Spiraling Ballistic Missile State Estimation",
+      authors:"Jinwhan Kim*, S.S. Vaddi, P.K. Menon and E.J. Ohlmeyer",
+      venue:"IEEE Transactions on Aerospace and Electronic Systems, Vol. 48, pp. 313-328, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"Terrain-Based Localization Using Particle Filter for Underwater Navigation",
+      authors:"Jinwhan Kim* and Taeyun Kim",
+      venue:"International Journal of Ocean System Engineering, Vol. 1, pp. 89-94, 2011.",
+      year:"2011"
+    },
+
+    {
+      title:"Particle Filter for Ballistic Target Tracking with Glint Noise",
+      authors:"Jinwhan Kim*, M. Tandale and P.K. Menon",
+      venue:"Journal of Guidance, Control and Dynamics, Vol. 33, No. 6, pp. 1918-1921, 2010.",
+      year:"2010"
+    },
+
+    {
+      title:"Rapid Estimation of Impaired-Aircraft Aerodynamic Parameters",
+      authors:"Jinwhan Kim*, K. Palaniappan and P.K. Menon",
+      venue:"Journal of Aircraft, Vol. 47, No. 4, pp. 1216-1228, 2010.",
+      year:"2010"
+    },
+
+    {
+      title:"Feedback Dual Controller Design and Its Application to Monocular Vision-Based Docking",
+      authors:"Jinwhan Kim and S.M. Rock*",
+      venue:"Journal of Guidance, Control and Dynamics, Vol. 32, No. 4, pp. 1134-1142, 2009.",
+      year:"2009"
+    }
+  ],
+
+  "International Conferences": [
+    {
+      title:"Data-Driven Modeling of Surface Vehicle Dynamics Using Deep Koopman Networks",
+      authors:"Jiyong Choi and Jinwhan Kim*",
+      venue:"IFAC World Congress, Busan, Korea, Aug. 2026.",
+      year:"2026"
+    },
+
+    {
+      title:"ID(O): Mapping Data Quantization for Bathymetric Collaborative SLAM",
+      authors:"Qianyi Zhang and Jinwhan Kim*",
+      venue:"IEEE International Conference on Robotics and Automation (ICRA), Vienna, Austria, Jun. 2026 (TRO-paper).",
+      year:"2026"
+    },
+
+    {
+      title:"Hierarchical Planning for Vehicle Routing and Scheduling in Marsupial Robotic Systems",
+      authors:"Donghyun Kim and Jinwhan Kim*",
+      venue:"IEEE International Conference on Robotics and Automation (ICRA), Vienna, Austria, Jun. 2026 (RA-L paper).",
+      year:"2026"
+    },
+
+    {
+      title:"Enhancing Navigational Scene Understanding Using Integrated Language Models in Maritime Environments",
+      authors:"Yeongha Shin and Jinwhan Kim*",
+      venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Hangzhou, China, Oct. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"Efficient Routing and Scheduling for Marsupial USV-AUV System",
+      authors:"Donghyun Kim and Jinwhan Kim*",
+      venue:"IEEE International Symposium on Multi-Robot & Multi-Agent Systems (MRS), Singapore, Dec. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"Optimizing Coverage Path Planning for Underwater Surveys with Mother Ship-Deployed AUVs",
+      authors:"Kyungseo Kim and Jinwhan Kim*",
+      venue:"International Conference on Ubiquitous Robots (UR), 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"Robust Trajectory Tracking for Surface Vehicles Via L1-Augmented Model Predictive Control",
+      authors:"Kiyong Park, Changyu Lee and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Brest, France, Jun. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"Branch Augmented Neural Network for Marine Vessel Re-Identification Using LiDAR Point Cloud",
+      authors:"Dongwook Lee and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Brest, France, Jun. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"An Efficient Solution to the Multi-Depot Vehicle Routing Problem Using Reinforcement Learning",
+      authors:"Hakmo Son, Haggi Do and Jinwhan Kim*",
+      venue:"Robot Intelligence Technology and Applications (RITA), Ulsan, Korea, Dec. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"AnytimeFusion: Parameter-Free RGB Camera-Radar Sensor Fusion Algorithm in Complex Maritime Situations",
+      authors:"Yeongha Shin, Hanguen Kim and Jinwhan Kim*",
+      venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Abu Dhabi, UAE, Oct. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"Experimental Validation of an Intent-Inference-based Ship Collision Avoidance Algorithm",
+      authors:"Jinwook Park, Jiyong Choi, Jeonghong Park, Dongjin Yeo and Jinwhan Kim*",
+      venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), Blacksburg, VA, USA, Sep. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"An Efficient Method for Solving Routing Problems with Energy Constraints Using Reinforcement Learning",
+      authors:"H. Do, H. Son and J. Kim",
+      venue:"International Conference on Ubiquitous Robots (UR), New York, NY, USA, Jun. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"Feature-Based Global Localization for Underwater Terrain Aided Navigation Using Bag of Words",
+      authors:"Qianyi Zhang and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Singapore, Apr. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"Parameter-Varying Koopman Operator for Nonlinear System Modeling and Control",
+      authors:"Changyu Lee, Kiyong Park and Jinwhan Kim*",
+      venue:"62nd IEEE Conference on Decision and Control (CDC), Singapore, Dec. 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Robust Ship Berthing Control with Wind Disturbance Compensation Using Reachability Analysis",
+      authors:"Jinwook Park, Changyu Lee and Jinwhan Kim*",
+      venue:"IFAC World Congress, Yokohama, Japan, Jul. 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Robust Path Tracking and Obstacle Avoidance of Autonomous Ship Using Stochastic Model Predictive Control",
+      authors:"Kiyong Park, Changyu Lee and Jinwhan Kim*",
+      venue:"International Conference on Ubiquitous Robots (UR), Hawaii, USA, Jun. 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Multi-Target Tracking Considering the Uncertainty of Deep Learning-Based Object Detection of Marine Radar Images",
+      authors:"Eunghyun Kim, Jonghwi Kim and Jinwhan Kim*",
+      venue:"International Conference on Ubiquitous Robots (UR), Hawaii, USA, Jun. 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Marine Radar-Based Coastal SLAM with Occupancy Grid Mapping",
+      authors:"Hyunkeun Cho and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Limerick, Ireland, Jun. 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Mission Planning for Collaborative Operations of Autonomous Marine Systems",
+      authors:"Donghyun Kim and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Limerick, Ireland, Jun. 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Data Augmentation of Selective Subspace to Improve the Performance of Offline Reinforcement Learning",
+      authors:"Jungwoo Han and Jinwhan Kim*",
+      venue:"22th International Conference on Control, Automation and Systems (ICCAS 2022), Busan, Korea, Nov. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"Robust Path Tracking and Obstacle Avoidance Using Tube-Based Model Predictive Control for Surface Vehicles",
+      authors:"Changyu Lee, Quoc Van Tran and Jinwhan Kim*",
+      venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Copenhagen, Denmark, Sep. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"Hydrodynamics Modeling of a Surface Robotic Vehicle Using Computationally-Efficient Variations of Gaussian Processes",
+      authors:"Junwoo Jang and Jinwhan Kim*",
+      venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Copenhagen, Denmark, Sep. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"Direction-Only Orientation Alignment of Leader-Follower Networks",
+      authors:"Quoc Van Tran*, Hyo-Sung Ahn and Jinwhan Kim",
+      venue:"American Control Conference (ACC), Atlanta, USA, Jun. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"Path Optimization for Cooperative Mapping Using Multiple Robots with Limited Sensing Capabilities",
+      authors:"Kyungseo Kim and Jinwhan Kim*",
+      venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Prague, Czech Republic, Sep. 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"Robust Data Association for Multi-Object Detection in Maritime Environments Using Camera and Radar Measurements",
+      authors:"Keunhwan Kim, Jonghwi Kim and Jinwhan Kim*",
+      venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Prague, Czech Republic, Sep. 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"Energy Efficient Control for Electric Ship Propulsion Considering Thrust Fluctuation in Regular Waves",
+      authors:"Changyu Lee and Jinwhan Kim*",
+      venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Oldenburg, Germany, Sep. 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"COLREG-compliant Ship Collision Avoidance in Narrow Channels Using Curvilinear Coordinates",
+      authors:"Yonghoon Cho, Jonghwi Kim and Jinwhan Kim*",
+      venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Oldenburg, Germany, Sep. 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"Robust Loop Closure Method for Multi-Robot Map Fusion by Integration of Consistency and Data Similarity",
+      authors:"Haggi Do, Seonghun Hong and Jinwhan Kim*",
+      venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Las Vegas, Nevada, Oct. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"Probabilistic Intent Inference for Predicting the Compliance with COLREGs Between Two Surface Ships",
+      authors:"Yonghoon Cho, Jonghwi Kim and Jinwhan Kim*",
+      venue:"IFAC World Congress, Jul. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"Autonomous Docking of an Unmanned Surface Vehicle Based on Reachability Analysis",
+      authors:"Jinwook Park and Jinwhan Kim*",
+      venue:"20th International Conference on Control, Automation and Systems (ICCAS 2020), Busan, Korea, Oct. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"Robust Loop Closure Method for Multi-Robot Map Fusion by Integration of Consistency and Data Similarity",
+      authors:"Haggi Do, Seonghun Hong and Jinwhan Kim*",
+      venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Las Vegas, Nevada, Oct. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"Automatic Target Tracking with Time-Delayed Measurements for Unmanned Surface Vehicles",
+      authors:"Jungwook Han, Nam-sun Son and Jinwhan Kim*",
+      venue:"SPIE Future Sensing Technologies, Tokyo, Japan, Nov. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Fusing Lidar Data and Aerial Imagery with Perspective Correction for Precise Localization in Urban Canyons",
+      authors:"Jonghwi Kim and Jinwhan Kim*",
+      venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Macau, China, Nov. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Robust Loop Closure Selection for Multi-Robot Mapping under Perceptual Aliasing",
+      authors:"Haggi Do and Jinwhan Kim*",
+      venue:"19th International Conference on Control, Automation and Systems (ICCAS 2019), Jeju, Korea, 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Efficient Fleet Size Optimization for Task Allocation of Multiple Unmanned Vehicles",
+      authors:"Sukmin Yoon and Jinwhan Kim*",
+      venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Daejeon, Korea, Sep. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Experimental Validation of a Velocity Obstacle Based Collision Avoidance Algorithm for Unmanned Surface Vehicles",
+      authors:"Yonghoon Cho, Jungwook Han, Jinwhan Kim*, Philyeob Lee and Shin-Bae Park",
+      venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Daejeon, Korea, Sep. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Three-Dimensional Visual Mapping of Underwater Ship Hull Surface Using View-Based Piecewise- Planar Measurements",
+      authors:"Seonghun Hong and Jinwhan Kim*",
+      venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Daejeon, Korea, Sep. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Nonlinear Model Predictive Control of an Autonomous Underwater Vehicle for Terrain Profile Tracking",
+      authors:"Changyu Lee and Jinwhan Kim*",
+      venue:"International Conference on Ubiquitous Robots (UR), Jeju, Korea, Jun. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Semantic Segmentation of Marine Radar Images Using Convolutional Neural Networks",
+      authors:"Keunhwan Kim and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Marseille, France, Jun. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Weighted Grid Partitioning for Panel-Based Bathymetric SLAM",
+      authors:"Junwoo Jang and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Marseille, France, Jun. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Dynamic Grid Adaptation for Panel-Based Bathymetric SLAM",
+      authors:"Junwoo Jang and Jinwhan Kim*",
+      venue:"IEEE/OES International Symposium on Underwater Technology (UT), Kaohsiung, Taiwan, Apr. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Fleet Size Optimization and Collaborative Route Planning for Multi-Vehicle Task Allocation",
+      authors:"Sukmin Yoon and Jinwhan Kim*",
+      venue:"AIAA Scitech Forum, San Deigo, USA, Jan. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Informative Path Planning for Efficient Scalar Field Reconstruction",
+      authors:"Thorsteinn Jonsson, Jeonghyeon Wang and Jinwhan Kim*",
+      venue:"AIAA Scitech Forum, San Deigo, USA, Jan. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"Intent Inference of Ship Maneuvering for Automatic Ship Collision Avoidance",
+      authors:"Yonghoon Cho, Jungwook Han and Jinwhan Kim*",
+      venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), Opatija, Croatia, Sep. 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"Pose Estimation Considering an Uncertainty Model of Stereo Vision for In-Water Ship Hull Inspection",
+      authors:"Dongha Chung and Jinwhan Kim*",
+      venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), Opatija, Croatia, Sep. 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"Vehicle Localization in Urban Environment Using a 2D Online Map with Building Outlines",
+      authors:"Jonghwi Kim, Yonghoon Cho and Jinwhan Kim*",
+      venue:"International Conference on Ubiquitous Robots (UR), Hawaii, USA, 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"Ship Route Optimization Considering on-Time Arrival Probability under Environmental Uncertainty",
+      authors:"Byunghyun Yoo and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Kobe, Japan, May 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"Semantic Segmentation of Urban Scenes with a Location Prior Map Using Lidar Measurements",
+      authors:"Jeonghyeon Wang and Jinwhan Kim*",
+      venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Vancouver, CAN, Sep. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"A Novel Terrain Information Measure for Terrain-Referenced Underwater Navigation",
+      authors:"Taeyun Kim and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Anchorage, USA, Sep. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Development of a Hover-Capable AUV System for Automated Visual Ship-Hull Inspection and Mapping",
+      authors:"Seonghun Hong, Dongha Chung and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Anchorage, USA, Sep. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Powering Performance Analysis of Full-Scale Ships under Environmental Disturbances",
+      authors:"Byunghyun Yoo and Jinwhan Kim*",
+      venue:"IFAC World Congress, Toulouse, France, Jul. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Efficient Task Allocation for Collaborative Route Planning with Multiple Unmanned Vehicles",
+      authors:"Sukmin Yoon and Jinwhan Kim*",
+      venue:"IFAC World Congress, Toulouse, France, Jul. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Persistent Automatic Tracking of Multiple Surface Vessels by Fusing Radar and Lidar",
+      authors:"Jungwook Han, Jinwhan Kim* and Nam-sun Son",
+      venue:"MTS/IEEE OCEANS, Scotland, UK, Jun. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Collision Probability Assessment Between Surface Ships Considering Maneuvering Intentions",
+      authors:"Yonghoon Cho and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Scotland, UK, Jun. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Scalar Field Reconstruction Based on the Gaussian Process and Adaptive Sampling",
+      authors:"Thorsteinn B. Jonsson, Jeonghyeon Wang and Jinwhan Kim*",
+      venue:"14th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Jeju, Korea, Jun. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Lidar-Guided Autonomous Landing of an Aerial Vehicle on a Ground Vehicle",
+      authors:"Jonghwi Kim, Sangwook Woo and Jinwhan Kim*",
+      venue:"14th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Jeju, Korea, Jun. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"3D Reconstruction of Underwater Objects Using a Wide-Beam Imaging Sonar",
+      authors:"Sungchur Kwon, Jisung Park and Jinwhan Kim*",
+      venue:"IEEE/OES International Symposium on Underwater Technology (UT), Busan, Korea, Feb. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Panel-Based Bathymetric SLAM with a Multibeam Echosounder",
+      authors:"Taeyun Kim and Jinwhan Kim*",
+      venue:"IEEE/OES International Symposium on Underwater Technology (UT), Busan, Korea, Feb. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Underwater Pose Estimation Relative to Planar Hull Surface Using Stereo Vision",
+      authors:"Dongha Chung, Seonghun Hong and Jinwhan Kim*",
+      venue:"IEEE/OES International Symposium on Underwater Technology (UT), Busan, Korea, Feb. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"Efficient Visual SLAM Using Selective Image Registration for Autonomous Inspection of Underwater Structures",
+      authors:"Seonghun Hong and Jinwhan Kim*",
+      venue:"IEEE/OES Autonomous Underwater Vehicles (AUV), Tokyo, Japan, Nov. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"High-Precision Underwater Navigation Using Model-Referenced Pose Estimation with Monocular Vision",
+      authors:"Jisung Park and Jinwhan Kim*",
+      venue:"IEEE/OES Autonomous Underwater Vehicles (AUV), Tokyo, Japan, Nov. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"Probabilistic Quantification of Ship Collision Risk Considering Trajectory Uncertainties",
+      authors:"Jeonghong Park, Jungwook Han, Jinwhan Kim* and Nam-sun Son",
+      venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), Trondheim, Norway, Sep. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"GPS-less Coastal Navigation Using Marine Radar for USV Operation",
+      authors:"Jungwook Han, Jeonghong Park, Jinwhan Kim* and Nam-sun Son",
+      venue:"IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), Trondheim, Norway, Sep. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"Semantic Segmentation of Urban Scenes with Enhanced Spatial Contexts",
+      authors:"Jeonghyeon Wang and Jinwhan Kim*",
+      venue:"13th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Xian, China, Aug. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"Visual SLAM with Keyframe Selection for Underwater Structure Inspection Using an Autonomous Underwater Vehicle",
+      authors:"Seonghun Hong and Jinwhan Kim*",
+      venue:"13th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Xian, China, Aug. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"Longitudinal Trajectory Optimization of an Underwater Glider in Finite Depth Water",
+      authors:"Sukmin Yoon and Jinwhan Kim*",
+      venue:"AIAA Guidance, Navigation, and Control Conference, San Diego, USA, Jan. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"Three-Dimensional Reconstruction of a Semi-Submersible Offshore Platform with an Unmanned Surface Vehicle",
+      authors:"Jungwook Han, Minju Kang, Jeonghyeon Wang and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Shanghai, China, Apr. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"Autonomous Detection and Tracking of a Surface Ship Using Onboard Monocular Vision",
+      authors:"Yonghoon Cho, Jeonghong park, Minju Kang and Jinwhan Kim*",
+      venue:"12th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Goyang city, Korea, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Planar SLAM under a Semi-Submersible Offshore Platform with an Unmanned Surface Vehicle",
+      authors:"Jungwook Han, Minju Kang, Yonghoon Cho and Jinwhan Kim*",
+      venue:"12th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Goyang city, Korea, Oct. 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Optimization of Fish-Like Locomotion Using Hierarchical Reinforcement Learning",
+      authors:"Jeonghyeon Wang and Jinwhan Kim*",
+      venue:"12th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Goyang city, Korea, Oct. 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Relative Navigation with Passive Underwater Acoustic Sensing",
+      authors:"Yeonjoo Shim, Jisung Park and Jinwhan Kim*",
+      venue:"12th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Goyang city, Korea, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Autonomous Collision Avoidance for Unmanned Surface Ships Using Onboard Monocular Vision",
+      authors:"Jeonghong Park, Yonghoon Cho, Byunghyun Yoo and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Washington DC, USA, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Development of USV Autonomy for the 2014 Maritime RobotX Challenge",
+      authors:"Minju Kang, Sungchur Kwon, Jeonghong Park, Taeyun Kim, Jungwook Han, Jeonghyeon Wang, Seonghun Hong, Yeonjoo Shim, Sukmin Yoon, Byunghyun Yoo and Jinwhan Kim*",
+      venue:"10th IFAC Conference on Manoeuvring and Control of Marine Craft (MCMC), Copenhagen, Denmark, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Underwater Visual SLAM with Loop-Closure Using Image-to-Image Link Recovery",
+      authors:"Seonghun Hong, Taeyun Kim and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Genova, Italy, May 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"A Robust Task Space Position Tracking Control of an Underwater Vehicle Manipulator System",
+      authors:"M. Santhakumar*, Jinwhan Kim and Yogesh Singh",
+      venue:"Advances in Robotics, Goa, India, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Robust Nonlinear Proportional Integral Derivative Control for Position Tracking of an Underwater Manipulator",
+      authors:"M. Santhakumar and Jinwhan Kim*",
+      venue:"IEEE/ASME International Conference of Advances in Mechatronics (AIM), Busan, Korea, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"Disturbance Observer Based Terminal Sliding Mode Control of an Underwater Manipulator",
+      authors:"V. Vinoth, M. Santhakumar and Jinwhan Kim*",
+      venue:"International Conference on Control, Automation, Robotics & Vision, Marina Bay Sands, Singapore, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"Three-Dimensional Reconstruction of Bridge Structures Above the Waterline with an Unmanned Surface Vehicle",
+      authors:"Jungwook Han, Jeonghong Park and Jinwhan Kim*",
+      venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Chicago, USA, Sep. 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"Nonlinear Filtering for Terrain-Referenced Underwater Navigation with an Acoustic Altimeter",
+      authors:"Taeyun Kim and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Taipei, Taiwan, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"Towards Automatic Identification of Mismatched Image Pairs Through Loop Constraints",
+      authors:"A. Elibol, Jinwhan Kim*, N. Gracias and R. Garcia",
+      venue:"IS&T/SPIE Intelligent Robots and Computer Vision XXXI: Algorithms and Techniques, Vol. 9025, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"Beaconless Navigation for Mobile Robots Using Grid Line Pattern",
+      authors:"Taeyun Kim and Jinwhan Kim*",
+      venue:"10th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Jeju, Korea, 2013.",
+      year:"2013"
+    },
+
+    {
+      title:"Navigation of an Unmanned Surface Vessel under Bridges",
+      authors:"Jungwook Han and Jinwhan Kim*",
+      venue:"10th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Jeju, Korea, Oct. 2013.",
+      year:"2013"
+    },
+
+    {
+      title:"A Robust Dynamic Positioning Control Algorithm and Its Validation Through Experiment and Numerical Simulation",
+      authors:"Young-Shik Kim, Yun-Ho Kim, Hong-Gun Sung and Jinwhan Kim*",
+      venue:"International Offshore and Polar Engineering Conference (ISOPE), Alaska, 2013.",
+      year:"2013"
+    },
+
+    {
+      title:"Match Elimination Using Cycle Basis in Underwater Optical Mapping",
+      authors:"A. Elibol, Jinwhan Kim*, Son-Cheol Yu, N. Gracias and R. Garcia",
+      venue:"MTS/IEEE OCEANS, Bergen, Norway, Jun. 2013.",
+      year:"2013"
+    },
+
+    {
+      title:"Indirect Adaptive Control for Autonomous Underwater Vehicle-Manipulator Systems",
+      authors:"M. Santhakumar and Jinwhan Kim*",
+      venue:"International Offshore and Polar Engineering Conference (ISOPE), Rhodes, Greece, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"A Nonlinear Task Space Tracking Control of an Underactuated Underw Ater Vehicle",
+      authors:"M. Santhakumar and Jinwhan Kim*",
+      venue:"9th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Daejeon, Korea, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"A Null Space Control of an Underactuated Underwater Vehicle-Manipulator System under Ocean Currents",
+      authors:"M. Santhakumar, Jinwhan Kim* and Yonghyun Kim",
+      venue:"MTS/IEEE OCEANS, Yeosu, Korea, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"An Inviscid Model of Vortex Shedding Flow Around an Oscillating Flat Plate",
+      authors:"Sungyeop Lim, Wooyoung Choi and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Yeosu, Korea, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"On Data Assimilation in a Pseudo-Spectral Wave Prediction Model Using a Kalman Filter",
+      authors:"Seongjin Yoon, Jinwhan Kim and Wooyoung Choi*",
+      venue:"MTS/IEEE OCEANS, Yeosu, Korea, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"Analytical Criteria for Collision Avoidance Between Two Encountering Ships",
+      authors:"Jeonghong Park, Jinwhan Kim* and Nam-sun Son",
+      venue:"International Marine Simulator Forum (MARSIM), Singapore, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"An Optimal Control Formulation for Dual Control Problems",
+      authors:"Jinwhan Kim* and Sungmoon Joo",
+      venue:"International Conference on Control, Automation and Systems (ICCAS), Goyang, Korea, 2011.",
+      year:"2011"
+    },
+
+    {
+      title:"Modelling, Simulation and Model Reference Adaptive Control of Autonomous Underwater Vehicle-Manipulator Systems",
+      authors:"M. Santhakumar and Jinwhan Kim*",
+      venue:"International Conference on Control, Automation and Systems (ICCAS), Goyang, Korea, 2011.",
+      year:"2011"
+    },
+
+    {
+      title:"An Approach Towards Online Bathymetric SLAM",
+      authors:"Jinwhan Kim* and Hun Sang Jung",
+      venue:"MTS/IEEE OCEANS, Kona, Hawaii, 2011.",
+      year:"2011"
+    },
+
+    {
+      title:"Particle Filter for Ballistic Target Tracking with Glint Noise",
+      authors:"Jinwhan Kim*, M, Tandale, P.K. Menon and E.J. Ohlmeyer",
+      venue:"AIAA Guidance, Navigation, and Control Conference, Toronto, Canada, 2010.",
+      year:"2010"
+    },
+
+    {
+      title:"Motion Models for Use with the Maneuvering Ballistic Missile Tracking Estimators",
+      authors:"Jinwhan Kim*, P.K. Menon and E.J. Ohlmeyer",
+      venue:"AIAA Guidance, Navigation, and Control Conference, Toronto, Canada, 2010.",
+      year:"2010"
+    },
+
+    {
+      title:"Tracking of Spiraling Reentry Vehicles with Varying Frequency Using the Unscented Kalman Filter",
+      authors:"E.J. Ohlmeyer*, P.K. Menon and Jinwhan Kim",
+      venue:"AIAA Guidance, Navigation, and Control Conference, Toronto, Canada, 2010.",
+      year:"2010"
+    },
+
+    {
+      title:"A Framework for Stochastic Air Traffic Flow Modeling and Analysis",
+      authors:"P.K. Menon*, M. Tandale, Jinwhan Kim and P. Sengupta",
+      venue:"AIAA Guidance, Navigation, and Control Conference, Toronto, Canada, 2010.",
+      year:"2010"
+    },
+
+    {
+      title:"Air-Traffic Uncertainty Models for Queuing Analysis",
+      authors:"Jinwhan Kim*, M. Tandale and P.K. Menon",
+      venue:"AIAA Aviation Technology, Integration, and Operations Conference (ATIO), Hilton Head, South Carolina, 2009.",
+      year:"2009"
+    },
+
+    {
+      title:"Queuing Models for Analyzing the Impact of Trajectory Uncertainties on the NAS Flow Efficiency",
+      authors:"P. Sengupta*, M. Tandale, Jinwhan Kim and P.K. Menon",
+      venue:"AIAA Aviation Technology, Integration, and Operations Conference (ATIO), Hilton Head, South Carolina, 2009.",
+      year:"2009"
+    },
+
+    {
+      title:"Nonlinear Fileter Formulation for Rapid Estimation of Damaged Aircraft Performance",
+      authors:"Jinwhan Kim*, K. Palaniappan and P.K. Menon",
+      venue:"AIAA Guidance, Navigation, and Control Conference, Chicago, Illinois, 2009.",
+      year:"2009"
+    },
+
+    {
+      title:"Trajectory Uncertainty Modeling for Queuing Analysis of the National Airspace System",
+      authors:"Jinwhan Kim*, K. Palaniappan, P.K. Menon, M. Nag and K. Subbarao",
+      venue:"AIAA Aviation Technology, Integration, and Operations Conference (ATIO), Anchorage, Alaska, 2008.",
+      year:"2008"
+    },
+
+    {
+      title:"Comparison Between Three Spiraling Ballistic Missile State Estimators",
+      authors:"Jinwhan Kim*, S.S. Vaddi and P.K. Menon",
+      venue:"AIAA Guidance, Navigation, and Control Conference, Honolulu, Hawaii, 2008.",
+      year:"2008"
+    },
+
+    {
+      title:"Stochastic Feedback Controller Design Considering the Dual Effect",
+      authors:"Jinwhan Kim and Stephen Rock*",
+      venue:"AIAA Guidance, Navigation, and Control Conference, Keystone, Colorade, 2006.",
+      year:"2006"
+    }
+  ],
+
+  "Domestic Journals": [
+    {
+      title:"국제해상규칙이 반영된 속도장애물 기반 제어장벽함수를 활용한 선박 충돌회피 알고리즘",
+      authors:"박진욱, 이찬규, 최지용, 김진환*",
+      venue:"제어로봇시스템학회 논문지, Vol. 31, No. v, pp. 1271-1276, 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"자율운항선박을 위한 인식 및 센싱 기술",
+      authors:"김종휘, 김진환*",
+      venue:"제어로봇시스템학회 논문지, Vol. 30, No. v, pp. 383-393, 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"Trajectory Optimization for Autonomous Berthing of a Twin-Propeller Twin-Rudder Ship",
+      authors:"이찬규, 김진환*",
+      venue:"한국해양공학회 논문지, Vol. 37, No. 3, pp. 122-128, 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"HNS 광역 탐지 및 모니터링을 위한 부유식 무인시스템의 실험적 성능 검증",
+      authors:"박진욱, 김진식, 김진환*, 김용명, 이문진",
+      venue:"해양환경안전학회지, Vol. 28, No. S, pp. 11-17, 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"딥러닝 기반 객체 탐지 결과의 불확실성을 고려한 자동 선박 탐지 및 추적",
+      authors:"김종휘, 조용훈, 한솔, 김진환*",
+      venue:"제어로봇시스템학회 논문지, Vol. 28, No. 6, pp. 529-535, 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"해양 무인 이동체 기반의 수중 탐사를 위한 임무 계획",
+      authors:"장준우, 도학기, 김진환*",
+      venue:"한국해양공학회 논문지, Vol. 36, pp. 41-49, 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"인공지능 기술에 기반한 자율운항선박의 새로운 상황인식 시스템의 설계와 초기 결과",
+      authors:"최현택*, 박정홍, 최진우, 강민주, 이영준, 정종대, 김종휘, 권혁준, 김진환, 윤국진, 김한근, 박상태",
+      venue:"제어로봇시스템학회 논문지, Vol. 27, No. 8, 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"곡선좌표계 변환에 기반한 협수로에서 선박 자율 충돌회피",
+      authors:"조용훈, 김종휘, 김진환*",
+      venue:"대한조선학회 논문집, Vol. 58, No. 3, 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"자율 수중 작업 및 선체 검사 자동화를 위한 AUV 기술",
+      authors:"박지성, 정동하, 김진환*",
+      venue:"대한조선학회지, Vol. 57, No. 3, pp. 7-11, 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"확률 모델예측제어 알고리즘을 이용한 작동기 수가 부족한 무인잠수정 운동 제어",
+      authors:"이찬규, 장준우, 김진환*",
+      venue:"제어로봇시스템학회 논문지, Vol. 26, No. 5, pp. 373-378, 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"다중 로봇 시스템 지도통합을 위한 최대 가중 클릭 기반 강인한 루프 폐쇄 기법",
+      authors:"도학기, 윤석민, 김진환*",
+      venue:"제어로봇시스템학회 논문지, Vol. 26, No. 3, pp. 177-183, 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"지구 물리정보를 이용한 무인잠수정의 복합 항법 기술",
+      authors:"장준우, 조현근, 김진환*, 변승우",
+      venue:"한국로봇학회 논문지, Vol. 15, No. 1, pp. 24-31, 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"운용자와 자율 무인선 상호 작용을 고려한 행위 기반의 제어 알고리즘",
+      authors:"조용훈, 김종휘, 김진환*, 조용진, 유재관",
+      venue:"한국해양공학회 논문지, Vol. 33, pp. 620-626, 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"무인선 기술 동향 및 전망",
+      authors:"한정욱, 조용훈, 김진환*",
+      venue:"제어로봇시스템학회 논문지, Vol. 25, No. 2, pp. 43-52, 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"해상 장애물 추적을 위한 다중센서 융합 방법에 따른 성능비교",
+      authors:"한정욱, 조용훈, 김진환*, 이필엽",
+      venue:"제어로봇시스템학회 논문지, Vol. 25, pp. 551-556, 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"국제해상충돌예방규칙을 고려한 확률적 속도 장애물 기반의 선박 충돌회피 알고리즘",
+      authors:"조용훈, 한정욱, 김진환*, 이필엽",
+      venue:"대한조선학회 논문집, Vol. 56, pp. 75-81, 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"극지해양구조물 성능평가를 위한 스펙트럼 기반 시간역 빙하중 생성에 관한 연구",
+      authors:"김영식, 김진하, 강국진, 한소령, 김진환*",
+      venue:"한국해양공학회 논문지, Vol. 32, pp. 411-418, 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"노드 위치의 불확실성을 고려한 다수 운동체의 강인한 작업 할당 알고리즘",
+      authors:"윤석민, 김진환*",
+      venue:"제어로봇시스템학회 논문지, Vol. 24, No. 10, pp. 962-968, 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"GPS 사용 제한 조건에서의 무인선 레이다를 활용한 연안항법",
+      authors:"한정욱, 김진환*, 손남선",
+      venue:"제어로봇시스템학회 논문지, Vol. 24, No. 8, pp. 736-741, 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"사전위치정보를 이용한 도심 영상의 의미론적 분할",
+      authors:"왕정현, 김진환*",
+      venue:"한국로봇학회 논문지, Vol. 12, No. 3, pp. 249-257, 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"무인수상선의 자율운항을 위한 단안카메라 기반의 근거리 선박 자동 탐지",
+      authors:"박정홍, 한정욱, 김진환*, 손남선, 김선영",
+      venue:"제어로봇시스템학회 논문지, Vol. 23, No. 6, pp. 416-423, 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"쌍동형 무인선의 동적위치제어에 관한 연구",
+      authors:"강민주, 김태윤, 김진환*",
+      venue:"한국로봇학회 논문지, Vol. 11, No. 4, pp. 217-225, 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"단안 카메라를 이용한 수중 정밀 항법을 위한 모델 기반 포즈 추정",
+      authors:"박지성, 김진환*",
+      venue:"한국로봇학회 논문지, Vol. 11, No. 4, pp. 226-234, 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"영상 모자이킹을 통한 수중 검사를 위한 호버링 타입 AUV 시스템 개발",
+      authors:"홍성훈, 박정홍, 김태윤, 윤석민, 김진환*",
+      venue:"한국해양공학회 논문지, Vol. 28, No. 9, pp. 194-200, 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"수심 제한을 고려한 수중 글라이더 경로 최적화",
+      authors:"윤석민, 김진환*",
+      venue:"한국해양공학회 논문지, Vol. 28, No. 9, pp. 560-565, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"국소 집단 최적화 기법을 적용한 비정형 해저면 환경에서의 비주얼 SLAM",
+      authors:"홍성훈, 김진환*",
+      venue:"한국로봇학회 논문지, Vol. 9, No. 4, pp. 197-205, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"라오 - 블랙웰라이즈드 입자필터를 이용한 지형참조 수중항법",
+      authors:"김태윤, 김진환*, 최현택",
+      venue:"제어로봇시스템학회 논문지, Vol. 19, No. 8, pp. 682-687, 2013.",
+      year:"2013"
+    }
+  ],
+
+  "Domestic Conferences": [
+    {
+      title:"대형 언어 모델과 시각 언어 모델을 활용한 해양 상황 인지 알고리즘",
+      authors:"신영하, 김진환*",
+      venue:"2025 한국항해항만학회 추계학술대회, Nov. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"GPS 사용이 불가능한 상황에서의 레이더 - 측심기 융합을 통한 해군함정 위치추정",
+      authors:"권택중, 김진환*",
+      venue:"한국군사과학기술학회 종합학술대회, Jun. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"무인 수상 플랫폼 상 무인기 이착륙을 위한 로봇팔 영상 기반 제어기의 설계",
+      authors:"이용회, 김진환*",
+      venue:"제어로봇시스템학회, Jun. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"잔디깎이 패턴 기반의 커버리지 경로 계획을 위한 효율적인 다각형 분할 기법",
+      authors:"박준우, 김진환*",
+      venue:"제어로봇시스템학회, Jun. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"다중 이동 모드 수중 로봇을 이용한 해저 탐사를 위한 커버리지 경로 계획",
+      authors:"전지수, 김진환*",
+      venue:"한국해양과학기술협의회 공동학술대회, May 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"비선형 외란 관측기 기반 모델 예측 제어기를 이용한 무인 수상선의 강인한 경로 추종",
+      authors:"박기용, 이찬규, 김진환*",
+      venue:"한국로봇종합학술대회, Feb. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"쿠프만 심층 신경망을 활용한 수상선의 데이터 기반 모델링",
+      authors:"최지용, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"라이다 포인트 클라우드 기반 선박 재식별을 위한 경로 증강 신경망",
+      authors:"이동욱, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"불법 선박 탐지 및 재식별을 위한 인식 알고리즘",
+      authors:"한솔, 이동욱, 김진환*",
+      venue:"제어로봇시스템학회, Jul. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"평탄화 작업을 위한 모터 그레이더 블레이드 자세 제어",
+      authors:"전지수, 홍대희, 김진환*",
+      venue:"제어로봇시스템학회, Jul. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"다개체 시스템의 탐색 임무 수행을 위한 효율적인 영역 분할",
+      authors:"김경서, 유찬우, 김진환*",
+      venue:"한국군사과학기술학회 종합학술대회, Jun. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"GNSS 사용이 불가능한 환경에서의 해상 레이더 기반 위치 추정 기법 및 실험적 검증",
+      authors:"조현근, 김진환*",
+      venue:"한국해양과학기술협의회 공동학술대회, May 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"자율 무인선의 목표 선박 접근 제어 및 식별 전략에 관한 실험적 연구",
+      authors:"박기용, 이동욱, 한솔, 조현근, 김진환*",
+      venue:"한국해양과학기술협의회 공동학술대회, May 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"다개체 시스템의 효율적인 탐색 임무 수행을 위한 임무계획기 기반 영역 할당 알고리즘",
+      authors:"김경서, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"해양 무인 이동체 시스템의 효율적 임무 수행을 위한 계층적 계획 전략",
+      authors:"김동현, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"혼잡한 보행자 공간에서 운용되는 모바일 로봇 자율주행을 위한 경로계획",
+      authors:"김응현, 이찬규, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"해상 레이다와 카메라 기반 탐지 결과의 정보 상관 알고리즘",
+      authors:"김종휘, 한솔, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"해양 복합 무인 시스템의 자율 운용을 위한 효율적 임무 계획",
+      authors:"김동현, 김진환*",
+      venue:"한국해양공학회 추계학술대회, Oct. 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"가항영역 탐지를 통한 운하 환경에서의 자율 경로 생성",
+      authors:"김종휘, 정동하, 이찬규, 김진환*",
+      venue:"한국해양과학기술협의회 공동학술대회, May 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"자율운항 연구를 위한 다중 센서 데이터 소개",
+      authors:"정동하, 김종휘, 이찬규, 김진환*",
+      venue:"한국해양과학기술협의회 공동학술대회, May 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"해양 복합 무인 시스템 자율 운용을 위한 PDDL 기반의 모델 적응형 임무 계획기 설계",
+      authors:"김동현, 장준우, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"수중 운동체와 협업 중인 무인 수상선의 행위기반 제어",
+      authors:"김의종, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"비선형 모델 예측 제어 기법을 이용한 두 개의 전방향 추진기를 갖는 선박의 자동 접안",
+      authors:"박기용, 이찬규, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"해상 레이더 영상의 의미론적 분할을 이용한 다중 표적 추적",
+      authors:"김응현, 김종휘, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Feb. 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"수중운동체 운용 지원을 위한 무인수상선의 행위기반 제어",
+      authors:"김의종, 김진환*, 유찬우",
+      venue:"한국군사과학기술학회 추계학술대회, Nov. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"HNS 광역 탐지 및 모니터링 부유식 무인이동체 운용 시나리오의 실험적 검증",
+      authors:"박진욱, 김진식, 김진환*, 김용명, 이문진",
+      venue:"( 사 ) 해양환경안전학회 추계학술발표회, Nov. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"의도추론 기반 선박 충돌회피 알고리즘의 실험적 검증 및 성능 분석",
+      authors:"박진욱, 박기용, 김진환*",
+      venue:"대한조선학회 추계학술대회, Nov. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"자율 해양 무인이동체 시스템을 이용한 효율적 기뢰 탐색",
+      authors:"김경서, 김진환*",
+      venue:"한국군사과학기술학회 추계학술대회, Nov. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"대수심 영역을 포함한 환경에서의 강인한 지형참조항법 시스템",
+      authors:"조현근, 김진환*",
+      venue:"한국해양공학회 추계학술대회, Oct. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"PDDL 기반의 해양 복합 무인체계의 자율운용 임무계획기 설계",
+      authors:"장준우, 김동현, 김진환*",
+      venue:"한국해양공학회 추계학술대회, Oct. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"딥 러닝 기반의 중력축 정렬 오차 보정을 통한 관성 항법 성능개선",
+      authors:"김진식, 김진환*",
+      venue:"제어로봇시스템학회, Jun. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"다수의 자율수중이동체를 이용한 효율적 기뢰 탐색을 위한 행동 시퀀스 계획 알고리즘 개발",
+      authors:"김경서, 김진환*",
+      venue:"제어로봇시스템학회, Jun. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"다중 로봇 시스템의 협동적 임무계획을 위한 랑데부 위치 최적화",
+      authors:"도학기, 장준우, 김진환*",
+      venue:"제어로봇시스템학회, Jun. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"선박을 위한 강인한 모델예측제어기반 경로 추종 및 장애물 회피",
+      authors:"이찬규, 김진환*",
+      venue:"제어로봇시스템학회, Jun. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"HNS 광역 탐지 및 모니터링 부유식 무인이동체 운용을 위한 시스템 안정화 및 시나리오 설계",
+      authors:"박진욱, 김진식, 김진환*, 서동민, 이문진",
+      venue:"한국해양과학기술협의회 공동학술대회, Jun. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"불규칙파 중 전기추진선박의 에너지 효율 향상을 위한 모델예측제어",
+      authors:"이찬규, 김진환*",
+      venue:"한국해양과학기술협의회 공동학술대회, Jun. 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"재난 후 실내 환경에서의 수색 임무를 위한 다중 에이전트 슬램 및 경로 계획",
+      authors:"한솔, 한정우, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, May 2022.",
+      year:"2022"
+    },
+
+    {
+      title:"HNS 광역 탐지 모니터링 부유식 무인이동체 운용 검증 및 결과",
+      authors:"박진욱, 오원석, 김진환*, 서동민, 이문진",
+      venue:"( 사 ) 해양환경안전학회 추계학술발표회, Nov. 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"포항 운하에서의 자율 운항 실험을 위한 최적 경로 추종",
+      authors:"이찬규, 정동하, 김종휘, 조용훈, 김진환*, 최휘용, 이준식",
+      venue:"대한조선학회 추계학술대회, Nov. 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"포항 운하에서의 자율 운항 실험을 위한 다중 센서 융합",
+      authors:"김종휘, 정동하, 이찬규, 조용훈, 김진환*, 장왕석, 박세용",
+      venue:"한국해양공학회 추계학술대회, Oct. 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"불확실성 수렴도 예측을 통한 다개체 시스템의 협력적 매핑",
+      authors:"김경서, 김진환*",
+      venue:"제어로봇시스템학회, Jun. 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"도달 가능성 분석 기반의 PID/SMC 제어기 전환을 통한 선박 자동 접안",
+      authors:"박진욱, 김진환*",
+      venue:"제어로봇시스템학회, Jun. 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"HNS 광역 탐지 및 모니터링 부유식 무인이동체 운용을 위한 시스템 고도화",
+      authors:"박진욱, 오원석, 김진환*, 서동민, 이문진",
+      venue:"( 사 ) 해양환경안전학회 춘계학술발표회, Jun. 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"파랑 중 전기추진선박의 에너지 효율 향상을 위한 모델예측제어",
+      authors:"이찬규, 김진환*",
+      venue:"한국해양과학기술협의회 공동학술대회, May 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"지구물리정보의 하향 연속 오차를 고려한 수중 항법 기술",
+      authors:"조현근, 김진환*",
+      venue:"한국해양과학기술협의회 공동학술대회, May 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"평활도 제약조건을 고려한 수중 3 차원 곡면 복원 기법",
+      authors:"정동하, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, May 2021.",
+      year:"2021"
+    },
+
+    {
+      title:"자가학습기반 단일 카메라 깊이 추정 알고리즘의 해상환경 적용",
+      authors:"장준우, 김종휘, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 강릉, Dec. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"강화학습을 이용한 예인선 지원 선박의 자율 접안",
+      authors:"홍승조, 김진환*",
+      venue:"한국해양공학회 추계학술대회, Dec. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"강화학습 기반 예인선 제어방법에 의한 선박 자율 접안",
+      authors:"홍승조, 김진환*",
+      venue:"한국해군과학기술학회 추계학술대회, Nov. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"베이지안 최적화 기반 HNS 광역 탐지 및 모니터링 운용 알고리즘 개발",
+      authors:"왕정현, 박진욱, 김진환*, 황태현, 이문진",
+      venue:"( 사 ) 해양환경안전학회 추계학술발표회, Nov. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"해류 중에서의 수상선 경로 추종을 위한 추적 유도법칙의 안정성 해석",
+      authors:"조현근, 김진환*, 변승우",
+      venue:"한국로봇학회 한국로봇종합학술대회, Aug. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"수중환경에서의 강인한 지도통합을 위한 루프 폐쇄 기법",
+      authors:"도학기, 홍성훈, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Aug. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"무인선을 이용한 포항 운하 라이다 지도 작성",
+      authors:"전승훈, 김종휘, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Aug. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"군집 무인선의 행위 기반 대형 제어",
+      authors:"김종휘, 조용훈, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Aug. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"해상 통항 규칙 준수 여부 예측을 위한 의도 추론 모델의 성능평가",
+      authors:"조용훈, 한정욱, 김종휘, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, Aug. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"HNS 광역 탐지 및 모니터링 부유식 무인이동체 통합 시스템 개발 및 검증",
+      authors:"왕정현, 박진욱, 김진환*, 황태현, 이문진",
+      venue:"한국해양과학기술협의회 공동학술대회, Jul. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"쌍축 쌍타 선박의 자동접안을 위한 모델예측제어",
+      authors:"이찬규, 김진환*",
+      venue:"한국해양과학기술협의회 공동학술대회, Jul. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"선박 자동 탐지 및 추적을 위한 딥러닝 기반의 인스턴스 단위 분할 적용",
+      authors:"김종휘, 조용훈, 한솔, 김진환*",
+      venue:"한국해양과학기술협의회 공동학술대회, Jul. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"두 개의 수중청음기를 이용한 음원 위치 탐지를 위한 협업 경로 계획 .",
+      authors:"김경서, 김진환*.",
+      venue:"제어로봇시스템학회, Jul. 2020.",
+      year:"2020"
+    },
+
+    {
+      title:"GPS 사용 제한 조건에서 무인선의 레이다를 활용한 동시적 위치추정 및 지도작성",
+      authors:"한정욱, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 김해, Oct. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"HNS 광역 탐지 및 모니터링을 위한 부유식 무인이동체 개발 및 검증",
+      authors:"왕정현, 박진욱, 김진환*, 황태현, 이문진",
+      venue:"추게해양환경안전학회 학술발표회, Nov. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"재난 환경에서의 자율 탐색을 위한 무인 시스템의 선단 최적화",
+      authors:"윤석민, 도학기, 김진환*",
+      venue:"대한조선학회 추계학술대회, Oct. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"표적 운동 추정 과정에서의 다중모델 기반 필터의 모호성 해결",
+      authors:"장준우, 이찬규, 김진환*",
+      venue:"제어로봇시스템학회, May 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"합성곱 신경망을 이용한 해상 레이다 영상의 의미론적 분할",
+      authors:"김근환, 김진환*",
+      venue:"한국해양공학회 춘계학술대회, May 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"HNS 광역 탐지 및 모니터링을 위한 해상용 무인기 운용기법 기초 연구",
+      authors:"왕정현, 김진환*, 황태현, 이문진",
+      venue:", Apr. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"토폴로지 제어를 이용한 분산형 다수 무인 시스템의 경로계획",
+      authors:"도학기, 윤석민, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Jan. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"격자 기반 필터를 이용한 수중 지자기 항법",
+      authors:"장준우, 김태윤, 김진환*, 변승우",
+      venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Jan. 2019.",
+      year:"2019"
+    },
+
+    {
+      title:"해양 재난 사고 대응을 위한 다수 자율 이동체의 임무 계획",
+      authors:"윤석민, 도학기, 김진환*",
+      venue:"한국해양공학회 추계학술대회, Nov. 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"단안 카메라 영상을 이용한 합성곱 신경망 기반 선박 탐지 및 추적",
+      authors:"김종휘, 김근환, 이찬규, 김진환*, 이필엽",
+      venue:"한국해양공학회 추계학술대회, Nov. 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"무인선의 자율운항을 위한 다중센서 융합 기반 장애물 인식",
+      authors:"한정욱, 조용훈, 김종휘, 김진환*, 손남선",
+      venue:"대한조선학회 추계학술대회, Nov. 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"위치 불확실성을 고려한 다수 운동체의 작업 할당 알고리즘",
+      authors:"윤석민, 김진환*",
+      venue:"제어로봇시스템학회, May 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"속도 좌표계에서의 두 선박의 충돌확률 평가",
+      authors:"조용훈, 한정욱, 김진환*, 이필엽",
+      venue:"한국해양과학기술협의회 공동학술대회, May 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"부유식 무인이동체 기반 HNS 광역 탐지 및 모니터링 시스템 설계 구현",
+      authors:"왕정현, Thorsteinn B. Jonsson, 김진환*, 황태현, 이문진",
+      venue:"한국해양과학기술협의회 공동학술대회, May 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"단안 카메라를 이용한 수중 선체 표면의 3 차원 모자이킹",
+      authors:"홍성훈, 김진환*",
+      venue:"한국해양과학기술협의회 공동학술대회, May 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"지형참조항법을 위한 지형 정보량 정량화 방법",
+      authors:"김태윤, 김진환*",
+      venue:"한국항공우주학회 춘계학술대회, Apr. 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"무인선의 자율운항을 위한 COLREGs 기반의 충돌회피 알고리즘",
+      authors:"조용훈, 한정욱, 김진환*, 이필엽",
+      venue:"한국로봇학회 한국로봇종합학술대회 , 횡성, Jan. 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"수중 선체 상대 항법을 위한 스테레오 영상 기반의 선체 표면 상대 포즈 추정",
+      authors:"정동하, 홍성훈, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회 , 횡성, Jan. 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"시간적 상황 정보를 이용한 도심 영상의 의미론적 분할",
+      authors:"왕정현, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회 , 횡성, Jan. 2018.",
+      year:"2018"
+    },
+
+    {
+      title:"스칼라장의 효율적인 재구성을 위한 정보적 경로계획",
+      authors:"왕정현, Thorsteinn Baldvin Jonsson, 김진환*, 황태현, 이문진",
+      venue:"해양환경안전학회 추계학술발표회 , 부산, Nov. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"무인선의 센서융합을 통한 다중물체 추적",
+      authors:"한정욱, 조용훈, 김종휘, 김진환*, 손남선",
+      venue:"대한조선학회 추계학술대회 , 여수, Nov. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"환경 외란의 불확실성을 고려한 선박 항로 최적화 기법 연구",
+      authors:"유병현, 김진환*",
+      venue:"한국항해항만학회 추계학술대회 , 부산, Nov. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"무인선 - 무인기 협업 기반 스칼라장 복원을 위한 경로계획",
+      authors:"우상욱, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 거제, Oct. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"해양 탐색을 위한 다수 자율 이동체의 운용 대수 최적화 및 임무 계획",
+      authors:"윤석민, 우상욱, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 거제, Oct. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"비활성 운동체 제약조건을 고려한 효율적인 작업할당 알고리즘",
+      authors:"윤석민, 김진환*",
+      venue:"제어로봇시스템학회, May 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"확률론적 충돌 위험도 평가를 통한 무인 선박 간의 충돌회피",
+      authors:"박정홍, 김진환*, 최진우, 최현택",
+      venue:"제어로봇시스템학회, May 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"실내 주차장 환경에서 무인자동차의 측위 및 매핑을 위한 형상정보 기반의 SLAM",
+      authors:"한정욱, 김진환*, 심현철",
+      venue:"제어로봇시스템학회, May 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"HNS 광역탐지 및 모니터링을 위한 적응적 샘플링 기반 스칼라장 재구성 기법 연구",
+      authors:"왕정현, Thorsteinn B. Jonsson, 김진환*, 황태현, 이문진",
+      venue:"한국해양과학기술협의회 공동학술대회, Apr. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"선체 수중검사 자동화 시스템 개발 및 기초 실험",
+      authors:"홍성훈, 정동하, 김진환*, 정찬익, 안성준, 이정우",
+      venue:"한국해양과학기술협의회 공동학술대회, Apr. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"가도달성 분석 기반의 확률론적 운동체간 충돌위험성 평가",
+      authors:"조용훈, 우상욱, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Feb. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"수중 로봇의 선체 상대 항법을 위한 스테레오 영상 기반의 선체 표면 법선 벡터 추정",
+      authors:"정동하, 홍성훈, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Feb. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"상대위치모델을 이용한 도심 이미지의 의미론적 분할",
+      authors:"왕정현, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Feb. 2017.",
+      year:"2017"
+    },
+
+    {
+      title:"HNS 광역탐지 및 모니터링을 위한 무인이동체 시스템 설계 및 운용 기법 연구",
+      authors:"왕정현, 박지성, 김진환*, 황태현, 이문진",
+      venue:"해양환경안전학회 추계학술발표회 , 부산, Nov. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"기계학습 기법을 이용한 실선 추진성능의 확률 모델 개발",
+      authors:"유병현, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 부산, Nov. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"해양 자율 탐색을 위한 다수 이종 무인시스템의 임무계획",
+      authors:"윤석민, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 부산, Nov. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"가우시안 프로세스를 이용한 해양 스칼라장의 효과적 표현 기법 연구",
+      authors:"김동환, 왕정현, 김진환*, 이문진",
+      venue:"한국해양공학회 추계학술대회 , 부산, Nov. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"수중 구조물 검사를 위한 포즈 기반 정합 기법이 적용된 영상 모자이킹",
+      authors:"홍성훈, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 부산, Nov. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"무인 수상선의 자율운항을 위한 확률론적 충돌위험 평가",
+      authors:"박정홍, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 부산, Nov. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"해양 재난사고 대응을 위한 다수 무인시스템의 협업운용기술 개발",
+      authors:"윤석민, 우상욱, 김진환*, 김선영",
+      venue:"한국항해항만학회 추계학술대회 , 여수, Nov. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"HNS 사고 긴급대응을 위한 무인이동체 시스템 개발",
+      authors:"박지성, 김진환*",
+      venue:"한국위험물학회 , 용인, Aug. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"GPS 사용이 제한되는 지역에서 무인선의 펄스레이더를 활용한 연안항법",
+      authors:"한정욱, 김진환*",
+      venue:"한국군사과학기술학회 종합학술대회 , 제주, Jun. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"무인이동체 시스템을 이용한 HNS 광역탐지 운용 개념 연구",
+      authors:"왕정현, 박지성, 김진환*, 황태현, 이문진",
+      venue:"한국해양환경 에너지학회 , 부산, May 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"지형참조 수중항법의 항법 성능 평가를 위한 지형 정보량 지표 연구",
+      authors:"김태윤, 김진환*",
+      venue:"한국군사과학기술학회 종합학술대회 , 제주, Jun. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"실선운항기록을 이용한 환경외란 중에서의 선박추진성능 해석",
+      authors:"유병현, 김진환*, 김정중, 안영태",
+      venue:"대한조선학회 춘계학술대회 , 부산, May 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"무인선의 자율운항을 위한 적외선 영상 기반의 선박 자동 탐지 및 추적",
+      authors:"조용훈, 박정홍, 김진환*, 손남선",
+      venue:"대한조선학회 춘계학술대회 , 부산, May 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"무인선의 레이더와 라이다 정보를 활용한 영상기반 다중 물체 경로 추정",
+      authors:"박정홍, 한정욱, 김진환*, 손남선",
+      venue:"대한조선학회 춘계학술대회 , 부산, May 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"무인선의 펄스 레이더를 이용한 다중물체 추적",
+      authors:"한정욱, 박정홍, 김진환*, 손남선",
+      venue:"대한조선학회 춘계학술대회 , 부산, May 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"수중 구조물 자율 검사를 위한 키프레임 선택 기법이 적용된 영상기반 SLAM",
+      authors:"홍성훈, 김진환*",
+      venue:"한국해양공학회 춘계학술대회 , 부산, May 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"쿼터니언 피드백을 이용한 무인 수중 잠수정의 자세제어",
+      authors:"정동하, 김진환*",
+      venue:"한국해양공학회 춘계학술대회 , 부산, May 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"쌍동형 무인선의 동적위치제어에 대한 연구",
+      authors:"강민주, 김종휘, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Jan. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"수중 자율 작업을 위한 모델 기반 포즈 추정",
+      authors:"박지성, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회 , 평창, Jan. 2016.",
+      year:"2016"
+    },
+
+    {
+      title:"HNS 원격 탐지를 위한 무인 시스템 운용 개념 연구",
+      authors:"박지성, 왕정현, 김진환*, 황태현, 이문진",
+      venue:"해양환경안전학회 , 통영, Nov. 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"해저지형기반 수중운동체의 동시 위치추정 및 지도작성",
+      authors:"김태윤, 김진환*",
+      venue:"한국군사과학기술학회 추계학술대회 , 대전, Nov. 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"무인수상선의 자율 임무활용 기술개발",
+      authors:"김진환*, 박정홍, 한정욱, 김태윤, 강민주",
+      venue:"한국군사과학기술학회 추계학술대회 , 대전, Nov. 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"무인선의 자율운항을 위한 영상기반 선박 충돌 회피 및 추종",
+      authors:"박정홍, 강민주, 조용훈, 김진환*",
+      venue:"대한조선학회 추계학술대회 , 거제, Nov. 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"무인선을 활용한 반잠수식 해양 구조물 3 차원 형상 복원",
+      authors:"한정욱, 강민주, 김진환*",
+      venue:"대한조선학회 추계학술대회 , 거제, Nov. 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"카메라 기반 수중 검사를 위한 호버링 타입 AUV 시스템 개발",
+      authors:"홍성훈, 박정홍, 김태윤, 윤석민, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 대전, Oct. 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"하이드로폰을 이용한 해양운동체와 수중 음원 위치 동시 추정",
+      authors:"심연주, 박지성, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 대전, Oct. 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"강화학습을 이용한 물고기의 유영 패턴 최적화",
+      authors:"왕정현, 김진환*",
+      venue:"한국해양공학회 춘계학술대회 , 제주, May 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"무인선의 펄스레이더를 이용한 장애물 자동탐지",
+      authors:"한정욱, 김진환*, 손남선",
+      venue:"대한조선학회 춘계학술대회, 제주, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"무인선의 단안카메라를 이용한 상대 선박의 경로추정",
+      authors:"박정홍, 김진환*, 손남선",
+      venue:"대한조선학회 춘계학술대회, 제주, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"쌍축쌍타선의 추력분배에 대한 도식적 접근",
+      authors:"강민주, 김진환*",
+      venue:"한국해양공학회 춘계학술대회, 제주, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"스캐닝 소나를 이용한 수중 구조물의 3 차원 형상복원",
+      authors:"권성철, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, 대전, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"방향 모호성을 고려한 수중 음원 위치 추정 기법",
+      authors:"심연주, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회, 대전, 2015.",
+      year:"2015"
+    },
+
+    {
+      title:"불연속 영상 링크 복원을 통한 루프 - 폐쇄 기법이 적용된 수중 비주얼 슬램",
+      authors:"홍성훈, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 제주, Oct. 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"조위 변동을 고려한 지형참조 수중항법",
+      authors:"김태윤, 김진환*",
+      venue:"제 10 회 해양무기 학술대회, 진해, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"직렬배치된 해양구조물의 운동 제어에 대한 연구",
+      authors:"김영식, 성홍근, 홍장표, 김진환*",
+      venue:"한국해양과학기술협의회 공동학술대회, 부산, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"수심제한을 고려한 수중글라이더 경로최적화",
+      authors:"윤석민, 김진환*",
+      venue:"한국해양공학회 춘계학술대회 , 부산, May 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"무인선의 표적기동분석을 위한 영상기반 추적필터 설계",
+      authors:"박정홍, 김태윤, 김진환*, 손남선",
+      venue:"대한조선학회 춘계학술대회, 부산, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"국소 형상 정보를 이용한 제약조건 하의 매니퓰레이터 경로 계획",
+      authors:"왕정현, 이주장, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회 , 부여, Jun. 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"국소 집단 최적화 기법을 적용한 비정형 해저면 환경에서의 비주얼 SLAM",
+      authors:"홍성훈, 김진환*",
+      venue:"한국로봇학회 한국로봇종합학술대회 , 부여, Jun. 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"무인선의 삼차원 라이다를 이용한 장애물 자율 탐지 기법에 관한 연구",
+      authors:"한정욱, 김진환*, 손남선",
+      venue:"대한조선학회 춘계학술대회, 부산, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"수중 환경에서의 물체 자유 감지 및 회수를 위한 기초연구",
+      authors:"박지성, 김진환*",
+      venue:"한국해양공학회 춘계학술대회, 부산, 2014.",
+      year:"2014"
+    },
+
+    {
+      title:"선박 추진용 외부장형 전자기유체 추진기에 관한 기초연구",
+      authors:"이호장, Hiromichi Akimoto, 김진환*",
+      venue:"대한조선학회 추계학술대회, 울산, 2013.",
+      year:"2013"
+    },
+
+    {
+      title:"기계학습 기법을 이용한 실선 운항성능 분석 및 모델링",
+      authors:"유병현, 김진환*, 김희정, 김정중",
+      venue:"대한조선학회 추계학술대회, 울산, 2013.",
+      year:"2013"
+    },
+
+    {
+      title:"무인선 센서 융합을 통한 교량 구조물의 3 차원 형상 복원",
+      authors:"한정욱, 박정홍, 김태윤, 김진환*",
+      venue:"한국해양공학회 추계학술대회, 서울, 2013.",
+      year:"2013"
+    },
+
+    {
+      title:"전역 정렬 과정에서의 스케일링 효과를 고려한 수중 영상 모자이킹",
+      authors:"홍성훈, A. Elibol, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 서울, Oct. 2013.",
+      year:"2013"
+    },
+
+    {
+      title:"천수용 수중 글라이더 시스템 설계 및 경로 최적화",
+      authors:"윤석민, 김진환*",
+      venue:"한국해양공학회 추계학술대회 , 서울, Oct. 2013.",
+      year:"2013"
+    },
+
+    {
+      title:"단안 카메라 영상을 이용한 무인선의 장애물 탐지 및 추적",
+      authors:"박정홍, 김진환*, 손남선",
+      venue:"대한조선학회 춘계학술대회, 제주, 2013.",
+      year:"2013"
+    },
+
+    {
+      title:"FPSO 와 셔틀 탱커간 탠덤 하역 운전을 위한 작업공간 기반 동적 위치 제어",
+      authors:"이형배, 김영식, 김진환*",
+      venue:"한국해양공학회 춘계학술대회, 제주, 2013.",
+      year:"2013"
+    },
+
+    {
+      title:"조류 영향을 고려한 강화학습 기반 해양운동체 경로 최적화",
+      authors:"유병현, 김진환*",
+      venue:"대한조선학회 추계학술대회, 창원, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"작업공간에서의 피드백 선형화를 이용한 수중 운동체의 웨더베이닝",
+      authors:"김영현, 김진환*",
+      venue:"한국해양공학회 추계학술대회, 부산, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"Rao-Blackwellized 입자 필터를 이용한 지형참조 수중항법",
+      authors:"김태윤, 김진환*",
+      venue:"한국해양공학회 추계학술대회, 부산, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"해양환경에서의 영상기반 물체탐지 및 추적 기법 연구",
+      authors:"박정홍, 김진환*, 손남선",
+      venue:"대한조선학회 춘계학술대회, 대구, 2012.",
+      year:"2012"
+    },
+
+    {
+      title:"Underactuated AUV 의 모델링 및 동적위치 제어",
+      authors:"김영현, 김진환*",
+      venue:"한국수중로봇기술연구회, 부산, 2011.",
+      year:"2011"
+    },
+
+    {
+      title:"교항하는 두 선박간의 충돌회피에 관한 해석적 접근",
+      authors:"박정홍, 김진환*",
+      venue:"한국항해항만학회 추계학술대회, 부산, 2011.",
+      year:"2011"
+    },
+
+    {
+      title:"시불변 불균일 스칼라장에서의 항법을 위한 실시간 필터 알고리듬",
+      authors:"김진환",
+      venue:"한국해양공학회 춘계학술대회, 부산, 2011.",
+      year:"2011"
+    }
+  ]
+};
   const select = document.getElementById("publication-filter");
   const list = document.getElementById("publication-list");
   const count = document.getElementById("publication-count");
