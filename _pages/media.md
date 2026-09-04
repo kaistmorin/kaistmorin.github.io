@@ -65,7 +65,7 @@ nav_order: 5
     <div class="media-section-head"><h2>Featured</h2></div>
     <article class="media-featured-video">
       <div class="media-video-wrap">
-        <iframe src="https://www.youtube.com/embed/Ya1pfWYRMrc?start=214"
+        <iframe src="https://www.youtube.com/embed/Ya1pfWYRMrc?start=0"
           title="MORIN Lab Featured Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
