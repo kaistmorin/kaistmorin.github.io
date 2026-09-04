@@ -172,6 +172,19 @@ nav_order: 3
   overflow-wrap: anywhere;
 }
 
+.person-homepage {
+  margin-left: 5px;
+  color: var(--morin-blue);
+  font-size: .78em;
+  font-weight: 500;
+  text-decoration: none;
+  vertical-align: 1px;
+}
+
+.person-homepage:hover {
+  text-decoration: underline;
+}
+
 .director-card {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
@@ -282,7 +295,9 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/kyungseo-kim.jpg' | relative_url }}" alt="Kyungseo Kim"></div>
         <div class="person-info">
-          <h3 class="person-name">Kyungseo Kim</h3>
+          <h3 class="person-name">Kyungseo Kim
+            <a class="person-homepage" href="https://example.com" target="_blank" rel="noopener" aria-label="Kyungseo Kim homepage">↗</a>          
+          </h3>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST (2026)</p>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
           <p class="person-meta"><strong>B.S.</strong> KAIST</p>
