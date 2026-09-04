@@ -72,7 +72,7 @@ nav_order: 5
       </div>
       <div class="media-featured-meta">
         <p class="media-label">Featured Video</p>
-        <h3 class="media-title">MORIN Lab Research in Action</h3>
+        <h3 class="media-title">Team KAIST at MBZIRC Maritime Grand Challenge</h3>
       </div>
     </article>
   </section>
@@ -92,7 +92,7 @@ nav_order: 5
       <article class="media-card">
         <a href="{{ '/media/research-in-action/2024-MBZIRC-final/' | relative_url }}">
           <div class="media-thumb media-play"><img src="{{ '/assets/img/media/research-in-action/2024-MBZIRC-final.jpeg' | relative_url }}" alt="Marine Field Experiment"></div>
-          <div class="media-card-meta"><p class="media-label">Video</p><h3 class="media-title">MBZIRC Final Competition in Yas Island</h3></div>
+          <div class="media-card-meta"><p class="media-label">Video</p><h3 class="media-title">MBZIRC Final Competition at Yas Island, UAE</h3></div>
         </a>
       </article>
       <article class="media-card">
