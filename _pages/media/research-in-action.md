@@ -63,7 +63,7 @@ nav: false
   <div class="archive-grid">
   <article class="archive-card">
     <a href="{{ '/media/research-in-action/2026-RAL-DKim/' | relative_url }}">
-      <div class="media-thumb">
+      <div class="media-thumb media-play">
         <img src="{{ '/assets/img/media/research-in-action/2026-RAL-DKim.jpg' | relative_url }}" alt="Marine Field Experiment">
       </div>
       <div class="archive-meta">
@@ -85,7 +85,7 @@ nav: false
   </article>
   <article class="archive-card">
     <a href="{{ '/media/research-in-action/2019-Pohang-WAMV/' | relative_url }}">
-      <div class="media-thumb media-play">
+      <div class="media-thumb">
         <img src="{{ '/assets/img/media/research-in-action/2019-Pohang-WAMV.jpg' | relative_url }}" alt="Autonomous Marine Robotics Demonstration">
       </div>
       <div class="archive-meta">

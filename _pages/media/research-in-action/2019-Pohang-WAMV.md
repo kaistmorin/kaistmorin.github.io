@@ -58,7 +58,7 @@ nav: false
 
 <div class="media-detail">
   <a class="archive-back" href="{{ '/media/research-in-action/' | relative_url }}">← Back to Research in Action</a>
-  <h1>Marine Field Experiment</h1>
+  <h1>Autonomous Navigation in Pohang Canal</h1>
   <p class="detail-date">Photo</p>
   <div class="detail-hero"><img src="{{ '/assets/img/media/research/2019-Pohang-WAMV.jpg' | relative_url }}" alt="Marine Field Experiment"></div>
   <div class="detail-body"><p>A field experiment with marine robotic systems.</p></div>
