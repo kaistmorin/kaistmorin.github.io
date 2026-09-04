@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Research in Action
-permalink: /media/research-in-action/
+title: "Taeyun Kim and Seonghun Hong — OCEANS'17 Student Poster Competition"
+permalink: /media/events/2017-09-01-taeyun-kim-and-seonghun-hong-oceans-17-student-poster-competition/
 nav: false
 ---
 
@@ -56,42 +56,10 @@ nav: false
 @media(max-width:640px){.media-page,.media-archive,.media-detail{width:calc(100% - 30px)}.media-grid,.archive-grid{grid-template-columns:1fr}}
 </style>
 
-<div class="media-archive">
-  <a class="archive-back" href="{{ '/media/' | relative_url }}">← Back to Media</a>
-  <h1>Research in Action</h1>
-  <p class="media-intro">Photos, videos, and demonstrations of MORIN Lab research activities.</p>
-  <div class="archive-grid">
-  <article class="archive-card">
-    <a href="{{ '/media/research-in-action/featured-research-video/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/research/field-experiment.jpeg' | relative_url }}" alt="MORIN Lab Research in Action">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">MORIN Lab Research in Action</h3>
-      </div>
-    </a>
-  </article>
-  <article class="archive-card">
-    <a href="{{ '/media/research-in-action/marine-field-experiment/' | relative_url }}">
-      <div class="media-thumb">
-        <img src="{{ '/assets/img/media/research/field-experiment.jpeg' | relative_url }}" alt="Marine Field Experiment">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Photo</p>
-        <h3 class="media-title">Marine Field Experiment</h3>
-      </div>
-    </a>
-  </article>
-  <article class="archive-card">
-    <a href="{{ '/media/research-in-action/autonomous-marine-robotics-video/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/research/field-experiment.jpeg' | relative_url }}" alt="Autonomous Marine Robotics Demonstration">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Autonomous Marine Robotics Demonstration</h3>
-      </div>
-    </a>
-  </article></div>
+<div class="media-detail">
+  <a class="archive-back" href="{{ '/media/events/' | relative_url }}">← Back to Events</a>
+  <h1>Taeyun Kim and Seonghun Hong — OCEANS'17 Student Poster Competition</h1>
+  <p class="detail-date">2017-09-01</p>
+  <div class="detail-hero"><img src="{{ '/assets/img/media/events/event-24.jpg' | relative_url }}" alt="Taeyun Kim and Seonghun Hong — OCEANS&#x27;17 Student Poster Competition"></div>
+  <div class="detail-body"><p>Their works on terrain-referenced underwater navigation and hover-capable AUV visual ship-hull inspection were selected for the OCEANS’17 Student Poster Competition.</p></div>
 </div>
