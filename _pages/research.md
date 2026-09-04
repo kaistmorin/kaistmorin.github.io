@@ -120,7 +120,7 @@ nav_order: 2
 
     <section class="research-item">
       <div class="research-image">
-        <img src="{{ '/assets/img/research/marine-field-robotics.jpg' | relative_url }}" alt="Autonomous marine and field robotics">
+        <img src="{{ '/assets/img/research/fig1.png' | relative_url }}" alt="Autonomous marine and field robotics">
       </div>
       <div>
         <h2>Autonomous Marine &amp; Field Robotics</h2>

@@ -142,6 +142,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const publicationData = {
   "International Journals": [
     {
+      title:"Makespan Minimization for Multi-Robot Task Allocation with Balance-Aware Pointerformer",
+      authors:"Hakmo Son, Haggi Do and Jinwhan Kim*",
+      venue:"IEEE Robotics and Automation Letters (RA-L), In press, 2026.",
+      year:"2026"
+    },
+
+    {
+      title:"CROCS: Camera-Radar Online Alignment via Conic-Section-Constrained Scalar Field Correlation",
+      authors:"Sol Han and Jinwhan Kim*",
+      venue:"IEEE Robotics and Automation Letters (RA-L), In press, 2026.",
+      year:"2026"
+    },
+
+    {
+      title:"Terrain-Based Global Tracking Without Prior Pose Information using Multibeam Echosounder Measurements",
+      authors:"Qianyi Zhang and Jinwhan Kim*",
+      venue:"IEEE Transactions on Instrumentation and Measurement, Vol. 75, pp. 7506113-7506113, 2026",
+      year:"2026"
+    },
+
+    {
       title:"Motion State Estimation of Maritime Objects with Image-Derived Uncertainty Using a Monocular Camera on Unmanned Surface Vehicles",
       authors:"Yonghoon Cho, Jinwhan Kim and Jonghwi Kim*",
       venue:"IEEE Sensors Journal, In press, 2026.",
@@ -187,8 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title:"Data Association Leveraging Extrinsic Parameter Consistency for Multi-Object Detection in Maritime Environment",
       authors:"Jonghwi Kim, Sol Han and Jinwhan Kim*",
       venue:"Mechatronics, Vol. 108, 2025.",
-      year:"2025",
-      note:"Jonghwi Kim and Sol Han contributed equally to this work"
+      year:"2025"
     },
 
     {
@@ -265,8 +285,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title:"Navigable Area Detection and Perception-Guided Model Predictive Control for Autonomous Navigation in Narrow Waterways",
       authors:"Jonghwi Kim, Changyu Lee, Dongha Chung and Jinwhan Kim*",
       venue:"IEEE Robotics and Automation Letters (RA-L), Vol. 8, No. 9, pp. 5456-5463, 2023.",
-      year:"2023",
-      note:"Jonghwi Kim and Changyu Lee contributed equally to this work"
+      year:"2023"
     },
 
     {
@@ -287,8 +306,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title:"K-Mixup: Data Augmentation for Offline Reinforcement Learning Using Mixup in a Koopman Invariant Subspace",
       authors:"Junwoo Jang, Jungwoo Han and Jinwhan Kim*",
       venue:"Expert Systems with Applications, Vol. 225, 2023.",
-      year:"2023",
-      note:"Junwoo Jang and Jungwoo Han contributed equally to the work"
+      year:"2023"
     },
 
     {
@@ -794,6 +812,13 @@ document.addEventListener("DOMContentLoaded", function () {
       title:"Hierarchical Planning for Vehicle Routing and Scheduling in Marsupial Robotic Systems",
       authors:"Donghyun Kim and Jinwhan Kim*",
       venue:"IEEE International Conference on Robotics and Automation (ICRA), Vienna, Austria, Jun. 2026 (RA-L paper).",
+      year:"2026"
+    },
+
+    {
+      title:"Physics-Informed Hybrid Dynamics Modeling of High-Speed Autonomous Surface Vehicles",
+      authors:"Taewoo Lee, Kiyong Park and Jinwhan Kim*",
+      venue:"MTS/IEEE OCEANS, Sanya, China, May 2025.",
       year:"2026"
     },
 
