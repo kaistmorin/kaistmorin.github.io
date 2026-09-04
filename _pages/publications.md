@@ -798,13 +798,6 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     {
-      title:"Enhancing Navigational Scene Understanding Using Integrated Language Models in Maritime Environments",
-      authors:"Yeongha Shin and Jinwhan Kim*",
-      venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Hangzhou, China, Oct. 2025.",
-      year:"2025"
-    },
-
-    {
       title:"Efficient Routing and Scheduling for Marsupial USV-AUV System",
       authors:"Donghyun Kim and Jinwhan Kim*",
       venue:"IEEE International Symposium on Multi-Robot & Multi-Agent Systems (MRS), Singapore, Dec. 2025.",
@@ -812,9 +805,23 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     {
+      title:"Enhancing Navigational Scene Understanding Using Integrated Language Models in Maritime Environments",
+      authors:"Yeongha Shin and Jinwhan Kim*",
+      venue:"IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Hangzhou, China, Oct. 2025.",
+      year:"2025"
+    },
+
+    {
       title:"Optimizing Coverage Path Planning for Underwater Surveys with Mother Ship-Deployed AUVs",
       authors:"Kyungseo Kim and Jinwhan Kim*",
-      venue:"International Conference on Ubiquitous Robots (UR), 2025.",
+      venue:"International Conference on Ubiquitous Robots (UR), College Station, USA, Jun. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"Semantic Loop Closure for Reducing False Matches in SLAM",
+      authors:"Junhyung Kim and Jinwhan Kim*",
+      venue:"International Conference on Ubiquitous Robots (UR), College Station, USA, Jun. 2025.",
       year:"2025"
     },
 
@@ -829,6 +836,20 @@ document.addEventListener("DOMContentLoaded", function () {
       title:"Branch Augmented Neural Network for Marine Vessel Re-Identification Using LiDAR Point Cloud",
       authors:"Dongwook Lee and Jinwhan Kim*",
       venue:"MTS/IEEE OCEANS, Brest, France, Jun. 2025.",
+      year:"2025"
+    },
+
+    {
+      title:"NV-LIOM: LiDAR-Inertial Odometry and Mapping Using Normal Vectors Towards Robust SLAM in Multifloor Environments",
+      authors:"Dongha Chung and Jinwhan Kim*",
+      venue:"IEEE International Conference on Robotics and Automation (ICRA), Atlanta, USA, Jun. 2025 (RA-L paper).",
+      year:"2025"
+    },
+
+    {
+      title:"Shape BoW: Generalized Bag of Words for Appearance-Based Loop Closure Detection in Bathymetric SLAM",
+      authors:"Qianyi Zhang and Jinwhan Kim*",
+      venue:"IEEE International Conference on Robotics and Automation (ICRA), Atlanta, USA, Jun. 2025 (RA-L paper).",
       year:"2025"
     },
 
@@ -855,8 +876,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     {
       title:"An Efficient Method for Solving Routing Problems with Energy Constraints Using Reinforcement Learning",
-      authors:"H. Do, H. Son and J. Kim",
+      authors:"Haggi Do, Hakmo Son and Jinwhan Kim",
       venue:"International Conference on Ubiquitous Robots (UR), New York, NY, USA, Jun. 2024.",
+      year:"2024"
+    },
+
+    {
+      title:"Navigable Area Detection and Perception-Guided Model Predictive Control for Autonomous Navigation in Narrow Waterways",
+      authors:"Jonghwi Kim, Changyu Lee, Dongha Chung and Jinwhan Kim*",
+      venue:"IEEE International Conference on Robotics and Automation (ICRA), Yokohama, Japan, May 2024 (RA-L paper).",
       year:"2024"
     },
 
@@ -906,6 +934,13 @@ document.addEventListener("DOMContentLoaded", function () {
       title:"Mission Planning for Collaborative Operations of Autonomous Marine Systems",
       authors:"Donghyun Kim and Jinwhan Kim*",
       venue:"MTS/IEEE OCEANS, Limerick, Ireland, Jun. 2023.",
+      year:"2023"
+    },
+
+    {
+      title:"Robust Data Association for Multi-Object Detection in Maritime Environments Using Camera and Radar Measurements",
+      authors:"Keunhwan Kim, Jonghwi Kim and Jinwhan Kim*",
+      venue:"IEEE International Conference on Robotics and Automation (ICRA), London, UK, May 2024 (RA-L paper).",
       year:"2023"
     },
 
