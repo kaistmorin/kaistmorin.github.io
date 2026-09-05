@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Field Experiments with WAM-V USV in Pohang Canal (2019)
+title: Field Experiments in Pohang Canal (2019)
 permalink: /media/videos/2021-PohangExperiment/
 nav: false
 ---
@@ -58,10 +58,10 @@ nav: false
 
 <div class="media-detail">
   <a class="archive-back" href="{{ '/media/videos/' | relative_url }}">← Back to Research in Action</a>
-  <h1>MBZIRC Final Competition at Yas Island (2024)</h1>
+  <h1>Field Experiments in Pohang Canal (2019)</h1>
   <p class="detail-date">Video</p>
   
   <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
-    <iframe src="https://www.youtube.com/embed/7Q2YpE4muPE?start=0" title="Field Experiments in Pohang Canal (2021)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-  <div class="detail-body"><p>We conducted a series of field experiments with WAM-V USV in Pohang Canal to collect data and develop our autonomous ship navigation algorithms.</p></div>
+    <iframe src="https://www.youtube.com/embed/7Q2YpE4muPE?start=0" title="Field Experiments in Pohang Canal (2019)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <div class="detail-body"><p>MORIN Lab conducted a series of field experiments and demonstrations in Pohang Canal in collaboration with Avikus, an HD Hyundai venture specializing in autonomous navigation technology. A conventional cruise boat was retrofitted as an autonomous vessel and successfully completed the canal cruise route without human intervention.</p></div>
 </div>

@@ -59,14 +59,14 @@ nav_order: 5
 
 <div class="media-page">
   <h1>Media</h1>
-  <p class="media-intro">Selected research activities, events, photos, and videos from MORIN Lab.</p>
+  <p class="media-intro">Selected videos and photos from MORIN Lab research and activities</p>
 
   <section class="media-section">
     <div class="media-section-head"><h2>Featured</h2></div>
     <article class="media-featured-video">
       <div class="media-video-wrap">
         <!--<iframe src="https://www.youtube.com/embed/Ya1pfWYRMrc?start=0"-->
-        <iframe src="https://www.youtube.com/embed/odzlFyiB0d0?start=2"
+        <iframe src="https://www.youtube.com/embed/AImN4DayCPo"
           title="MORIN Lab Featured Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
@@ -74,7 +74,7 @@ nav_order: 5
       <div class="media-featured-meta">
         <p class="media-label">Featured Video</p>
         <!--<h3 class="media-title">Team KAIST at MBZIRC Maritime Grand Challenge</h3>-->
-        <h3 class="media-title">Team KAIST at the Inaugural Maritime RobotX Challenge (2014)</h3>
+        <h3 class="media-title">MBZIRC Maritime Grand Challenge (2024)</h3>
       </div>
     </article>
   </section>
@@ -83,7 +83,7 @@ nav_order: 5
     <div class="media-section-head">
       <h2>Videos</h2>
       <a class="media-view-all" href="{{ '/media/videos/' | relative_url }}">View all →</a>
-    </div>
+    </div>    
     <div class="media-grid">
       <article class="media-card">
         <a href="{{ '/media/videos/2024-MBZIRC-MGC/' | relative_url }}">
@@ -93,14 +93,14 @@ nav_order: 5
       </article>
       <article class="media-card">
         <a href="{{ '/media/videos/2021-PohangExperiment/' | relative_url }}">
-          <div class="media-thumb"><img src="{{ '/assets/img/media/videos/2021-PohangExperiment.jpg' | relative_url }}" alt=""></div>
+          <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2021-PohangExperiment.jpg' | relative_url }}" alt=""></div>
           <div class="media-card-meta"><p class="media-label">Photo</p><h3 class="media-title">Field Experiments in Pohang Canal (2021)</h3></div>
         </a>
       </article>
       <article class="media-card">
         <a href="{{ '/media/videos/2019-VirtualRobotX/' | relative_url }}">
-          <div class="media-thumb"><img src="{{ '/assets/img/media/videos/2019-VirtualRobotX.jpg' | relative_url }}" alt=""></div>
-          <div class="media-card-meta"><p class="media-label">Photo</p><h3 class="media-title">Virtual RobotX Challenge (2019)</h3></div>
+          <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2019-VirtualRobotX.jpg' | relative_url }}" alt=""></div>
+          <div class="media-card-meta"><p class="media-label">Photo</p><h3 class="media-title">Virtual RobotX Competition (2019)</h3></div>
         </a>
       </article>
       </div>

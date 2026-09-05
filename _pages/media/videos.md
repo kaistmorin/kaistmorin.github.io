@@ -59,7 +59,7 @@ nav: false
 <div class="media-archive">
   <a class="archive-back" href="{{ '/media/' | relative_url }}">← Back to Media</a>
   <h1>Videos</h1>
-  <p class="media-intro">Videos of MORIN Lab's research activities</p>
+  <p class="media-intro">Selected videos from MORIN Lab research and activities</p>
   <div class="archive-grid">
 
   <article class="archive-card">
@@ -69,7 +69,7 @@ nav: false
       </div>
       <div class="archive-meta">
         <p class="media-label">Video</p>
-        <h3 class="media-title">MBZIRC Final Competition in Yas Island, UAE (2024)</h3>
+        <h3 class="media-title">MBZIRC Maritime Grand Challenge (2024)</h3>
       </div>
     </a>
   </article>
@@ -81,7 +81,7 @@ nav: false
       </div>
       <div class="archive-meta">
         <p class="media-label">Video</p>
-        <h3 class="media-title">Field Experiments with WAM-V USV in Pohang Canal (2019)</h3>
+        <h3 class="media-title">Field Experiments in Pohang Canal (2019)</h3>
       </div>
     </a>
   </article>
@@ -105,7 +105,7 @@ nav: false
       </div>
       <div class="archive-meta">
         <p class="media-label">Video</p>
-        <h3 class="media-title">Inaugural Maritime RobotX Challenge (2014) </h3>
+        <h3 class="media-title">Maritime RobotX Challenge (2014) </h3>
       </div>
     </a>
   </article>  
