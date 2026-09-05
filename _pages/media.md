@@ -66,7 +66,7 @@ nav_order: 5
     <article class="media-featured-video">
       <div class="media-video-wrap">
         <!--<iframe src="https://www.youtube.com/embed/Ya1pfWYRMrc?start=0"-->
-        <iframe src="https://www.youtube.com/embed/ewwMIfPx8N0"
+        <iframe src="https://www.youtube.com/embed/odzlFyiB0d0start=2"
           title="MORIN Lab Featured Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
@@ -81,54 +81,29 @@ nav_order: 5
 
   <section class="media-section">
     <div class="media-section-head">
-      <h2>Research in Action</h2>
-      <a class="media-view-all" href="{{ '/media/research-in-action/' | relative_url }}">View all →</a>
+      <h2>Videos</h2>
+      <a class="media-view-all" href="{{ '/media/videos/' | relative_url }}">View all →</a>
     </div>
     <div class="media-grid">
       <article class="media-card">
-        <a href="{{ '/media/research-in-action/2026-RAL-DKim/' | relative_url }}">
-          <div class="media-thumb media-play"><img src="{{ '/assets/img/media/research-in-action/2026-RAL-DKim.jpg' | relative_url }}" alt=""></div>
-          <div class="media-card-meta"><p class="media-label">Video</p><h3 class="media-title">Supplementary Video for RA-L Paper</h3></div>
+        <a href="{{ '/media/videos/2024-MBZIRC-MGC/' | relative_url }}">
+          <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2024-MBZIRC-MGC.jpeg' | relative_url }}" alt=""></div>
+          <div class="media-card-meta"><p class="media-label">Video</p><h3 class="media-title">MBZIRC Maritime Grand Challenge (2024)</h3></div>
         </a>
       </article>
       <article class="media-card">
-        <a href="{{ '/media/research-in-action/2024-MBZIRC-final/' | relative_url }}">
-          <div class="media-thumb media-play"><img src="{{ '/assets/img/media/research-in-action/2024-MBZIRC-final.jpeg' | relative_url }}" alt=""></div>
-          <div class="media-card-meta"><p class="media-label">Video</p><h3 class="media-title">MBZIRC Final Competition at Yas Island, UAE</h3></div>
+        <a href="{{ '/media/videos/2021-PohangExperiment/' | relative_url }}">
+          <div class="media-thumb"><img src="{{ '/assets/img/media/videos/2021-PohangExperiment.jpg' | relative_url }}" alt=""></div>
+          <div class="media-card-meta"><p class="media-label">Photo</p><h3 class="media-title">Field Experiments in Pohang Canal (2021)</h3></div>
         </a>
       </article>
       <article class="media-card">
-        <a href="{{ '/media/research-in-action/2019-Pohang-WAMV/' | relative_url }}">
-          <div class="media-thumb"><img src="{{ '/assets/img/media/research-in-action/2019-Pohang-WAMV.jpg' | relative_url }}" alt=""></div>
-          <div class="media-card-meta"><p class="media-label">Photo</p><h3 class="media-title">Autonomous USV Navigation in Pohang Canal</h3></div>
-        </a>
-      </article></div>
-  </section>
-
-  <section class="media-section">
-    <div class="media-section-head">
-      <h2>Events</h2>
-      <a class="media-view-all" href="{{ '/media/events/' | relative_url }}">View all →</a>
-    </div>
-    <div class="media-grid">
-      <article class="media-card">
-        <a href="{{ '/media/events/2026-07-15-dongwook-lee-best-application-paper-award-candidate-at-ur-2026/' | relative_url }}">
-          <div class="media-thumb"><img src="{{ '/assets/img/media/events/event-01.jpg' | relative_url }}" alt="Dongwook Lee — Best Application Paper Award Candidate at UR 2026"></div>
-          <div class="media-card-meta"><p class="media-label">2026-07-15</p><h3 class="media-title">Dongwook Lee — Best Application Paper Award Candidate at UR 2026</h3></div>
+        <a href="{{ '/media/videos/2019-VirtualRobotX/' | relative_url }}">
+          <div class="media-thumb"><img src="{{ '/assets/img/media/videos/2019-VirtualRobotX.jpg' | relative_url }}" alt=""></div>
+          <div class="media-card-meta"><p class="media-label">Photo</p><h3 class="media-title">Virtual RobotX Challenge (2019)</h3></div>
         </a>
       </article>
-      <article class="media-card">
-        <a href="{{ '/media/events/2026-07-02-taekjoong-kwon-best-paper-award/' | relative_url }}">
-          <div class="media-thumb"><img src="{{ '/assets/img/media/events/event-02.jpg' | relative_url }}" alt="Taekjoong Kwon — Best Paper Award"></div>
-          <div class="media-card-meta"><p class="media-label">2026-07-02</p><h3 class="media-title">Taekjoong Kwon — Best Paper Award</h3></div>
-        </a>
-      </article>
-      <article class="media-card">
-        <a href="{{ '/media/events/2025-11-11-taekjoong-kwon-and-jinwhan-kim-encouragement-award/' | relative_url }}">
-          <div class="media-thumb"><img src="{{ '/assets/img/media/events/event-03.jpg' | relative_url }}" alt="Taekjoong Kwon and Jinwhan Kim — Encouragement Award"></div>
-          <div class="media-card-meta"><p class="media-label">2025-11-11</p><h3 class="media-title">Taekjoong Kwon and Jinwhan Kim — Encouragement Award</h3></div>
-        </a>
-      </article></div>
+      </div>
   </section>
 
   <section class="media-section">

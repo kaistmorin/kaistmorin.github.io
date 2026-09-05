@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Dongwook Lee — Third Prize at OCEANS'25 Student Poster Competition"
-permalink: /media/events/2025-06-18-dongwook-lee-third-prize-at-oceans-25-student-poster-competition/
+title: Team KAIST at Inaugural Maritime RobotX Challenge (2014)
+permalink: /media/videos/2014-RobotXChallenge/
 nav: false
 ---
 
@@ -57,9 +57,13 @@ nav: false
 </style>
 
 <div class="media-detail">
-  <a class="archive-back" href="{{ '/media/events/' | relative_url }}">← Back to Events</a>
-  <h1>Dongwook Lee — Third Prize at OCEANS'25 Student Poster Competition</h1>
-  <p class="detail-date">2025-06-18</p>
-  <div class="detail-hero"><img src="{{ '/assets/img/media/events/event-05.jpg' | relative_url }}" alt="Dongwook Lee — Third Prize at OCEANS&#x27;25 Student Poster Competition"></div>
-  <div class="detail-body"><p>The paper "Branch Augmented Neural Network for Marine Vessel Re-Identification Using LiDAR Point Cloud" won third prize at the MTS/IEEE OCEANS’25 student poster competition in Brest, France.</p></div>
+  <a class="archive-back" href="{{ '/media/videos/' | relative_url }}">← Back to Research in Action</a>
+  <h1>Inaugural Maritime RobotX Challenge (2014)</h1>
+  <p class="detail-date">Video</p>
+  
+  <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/odzlFyiB0d0" title="Team KAIST at Inaugural Maritime RobotX Challenge (2014)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="detail-body"><p>We participated in the inaugural Maritime RobotX Challenge in 2014, held at Marina Bay, Singapore. At the time, it was the largest robotics competition in the maritime domain. We competed against teams from 15 universities across five countries in the Pacific region and ultimately secured 2nd place. </p>
+  <div class="detail-actions"><a href="https://www.youtube.com/watch?v=ewwMIfPx8N0" target="_blank" rel="noopener">Open on YouTube ↗</a></div></div>
 </div>

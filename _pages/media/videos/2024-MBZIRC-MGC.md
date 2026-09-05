@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Dongwook Lee — Best Application Paper Award Candidate at UR 2026"
-permalink: /media/events/2026-07-15-dongwook-lee-best-application-paper-award-candidate-at-ur-2026/
+title: MBZIRC Final Competition at Yas Island (2024)
+permalink: /media/videos/2024-MBZIRC-MGC/
 nav: false
 ---
 
@@ -57,9 +57,11 @@ nav: false
 </style>
 
 <div class="media-detail">
-  <a class="archive-back" href="{{ '/media/events/' | relative_url }}">← Back to Events</a>
-  <h1>Dongwook Lee — Best Application Paper Award Candidate at UR 2026</h1>
-  <p class="detail-date">2026-07-15</p>
-  <div class="detail-hero"><img src="{{ '/assets/img/media/events/event-01.jpg' | relative_url }}" alt="Dongwook Lee — Best Application Paper Award Candidate at UR 2026"></div>
-  <div class="detail-body"><p>The paper "Gaussian Process-based Underwater Geomagnetic Mapping under Inertial Navigation Drift" was selected as a Best Application Paper Award Candidate at UR 2026 in Ibaraki, Osaka, Japan.</p></div>
+  <a class="archive-back" href="{{ '/media/videos/' | relative_url }}">← Back to Research in Action</a>
+  <h1>MBZIRC Final Competition at Yas Island (2024)</h1>
+  <p class="detail-date">Video</p>
+  
+  <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/Ya1pfWYRMrc?start=0" title="MBZIRC Final Competition at Yas Island" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <div class="detail-body"><p>This is an introduction video of Team KAIST, which participated in the MBZIRC Maritime Grand Challenge held from 2022 to 2024. More videos are available on the official <a href="https://www.youtube.com/c/MBZIRC" target="_blank" rel="noopener">MBZIRC YouTube channel </a>.</p></div>
 </div>

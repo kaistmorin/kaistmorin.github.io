@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Supplementary Video for RA-L Paper (2026)
-permalink: /media/research-in-action/2026-RAL-DKim/
+title: Videos
+permalink: /media/videos/
 nav: false
 ---
 
@@ -56,14 +56,59 @@ nav: false
 @media(max-width:640px){.media-page,.media-archive,.media-detail{width:calc(100% - 30px)}.media-grid,.archive-grid{grid-template-columns:1fr}}
 </style>
 
-<div class="media-detail">
-  <a class="archive-back" href="{{ '/media/research-in-action/' | relative_url }}">← Back to Research in Action</a>
-  <h1>Supplementary Video for RA-L Paper (2026)</h1>
-  <p class="detail-date">Video</p>
-  
-  <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
-    <iframe src="https://www.youtube.com/embed/ED17maqhDR4" title="Supplementary Video for RA-L Paper (2026)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="media-archive">
+  <a class="archive-back" href="{{ '/media/' | relative_url }}">← Back to Media</a>
+  <h1>Videos</h1>
+  <p class="media-intro">Videos of MORIN Lab's research activities</p>
+  <div class="archive-grid">
+
+  <article class="archive-card">
+    <a href="{{ '/media/videos/2024-MBZIRC-MGC/' | relative_url }}">
+      <div class="media-thumb media-play">
+        <img src="{{ '/assets/img/media/videos/2024-MBZIRC-MGC.jpeg' | relative_url }}" alt="">
+      </div>
+      <div class="archive-meta">
+        <p class="media-label">Video</p>
+        <h3 class="media-title">MBZIRC Final Competition in Yas Island, UAE (2024)</h3>
+      </div>
+    </a>
+  </article>
+
+  <article class="archive-card">
+    <a href="{{ '/media/videos/2021-PohangExperiment/' | relative_url }}">
+      <div class="media-thumb media-play">
+        <img src="{{ '/assets/img/media/videos/2021-PohangExperiment.jpg' | relative_url }}" alt="">
+      </div>
+      <div class="archive-meta">
+        <p class="media-label">Video</p>
+        <h3 class="media-title">Field Experiments with WAM-V USV in Pohang Canal (2019)</h3>
+      </div>
+    </a>
+  </article>
+
+  <article class="archive-card">
+    <a href="{{ '/media/videos/2019-VirtualRobotX/' | relative_url }}">
+      <div class="media-thumb media-play">
+        <img src="{{ '/assets/img/media/videos/2021-VirtualRobotX.jpg' | relative_url }}" alt="">
+      </div>
+      <div class="archive-meta">
+        <p class="media-label">Video</p>
+        <h3 class="media-title">Virtual RobotX Competition (2019)</h3>
+      </div>
+    </a>
+  </article>
+
+  <article class="archive-card">
+    <a href="{{ '/media/videos/2014-RobotXChallenge/' | relative_url }}">
+      <div class="media-thumb media-play">
+        <img src="{{ '/assets/img/media/videos/2014-RobotXChallenge.jpg' | relative_url }}" alt="">
+      </div>
+      <div class="archive-meta">
+        <p class="media-label">Video</p>
+        <h3 class="media-title">Inaugural Maritime RobotX Challenge (2014) </h3>
+      </div>
+    </a>
+  </article>  
+
   </div>
-  <div class="detail-body"><p>This work will be presented at IROS 2027 in Florence, Italy, to be held from September 26 to October 1, 2027.</p>
-  <!--<div class="detail-actions"><a href="https://www.youtube.com/watch?v=ED17maqhDR4" target="_blank" rel="noopener">Open on YouTube ↗</a></div></div>-->
 </div>

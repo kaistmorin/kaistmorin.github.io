@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Taewoo Lee — Student Excellent Poster Award"
-permalink: /media/events/2025-09-29-taewoo-lee-student-excellent-poster-award/
+title: Virtual RobotX Competition (2019)
+permalink: /media/videos/2019-VirtualRobotX/
 nav: false
 ---
 
@@ -57,9 +57,13 @@ nav: false
 </style>
 
 <div class="media-detail">
-  <a class="archive-back" href="{{ '/media/events/' | relative_url }}">← Back to Events</a>
-  <h1>Taewoo Lee — Student Excellent Poster Award</h1>
-  <p class="detail-date">2025-09-29</p>
-  <div class="detail-hero"><img src="{{ '/assets/img/media/events/event-04.jpg' | relative_url }}" alt="Taewoo Lee — Student Excellent Poster Award"></div>
-  <div class="detail-body"><p>The paper "System Identification of Autonomous Surface Vehicle using Physics Informed Neural Networks" received the Student Excellent Poster Award at the 12th UTokyo-SJTU-KAIST Joint Academic Symposium.</p></div>
+  <a class="archive-back" href="{{ '/media/videos/' | relative_url }}">← Back to Research in Action</a>
+  <h1>Supplementary Video for RA-L Paper (2026)</h1>
+  <p class="detail-date">Video</p>
+  
+  <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/0Q2ehhmSz0Q" title="Virtual RobotX Competition (2019)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="detail-body"><p>The Virtual RobotX (VRX) Competition is an international university-level competition conducted in a Gazebo-based simulation environment developed by Open Robotics and the Naval Postgraduate School. Participating students are challenged to develop innovative solutions that enable their virtual USVs to complete a series of prescribed autonomous tasks. More information and the final competition results are available on the <a href="https://robotx.org/2019/12/06/2019-virtual-robotx-competition-final-standings/" target="_blank" rel="noopener">official RobotX website</a>.</p>
+  <!--<div class="detail-actions"><a href="https://www.youtube.com/watch?v=ED17maqhDR4" target="_blank" rel="noopener">Open on YouTube ↗</a></div></div>-->
 </div>

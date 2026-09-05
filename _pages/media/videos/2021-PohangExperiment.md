@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Taekjoong Kwon — Best Paper Award"
-permalink: /media/events/2026-07-02-taekjoong-kwon-best-paper-award/
+title: Field Experiments with WAM-V USV in Pohang Canal (2019)
+permalink: /media/videos/2021-PohangExperiment/
 nav: false
 ---
 
@@ -57,9 +57,11 @@ nav: false
 </style>
 
 <div class="media-detail">
-  <a class="archive-back" href="{{ '/media/events/' | relative_url }}">← Back to Events</a>
-  <h1>Taekjoong Kwon — Best Paper Award</h1>
-  <p class="detail-date">2026-07-02</p>
-  <div class="detail-hero"><img src="{{ '/assets/img/media/events/event-02.jpg' | relative_url }}" alt="Taekjoong Kwon — Best Paper Award"></div>
-  <div class="detail-body"><p>The paper "Maritime Positioning through Marine Radar–Monocular Visual Odometry Fusion under GNSS-Denied Environments" received the Best Paper Award at the 2025 Winter Conference of the Korean Society of Naval Science and Technology.</p></div>
+  <a class="archive-back" href="{{ '/media/videos/' | relative_url }}">← Back to Research in Action</a>
+  <h1>MBZIRC Final Competition at Yas Island (2024)</h1>
+  <p class="detail-date">Video</p>
+  
+  <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/7Q2YpE4muPE?start=0" title="Field Experiments in Pohang Canal (2021)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <div class="detail-body"><p>We conducted a series of field experiments with WAM-V USV in Pohang Canal to collect data and develop our autonomous ship navigation algorithms.</p></div>
 </div>
