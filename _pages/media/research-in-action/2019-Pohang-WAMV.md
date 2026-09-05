@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Autonomous Navigation in Pohang Canal (2019)
+title: Field Experiments with WAM-V USV in Pohang Canal (2019)
 permalink: /media/research-in-action/2019-Pohang-WAMV/
 nav: false
 ---
@@ -58,8 +58,8 @@ nav: false
 
 <div class="media-detail">
   <a class="archive-back" href="{{ '/media/research-in-action/' | relative_url }}">← Back to Research in Action</a>
-  <h1>Autonomous Navigation in Pohang Canal</h1>
+  <h1>Field Experiments in Pohang Canal (2019)</h1>
   <p class="detail-date">Photo</p>
   <div class="detail-hero"><img src="{{ '/assets/img/media/research-in-action/2019-Pohang-WAMV.jpg' | relative_url }}" alt=""></div>
-  <div class="detail-body"><p>We conducted a series of field experiments  with WAM-V USV in Pohang Canal to collect data and develop our autonomous ship navigation algorithms.</p></div>
+  <div class="detail-body"><p>We conducted a series of field experiments with WAM-V USV in Pohang Canal to collect data and develop our autonomous ship navigation algorithms.</p></div>
 </div>

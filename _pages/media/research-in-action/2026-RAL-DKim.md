@@ -62,7 +62,8 @@ nav: false
   <p class="detail-date">Video</p>
   
   <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
-    <iframe src="https://www.youtube.com/embed/ED17maqhDR4" title="Supplementary Video for RA-L Paper by Donghyun Kim" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/ED17maqhDR4" title="Supplementary Video for RA-L Paper (2026)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
-  <div class="detail-body"><p>This work will be presented at IROS 2027 in Florence, Italy, from September 26 to October 1, 2027.</p><div class="detail-actions"><a href="https://www.youtube.com/watch?v=ED17maqhDR4" target="_blank" rel="noopener">Open on YouTube ↗</a></div></div>
+  <div class="detail-body"><p>This work will be presented at IROS 2027 in Florence, Italy, to be held from September 26 to October 1, 2027.</p>
+  <!--<div class="detail-actions"><a href="https://www.youtube.com/watch?v=ED17maqhDR4" target="_blank" rel="noopener">Open on YouTube ↗</a></div></div>-->
 </div>

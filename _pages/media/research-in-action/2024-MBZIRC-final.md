@@ -58,10 +58,10 @@ nav: false
 
 <div class="media-detail">
   <a class="archive-back" href="{{ '/media/research-in-action/' | relative_url }}">← Back to Research in Action</a>
-  <h1>MBZIRC Final Competition at Yas Island</h1>
+  <h1>MBZIRC Final Competition at Yas Island (2024)</h1>
   <p class="detail-date">Video</p>
   
   <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
     <iframe src="https://www.youtube.com/embed/Ya1pfWYRMrc?start=0" title="MBZIRC Final Competition at Yas Island" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-  <div class="detail-body"><p>This is the official introduction video of Team KAIST at MBZIRC. More videos are available on the <a href="https://www.youtube.com/c/MBZIRC" target="_blank" rel="noopener">MBZIRC YouTube channel </a>.</p></div>
+  <div class="detail-body"><p>This is an introduction video of Team KAIST, which participated in the MBZIRC Maritime Grand Challenge held from 2022 to 2024. More videos are available on the official <a href="https://www.youtube.com/c/MBZIRC" target="_blank" rel="noopener">MBZIRC YouTube channel </a>.</p></div>
 </div>

@@ -93,7 +93,7 @@ nav: false
       </div>
       <div class="archive-meta">
         <p class="media-label">Photo</p>
-        <h3 class="media-title">Autonomous USV Navigation in Pohang Canal (2019)</h3>
+        <h3 class="media-title">Field Experiments with WAM-V USV in Pohang Canal (2019)</h3>
       </div>
     </a>
   </article>
