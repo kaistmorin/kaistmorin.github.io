@@ -94,13 +94,13 @@ nav_order: 5
       <article class="media-card">
         <a href="{{ '/media/videos/2021-PohangExperiment/' | relative_url }}">
           <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2021-PohangExperiment.jpg' | relative_url }}" alt=""></div>
-          <div class="media-card-meta"><p class="media-label">Photo</p><h3 class="media-title">Field Experiments in Pohang Canal (2021)</h3></div>
+          <div class="media-card-meta"><p class="media-label">Video</p><h3 class="media-title">Field Experiments in Pohang Canal (2021)</h3></div>
         </a>
       </article>
       <article class="media-card">
         <a href="{{ '/media/videos/2019-VirtualRobotX/' | relative_url }}">
           <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2019-VirtualRobotX.jpg' | relative_url }}" alt=""></div>
-          <div class="media-card-meta"><p class="media-label">Photo</p><h3 class="media-title">Virtual RobotX Competition (2019)</h3></div>
+          <div class="media-card-meta"><p class="media-label">Video</p><h3 class="media-title">Virtual RobotX Competition (2019)</h3></div>
         </a>
       </article>
       </div>
