@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Research in Action
-permalink: /media/research-in-action/
+title: Team KAIST at Inaugural Maritime RobotX Challenge (2014)
+permalink: /media/research-in-action/2026-RAL-DKim/
 nav: false
 ---
 
@@ -56,59 +56,14 @@ nav: false
 @media(max-width:640px){.media-page,.media-archive,.media-detail{width:calc(100% - 30px)}.media-grid,.archive-grid{grid-template-columns:1fr}}
 </style>
 
-<div class="media-archive">
-  <a class="archive-back" href="{{ '/media/' | relative_url }}">← Back to Media</a>
-  <h1>Research in Action</h1>
-  <p class="media-intro">Photos, videos, and demonstrations of MORIN Lab research activities.</p>
-  <div class="archive-grid">
-
-  <article class="archive-card">
-    <a href="{{ '/media/research-in-action/2026-RAL-DKim/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/research-in-action/2026-RAL-DKim.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Supplementary Video for RA-L Paper by Donghyun Kim </h3>
-      </div>
-    </a>
-  </article>  
-
-  <article class="archive-card">
-    <a href="{{ '/media/research-in-action/2024-MBZIRC-final/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/research-in-action/2024-MBZIRC-final.jpeg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">MBZIRC Final Competition in Yas Island, UAE (2024)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/research-in-action/2019-Pohang-WAMV/' | relative_url }}">
-      <div class="media-thumb">
-        <img src="{{ '/assets/img/media/research-in-action/2019-Pohang-WAMV.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Photo</p>
-        <h3 class="media-title">Autonomous USV Navigation in Pohang Canal (2019)</h3>
-      </div>
-    </a>
-  </article>
+<div class="media-detail">
+  <a class="archive-back" href="{{ '/media/research-in-action/' | relative_url }}">← Back to Research in Action</a>
+  <h1>Team KAIST at Inaugural Maritime RobotX Challenge (2014)</h1>
+  <p class="detail-date">Video</p>
   
-  <article class="archive-card">
-    <a href="{{ '/media/research-in-action/2014-RobotX-final/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/research-in-action/2014-RobotX-final.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Team KAIST at Inaugural Maritime RobotX Challenge (2014) </h3>
-      </div>
-    </a>
-  </article>  
-
+  <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/3rFIcvAlBcc?start=2" title="Team KAIST at Inaugural Maritime RobotX Challenge (2014)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
+  <div class="detail-body"><p>We participated in the inaugural Maritime RobotX Challenge in 2014, held at Marina Bay, Singapore. At the time, it was the largest robotics competition in the maritime domain. We competed against teams from 15 universities across five countries in the Pacific region and ultimately secured 2nd place. </p>
+  <div class="detail-actions"><a href="https://www.youtube.com/watch?v=3rFIcvAlBcc" target="_blank" rel="noopener">Open on YouTube ↗</a></div></div>
 </div>

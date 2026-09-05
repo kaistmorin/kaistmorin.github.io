@@ -65,14 +65,16 @@ nav_order: 5
     <div class="media-section-head"><h2>Featured</h2></div>
     <article class="media-featured-video">
       <div class="media-video-wrap">
-        <iframe src="https://www.youtube.com/embed/Ya1pfWYRMrc?start=0"
+        <!--<iframe src="https://www.youtube.com/embed/Ya1pfWYRMrc?start=0"-->
+        <iframe src="https://www.youtube.com/embed/3rFIcvAlBcc?start=2"
           title="MORIN Lab Featured Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
       <div class="media-featured-meta">
         <p class="media-label">Featured Video</p>
-        <h3 class="media-title">Team KAIST at MBZIRC Maritime Grand Challenge</h3>
+        <!--<h3 class="media-title">Team KAIST at MBZIRC Maritime Grand Challenge</h3>-->
+        <h3 class="media-title">Team KAIST at the Inaugural Maritime RobotX Challenge (2014)</h3>
       </div>
     </article>
   </section>

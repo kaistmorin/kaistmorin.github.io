@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MBZIRC Final Competition at Yas Island
+title: MBZIRC Final Competition at Yas Island (2024)
 permalink: /media/research-in-action/2024-MBZIRC-final/
 nav: false
 ---
@@ -62,7 +62,6 @@ nav: false
   <p class="detail-date">Video</p>
   
   <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
-    <iframe src="https://www.youtube.com/embed/Ya1pfWYRMrc?start=0" title="MBZIRC Final Competition at Yas Island" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-  <div class="detail-body"><p>Official Introduction Video of Team KAIST at MBZIRC.</p><div class="detail-actions"><a href="https://www.youtube.com/watch?v=Ya1pfWYRMrc&t=0s" target="_blank" rel="noopener">Open on YouTube ↗</a></div></div>
+    <iframe src="https://www.youtube.com/embed/Ya1pfWYRMrc?start=0" title="MBZIRC Final Competition at Yas Island" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <div class="detail-body"><p>This is the official introduction video of Team KAIST at MBZIRC. More videos are available on the <a href="https://www.youtube.com/c/MBZIRC" target="_blank" rel="noopener">MBZIRC YouTube channel </a>.</p></div>
 </div>
