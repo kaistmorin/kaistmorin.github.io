@@ -64,10 +64,8 @@ nav: false
   <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
     <iframe src="https://www.youtube.com/embed/odzlFyiB0d0?start=2" title="Maritime RobotX Challenge (2014)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
-  <div class="detail-body"><p>We participated in the inaugural Maritime RobotX Challenge in 2014, held at Marina Bay, Singapore. At the time, it was the largest robotics competition in the maritime domain. We competed against teams from 15 universities across five countries in the Pacific region and ultimately secured 2nd place. </p>
   <div class="detail-body"> <p>
-    The Maritime RobotX Challenge is an international robotics competition in which university teams develop autonomous surface vehicles and related robotic systems for a series of maritime autonomy tasks.
-    Team KAIST participated in the 2014 competition and operated its own team blog throughout the event.
+    The Maritime RobotX Challenge is an international robotics competition in which university teams develop autonomous surface vehicles and related robotic systems for a series of maritime autonomy tasks. We participated in the 2014 competition, competed against teams from 15 universities across five countries in the Pacific region, and ultimately secured 2nd place. 
   </p>
   <ul>
     <li>
@@ -77,7 +75,7 @@ nav: false
     </li>
     <li>
       <a href="https://www.youtube.com/watch?v=OImO9UxFl6M" target="_blank" rel="noopener">
-        Competition Recap Video
+        Official Competition Recap Video
       </a>
       — Official recap of the 2014 Maritime RobotX Challenge
     </li>
