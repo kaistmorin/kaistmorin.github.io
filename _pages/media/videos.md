@@ -89,7 +89,7 @@ nav: false
   <article class="archive-card">
     <a href="{{ '/media/videos/2019-VirtualRobotX/' | relative_url }}">
       <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2021-VirtualRobotX.jpg' | relative_url }}" alt="">
+        <img src="{{ '/assets/img/media/videos/2019-VirtualRobotX.jpg' | relative_url }}" alt="">
       </div>
       <div class="archive-meta">
         <p class="media-label">Video</p>
