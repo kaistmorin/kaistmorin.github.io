@@ -69,7 +69,7 @@ nav: false
       </div>
       <div class="archive-meta">
         <p class="media-label">Video</p>
-        <h3 class="media-title">Supplementary Video for RA-L Paper by Donghyun Kim </h3>
+        <h3 class="media-title">Supplementary Video for RA-L Paper (2026) </h3>
       </div>
     </a>
   </article>  

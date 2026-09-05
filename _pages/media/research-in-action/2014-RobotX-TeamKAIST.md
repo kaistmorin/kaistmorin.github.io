@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Team KAIST at Inaugural Maritime RobotX Challenge (2014)
-permalink: /media/research-in-action/2026-RAL-DKim/
+permalink: /media/research-in-action/2014-RobotX-TeamKAIST/
 nav: false
 ---
 

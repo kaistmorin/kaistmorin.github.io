@@ -88,7 +88,7 @@ nav_order: 5
       <article class="media-card">
         <a href="{{ '/media/research-in-action/2026-RAL-DKim/' | relative_url }}">
           <div class="media-thumb media-play"><img src="{{ '/assets/img/media/research-in-action/2026-RAL-DKim.jpg' | relative_url }}" alt=""></div>
-          <div class="media-card-meta"><p class="media-label">Video</p><h3 class="media-title">Supplementary Video for RA-L Paper by Donghyun Kim</h3></div>
+          <div class="media-card-meta"><p class="media-label">Video</p><h3 class="media-title">Supplementary Video for RA-L Paper</h3></div>
         </a>
       </article>
       <article class="media-card">

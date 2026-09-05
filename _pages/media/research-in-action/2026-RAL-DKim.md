@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Supplementary Video for RA-L Paper by Donghyun Kim
+title: Supplementary Video for RA-L Paper (2026)
 permalink: /media/research-in-action/2026-RAL-DKim/
 nav: false
 ---
@@ -58,7 +58,7 @@ nav: false
 
 <div class="media-detail">
   <a class="archive-back" href="{{ '/media/research-in-action/' | relative_url }}">← Back to Research in Action</a>
-  <h1>Supplementary Video for RA-L Paper by Donghyun Kim</h1>
+  <h1>Supplementary Video for RA-L Paper (2026)</h1>
   <p class="detail-date">Video</p>
   
   <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
