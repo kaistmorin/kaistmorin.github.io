@@ -58,10 +58,31 @@ nav: false
 
 <div class="media-detail">
   <a class="archive-back" href="{{ '/media/videos/' | relative_url }}">← Back to Research in Action</a>
-  <h1>Field Experiments in Pohang Canal (2019)</h1>
+  <h1>Field Experiments in Pohang Canal (2021)</h1>
   <p class="detail-date">Video</p>
   
   <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
     <iframe src="https://www.youtube.com/embed/7Q2YpE4muPE?start=0" title="Field Experiments in Pohang Canal (2019)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-  <div class="detail-body"><p>MORIN Lab conducted a series of field experiments and demonstrations in Pohang Canal in collaboration with Avikus, an HD Hyundai venture specializing in autonomous navigation technology. A conventional cruise boat was retrofitted as an autonomous vessel and successfully completed the canal cruise route without human intervention.</p></div>
+  <div class="detail-body">
+  <p>
+    MORIN Lab conducted a series of field experiments and demonstrations in Pohang Canal in collaboration with Avikus, an HD Hyundai venture specializing in autonomous navigation technology.
+    A conventional cruise boat was retrofitted as an autonomous vessel and successfully completed the canal cruise route without human intervention.
+    The Pohang Canal Dataset was created from these field experiments and has been made publicly available for research and benchmarking.
+  </p>
+  <ul>
+    <li>
+      <a href="https://sites.google.com/view/pohang-canal-dataset/home" target="_blank" rel="noopener">
+        Pohang Canal Dataset
+      </a>
+      — Dataset overview, sensor configuration, and detailed information
+    </li>
+
+    <li>
+      <a href="https://registry.opendata.aws/pohang-canal-dataset/" target="_blank" rel="noopener">
+        AWS Open Data Registry
+      </a>
+      — Public access to the Pohang Canal Dataset
+    </li>
+  </ul>
+</div>
 </div>

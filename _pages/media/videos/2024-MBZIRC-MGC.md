@@ -58,14 +58,14 @@ nav: false
 
 <div class="media-detail">
   <a class="archive-back" href="{{ '/media/videos/' | relative_url }}">← Back to Research in Action</a>
-  <h1>MBZIRC Final Competition at Yas Island (2024)</h1>
+  <h1>MBZIRC Maritime Grand Challenge (2024)</h1>
   <p class="detail-date">Video</p>
   
   <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
     <iframe src="https://www.youtube.com/embed/AImN4DayCPo?start=0" title="MBZIRC Maritime Grand Challenge (2024)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
   <div class="detail-body">
   <p>
-    The MBZIRC Maritime Grand Challenge was an international robotics competition focused on autonomous maritime operations using multiple unmanned systems. Team KAIST, led by students from MORIN Lab, advanced to the final round and took part in the month-long final competition in Abu Dhabi, UAE, ultimately finishing in second place.
+    The MBZIRC Maritime Grand Challenge was one of the largest maritime robotics competitions ever held, focusing on autonomous maritime operations using multiple unmanned systems. The competition ran from 2022 to 2024 and consisted of three stages—the white paper phase, the semifinal, and the final—through which teams were progressively evaluated. Team KAIST, led by students from MORIN Lab, advanced to the final round and took part in the month-long final competition in Abu Dhabi, UAE.
   </p>
   <ul>
     <li><a href="https://www.mbzirc.com/grand-challenge" target="_blank" rel="noopener">Challenge Overview</a></li>
