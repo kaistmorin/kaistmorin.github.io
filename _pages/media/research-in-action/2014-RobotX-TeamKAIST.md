@@ -62,8 +62,8 @@ nav: false
   <p class="detail-date">Video</p>
   
   <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
-    <iframe src="https://www.youtube.com/embed/3rFIcvAlBcc?start=2" title="Team KAIST at Inaugural Maritime RobotX Challenge (2014)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/ewwMIfPx8N0" title="Team KAIST at Inaugural Maritime RobotX Challenge (2014)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   <div class="detail-body"><p>We participated in the inaugural Maritime RobotX Challenge in 2014, held at Marina Bay, Singapore. At the time, it was the largest robotics competition in the maritime domain. We competed against teams from 15 universities across five countries in the Pacific region and ultimately secured 2nd place. </p>
-  <div class="detail-actions"><a href="https://www.youtube.com/watch?v=3rFIcvAlBcc" target="_blank" rel="noopener">Open on YouTube ↗</a></div></div>
+  <div class="detail-actions"><a href="https://www.youtube.com/watch?v=ewwMIfPx8N0" target="_blank" rel="noopener">Open on YouTube ↗</a></div></div>
 </div>

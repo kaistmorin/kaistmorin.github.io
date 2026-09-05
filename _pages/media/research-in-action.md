@@ -99,9 +99,9 @@ nav: false
   </article>
   
   <article class="archive-card">
-    <a href="{{ '/media/research-in-action/2014-RobotX-final/' | relative_url }}">
+    <a href="{{ '/media/research-in-action/2014-RobotX-TeamKAIST/' | relative_url }}">
       <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/research-in-action/2014-RobotX-final.jpg' | relative_url }}" alt="">
+        <img src="{{ '/assets/img/media/research-in-action/2014-RobotX-TeamKAIST.jpg' | relative_url }}" alt="">
       </div>
       <div class="archive-meta">
         <p class="media-label">Video</p>
