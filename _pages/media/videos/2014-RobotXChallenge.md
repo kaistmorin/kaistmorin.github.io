@@ -65,7 +65,7 @@ nav: false
     <iframe src="https://www.youtube.com/embed/odzlFyiB0d0?start=2" title="Maritime RobotX Challenge (2014)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   <div class="detail-body"> <p>
-    The Maritime RobotX Challenge is an international robotics competition in which university teams develop autonomous surface vehicles and related robotic systems for a series of maritime autonomy tasks. We participated in the 2014 competition, competed against teams from 15 universities across five countries in the Pacific region, and ultimately secured 2nd place. 
+    The Maritime RobotX Challenge is a biennial international robotics competition in which university teams develop autonomous surface vehicle systems based on the WAM-V USV platform to complete a series of maritime autonomy tasks. We participated in the inaugural RobotX Challenge in 2014, having been selected and invited to compete against teams from 15 universities around the world. More detailed information is available through the links below.
   </p>
   <ul>
     <li>
