@@ -24,21 +24,30 @@ nav: false
   <a class="archive-back" href="{{ '/media/' | relative_url }}">← Back to Media</a>
   <h1>Videos</h1>
   <p class="media-intro">Selected videos from MORIN Lab research and activities</p>
-
-  {% assign media_videos = site.pages | where: "media_type", "video" | sort: "media_order" %}
   <div class="archive-grid">
-    {% for item in media_videos %}
-      <article class="archive-card">
-        <a href="{{ item.url | relative_url }}">
-          <div class="media-thumb media-play">
-            <img src="{{ item.media_thumb | relative_url }}" alt="">
-          </div>
-          <div class="archive-meta">
-            <p class="media-label">Video</p>
-            <h3 class="media-title">{{ item.title }}</h3>
-          </div>
-        </a>
-      </article>
-    {% endfor %}
+    <article class="archive-card">
+      <a href="{{ '/media/videos/2024-MBZIRC-MGC/' | relative_url }}">
+        <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2024-MBZIRC-MGC.jpeg' | relative_url }}" alt=""></div>
+        <div class="archive-meta"><p class="media-label">Video</p><h3 class="media-title">MBZIRC Maritime Grand Challenge (2024)</h3></div>
+      </a>
+    </article>
+    <article class="archive-card">
+      <a href="{{ '/media/videos/2021-PohangExperiment/' | relative_url }}">
+        <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2021-PohangExperiment.jpg' | relative_url }}" alt=""></div>
+        <div class="archive-meta"><p class="media-label">Video</p><h3 class="media-title">Field Experiments in Pohang Canal (2021)</h3></div>
+      </a>
+    </article>
+    <article class="archive-card">
+      <a href="{{ '/media/videos/2019-VirtualRobotX/' | relative_url }}">
+        <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2019-VirtualRobotX.jpg' | relative_url }}" alt=""></div>
+        <div class="archive-meta"><p class="media-label">Video</p><h3 class="media-title">Virtual RobotX Competition (2019)</h3></div>
+      </a>
+    </article>
+    <article class="archive-card">
+      <a href="{{ '/media/videos/2014-RobotXChallenge/' | relative_url }}">
+        <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2014-RobotXChallenge.jpg' | relative_url }}" alt=""></div>
+        <div class="archive-meta"><p class="media-label">Video</p><h3 class="media-title">Maritime RobotX Challenge (2014)</h3></div>
+      </a>
+    </article>
   </div>
 </div>
