@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% include media-styles.html %}
+
+<div class="media-detail">
+  <a class="archive-back" href="{{ '/media/videos/' | relative_url }}">← Back to Videos</a>
+  <h1>{{ page.title }}</h1>
+  <p class="detail-date">Video</p>
+
+  <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
+    <iframe
+      src="https://www.youtube.com/embed/{{ page.youtube_id }}{% if page.youtube_start %}?start={{ page.youtube_start }}{% endif %}"
+      title="{{ page.title }}"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="detail-body">
+    {{ content }}
+  </div>
+</div>
