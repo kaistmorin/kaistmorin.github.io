@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Videos
-permalink: /media/videos/
+title: Maritime RobotX Challenge (2014)
+permalink: /media/videos/2014-RobotXChallenge/
 nav: false
 ---
 
@@ -56,59 +56,36 @@ nav: false
 @media(max-width:640px){.media-page,.media-archive,.media-detail{width:calc(100% - 30px)}.media-grid,.archive-grid{grid-template-columns:1fr}}
 </style>
 
-<div class="media-archive">
-  <a class="archive-back" href="{{ '/media/' | relative_url }}">← Back to Media</a>
-  <h1>Videos</h1>
-  <p class="media-intro">Selected videos from MORIN Lab research and activities</p>
-  <div class="archive-grid">
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2024-MBZIRC-MGC/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2024-MBZIRC-MGC.jpeg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">MBZIRC Maritime Grand Challenge (2024)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2021-PohangExperiment/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2021-PohangExperiment.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Field Experiments in Pohang Canal (2021)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2019-VirtualRobotX/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2019-VirtualRobotX.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Virtual RobotX Competition (2019)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2014-RobotXChallenge/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2014-RobotXChallenge.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Maritime RobotX Challenge (2014) </h3>
-      </div>
-    </a>
-  </article>  
-
+<div class="media-detail">
+  <a class="archive-back" href="{{ '/media/videos/' | relative_url }}">← Back to Research in Action</a>
+  <h1>Maritime RobotX Challenge (2014)</h1>
+  <p class="detail-date">Video</p>
+  
+  <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/odzlFyiB0d0?start=2" title="Maritime RobotX Challenge (2014)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="detail-body"> <p>
+    The Maritime RobotX Challenge is a biennial international robotics competition in which university teams develop autonomous surface vehicle systems based on the WAM-V USV platform to complete a series of maritime autonomy tasks. We participated in the inaugural RobotX Challenge in 2014, having been selected and invited to compete against teams from 15 universities around the world. More detailed information is available through the links below.
+  </p>
+  <ul>
+    <li>
+      <a href="https://robotx.org/programs/2014-robotx-challenge/" target="_blank" rel="noopener">
+        Official Competition Website
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=OImO9UxFl6M" target="_blank" rel="noopener">
+        Official Competition Recap Video
+      </a>
+      — Official recap of the 2014 Maritime RobotX Challenge
+    </li>
+    <li>
+      <a href="https://robotxangrynerds.blogspot.com/" target="_blank" rel="noopener">
+        Team KAIST Blog
+      </a>
+      — More detailed records and updates from our team during the competition
+    </li>
+  </ul>
+  <!--<div class="detail-actions"><a href="https://www.youtube.com/watch?v=ewwMIfPx8N0" target="_blank" rel="noopener">Open on YouTube ↗</a></div>-->
   </div>
 </div>

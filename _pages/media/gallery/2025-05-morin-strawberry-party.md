@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Videos
-permalink: /media/videos/
+title: "MORIN Strawberry Party"
+permalink: /media/gallery/2025-05-morin-strawberry-party/
 nav: false
 ---
 
@@ -56,59 +56,10 @@ nav: false
 @media(max-width:640px){.media-page,.media-archive,.media-detail{width:calc(100% - 30px)}.media-grid,.archive-grid{grid-template-columns:1fr}}
 </style>
 
-<div class="media-archive">
-  <a class="archive-back" href="{{ '/media/' | relative_url }}">← Back to Media</a>
-  <h1>Videos</h1>
-  <p class="media-intro">Selected videos from MORIN Lab research and activities</p>
-  <div class="archive-grid">
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2024-MBZIRC-MGC/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2024-MBZIRC-MGC.jpeg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">MBZIRC Maritime Grand Challenge (2024)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2021-PohangExperiment/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2021-PohangExperiment.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Field Experiments in Pohang Canal (2021)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2019-VirtualRobotX/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2019-VirtualRobotX.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Virtual RobotX Competition (2019)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2014-RobotXChallenge/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2014-RobotXChallenge.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Maritime RobotX Challenge (2014) </h3>
-      </div>
-    </a>
-  </article>  
-
-  </div>
+<div class="media-detail">
+  <a class="archive-back" href="{{ '/media/gallery/' | relative_url }}">← Back to Gallery</a>
+  <h1>MORIN Strawberry Party</h1>
+  <p class="detail-date">2025-05</p>
+  <div class="detail-hero"><img src="{{ '/assets/img/media/gallery/gallery-02.jpg' | relative_url }}" alt="MORIN Strawberry Party"></div>
+  <div class="detail-body"><p>At MORIN Lab, we enjoyed a strawberry party to welcome spring.</p></div>
 </div>

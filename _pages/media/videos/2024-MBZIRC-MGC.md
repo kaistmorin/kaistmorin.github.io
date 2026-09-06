@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Videos
-permalink: /media/videos/
+title: MBZIRC Maritime Grand Challenge (2024)
+permalink: /media/videos/2024-MBZIRC-MGC/
 nav: false
 ---
 
@@ -56,59 +56,21 @@ nav: false
 @media(max-width:640px){.media-page,.media-archive,.media-detail{width:calc(100% - 30px)}.media-grid,.archive-grid{grid-template-columns:1fr}}
 </style>
 
-<div class="media-archive">
-  <a class="archive-back" href="{{ '/media/' | relative_url }}">← Back to Media</a>
-  <h1>Videos</h1>
-  <p class="media-intro">Selected videos from MORIN Lab research and activities</p>
-  <div class="archive-grid">
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2024-MBZIRC-MGC/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2024-MBZIRC-MGC.jpeg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">MBZIRC Maritime Grand Challenge (2024)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2021-PohangExperiment/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2021-PohangExperiment.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Field Experiments in Pohang Canal (2021)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2019-VirtualRobotX/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2019-VirtualRobotX.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Virtual RobotX Competition (2019)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2014-RobotXChallenge/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2014-RobotXChallenge.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Maritime RobotX Challenge (2014) </h3>
-      </div>
-    </a>
-  </article>  
-
+<div class="media-detail">
+  <a class="archive-back" href="{{ '/media/videos/' | relative_url }}">← Back to Research in Action</a>
+  <h1>MBZIRC Maritime Grand Challenge (2024)</h1>
+  <p class="detail-date">Video</p>
+  
+  <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/AImN4DayCPo?start=0" title="MBZIRC Maritime Grand Challenge (2024)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <div class="detail-body">
+  <p>
+    The MBZIRC Maritime Grand Challenge was one of the largest maritime robotics competitions ever held, focusing on autonomous maritime operations using multiple unmanned systems. The competition ran from 2022 to 2024 and consisted of three stages—the white paper phase, the semifinal, and the final—through which teams were progressively evaluated. Team KAIST, led by students from MORIN Lab, advanced to the final round and took part in the month-long final competition in Abu Dhabi, UAE.
+  </p>
+  <ul>
+    <li><a href="https://www.mbzirc.com/grand-challenge" target="_blank" rel="noopener">Challenge Overview</a></li>
+    <li><a href="https://www.mbzirc.com/grand-challenge-final-results" target="_blank" rel="noopener">Final Results</a></li>
+    <li><a href="https://www.youtube.com/c/MBZIRC" target="_blank" rel="noopener">Official Videos</a></li>
+  </ul>
   </div>
 </div>

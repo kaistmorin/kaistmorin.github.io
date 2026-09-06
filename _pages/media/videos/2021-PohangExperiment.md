@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Videos
-permalink: /media/videos/
+title: Field Experiments in Pohang Canal (2019)
+permalink: /media/videos/2021-PohangExperiment/
 nav: false
 ---
 
@@ -56,59 +56,33 @@ nav: false
 @media(max-width:640px){.media-page,.media-archive,.media-detail{width:calc(100% - 30px)}.media-grid,.archive-grid{grid-template-columns:1fr}}
 </style>
 
-<div class="media-archive">
-  <a class="archive-back" href="{{ '/media/' | relative_url }}">← Back to Media</a>
-  <h1>Videos</h1>
-  <p class="media-intro">Selected videos from MORIN Lab research and activities</p>
-  <div class="archive-grid">
+<div class="media-detail">
+  <a class="archive-back" href="{{ '/media/videos/' | relative_url }}">← Back to Research in Action</a>
+  <h1>Field Experiments in Pohang Canal (2021)</h1>
+  <p class="detail-date">Video</p>
+  
+  <div class="media-video-wrap" style="margin:18px 0 24px;border-radius:8px;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/7Q2YpE4muPE?start=0" title="Field Experiments in Pohang Canal (2019)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <div class="detail-body">
+  <p>
+    MORIN Lab conducted a series of field experiments and demonstrations in Pohang Canal in collaboration with Avikus, an HD Hyundai venture specializing in autonomous navigation technology.
+    A conventional cruise boat was retrofitted as an autonomous vessel and successfully completed the canal cruise route without human intervention.
+    The Pohang Canal Dataset was created from these field experiments and has been made publicly available for research and benchmarking.
+  </p>
+  <ul>
+    <li>
+      <a href="https://sites.google.com/view/pohang-canal-dataset/home" target="_blank" rel="noopener">
+        Pohang Canal Dataset
+      </a>
+      — Dataset overview, sensor configuration, and detailed information
+    </li>
 
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2024-MBZIRC-MGC/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2024-MBZIRC-MGC.jpeg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">MBZIRC Maritime Grand Challenge (2024)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2021-PohangExperiment/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2021-PohangExperiment.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Field Experiments in Pohang Canal (2021)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2019-VirtualRobotX/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2019-VirtualRobotX.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Virtual RobotX Competition (2019)</h3>
-      </div>
-    </a>
-  </article>
-
-  <article class="archive-card">
-    <a href="{{ '/media/videos/2014-RobotXChallenge/' | relative_url }}">
-      <div class="media-thumb media-play">
-        <img src="{{ '/assets/img/media/videos/2014-RobotXChallenge.jpg' | relative_url }}" alt="">
-      </div>
-      <div class="archive-meta">
-        <p class="media-label">Video</p>
-        <h3 class="media-title">Maritime RobotX Challenge (2014) </h3>
-      </div>
-    </a>
-  </article>  
-
-  </div>
+    <li>
+      <a href="https://registry.opendata.aws/pohang-canal-dataset/" target="_blank" rel="noopener">
+        AWS Open Data Registry
+      </a>
+      — Public access to the Pohang Canal Dataset
+    </li>
+  </ul>
+</div>
 </div>
