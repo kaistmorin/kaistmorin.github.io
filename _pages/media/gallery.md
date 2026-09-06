@@ -23,30 +23,20 @@ nav: false
   <a class="archive-back" href="{{ '/media/' | relative_url }}">← Back to Media</a>
   <h1>Gallery</h1>
   <p class="media-intro">Selected photos and moments from MORIN Lab activities and lab life</p>
+
   <div class="archive-grid">
-    <article class="archive-card">
-      <a href="{{ '/media/gallery/2026-06-morin-kmrts/' | relative_url }}">
-        <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-01.jpg' | relative_url }}" alt="MORIN KMRTS"></div>
-        <div class="archive-meta"><p class="media-label">2026-06</p><h3 class="media-title">MORIN KMRTS</h3></div>
-      </a>
-    </article>
-    <article class="archive-card">
-      <a href="{{ '/media/gallery/2025-05-morin-strawberry-party/' | relative_url }}">
-        <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-02.jpg' | relative_url }}" alt="MORIN Strawberry Party"></div>
-        <div class="archive-meta"><p class="media-label">2025-05</p><h3 class="media-title">MORIN Strawberry Party</h3></div>
-      </a>
-    </article>
-    <article class="archive-card">
-      <a href="{{ '/media/gallery/2024-02-2024-kroc/' | relative_url }}">
-        <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-03.jpg' | relative_url }}" alt="2024 KRoC"></div>
-        <div class="archive-meta"><p class="media-label">2024-02</p><h3 class="media-title">2024 KRoC</h3></div>
-      </a>
-    </article>
-    <article class="archive-card">
-      <a href="{{ '/media/gallery/2022-10-morin-fall-hiking/' | relative_url }}">
-        <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-04.jpg' | relative_url }}" alt="MORIN Fall Hiking"></div>
-        <div class="archive-meta"><p class="media-label">2022-10</p><h3 class="media-title">MORIN Fall Hiking</h3></div>
-      </a>
-    </article>
+    {% for item in site.data.media.gallery %}
+      <article class="archive-card">
+        <a href="{{ item.url | relative_url }}">
+          <div class="media-thumb">
+            <img src="{{ item.thumb | relative_url }}" alt="{{ item.title }}">
+          </div>
+          <div class="archive-meta">
+            <p class="media-label">{{ item.label }}</p>
+            <h3 class="media-title">{{ item.title }}</h3>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
   </div>
 </div>

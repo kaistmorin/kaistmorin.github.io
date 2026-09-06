@@ -18,3 +18,24 @@ videos:
     url: "/media/videos/2014-RobotXChallenge/"
     thumb: "/assets/img/media/videos/2014-RobotXChallenge.jpg"
     label: "Video"
+
+gallery:
+  - title: "MORIN KMRTS"
+    url: "/media/gallery/2026-06-morin-kmrts/"
+    thumb: "/assets/img/media/gallery/gallery-01.jpg"
+    label: "2026-06"
+
+  - title: "MORIN Strawberry Party"
+    url: "/media/gallery/2025-05-morin-strawberry-party/"
+    thumb: "/assets/img/media/gallery/gallery-02.jpg"
+    label: "2025-05"
+
+  - title: "2024 KRoC"
+    url: "/media/gallery/2024-02-2024-kroc/"
+    thumb: "/assets/img/media/gallery/gallery-03.jpg"
+    label: "2024-02"
+
+  - title: "MORIN Fall Hiking"
+    url: "/media/gallery/2022-10-morin-fall-hiking/"
+    thumb: "/assets/img/media/gallery/gallery-04.jpg"
+    label: "2022-10"
