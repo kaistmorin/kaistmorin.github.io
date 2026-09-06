@@ -6,7 +6,6 @@ nav: false
 nav_order: 5
 ---
 
-
 <style>
 .news-page {
   --morin-navy: #0b2d5c;
@@ -69,7 +68,6 @@ nav_order: 5
   .news-item { grid-template-columns: 1fr; gap: 5px; }
 }
 </style>
-
 
 <div class="news-page">
   <h1>News</h1>

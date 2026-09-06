@@ -206,11 +206,11 @@ nav: false
       <div class="morin-hero-slide active" id="morin-slide-light">
         <img src="{{ '/assets/img/morin-hero-light.png' | relative_url }}" alt="MORIN Lab civilian marine robotics">
       </div>
-      
+
       <div class="morin-hero-slide" id="morin-slide-dark">
         <img src="{{ '/assets/img/morin-hero-dark.png' | relative_url }}" alt="MORIN Lab marine robotics">
       </div>
-      
+
       <div class="morin-hero-content dark-text active" id="morin-text-light">
         <h1>Mobile Robotics &amp;<br>Intelligence Laboratory</h1>
         <div class="morin-hero-rule"></div>
@@ -230,6 +230,7 @@ nav: false
       </div>
 
     </div>
+
   </section>
 
   <section class="morin-intro">
@@ -271,6 +272,7 @@ nav: false
              alt="MORIN Lab">
       </div>
     </div>
+
   </section>
 
 </div>

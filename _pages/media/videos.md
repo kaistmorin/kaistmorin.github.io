@@ -108,7 +108,7 @@ nav: false
         <h3 class="media-title">Maritime RobotX Challenge (2014) </h3>
       </div>
     </a>
-  </article>  
+  </article>
 
   </div>
 </div>

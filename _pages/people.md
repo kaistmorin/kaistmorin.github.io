@@ -275,7 +275,7 @@ nav_order: 3
       <img class="director-photo" src="{{ '/assets/img/people/jinwhan-kim.jpg' | relative_url }}" alt="Jinwhan Kim">
       <div>
         <h3>Jinwhan Kim</h3>
-        <p><strong>Professor</strong>, Department of Mechanical Engineering, KAIST</p>        
+        <p><strong>Professor</strong>, Department of Mechanical Engineering, KAIST</p>
         <p>Jointly affilated with Robotics Program & Graduate School of Ocean Systems Engineering</p>
         <p><strong>Phone</strong>: +82-42-350-1519</p>
         <p><strong>Email</strong>: jinwhan@kaist.ac.kr</p>
@@ -286,6 +286,7 @@ nav_order: 3
         <p><strong>B.S.</strong> Naval Architecture and Ocean Engineering, Seoul National University</p>
       </div>
     </div>
+
   </section>
 
   <section class="people-section">
@@ -326,6 +327,7 @@ nav_order: 3
       </article>
 
     </div>
+
   </section>
 
   <section class="people-section">
@@ -475,7 +477,7 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Ju Hang Lee"></div>
         <div class="person-info">
-          <h3 class="person-name">Ju Hang Lee</h3>          
+          <h3 class="person-name">Ju Hang Lee</h3>
           <p class="person-meta"><strong>B.S.</strong> Hanyang University</p>
           <a class="person-email">hangsul@kaist.ac.kr</a>
         </div>
@@ -491,8 +493,8 @@ nav_order: 3
             )
           </span>
         </h3>
-        <!--        
-          <h3 class="person-name">Ji Soo Kim</h3>          
+        <!--
+          <h3 class="person-name">Ji Soo Kim</h3>
           <p class="person-affiliation">Currently with <a href="https://www.hd-ksoe.com/" target="_blank" rel="noopener">HD KSOE</a></p>
         -->
           <p class="person-meta"><strong>M.S.</strong> Inha University</p>
@@ -500,9 +502,10 @@ nav_order: 3
           <a class="person-email">kimjjs100@kaist.ac.kr</a>
         </div>
       </article>
-      
+
 
     </div>
+
   </section>
 
   <section class="people-section">
@@ -546,6 +549,7 @@ nav_order: 3
       </article>
 
     </div>
+
   </section>
 
   <section class="people-section">

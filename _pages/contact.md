@@ -147,6 +147,7 @@ nav_order: 6
         +82-42-350-1579
       </p>
     </div>
+
   </div>
 
   <div class="contact-map-block">
