@@ -6,95 +6,47 @@ nav: false
 ---
 
 <style>
-.media-page,.media-archive,.media-detail{
-  --morin-navy:#0b2d5c;
-  --morin-text:#1f2937;
-  --morin-muted:#667085;
-  --morin-line:#e6ebf0;
-  width:calc(100% - 48px);
-  max-width:1120px;
-  box-sizing:border-box;
-  margin:0 auto;
-  padding:11px 0 72px;
-  font-family:inherit;
-}
-.media-page h1,.media-archive h1,.media-detail h1{
-  margin:0 0 12px;font-size:2.25rem;font-weight:400;line-height:1.15;
-}
+.media-archive{--morin-navy:#0b2d5c;--morin-text:#1f2937;--morin-muted:#667085;--morin-line:#e6ebf0;width:calc(100% - 48px);max-width:1120px;box-sizing:border-box;margin:0 auto;padding:11px 0 72px;font-family:inherit}
+.media-archive h1{margin:0 0 12px;font-size:2.25rem;font-weight:400;line-height:1.15}
 .media-intro{max-width:860px;margin:0 0 30px;color:var(--morin-text);font-size:1rem;line-height:1.55}
-.media-section{margin-top:34px}
-.media-section-head{display:flex;align-items:center;gap:14px;margin:0 0 15px}
-.media-section-head h2{margin:0;color:var(--morin-navy);font-size:1.25rem;font-weight:600}
-.media-section-head::after{content:"";flex:1;height:1px;background:var(--morin-line)}
-.media-view-all{margin-left:auto;color:var(--morin-navy);font-size:.86rem;font-weight:600;text-decoration:none;white-space:nowrap}
-.media-view-all:hover,.archive-back:hover{text-decoration:underline}
-.media-featured-video,.media-card,.archive-card{
-  overflow:hidden;border:1px solid var(--morin-line);border-radius:8px;background:#fff;
-}
-.media-video-wrap{position:relative;width:100%;aspect-ratio:16/9;background:#000}
-.media-video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.media-featured-meta,.media-card-meta,.archive-meta{padding:12px 13px 14px}
-.media-label,.detail-date{margin:0 0 5px;color:var(--morin-muted);font-size:.78rem}
-.media-title{margin:0 0 5px;color:var(--morin-navy);font-size:1rem;font-weight:600;line-height:1.4}
-.media-desc{margin:0;color:var(--morin-muted);font-size:.88rem;line-height:1.5}
-.media-grid,.archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.media-card a,.archive-card a{display:block;color:inherit;text-decoration:none}
-.media-card a:hover .media-title,.archive-card a:hover .media-title{text-decoration:underline;text-underline-offset:2px}
-.media-thumb{position:relative;overflow:hidden;aspect-ratio:16/9;background:#f3f5f7}
-.media-thumb img{display:block;width:100%;height:100%;object-fit:cover}
-.media-play::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:42px;height:42px;display:grid;place-items:center;padding-left:3px;border-radius:50%;background:rgba(11,45,92,.88);color:#fff;font-size:15px}
-.archive-back{display:inline-block;margin:0 0 20px;color:var(--morin-navy);text-decoration:none;font-size:.9rem}
-.archive-grid{margin-top:22px}
-.detail-hero{overflow:hidden;border:1px solid var(--morin-line);border-radius:8px;margin:18px 0 24px}
-.detail-hero img{display:block;width:100%;max-height:620px;object-fit:cover}
-.detail-body{max-width:860px;color:var(--morin-text);font-size:.98rem;line-height:1.7}
-.detail-body p{margin:0 0 14px}
-.detail-actions{margin-top:18px}
-.detail-actions a{color:var(--morin-navy);font-weight:600;text-decoration:none}
-.detail-actions a:hover{text-decoration:underline}
-@media(max-width:850px){.media-grid,.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:640px){.media-page,.media-archive,.media-detail{width:calc(100% - 30px)}.media-grid,.archive-grid{grid-template-columns:1fr}}
+.archive-back{display:inline-block;margin:0 0 20px;color:var(--morin-navy);text-decoration:none;font-size:.9rem}.archive-back:hover{text-decoration:underline}
+.archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:22px}
+.archive-card{overflow:hidden;border:1px solid var(--morin-line);border-radius:8px;background:#fff}
+.archive-card a{display:block;color:inherit;text-decoration:none}.archive-card a:hover .media-title{text-decoration:underline;text-underline-offset:2px}
+.media-thumb{overflow:hidden;aspect-ratio:16/9;background:#f3f5f7}.media-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.archive-meta{padding:12px 13px 14px}.media-label{margin:0 0 5px;color:var(--morin-muted);font-size:.78rem}.media-title{margin:0;color:var(--morin-navy);font-size:1rem;font-weight:600;line-height:1.4}
+@media(max-width:850px){.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.media-archive{width:calc(100% - 30px)}.archive-grid{grid-template-columns:1fr}}
 </style>
 
 <div class="media-archive">
   <a class="archive-back" href="{{ '/media/' | relative_url }}">← Back to Media</a>
   <h1>Gallery</h1>
-  <p class="media-intro">Selected photos and moments from MORIN Lab activities and lab life.</p>
+  <p class="media-intro">Selected photos and moments from MORIN Lab activities and lab life</p>
   <div class="archive-grid">
-  <article class="archive-card">
-    <a href="{{ '/media/gallery/2026-06-morin-kmrts/' | relative_url }}">
-      <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-01.jpg' | relative_url }}" alt="MORIN KMRTS"></div>
-      <div class="archive-meta">
-        <p class="media-label">2026-06</p>
-        <h3 class="media-title">MORIN KMRTS</h3>
-      </div>
-    </a>
-  </article>
-  <article class="archive-card">
-    <a href="{{ '/media/gallery/2025-05-morin-strawberry-party/' | relative_url }}">
-      <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-02.jpg' | relative_url }}" alt="MORIN Strawberry Party"></div>
-      <div class="archive-meta">
-        <p class="media-label">2025-05</p>
-        <h3 class="media-title">MORIN Strawberry Party</h3>
-      </div>
-    </a>
-  </article>
-  <article class="archive-card">
-    <a href="{{ '/media/gallery/2024-02-2024-kroc/' | relative_url }}">
-      <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-03.jpg' | relative_url }}" alt="2024 KRoC"></div>
-      <div class="archive-meta">
-        <p class="media-label">2024-02</p>
-        <h3 class="media-title">2024 KRoC</h3>
-      </div>
-    </a>
-  </article>
-  <article class="archive-card">
-    <a href="{{ '/media/gallery/2022-10-morin-fall-hiking/' | relative_url }}">
-      <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-04.jpg' | relative_url }}" alt="MORIN Fall Hiking"></div>
-      <div class="archive-meta">
-        <p class="media-label">2022-10</p>
-        <h3 class="media-title">MORIN Fall Hiking</h3>
-      </div>
-    </a>
-  </article></div>
+    <article class="archive-card">
+      <a href="{{ '/media/gallery/2026-06-morin-kmrts/' | relative_url }}">
+        <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-01.jpg' | relative_url }}" alt="MORIN KMRTS"></div>
+        <div class="archive-meta"><p class="media-label">2026-06</p><h3 class="media-title">MORIN KMRTS</h3></div>
+      </a>
+    </article>
+    <article class="archive-card">
+      <a href="{{ '/media/gallery/2025-05-morin-strawberry-party/' | relative_url }}">
+        <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-02.jpg' | relative_url }}" alt="MORIN Strawberry Party"></div>
+        <div class="archive-meta"><p class="media-label">2025-05</p><h3 class="media-title">MORIN Strawberry Party</h3></div>
+      </a>
+    </article>
+    <article class="archive-card">
+      <a href="{{ '/media/gallery/2024-02-2024-kroc/' | relative_url }}">
+        <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-03.jpg' | relative_url }}" alt="2024 KRoC"></div>
+        <div class="archive-meta"><p class="media-label">2024-02</p><h3 class="media-title">2024 KRoC</h3></div>
+      </a>
+    </article>
+    <article class="archive-card">
+      <a href="{{ '/media/gallery/2022-10-morin-fall-hiking/' | relative_url }}">
+        <div class="media-thumb"><img src="{{ '/assets/img/media/gallery/gallery-04.jpg' | relative_url }}" alt="MORIN Fall Hiking"></div>
+        <div class="archive-meta"><p class="media-label">2022-10</p><h3 class="media-title">MORIN Fall Hiking</h3></div>
+      </a>
+    </article>
+  </div>
 </div>
