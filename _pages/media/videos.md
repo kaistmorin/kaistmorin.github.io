@@ -24,30 +24,20 @@ nav: false
   <a class="archive-back" href="{{ '/media/' | relative_url }}">← Back to Media</a>
   <h1>Videos</h1>
   <p class="media-intro">Selected videos from MORIN Lab research and activities</p>
+
   <div class="archive-grid">
-    <article class="archive-card">
-      <a href="{{ '/media/videos/2024-MBZIRC-MGC/' | relative_url }}">
-        <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2024-MBZIRC-MGC.jpeg' | relative_url }}" alt=""></div>
-        <div class="archive-meta"><p class="media-label">Video</p><h3 class="media-title">MBZIRC Maritime Grand Challenge (2024)</h3></div>
-      </a>
-    </article>
-    <article class="archive-card">
-      <a href="{{ '/media/videos/2021-PohangExperiment/' | relative_url }}">
-        <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2021-PohangExperiment.jpg' | relative_url }}" alt=""></div>
-        <div class="archive-meta"><p class="media-label">Video</p><h3 class="media-title">Field Experiments in Pohang Canal (2021)</h3></div>
-      </a>
-    </article>
-    <article class="archive-card">
-      <a href="{{ '/media/videos/2019-VirtualRobotX/' | relative_url }}">
-        <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2019-VirtualRobotX.jpg' | relative_url }}" alt=""></div>
-        <div class="archive-meta"><p class="media-label">Video</p><h3 class="media-title">Virtual RobotX Competition (2019)</h3></div>
-      </a>
-    </article>
-    <article class="archive-card">
-      <a href="{{ '/media/videos/2014-RobotXChallenge/' | relative_url }}">
-        <div class="media-thumb media-play"><img src="{{ '/assets/img/media/videos/2014-RobotXChallenge.jpg' | relative_url }}" alt=""></div>
-        <div class="archive-meta"><p class="media-label">Video</p><h3 class="media-title">Maritime RobotX Challenge (2014)</h3></div>
-      </a>
-    </article>
+    {% for item in site.data.media.videos %}
+      <article class="archive-card">
+        <a href="{{ item.url | relative_url }}">
+          <div class="media-thumb media-play">
+            <img src="{{ item.thumb | relative_url }}" alt="">
+          </div>
+          <div class="archive-meta">
+            <p class="media-label">{{ item.label }}</p>
+            <h3 class="media-title">{{ item.title }}</h3>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
   </div>
 </div>

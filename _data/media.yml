@@ -1,0 +1,20 @@
+videos:
+  - title: "MBZIRC Maritime Grand Challenge (2024)"
+    url: "/media/videos/2024-MBZIRC-MGC/"
+    thumb: "/assets/img/media/videos/2024-MBZIRC-MGC.jpeg"
+    label: "Video"
+
+  - title: "Field Experiments in Pohang Canal (2021)"
+    url: "/media/videos/2021-PohangExperiment/"
+    thumb: "/assets/img/media/videos/2021-PohangExperiment.jpg"
+    label: "Video"
+
+  - title: "Virtual RobotX Competition (2019)"
+    url: "/media/videos/2019-VirtualRobotX/"
+    thumb: "/assets/img/media/videos/2019-VirtualRobotX.jpg"
+    label: "Video"
+
+  - title: "Maritime RobotX Challenge (2014)"
+    url: "/media/videos/2014-RobotXChallenge/"
+    thumb: "/assets/img/media/videos/2014-RobotXChallenge.jpg"
+    label: "Video"
