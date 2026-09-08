@@ -28,7 +28,6 @@ _In `v1.x`, al-folio is a **thin starter, not a theme**: the runtime ships as in
 
 </div>
 
-
 ## Getting started
 
 **⚠️ Important: Use "Use this template" (not fork)**
