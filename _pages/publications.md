@@ -12,6 +12,9 @@ nav_order: 4
   --morin-text: #1f2937;
   --morin-muted: #667085;
   --morin-line: #e6ebf0;
+  --morin-sky: #1f8fd0;
+  --morin-sky-soft: #a8d8f2;
+  --morin-sky-tint: #eaf5fc;
   width: calc(100% - 48px);
   max-width: 1120px;
   box-sizing: border-box;
@@ -49,8 +52,33 @@ nav_order: 4
   border-bottom: 1px solid var(--morin-line);
 }
 
+.publications-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 16px;
+}
+
+.publications-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.publications-field--type { width: min(250px, 100%); }
+.publications-field--year { width: min(150px, 100%); }
+.publications-field--author { width: min(290px, 100%); }
+
+.publications-field-label {
+  color: var(--morin-muted);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
 .publications-select {
-  width: min(360px, 100%);
+  width: 100%;
   padding: 10px 38px 10px 12px;
   border: 1px solid #cfd6df;
   border-radius: 7px;
@@ -58,6 +86,46 @@ nav_order: 4
   color: var(--morin-text);
   font-size: .94rem;
   line-height: 1.3;
+  /* overrides the theme's magenta highlight on the open dropdown */
+  accent-color: var(--morin-sky);
+}
+
+.publications-select:hover {
+  border-color: var(--morin-sky-soft);
+}
+
+/* !important: the theme's own focus colour is magenta and lives in a gem-owned
+   stylesheet this repo must not edit, so it has to be beaten here. */
+.publications-select:focus,
+.publications-select:focus-visible {
+  border-color: var(--morin-sky) !important;
+  outline: 2px solid var(--morin-sky-soft) !important;
+  outline-offset: 1px;
+  box-shadow: 0 0 0 3px rgba(31, 143, 208, .20) !important;
+}
+
+.publications-select option:checked,
+.publications-select option:hover {
+  background: var(--morin-sky) !important;
+  color: #fff !important;
+}
+
+.publication-category {
+  display: inline-block;
+  margin: 6px 0 0;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--morin-sky-tint);
+  color: var(--morin-sky);
+  font-size: .74rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+.publications-empty {
+  margin: 26px 0 0;
+  color: var(--morin-muted);
+  font-size: .95rem;
 }
 
 .publications-list {
@@ -67,8 +135,8 @@ nav_order: 4
 .publication-year {
   margin: 34px 0 0;
   padding: 0 0 7px;
-  border-bottom: 2px solid var(--morin-navy);
-  color: var(--morin-navy);
+  border-bottom: 2px solid var(--morin-sky-soft);
+  color: var(--morin-sky);
   font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.3;
@@ -134,17 +202,31 @@ nav_order: 4
   <h1>Publications</h1>
   <p class="publications-intro">
     Publications of the Mobile Robotics &amp; Intelligence Laboratory.
-    Select a publication type below to view the corresponding list. Publications are sorted by year, newest first.<br>
+    Filter by type, year or author. Publications are sorted by year, newest first.<br>
     <span class="publications-note">* denotes the corresponding author.</span>
   </p>
 
   <div class="publications-controls">
-    <select id="publication-filter" class="publications-select" aria-label="Select publication type">
-      <option value="International Journals">International Journals</option>
-      <option value="International Conferences">International Conferences</option>
-      <option value="Domestic Journals">Domestic Journals</option>
-      <option value="Domestic Conferences">Domestic Conferences</option>
-    </select>
+    <div class="publications-filters">
+      <label class="publications-field publications-field--type">
+        <span class="publications-field-label">Type</span>
+        <select id="publication-filter" class="publications-select">
+          <option value="">All Types</option>
+          <option value="International Journals" selected>International Journals</option>
+          <option value="International Conferences">International Conferences</option>
+          <option value="Domestic Journals">Domestic Journals</option>
+          <option value="Domestic Conferences">Domestic Conferences</option>
+        </select>
+      </label>
+      <label class="publications-field publications-field--year">
+        <span class="publications-field-label">Year</span>
+        <select id="publication-year-filter" class="publications-select"></select>
+      </label>
+      <label class="publications-field publications-field--author">
+        <span class="publications-field-label">Author</span>
+        <select id="publication-author-filter" class="publications-select"></select>
+      </label>
+    </div>
     <p id="publication-count" class="publication-count"></p>
   </div>
 
@@ -156,7 +238,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Publication data lives in _data/publications.yml (single source of truth,
   // shared with the home page's Research Highlights section).
   const publicationData = {{ site.data.publications | jsonify }};
-  const select = document.getElementById("publication-filter");
+  const catSelect = document.getElementById("publication-filter");
+  const yearSelect = document.getElementById("publication-year-filter");
+  const authorSelect = document.getElementById("publication-author-filter");
   const list = document.getElementById("publication-list");
   const count = document.getElementById("publication-count");
 
@@ -169,13 +253,86 @@ document.addEventListener("DOMContentLoaded", function () {
       .replace(/'/g, "&#039;");
   }
 
-  function render(category) {
-    const entries = [...(publicationData[category] || [])].sort((a, b) => Number(b.year) - Number(a.year));
-    count.textContent = entries.length + (entries.length === 1 ? " entry" : " entries");
+  // "Hakmo Son, Haggi Do and Jinwhan Kim*" -> ["Hakmo Son", "Haggi Do", "Jinwhan Kim"]
+  function splitAuthors(value) {
+    return String(value || "")
+      .split(/\s*,\s*|\s+and\s+/)
+      .map(function (name) { return name.trim().replace(/\*+$/, "").trim(); })
+      .filter(Boolean);
+  }
+
+  // Flatten every category once, tagging each entry with the category it came from.
+  const entriesAll = [];
+  Object.keys(publicationData).forEach(function (category) {
+    (publicationData[category] || []).forEach(function (item) {
+      entriesAll.push({
+        category: category,
+        title: item.title,
+        authors: item.authors,
+        authorList: splitAuthors(item.authors),
+        venue: item.venue,
+        year: item.year,
+        note: item.note
+      });
+    });
+  });
+
+  function selectEntries(category, year, author) {
+    return entriesAll.filter(function (item) {
+      return (!category || item.category === category)
+        && (!year || item.year === year)
+        && (!author || item.authorList.indexOf(author) !== -1);
+    });
+  }
+
+  // Rebuild a select, keeping the current choice when it is still available.
+  function fillSelect(select, options, allLabel) {
+    const wanted = select.value;
+    const keep = options.some(function (o) { return o.value === wanted; }) ? wanted : "";
+    select.innerHTML = '<option value="">' + escapeHtml(allLabel) + "</option>"
+      + options.map(function (o) {
+          return '<option value="' + escapeHtml(o.value) + '">' + escapeHtml(o.label) + "</option>";
+        }).join("");
+    select.value = keep;
+    return keep;
+  }
+
+  function yearOptions(entries) {
+    const years = [];
+    entries.forEach(function (item) {
+      if (years.indexOf(item.year) === -1) years.push(item.year);
+    });
+    years.sort(function (a, b) { return Number(b) - Number(a); });
+    return years.map(function (y) { return { value: y, label: y }; });
+  }
+
+  function authorOptions(entries) {
+    const tally = new Map();
+    entries.forEach(function (item) {
+      const seen = {};
+      item.authorList.forEach(function (name) {
+        if (seen[name]) return;
+        seen[name] = true;
+        tally.set(name, (tally.get(name) || 0) + 1);
+      });
+    });
+    return Array.from(tally.keys())
+      .sort(function (a, b) { return a.localeCompare(b, "en"); })
+      .map(function (name) { return { value: name, label: name + " (" + tally.get(name) + ")" }; });
+  }
+
+  function render(entries, showCategory) {
+    const sorted = entries.slice().sort(function (a, b) { return Number(b.year) - Number(a.year); });
+    count.textContent = sorted.length + (sorted.length === 1 ? " entry" : " entries");
+
+    if (!sorted.length) {
+      list.innerHTML = '<p class="publications-empty">No publications match the selected filters.</p>';
+      return;
+    }
 
     let currentYear = null;
 
-    list.innerHTML = entries.map(function (item) {
+    list.innerHTML = sorted.map(function (item) {
       let heading = "";
       if (item.year !== currentYear) {
         currentYear = item.year;
@@ -187,14 +344,24 @@ document.addEventListener("DOMContentLoaded", function () {
           <p class="publication-authors">${escapeHtml(item.authors)}</p>
           <p class="publication-venue">${escapeHtml(item.venue)}</p>
           ${item.note ? `<p class="publication-note">${escapeHtml(item.note)}</p>` : ""}
+          ${showCategory ? `<span class="publication-category">${escapeHtml(item.category)}</span>` : ""}
         </article>`;
     }).join("");
   }
 
-  select.addEventListener("change", function () {
-    render(this.value);
+  // Year options follow type + author, author options follow type + year, so the
+  // three filters can never combine into an empty result.
+  function update() {
+    const category = catSelect.value;
+    const year = fillSelect(yearSelect, yearOptions(selectEntries(category, "", authorSelect.value)), "All Years");
+    const author = fillSelect(authorSelect, authorOptions(selectEntries(category, year, "")), "All Authors");
+    render(selectEntries(category, year, author), !category);
+  }
+
+  [catSelect, yearSelect, authorSelect].forEach(function (el) {
+    el.addEventListener("change", update);
   });
 
-  render(select.value);
+  update();
 });
 </script>
