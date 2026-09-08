@@ -808,10 +808,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Venue strings already end with the year; only add it when one is missing.
+  // Venue strings already end with the year; only add one when the venue has none.
   function venueLine(entry) {
     const venue = String(entry.venue || "").trim();
-    if (!entry.year || venue.indexOf(entry.year) !== -1) return venue;
+    if (!entry.year || /\b(19|20)\d{2}\b/.test(venue)) return venue;
     return venue.replace(/\.$/, "") + ", " + entry.year + ".";
   }
 
