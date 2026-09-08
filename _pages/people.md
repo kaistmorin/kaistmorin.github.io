@@ -579,7 +579,7 @@ nav_order: 3
         <div class="person-info">
           <h3 class="person-name">Yeongha Shin <a class="person-homepage" href="https://www.linkedin.com/in/yeongha-shin-672665234/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>Homepage</a></h3>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
-          <p class="person-meta"><strong>B.S.</strong> Korea Maritime University</p>
+          <p class="person-meta"><strong>B.S.</strong> Korea Maritime and Ocean University</p>
           <div class="person-interests">
             <span class="person-interest">Scene Understanding</span>
             <span class="person-interest">Decision Making</span>
