@@ -13,3 +13,13 @@ overrides:
       #2698ba dark); this site wants sky blue on the navbar tabs only. The file is a
       verbatim copy of the gem source plus one appended `.navbar { --global-theme-color;
       --global-hover-color }` block, so the rest of the site keeps the gem palette.
+  - path: _sass/_navbar.scss
+    gem: al_folio_core
+    gem_version: 1.0.15
+    reason: >-
+      Lab logo beside the site title in the navigation bar. al_folio_core renders
+      `.navbar-brand.title` only on pages other than the home page, and the logo has
+      to sit next to that text at the same height. The file is a verbatim copy of the
+      gem source plus one appended `.navbar-brand.title` block that draws
+      assets/img/morin-logo.png as a ::before background image, so no layout or
+      include override is needed.
