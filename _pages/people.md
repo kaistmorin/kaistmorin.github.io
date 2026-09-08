@@ -13,6 +13,7 @@ nav_order: 3
   --morin-text: #1f2937;
   --morin-muted: #667085;
   --morin-line: #e6ebf0;
+  --morin-sky: #1f8fd0;
   width: calc(100% - 48px);
   max-width: 1120px;
   box-sizing: border-box;
@@ -136,6 +137,7 @@ nav_order: 3
 }
 
 .person-affiliation a:hover {
+  color: var(--morin-sky);
   text-decoration: underline;
 }
 
@@ -153,6 +155,7 @@ nav_order: 3
 }
 
 .person-name-affiliation a:hover {
+  color: var(--morin-sky);
   text-decoration: underline;
 }
 
@@ -162,6 +165,10 @@ nav_order: 3
   color: var(--morin-text);
   font-size: .86rem;
   line-height: 1.5;
+}
+
+.person-email:hover {
+  color: var(--morin-muted);
 }
 
 .person-email {
@@ -274,6 +281,7 @@ nav_order: 3
 
 .person-latest .person-latest-more:hover,
 .person-latest .person-latest-more:focus-visible {
+  color: var(--morin-sky);
   text-decoration: underline;
 }
 
@@ -347,6 +355,7 @@ nav_order: 3
 
 .alumni-pubs:hover,
 .alumni-pubs:focus-visible {
+  color: var(--morin-sky);
   text-decoration: underline;
 }
 
