@@ -294,7 +294,7 @@ nav_order: 3
     <div class="people-grid">
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/kyungseo-kim.jpg' | relative_url }}" alt="Kyungseo Kim"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/kyungseokim.png' | relative_url }}" alt="Kyungseo Kim"></div>
         <div class="person-info">
           <h3 class="person-name">Kyungseo Kim <a class="person-homepage" href="https://example.com" target="_blank" rel="noopener">↗</a></h3>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST (2026)</p>
@@ -305,7 +305,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/jinwook-park.jpg' | relative_url }}" alt="Jinwook Park"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/jinwookpark.png' | relative_url }}" alt="Jinwook Park"></div>
         <div class="person-info">
           <h3 class="person-name">Jinwook Park <a class="person-homepage" href="https://example.com" target="_blank" rel="noopener">↗</a></h3>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST</p>
@@ -316,7 +316,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/qianyi-zhang.jpg' | relative_url }}" alt="Qianyi Zhang"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/qianyizhang.png' | relative_url }}" alt="Qianyi Zhang"></div>
         <div class="person-info">
           <h3 class="person-name">Qianyi Zhang <a class="person-homepage" href="https://example.com" target="_blank" rel="noopener">↗</a></h3>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST</p>
@@ -335,7 +335,7 @@ nav_order: 3
     <div class="people-grid">
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/sol-han.jpg' | relative_url }}" alt="Sol Han"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/solhan.png' | relative_url }}" alt="Sol Han"></div>
         <div class="person-info">
         <h3 class="person-name">Sol Han</h3>
         <p class="person-meta"><strong>B.S.</strong> KAIST</p>
@@ -344,7 +344,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/kiyong-park.jpg' | relative_url }}" alt="Kiyong Park"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/kiyongpark.png' | relative_url }}" alt="Kiyong Park"></div>
         <div class="person-info">
         <h3 class="person-name">Kiyong Park</h3>
         <p class="person-meta"><strong>B.S.</strong> KAIST</p>
@@ -353,7 +353,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/donghyun-kim.jpg' | relative_url }}" alt="Donghyun Kim"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/donghyunkim.png' | relative_url }}" alt="Donghyun Kim"></div>
         <div class="person-info">
         <h3 class="person-name">Donghyun Kim</h3>
         <p class="person-meta"><strong>M.S.</strong> KAIST</p>
@@ -363,7 +363,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/hakmo-son.jpg' | relative_url }}" alt="Hakmo Son"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/hakmoson.png' | relative_url }}" alt="Hakmo Son"></div>
         <div class="person-info">
         <h3 class="person-name">Hakmo Son</h3>
         <p class="person-meta"><strong>B.S.</strong> KAIST</p>
@@ -372,7 +372,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/jisu-jeon.jpg' | relative_url }}" alt="Jisu Jeon"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/jisujeon.png' | relative_url }}" alt="Jisu Jeon"></div>
         <div class="person-info">
         <h3 class="person-name">Jisu Jeon</h3>
         <p class="person-meta"><strong>M.S.</strong> Korea University</p>
@@ -382,7 +382,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/dongwook-lee.jpg' | relative_url }}" alt="Dongwook Lee"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/dongwooklee.jpg' | relative_url }}" alt="Dongwook Lee"></div>
         <div class="person-info">
           <h3 class="person-name">Dongwook Lee</h3>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
@@ -392,7 +392,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/jiyong-choi.jpg' | relative_url }}" alt="Jiyong Choi"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/jiyongchoi.png' | relative_url }}" alt="Jiyong Choi"></div>
         <div class="person-info">
           <h3 class="person-name">Jiyong Choi</h3>
           <p class="person-meta"><strong>B.S.</strong> KAIST</p>
@@ -401,7 +401,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Minju Kang"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/Minju.jpg' | relative_url }}" alt="Minju Kang"></div>
         <div class="person-info">
           <h3 class="person-name">Minju Kang
           <span class="person-name-affiliation">
@@ -417,7 +417,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Keunhwan Kim"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/Keunhwan.jpg' | relative_url }}" alt="Keunhwan Kim"></div>
         <div class="person-info">
           <h3 class="person-name">Keunhwan Kim
           <span class="person-name-affiliation">
@@ -433,7 +433,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Yeongha Shin"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/yeonghashin.png' | relative_url }}" alt="Yeongha Shin"></div>
         <div class="person-info">
           <h3 class="person-name">Yeongha Shin</h3>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
@@ -443,7 +443,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Wonseok Oh"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/Wonseok.png' | relative_url }}" alt="Wonseok Oh"></div>
         <div class="person-info">
           <h3 class="person-name">Wonseok Oh
           <span class="person-name-affiliation">
@@ -459,7 +459,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Kyeongmo Kang"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/kyeongmokang.png' | relative_url }}" alt="Kyeongmo Kang"></div>
         <div class="person-info">
           <h3 class="person-name">Kyeongmo Kang
           <span class="person-name-affiliation">
@@ -475,7 +475,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Ju Hang Lee"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/juhanglee.jpg' | relative_url }}" alt="Ju Hang Lee"></div>
         <div class="person-info">
           <h3 class="person-name">Ju Hang Lee</h3>
           <p class="person-meta"><strong>B.S.</strong> Hanyang University</p>
@@ -484,7 +484,7 @@ nav_order: 3
       </article>
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Ji Soo Kim"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/jisookim.jpg' | relative_url }}" alt="Ji Soo Kim"></div>
         <div class="person-info">
           <h3 class="person-name">Ji Soo Kim
           <span class="person-name-affiliation">
@@ -513,7 +513,7 @@ nav_order: 3
     <div class="people-grid">
 
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Tae Woo Lee"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/taewoolee.jpg' | relative_url }}" alt="Tae Woo Lee"></div>
         <div class="person-info">
           <h3 class="person-name">Tae Woo Lee</h3>
           <p class="person-meta"><strong>B.S.</strong> KAIST</p>
@@ -522,7 +522,7 @@ nav_order: 3
       </article>
 
        <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Kyeonghun Lee"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/kyeonghunlee.png' | relative_url }}" alt="Kyeonghun Lee"></div>
         <div class="person-info">
           <h3 class="person-name">Kyeonghun Lee</h3>
           <p class="person-meta"><strong>B.S.</strong> KAIST</p>
@@ -531,7 +531,7 @@ nav_order: 3
       </article>
 
        <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Sang Won Park"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/sangwonpark.png' | relative_url }}" alt="Sang Won Park"></div>
         <div class="person-info">
           <h3 class="person-name">Sang Won Park</h3>
           <p class="person-meta"><strong>B.S.</strong> Hanyang University</p>
@@ -540,7 +540,7 @@ nav_order: 3
       </article>
 
        <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="Taeung Lee"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/taeung.jpg' | relative_url }}" alt="Taeung Lee"></div>
         <div class="person-info">
           <h3 class="person-name">Taeung Lee</h3>
           <p class="person-meta"><strong>B.S.</strong> Korea University</p>
@@ -556,7 +556,7 @@ nav_order: 3
     <div class="people-section-title"><h2>Administrator</h2></div>
     <div class="people-grid">
       <article class="person-card">
-        <div class="person-photo"><img src="{{ '/assets/img/people/seonah-lee.jpg' | relative_url }}" alt="Seonah Lee"></div>
+        <div class="person-photo"><img src="{{ '/assets/img/people/seonahlee.png' | relative_url }}" alt="Seonah Lee"></div>
         <div class="person-info">
           <h3 class="person-name">Seonah Lee</h3>
           <p class="person-meta"><strong>Office</strong>: 4170, Practice Building (N9)</p>
