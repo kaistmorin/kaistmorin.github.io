@@ -332,6 +332,32 @@ nav_order: 3
   line-height: 1.5;
 }
 
+.alumni-pubs-col {
+  white-space: nowrap;
+}
+
+.alumni-pubs {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--morin-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.alumni-pubs:hover,
+.alumni-pubs:focus-visible {
+  text-decoration: underline;
+}
+
+.alumni-pubs i {
+  font-size: .68rem;
+}
+
+.alumni-pubs-none {
+  color: var(--morin-muted);
+}
+
 .alumni-wrap {
   overflow-x: auto;
   border-top: 1px solid var(--morin-line);
@@ -827,8 +853,10 @@ document.addEventListener("DOMContentLoaded", function () {
     return candidate.order < current.order;
   }
 
-  // canonical member name -> the one paper to show on their card.
+  // canonical member name -> the one paper to show on their card, and how many
+  // papers they have in total (used by the alumni table).
   const bestByMember = new Map();
+  const countByMember = new Map();
   let order = 0;
   CATEGORY_ORDER.forEach(function (category) {
     (publicationData[category] || []).forEach(function (item) {
@@ -842,6 +870,7 @@ document.addEventListener("DOMContentLoaded", function () {
       memberAuthors(item.authors).forEach(function (name) {
         const current = bestByMember.get(name);
         if (!current || isBetter(entry, current)) bestByMember.set(name, entry);
+        countByMember.set(name, (countByMember.get(name) || 0) + 1);
       });
     });
   });
@@ -898,5 +927,28 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
           </details>`);
   });
+
+  // Alumni are listed in a table instead of cards, so they get a "Publications"
+  // column linking to the same filtered view. The column is only added when at
+  // least one alumnus has a paper, so an empty column can never appear.
+  const alumniTable = document.querySelector(".alumni-table");
+  const alumniRows = alumniTable
+    ? Array.prototype.map.call(alumniTable.querySelectorAll("tbody tr"), function (row) {
+        const member = row.cells[0] ? authorLookup.get(normalizeName(row.cells[0].textContent)) : undefined;
+        return { row: row, member: member, count: (member && countByMember.get(member)) || 0 };
+      })
+    : [];
+
+  if (alumniRows.some(function (item) { return item.count > 0; })) {
+    const head = alumniTable.querySelector("thead tr");
+    if (head) head.insertAdjacentHTML("beforeend", '<th class="alumni-pubs-col">Publications</th>');
+
+    alumniRows.forEach(function (item) {
+      const cell = item.count
+        ? `<a class="alumni-pubs" href="${publicationsUrl}?author=${encodeURIComponent(item.member)}">${item.count} ${item.count === 1 ? "paper" : "papers"}<i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>`
+        : '<span class="alumni-pubs-none">&mdash;</span>';
+      item.row.insertAdjacentHTML("beforeend", '<td class="alumni-pubs-col">' + cell + "</td>");
+    });
+  }
 });
 </script>

@@ -141,7 +141,7 @@
     authors: "Yonghoon Cho, Jinwook Park, Jonghwi Kim and Jinwhan Kim*"
     venue: "IEEE Journal of Oceanic Engineering, Vol. 48, No. 4, pp. 1009-1018, 2023."
     year: "2023"
-    area: "Planning"
+    area: "Control"
 
   - title: "A Learning-Based Approach to Surface Vehicle Dynamics Modeling for Robust Multistep Prediction"
     authors: "Junwoo Jang, Changyu Lee and Jinwhan Kim*"
@@ -231,7 +231,7 @@
     authors: "Yonghoon Cho, Jonghwi Kim and Jinwhan Kim*"
     venue: "IEEE Robotics and Automation Letters (RA-L), Vol. 7, No. 1, pp. 518-525, 2022."
     year: "2022"
-    area: "Planning"
+    area: "Control"
 
   - title: "Robust Data Association for Multi-Object Detection in Maritime Environments Using Camera and Radar Measurements"
     authors: "Keunhwan Kim, Jonghwi Kim and Jinwhan Kim*"
@@ -261,13 +261,13 @@
     authors: "Yonghoon Cho, Jonghwi Kim and Jinwhan Kim*"
     venue: "IEEE Access, Vol. 9, pp. 5598-5608, 2021."
     year: "2021"
-    area: "Planning"
+    area: "Control"
 
   - title: "Efficient COLREG-Compliant Collision Avoidance in Multi-Ship Encounter Situations"
     authors: "Yonghoon Cho, Jungwook Han and Jinwhan Kim*"
     venue: "IEEE Transactions on Intelligent Transportation Systems, Vol. 23, pp. 1899-1911, 2020."
     year: "2020"
-    area: "Planning"
+    area: "Control"
 
   - title: "Robust Loop Closure Method for Multi-Robot Map Fusion by Integration of Consistency and Data Similarity"
     authors: "Haggi Do, Seonghun Hong and Jinwhan Kim*"
@@ -285,7 +285,7 @@
     authors: "Jungwook Han, Yonghoon Cho, Jonghwi Kim, Jinwhan Kim*, Nam-sun Son and Sun Young Kim"
     venue: "Journal of Field Robotics, Vol. 37, No. 6, pp. 987-1002, 2020."
     year: "2020"
-    area: "Planning"
+    area: "Control"
 
   - title: "Collaborative Mission and Route Planning of Multi-Vehicle Systems for Autonomous Search in Marine Environment"
     authors: "Sukmin Yoon, Haggi Do and Jinwhan Kim*"
@@ -658,7 +658,7 @@
     authors: "Jinwook Park, Jiyong Choi, Jeonghong Park, Dongjin Yeo and Jinwhan Kim*"
     venue: "IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), Blacksburg, USA, Sep. 2024."
     year: "2024"
-    area: "Planning"
+    area: "Control"
 
   - title: "An Efficient Method for Solving Routing Problems with Energy Constraints Using Reinforcement Learning"
     authors: "Haggi Do, Hakmo Son and Jinwhan Kim"
@@ -766,7 +766,7 @@
     authors: "Yonghoon Cho, Jonghwi Kim and Jinwhan Kim*"
     venue: "IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Oldenburg, Germany, Sep. 2021."
     year: "2021"
-    area: "Planning"
+    area: "Control"
 
   - title: "Robust Loop Closure Method for Multi-Robot Map Fusion by Integration of Consistency and Data Similarity"
     authors: "Haggi Do, Seonghun Hong and Jinwhan Kim*"
@@ -820,7 +820,7 @@
     authors: "Yonghoon Cho, Jungwook Han, Jinwhan Kim*, Philyeob Lee and Shin-Bae Park"
     venue: "IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), and Vehicles (CAMS), Daejeon, Korea, Sep. 2019."
     year: "2019"
-    area: "Planning"
+    area: "Control"
 
   - title: "Three-Dimensional Visual Mapping of Underwater Ship Hull Surface Using View-Based Piecewise- Planar Measurements"
     authors: "Seonghun Hong and Jinwhan Kim*"
@@ -868,7 +868,7 @@
     authors: "Yonghoon Cho, Jungwook Han and Jinwhan Kim*"
     venue: "IFAC Conference on Control Applications in Marine Systems, Robotics, and Vehicles (CAMS), Opatija, Croatia, Sep. 2018."
     year: "2018"
-    area: "Planning"
+    area: "Control"
 
   - title: "Pose Estimation Considering an Uncertainty Model of Stereo Vision for In-Water Ship Hull Inspection"
     authors: "Dongha Chung and Jinwhan Kim*"
@@ -1036,7 +1036,7 @@
     authors: "Jeonghong Park, Yonghoon Cho, Byunghyun Yoo and Jinwhan Kim*"
     venue: "MTS/IEEE OCEANS, Washington DC, USA, 2015."
     year: "2015"
-    area: "Perception"
+    area: "Control"
 
   - title: "Development of USV Autonomy for the 2014 Maritime RobotX Challenge"
     authors: "Minju Kang, Sungchur Kwon, Jeonghong Park, Taeyun Kim, Jungwook Han, Jeonghyeon Wang, Seonghun Hong, Yeonjoo Shim, Sukmin Yoon, Byunghyun Yoo and Jinwhan Kim*"
@@ -1144,7 +1144,7 @@
     authors: "Jeonghong Park, Jinwhan Kim* and Nam-sun Son"
     venue: "International Marine Simulator Forum (MARSIM), Singapore, 2012."
     year: "2012"
-    area: "Planning"
+    area: "Control"
 
   - title: "An Optimal Control Formulation for Dual Control Problems"
     authors: "Jinwhan Kim* and Sungmoon Joo"
@@ -1229,7 +1229,7 @@
     authors: "박진욱, 이찬규, 최지용, 김진환*"
     venue: "제어로봇시스템학회 논문지, Vol. 31, No. v, pp. 1271-1276, 2025."
     year: "2025"
-    area: "Planning"
+    area: "Control"
 
   - title: "자율운항선박을 위한 인식 및 센싱 기술"
     authors: "김종휘, 김진환*"
@@ -1271,7 +1271,7 @@
     authors: "조용훈, 김종휘, 김진환*"
     venue: "대한조선학회 논문집, Vol. 58, No. 3, 2021."
     year: "2021"
-    area: "Planning"
+    area: "Control"
 
   - title: "자율 수중 작업 및 선체 검사 자동화를 위한 AUV 기술"
     authors: "박지성, 정동하, 김진환*"
@@ -1319,7 +1319,7 @@
     authors: "조용훈, 한정욱, 김진환*, 이필엽"
     venue: "대한조선학회 논문집, Vol. 56, pp. 75-81, 2019."
     year: "2019"
-    area: "Planning"
+    area: "Control"
 
   - title: "극지해양구조물 성능평가를 위한 스펙트럼 기반 시간역 빙하중 생성에 관한 연구"
     authors: "김영식, 김진하, 강국진, 한소령, 김진환*"
@@ -1548,7 +1548,7 @@
     authors: "박진욱, 박기용, 김진환*"
     venue: "대한조선학회 추계학술대회, Nov. 2022."
     year: "2022"
-    area: "Planning"
+    area: "Control"
 
   - title: "자율 해양 무인이동체 시스템을 이용한 효율적 기뢰 탐색"
     authors: "김경서, 김진환*"
@@ -1842,7 +1842,7 @@
     authors: "조용훈, 한정욱, 김진환*, 이필엽"
     venue: "한국로봇학회 한국로봇종합학술대회 , 횡성, Jan. 2018."
     year: "2018"
-    area: "Planning"
+    area: "Control"
 
   - title: "수중 선체 상대 항법을 위한 스테레오 영상 기반의 선체 표면 상대 포즈 추정"
     authors: "정동하, 홍성훈, 김진환*"
@@ -1896,7 +1896,7 @@
     authors: "박정홍, 김진환*, 최진우, 최현택"
     venue: "제어로봇시스템학회, May 2017."
     year: "2017"
-    area: "Planning"
+    area: "Control"
 
   - title: "실내 주차장 환경에서 무인자동차의 측위 및 매핑을 위한 형상정보 기반의 SLAM"
     authors: "한정욱, 김진환*, 심현철"
@@ -2070,7 +2070,7 @@
     authors: "박정홍, 강민주, 조용훈, 김진환*"
     venue: "대한조선학회 추계학술대회 , 거제, Nov. 2015."
     year: "2015"
-    area: "Planning"
+    area: "Control"
 
   - title: "무인선을 활용한 반잠수식 해양 구조물 3 차원 형상 복원"
     authors: "한정욱, 강민주, 김진환*"
@@ -2256,7 +2256,7 @@
     authors: "박정홍, 김진환*"
     venue: "한국항해항만학회 추계학술대회, 부산, 2011."
     year: "2011"
-    area: "Planning"
+    area: "Control"
 
   - title: "시불변 불균일 스칼라장에서의 항법을 위한 실시간 필터 알고리듬"
     authors: "김진환"
