@@ -387,16 +387,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function authorOptions(entries) {
-    const tally = new Map();
+    const names = new Set();
     entries.forEach(function (item) {
       item.authorList.forEach(function (name) {
-        tally.set(name, (tally.get(name) || 0) + 1);
+        names.add(name);
       });
     });
-    return Array.from(tally.keys())
+    return Array.from(names)
       .sort(function (a, b) { return a.localeCompare(b, "en"); })
       .map(function (name) {
-        return { value: name, label: (authorLabel.get(name) || name) + " · " + tally.get(name) };
+        return { value: name, label: authorLabel.get(name) || name };
       });
   }
 
