@@ -1,0 +1,15 @@
+# Gem-owned files this site deliberately shadows.
+#
+# Each override freezes that file against gem upgrades, so after bumping a gem run
+#   bundle exec al-folio upgrade overrides diff <path>
+# to see what changed upstream, re-apply the local edit, then
+#   bundle exec al-folio upgrade overrides accept <path>
+overrides:
+  - path: _sass/_themes.scss
+    gem: al_folio_core
+    gem_version: 1.0.15
+    reason: >-
+      Navigation-bar accent colour. The gem theme colour is magenta (#b509ac light /
+      #2698ba dark); this site wants sky blue on the navbar tabs only. The file is a
+      verbatim copy of the gem source plus one appended `.navbar { --global-theme-color;
+      --global-hover-color }` block, so the rest of the site keeps the gem palette.

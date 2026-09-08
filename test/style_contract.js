@@ -65,7 +65,11 @@ if (/gem 'al_math',\s*:git =>/.test(gemfile)) {
   failures.push("`Gemfile` must not use git-branch pin for `al_math`; use released gem version.");
 }
 
-for (const forbiddenPath of ["_includes", "_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
+// `_sass` is intentionally absent from this list. This repository is a site built
+// FROM the al-folio starter, not the starter itself, and docs/ARCHITECTURE.md allows a
+// user's own site to shadow gem-owned style files. See .al-folio-overrides.yml for the
+// overrides in use and re-check them with `al-folio upgrade overrides audit` after a gem bump.
+for (const forbiddenPath of ["_includes", "_layouts", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
   if (exists(forbiddenPath)) {
     failures.push(`Starter must not own core component path \`${forbiddenPath}\`; move ownership to the corresponding gem.`);
   }
