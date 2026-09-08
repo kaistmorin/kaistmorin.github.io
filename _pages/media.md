@@ -30,7 +30,7 @@ nav_order: 5
 
 <div class="media-page">
   <h1>Media</h1>
-  <p class="media-intro">Selected videos and photos from MORIN Lab research and activities</p>
+  <p class="media-intro">Selected videos, awards, and photos from MORIN Lab research and activities</p>
 
   <section class="media-section">
     <div class="media-section-head"><h2>Featured</h2></div>
@@ -60,6 +60,28 @@ nav_order: 5
           <a href="{{ item.url | relative_url }}">
             <div class="media-thumb media-play">
               <img src="{{ item.thumb | relative_url }}" alt="">
+            </div>
+            <div class="media-card-meta">
+              <p class="media-label">{{ item.label }}</p>
+              <h3 class="media-title">{{ item.title }}</h3>
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="media-section">
+    <div class="media-section-head">
+      <h2>Awards</h2>
+      <a class="media-view-all" href="{{ '/media/awards/' | relative_url }}">View all →</a>
+    </div>
+    <div class="media-grid">
+      {% for item in site.data.media.awards limit:3 %}
+        <article class="media-card">
+          <a href="{{ item.url | relative_url }}">
+            <div class="media-thumb">
+              <img src="{{ item.thumb | relative_url }}" alt="{{ item.title }}">
             </div>
             <div class="media-card-meta">
               <p class="media-label">{{ item.label }}</p>

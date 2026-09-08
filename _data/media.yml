@@ -24,6 +24,192 @@ videos:
     thumb: "/assets/img/media/videos/2014-RobotXChallenge.jpg"
     label: "Video"
 
+awards:
+  - title: "Dongwook Lee received the Best Application Paper Award Candidate at UR 2026."
+    url: "/media/awards/2026-07-dongwook-lee-received-the-best-application-paper-award/"
+    thumb: "/assets/img/media/awards/UR_dongwook.png"
+    label: "2026-07"
+
+  - title: "Taekjoong Kwon received the Best Paper Award at the 2025 Winter Conference of the Korean Society of Naval Science and Technology."
+    url: "/media/awards/2026-07-taekjoong-kwon-received-the-best-paper-award-at-the-2025/"
+    thumb: "/assets/img/media/awards/taekjoong_first.png"
+    label: "2026-07"
+
+  - title: "Taekjoong Kwon and Jinwhan Kim received the Encouragement Award at the Graduate Student Defense Academic Conference."
+    url: "/media/awards/2025-11-taekjoong-kwon-and-jinwhan-kim-received-the-encouragement/"
+    thumb: "/assets/img/media/awards/taekjoong_second.png"
+    label: "2025-11"
+
+  - title: "Master student Taewoo Lee was awarded the Student Excellent Poster Award in The 12th UTokyo-SJTU-KAIST Joint Academic Symposium."
+    url: "/media/awards/2025-09-master-student-taewoo-lee-was-awarded-the-student/"
+    thumb: "/assets/img/media/awards/taewoo_UTokyo.jpg"
+    label: "2025-09"
+
+  - title: "Ph.D. Student Dongwook Lee was selected as the winner of the third prize award in OCEANS'25 Student Poster Competition"
+    url: "/media/awards/2025-06-ph-d-student-dongwook-lee-was-selected-as-the-winner-of/"
+    thumb: "/assets/img/media/awards/2025oceans_award.jpg"
+    label: "2025-06"
+
+  - title: "Ph.D. student Dongha Chung was awarded the grand prize from KAOSTS Paper Contest"
+    url: "/media/awards/2024-05-ph-d-student-dongha-chung-was-awarded-the-grand-prize/"
+    thumb: "/assets/img/media/awards/dhchung_KAOSTS.png"
+    label: "2024-05"
+
+  - title: "Ph.D. student Qianyi Zhang was selected to participate in OCEANS'24 Student Poster Competition."
+    url: "/media/awards/2024-04-ph-d-student-qianyi-zhang-was-selected-to-participate-in/"
+    thumb: "/assets/img/media/awards/2024oceans_spc.jpg"
+    label: "2024-04"
+
+  - title: "Team KAIST awarded 2nd Place Winner in MBZIRC 2023"
+    url: "/media/awards/2024-02-team-kaist-awarded-2nd-place-winner-in-mbzirc-2023/"
+    thumb: "/assets/img/media/awards/MBZIRC_TeamKAIST.jpg"
+    label: "2024-02"
+
+  - title: "Master student Eunghyun Kim was awarded Most Outstanding Paper Award from KRoC 2024"
+    url: "/media/awards/2024-02-master-student-eunghyun-kim-was-awarded-most-outstanding/"
+    thumb: "/assets/img/media/awards/KRoC_2024_award.png"
+    label: "2024-02"
+
+  - title: "Master student Donghyun Kim was selected to participate in OCEANS'23 Student Poster Competition."
+    url: "/media/awards/2023-06-master-student-donghyun-kim-was-selected-to-participate/"
+    thumb: "/assets/img/media/awards/Oceans_dk.png"
+    label: "2023-06"
+
+  - title: "Ph.D. Student Kyungseo Kim was awarded Outstanding Paper Award from ICROS 2022"
+    url: "/media/awards/2022-06-ph-d-student-kyungseo-kim-was-awarded-outstanding-paper/"
+    thumb: "/assets/img/media/awards/ICROS_2022_award_1.png"
+    label: "2022-06"
+
+  - title: "Ph.D. Student Sol Han and M.S. Student Jungwoo Han were awarded Outstanding Paper Award from KRoC 2022"
+    url: "/media/awards/2022-05-ph-d-student-sol-han-and-m-s-student-jungwoo-han-were/"
+    thumb: "/assets/img/media/awards/KRoC_2022_award_1.png"
+    label: "2022-05"
+
+  - title: "Ph.D. Student Jonghwi Kim was awarded Outstanding Student Paper Presentation Award from KSOE 2021"
+    url: "/media/awards/2022-01-ph-d-student-jonghwi-kim-was-awarded-outstanding-student/"
+    thumb: "/assets/img/media/awards/jonghwi2022.png"
+    label: "2022-01"
+
+  - title: "Ph.D. Student Junwoo Jang was awarded Outstanding Student Paper Presentation Award from KSOE 2020"
+    url: "/media/awards/2021-01-ph-d-student-junwoo-jang-was-awarded-outstanding-student/"
+    thumb: "/assets/img/media/awards/junwoo2020.jpg"
+    label: "2021-01"
+
+  - title: "Ph.D. Student Changyu Lee was awarded Outstanding Student Paper Presentation Award from KSOE 2020"
+    url: "/media/awards/2020-12-ph-d-student-changyu-lee-was-awarded-outstanding-student/"
+    thumb: "/assets/img/media/awards/2020_award_KSOE.jpg"
+    label: "2020-12"
+
+  - title: "Korean Federation of Science & Technology Societies Best Paper"
+    url: "/media/awards/2020-07-korean-federation-of-science-technology-societies-best/"
+    thumb: "/assets/img/media/awards/2020_award.jpg"
+    label: "2020-07"
+
+  - title: "Virtual RobotX (VRX) Competition 1st place"
+    url: "/media/awards/2019-12-virtual-robotx-vrx-competition-1st-place/"
+    thumb: "/assets/img/media/awards/vrx_ab.jpg"
+    label: "2019-12"
+
+  - title: "Master student Keunhwan was selected to participate in OCEANS'19 Student Poster Competition."
+    url: "/media/awards/2019-06-master-student-keunhwan-was-selected-to-participate-in/"
+    thumb: "/assets/img/media/awards/KKH_oceans.jpg"
+    label: "2019-06"
+
+  - title: "Ph.D. Student Junwoo Jang won the excellence prize in the Student Poster Competition UT'19 Kaohsiung"
+    url: "/media/awards/2019-04-ph-d-student-junwoo-jang-won-the-excellence-prize-in-the/"
+    thumb: "/assets/img/media/awards/junwoo2019.jpg"
+    label: "2019-04"
+
+  - title: "Ph.D. student Junwoo Jang received Poster Presentation Award 2nd Place in 5th UTokyo-SJTU-KAIST Joint Academic Symposium"
+    url: "/media/awards/2018-09-ph-d-student-junwoo-jang-received-poster-presentation/"
+    thumb: "/assets/img/media/awards/junwoo2018.jpg"
+    label: "2018-09"
+
+  - title: "Ph.D. Students Jungwook Han and Yonghoon Cho received Best Paper Award at Maritime RobotX Forum"
+    url: "/media/awards/2017-12-ph-d-students-jungwook-han-and-yonghoon-cho-received-best/"
+    thumb: "/assets/img/media/awards/20171215_JWHan_RobotXForum.jpg"
+    label: "2017-12"
+
+  - title: "Ph.D. students, Taeyun Kim and Seonghun Hong were selected to participate in OCEANS'17 Student Poster Competition."
+    url: "/media/awards/2017-09-ph-d-students-taeyun-kim-and-seonghun-hong-were-selected/"
+    thumb: "/assets/img/media/awards/2017Oceans.jpg"
+    label: "2017-09"
+
+  - title: "Ph.D. Student Sukmin Yoon received Outstanding Paper Award at Conference of the Institute of Control, Robotics and Systems"
+    url: "/media/awards/2017-05-ph-d-student-sukmin-yoon-received-outstanding-paper-award/"
+    thumb: "/assets/img/media/awards/Award_sukmin.jpg"
+    label: "2017-05"
+
+  - title: "Ph.D. student Seonghun Hong was awarded the grand prize from KAOSTS Paper Contest"
+    url: "/media/awards/2017-04-ph-d-student-seonghun-hong-was-awarded-the-grand-prize/"
+    thumb: "/assets/img/media/awards/Hong_2017_KAOST.jpg"
+    label: "2017-04"
+
+  - title: "Ph.D. Student Taeyun Kim won the 1st prize at UT 2017 student poster presentation competition"
+    url: "/media/awards/2017-02-ph-d-student-taeyun-kim-won-the-1st-prize-at-ut-2017/"
+    thumb: "/assets/img/media/awards/Taeyun_UT17.jpg"
+    label: "2017-02"
+
+  - title: "Ph.D. Student Jeonghyeon Wang was selected as the winner of the best robot vision paper award in KRoC 2017"
+    url: "/media/awards/2017-02-ph-d-student-jeonghyeon-wang-was-selected-as-the-winner/"
+    thumb: "/assets/img/media/awards/Award_jwang.jpg"
+    label: "2017-02"
+
+  - title: "Ph.D. Student Seonghun Hong was awarded as an Outstanding Student Paper Award from KSOE 2016"
+    url: "/media/awards/2017-02-ph-d-student-seonghun-hong-was-awarded-as-an-outstanding/"
+    thumb: "/assets/img/media/awards/hong_20170203.jpg"
+    label: "2017-02"
+
+  - title: "Master student Dongha Chung was awarded outstanding student paper presentation from KSOE 2016"
+    url: "/media/awards/2016-11-master-student-dongha-chung-was-awarded-outstanding/"
+    thumb: "/assets/img/media/awards/chung_20161117.jpg"
+    label: "2016-11"
+
+  - title: "Ph.D. Student Jungwook Han was selected as the winner of the third prize award in OCEANS'16 Student Poster Competition"
+    url: "/media/awards/2016-04-ph-d-student-jungwook-han-was-selected-as-the-winner-of/"
+    thumb: "/assets/img/media/awards/HJW_OCEANS_2016_Poster.jpg"
+    label: "2016-04"
+
+  - title: "Ph.D. student Jisung Park was selected as one of Asian Federation of Computer Vision(AFCV) Best Robot Vision Paper Award winners of Korea Robotics Society (KROS) 2016 held in Pyeongchang, Republic of Korea"
+    url: "/media/awards/2016-01-ph-d-student-jisung-park-was-selected-as-one-of-asian/"
+    thumb: "/assets/img/media/awards/jisung_20160127.jpg"
+    label: "2016-01"
+
+  - title: "Master student Minju Kang is awarded Poster Award from KRoC"
+    url: "/media/awards/2016-01-master-student-minju-kang-is-awarded-poster-award-from/"
+    thumb: "/assets/img/media/awards/kang_20160126.jpg"
+    label: "2016-01"
+
+  - title: "Ph.D. Student Jeonghyeon Wang was awarded as an Outstanding Student Paper Award from KSOE"
+    url: "/media/awards/2015-10-ph-d-student-jeonghyeon-wang-was-awarded-as-an/"
+    thumb: "/assets/img/media/awards/wang_20151022.jpg"
+    label: "2015-10"
+
+  - title: "PhD Student Seonghun Hong was awarded the best paper award from JKROS"
+    url: "/media/awards/2015-10-phd-student-seonghun-hong-was-awarded-the-best-paper/"
+    thumb: "/assets/img/media/awards/hong_20151029.jpg"
+    label: "2015-10"
+
+  - title: "Master Student Sungchur Kwon was awarded outstanding poster award from KRoC 2015"
+    url: "/media/awards/2015-05-master-student-sungchur-kwon-was-awarded-outstanding/"
+    thumb: "/assets/img/media/awards/kwon_20150507.jpg"
+    label: "2015-05"
+
+  - title: "RobotX Competition 2nd place"
+    url: "/media/awards/2014-10-robotx-competition-2nd-place/"
+    thumb: "/assets/img/media/awards/robotx.jpg"
+    label: "2014-10"
+
+  - title: "Master student Jisung Park was selected as one of five Outstanding Student Paper & Presentation Award winners of the 2014 spring conference of The Korean Society of Ocean Engineering held in Busan, Republic of Korea"
+    url: "/media/awards/2014-05-master-student-jisung-park-was-selected-as-one-of-five/"
+    thumb: "/assets/img/media/awards/jisung_20140523.jpg"
+    label: "2014-05"
+
+  - title: "PhD Student Jungwook Han was awarded Outstanding Paper Award from KSOE"
+    url: "/media/awards/2014-01-phd-student-jungwook-han-was-awarded-outstanding-paper/"
+    thumb: "/assets/img/media/awards/han_20140128.jpg"
+    label: "2014-01"
+
 gallery:
   - title: "MORIN KMRTS"
     url: "/media/gallery/2026-06-morin-kmrts/"
