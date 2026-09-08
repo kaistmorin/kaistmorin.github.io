@@ -9,6 +9,7 @@
   --morin-text: #1f2937;
   --morin-muted: #667085;
   --morin-line: #e6ebf0;
+  --morin-sky: #1f8fd0;
   width: calc(100% - 48px);
   max-width: 1120px;
   box-sizing: border-box;
@@ -132,6 +133,7 @@
 }
 
 .person-affiliation a:hover {
+  color: var(--morin-sky);
   text-decoration: underline;
 }
 
@@ -149,6 +151,7 @@
 }
 
 .person-name-affiliation a:hover {
+  color: var(--morin-sky);
   text-decoration: underline;
 }
 
@@ -158,6 +161,10 @@
   color: var(--morin-text);
   font-size: .86rem;
   line-height: 1.5;
+}
+
+.person-email:hover {
+  color: var(--morin-muted);
 }
 
 .person-email {
@@ -270,6 +277,7 @@
 
 .person-latest .person-latest-more:hover,
 .person-latest .person-latest-more:focus-visible {
+  color: var(--morin-sky);
   text-decoration: underline;
 }
 
@@ -343,6 +351,7 @@
 
 .alumni-pubs:hover,
 .alumni-pubs:focus-visible {
+  color: var(--morin-sky);
   text-decoration: underline;
 }
 
