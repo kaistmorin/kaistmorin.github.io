@@ -519,6 +519,7 @@ nav_order: 3
         <div class="person-photo"><img src="{{ '/assets/img/people/jiyongchoi.png' | relative_url }}" alt="Jiyong Choi"></div>
         <div class="person-info">
           <h3 class="person-name">Jiyong Choi</h3>
+          <p class="person-meta"><strong>M.S.</strong> KAIST</p>
           <p class="person-meta"><strong>B.S.</strong> KAIST</p>
           <a class="person-email">jiyongchoi0702@kaist.ac.kr</a>
         </div>
