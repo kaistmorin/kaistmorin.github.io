@@ -583,6 +583,10 @@ nav_order: 3
           </h3>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
           <p class="person-meta"><strong>B.S.</strong> KAIST</p>
+          <div class="person-interests">
+            <span class="person-interest">SLAM</span>
+            <span class="person-interest">VLA</span>
+          </div>
           <a class="person-email">ooww0123@kaist.ac.kr</a>
         </div>
       </article>
