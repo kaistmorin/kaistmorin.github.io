@@ -61,10 +61,10 @@
   min-width: 0;
 }
 
-.publications-field--type { width: min(215px, 100%); }
-.publications-field--area { width: min(150px, 100%); }
-.publications-field--year { width: min(120px, 100%); }
-.publications-field--author { width: min(265px, 100%); }
+.publications-field--type { width: min(245px, 100%); }
+.publications-field--area { width: min(155px, 100%); }
+.publications-field--year { width: min(135px, 100%); }
+.publications-field--author { width: min(255px, 100%); }
 
 .publications-field-label {
   color: var(--morin-muted);
@@ -76,7 +76,7 @@
 
 .publications-select {
   width: 100%;
-  padding: 10px 38px 10px 12px;
+  padding: 10px 32px 10px 12px;
   border: 1px solid #cfd6df;
   border-radius: 7px;
   background: #fff;
@@ -230,6 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Author filter roster: lab members only, Korean and English spellings merged.
   const authorRoster = [{"name":"Jinwhan Kim","korean":"김진환"},{"name":"Kyungseo Kim","korean":"김경서"},{"name":"Jinwook Park","korean":"박진욱"},{"name":"Qianyi Zhang"},{"name":"Sol Han","korean":"한솔"},{"name":"Kiyong Park","korean":"박기용"},{"name":"Donghyun Kim","korean":"김동현"},{"name":"Hakmo Son"},{"name":"Jisu Jeon","korean":"전지수"},{"name":"Dongwook Lee","korean":"이동욱"},{"name":"Jiyong Choi","korean":"최지용"},{"name":"Minju Kang","korean":"강민주"},{"name":"Keunhwan Kim","korean":"김근환"},{"name":"Yeongha Shin","korean":"신영하"},{"name":"Wonseok Oh","korean":"오원석"},{"name":"Kyeongmo Kang"},{"name":"Ju Hang Lee"},{"name":"Ji Soo Kim"},{"name":"Tae Woo Lee"},{"name":"Kyeonghun Lee"},{"name":"Sang Won Park"},{"name":"Taeung Lee"},{"name":"Seonah Lee"},{"name":"Hyunkuen Cho","korean":"조현근","aliases":["Hyunkeun Cho"]},{"name":"Junwoo Park","korean":"박준우"},{"name":"Yonghoe Lee","korean":"이용회"},{"name":"Taekjoong Kwon","korean":"권택중"},{"name":"Haggi Do","korean":"도학기"},{"name":"Changyu Lee","korean":"이찬규","aliases":["Changu Lee"]},{"name":"Hoon Chung"},{"name":"Junhyung Kim"},{"name":"Kunchul Hwang"},{"name":"Dongha Chung","korean":"정동하"},{"name":"Youngbum Kim"},{"name":"Jonghwi Kim","korean":"김종휘"},{"name":"Eunghyun Kim","korean":"김응현"},{"name":"Uijong Kim","korean":"김의종"},{"name":"Jungwoo Han","korean":"한정우"},{"name":"Junwoo Jang","korean":"장준우"},{"name":"Jinsik Kim","korean":"김진식"},{"name":"Yonghoon Cho","korean":"조용훈"},{"name":"Jisung Park","korean":"박지성"},{"name":"Seungjo Hong","korean":"홍승조"},{"name":"David Munk Zino"},{"name":"Jeonghyeon Wang","korean":"왕정현"},{"name":"Sukmin Yoon","korean":"윤석민"},{"name":"Seonghun Hong","korean":"홍성훈"},{"name":"Jungwook Han","korean":"한정욱"},{"name":"Byunghyun Yoo","korean":"유병현"},{"name":"Taeyun Kim","korean":"김태윤"},{"name":"Thorsteinn Baldvin Jonsson","aliases":["Thorsteinn B. Jonsson","Thorsteinn Jonsson"]},{"name":"Youngshik Kim","korean":"김영식"},{"name":"Sangwook Woo","korean":"우상욱"},{"name":"Aleixo Cambeiro Barreiro"},{"name":"Soohyun Nam"},{"name":"Jaeheon Choe"},{"name":"Yeonjoo Shim","korean":"심연주"},{"name":"Donghwan Kim","korean":"김동환"},{"name":"Jeonghong Park","korean":"박정홍"},{"name":"Sungchur Kwon","korean":"권성철"},{"name":"Hojang Lee","korean":"이호장"},{"name":"Hyungbae Lee","korean":"이형배"},{"name":"Younghyun Kim","korean":"김영현","aliases":["Yonghyun Kim"]},{"name":"Quoc Van Tran"},{"name":"Mohan Santhakumar","aliases":["M. Santhakumar"]},{"name":"Armagan Elibol","aliases":["A. Elibol"]}];
   const catSelect = document.getElementById("publication-filter");
+  const areaSelect = document.getElementById("publication-area-filter");
   const yearSelect = document.getElementById("publication-year-filter");
   const authorSelect = document.getElementById("publication-author-filter");
   const list = document.getElementById("publication-list");
@@ -283,17 +284,33 @@ document.addEventListener("DOMContentLoaded", function () {
         authorList: memberAuthors(item.authors),
         venue: item.venue,
         year: item.year,
+        area: item.area || "",
         note: item.note
       });
     });
   });
 
-  function selectEntries(category, year, author) {
+  function selectEntries(category, area, year, author) {
     return entriesAll.filter(function (item) {
       return (!category || item.category === category)
+        && (!area || item.area === area)
         && (!year || item.year === year)
         && (!author || item.authorList.indexOf(author) !== -1);
     });
+  }
+
+  // Fixed order so the areas always read perception -> planning -> control.
+  const AREA_ORDER = ["Perception", "Planning", "Control"];
+
+  function areaOptions(entries) {
+    const present = {};
+    entries.forEach(function (item) { if (item.area) present[item.area] = true; });
+    return AREA_ORDER.filter(function (a) { return present[a]; })
+      .map(function (a) { return { value: a, label: a }; });
+  }
+
+  function areaClass(area) {
+    return area ? "publication-area publication-area--" + area.toLowerCase() : "";
   }
 
   // Rebuild a select, keeping the current choice when it is still available.
@@ -354,7 +371,10 @@ document.addEventListener("DOMContentLoaded", function () {
           <p class="publication-authors">${escapeHtml(item.authors)}</p>
           <p class="publication-venue">${escapeHtml(item.venue)}</p>
           ${item.note ? `<p class="publication-note">${escapeHtml(item.note)}</p>` : ""}
-          ${showCategory ? `<span class="publication-category">${escapeHtml(item.category)}</span>` : ""}
+          ${item.area || showCategory ? `<div class="publication-tags">
+            ${item.area ? `<span class="${areaClass(item.area)}">${escapeHtml(item.area)}</span>` : ""}
+            ${showCategory ? `<span class="publication-category">${escapeHtml(item.category)}</span>` : ""}
+          </div>` : ""}
         </article>`;
     }).join("");
   }
@@ -363,12 +383,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // three filters can never combine into an empty result.
   function update() {
     const category = catSelect.value;
-    const year = fillSelect(yearSelect, yearOptions(selectEntries(category, "", authorSelect.value)), "All Years");
-    const author = fillSelect(authorSelect, authorOptions(selectEntries(category, year, "")), "All Authors");
-    render(selectEntries(category, year, author), !category);
+    const area = fillSelect(areaSelect,
+      areaOptions(selectEntries(category, "", yearSelect.value, authorSelect.value)), "All Areas");
+    const year = fillSelect(yearSelect,
+      yearOptions(selectEntries(category, area, "", authorSelect.value)), "All Years");
+    const author = fillSelect(authorSelect,
+      authorOptions(selectEntries(category, area, year, "")), "All Authors");
+    render(selectEntries(category, area, year, author), !category);
   }
 
-  [catSelect, yearSelect, authorSelect].forEach(function (el) {
+  [catSelect, areaSelect, yearSelect, authorSelect].forEach(function (el) {
     el.addEventListener("change", update);
   });
 
