@@ -65,10 +65,10 @@ nav_order: 4
   min-width: 0;
 }
 
-.publications-field--type { width: min(215px, 100%); }
-.publications-field--area { width: min(150px, 100%); }
-.publications-field--year { width: min(120px, 100%); }
-.publications-field--author { width: min(265px, 100%); }
+.publications-field--type { width: min(245px, 100%); }
+.publications-field--area { width: min(155px, 100%); }
+.publications-field--year { width: min(135px, 100%); }
+.publications-field--author { width: min(255px, 100%); }
 
 .publications-field-label {
   color: var(--morin-muted);
@@ -80,7 +80,7 @@ nav_order: 4
 
 .publications-select {
   width: 100%;
-  padding: 10px 38px 10px 12px;
+  padding: 10px 32px 10px 12px;
   border: 1px solid #cfd6df;
   border-radius: 7px;
   background: #fff;
@@ -275,6 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Author filter roster: lab members only, Korean and English spellings merged.
   const authorRoster = {{ site.data.publication_authors | jsonify }};
   const catSelect = document.getElementById("publication-filter");
+  const areaSelect = document.getElementById("publication-area-filter");
   const yearSelect = document.getElementById("publication-year-filter");
   const authorSelect = document.getElementById("publication-author-filter");
   const list = document.getElementById("publication-list");
@@ -328,17 +329,33 @@ document.addEventListener("DOMContentLoaded", function () {
         authorList: memberAuthors(item.authors),
         venue: item.venue,
         year: item.year,
+        area: item.area || "",
         note: item.note
       });
     });
   });
 
-  function selectEntries(category, year, author) {
+  function selectEntries(category, area, year, author) {
     return entriesAll.filter(function (item) {
       return (!category || item.category === category)
+        && (!area || item.area === area)
         && (!year || item.year === year)
         && (!author || item.authorList.indexOf(author) !== -1);
     });
+  }
+
+  // Fixed order so the areas always read perception -> planning -> control.
+  const AREA_ORDER = ["Perception", "Planning", "Control"];
+
+  function areaOptions(entries) {
+    const present = {};
+    entries.forEach(function (item) { if (item.area) present[item.area] = true; });
+    return AREA_ORDER.filter(function (a) { return present[a]; })
+      .map(function (a) { return { value: a, label: a }; });
+  }
+
+  function areaClass(area) {
+    return area ? "publication-area publication-area--" + area.toLowerCase() : "";
   }
 
   // Rebuild a select, keeping the current choice when it is still available.
@@ -399,7 +416,10 @@ document.addEventListener("DOMContentLoaded", function () {
           <p class="publication-authors">${escapeHtml(item.authors)}</p>
           <p class="publication-venue">${escapeHtml(item.venue)}</p>
           ${item.note ? `<p class="publication-note">${escapeHtml(item.note)}</p>` : ""}
-          ${showCategory ? `<span class="publication-category">${escapeHtml(item.category)}</span>` : ""}
+          ${item.area || showCategory ? `<div class="publication-tags">
+            ${item.area ? `<span class="${areaClass(item.area)}">${escapeHtml(item.area)}</span>` : ""}
+            ${showCategory ? `<span class="publication-category">${escapeHtml(item.category)}</span>` : ""}
+          </div>` : ""}
         </article>`;
     }).join("");
   }
@@ -408,12 +428,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // three filters can never combine into an empty result.
   function update() {
     const category = catSelect.value;
-    const year = fillSelect(yearSelect, yearOptions(selectEntries(category, "", authorSelect.value)), "All Years");
-    const author = fillSelect(authorSelect, authorOptions(selectEntries(category, year, "")), "All Authors");
-    render(selectEntries(category, year, author), !category);
+    const area = fillSelect(areaSelect,
+      areaOptions(selectEntries(category, "", yearSelect.value, authorSelect.value)), "All Areas");
+    const year = fillSelect(yearSelect,
+      yearOptions(selectEntries(category, area, "", authorSelect.value)), "All Years");
+    const author = fillSelect(authorSelect,
+      authorOptions(selectEntries(category, area, year, "")), "All Authors");
+    render(selectEntries(category, area, year, author), !category);
   }
 
-  [catSelect, yearSelect, authorSelect].forEach(function (el) {
+  [catSelect, areaSelect, yearSelect, authorSelect].forEach(function (el) {
     el.addEventListener("change", update);
   });
 
