@@ -217,6 +217,44 @@ nav_order: 3
   white-space: nowrap;
 }
 
+.person-latest {
+  margin: 12px 0 0;
+  padding: 11px 0 0;
+  border-top: 1px dashed var(--morin-line);
+}
+
+.person-latest .person-latest-label {
+  display: block;
+  margin: 0 0 4px;
+  color: var(--morin-blue);
+  font-size: .71rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.person-latest .person-latest-title {
+  margin: 0 0 3px;
+  color: var(--morin-navy);
+  font-size: .84rem;
+  font-weight: 600;
+  line-height: 1.42;
+}
+
+.person-latest .person-latest-venue {
+  margin: 0;
+  color: var(--morin-muted);
+  font-size: .8rem;
+  font-style: italic;
+  line-height: 1.42;
+}
+
+.director-card .person-latest {
+  max-width: 640px;
+  margin-top: 18px;
+}
+
 .director-card {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
@@ -677,3 +715,136 @@ nav_order: 3
   </section>
 
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Latest publication per member, resolved at page load so that adding a paper
+  // to _data/publications.yml is the only edit needed.
+  //   publications        - every paper, grouped by category
+  //   publication_authors - member name spellings (English / Korean / aliases)
+  //   highlight_venues    - "top venue" keywords, shared with the home page
+  const publicationData = {{ site.data.publications | jsonify }};
+  const authorRoster = {{ site.data.publication_authors | jsonify }};
+  const topVenueKeywords = {{ site.data.highlight_venues.match | jsonify }};
+
+  // Preference order, best first. Within "International Journals" a venue that
+  // matches topVenueKeywords (RA-L, Transactions, ...) outranks the rest, so the
+  // full order is: top journal > other international journal > international
+  // conference > domestic journal > domestic conference. Ties go to the newest
+  // year, then to the order the papers are written in _data/publications.yml
+  // (newest first).
+  const CATEGORY_ORDER = [
+    "International Journals",
+    "International Conferences",
+    "Domestic Journals",
+    "Domestic Conferences"
+  ];
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  // Ignore case, spaces, hyphens and periods when matching a spelling.
+  function normalizeName(value) {
+    return String(value || "").replace(/[\s\-.]/g, "").toLowerCase();
+  }
+
+  // spelling -> canonical member name.
+  const authorLookup = new Map();
+  authorRoster.forEach(function (person) {
+    [person.name].concat(person.korean || [], person.aliases || []).forEach(function (spelling) {
+      authorLookup.set(normalizeName(spelling), person.name);
+    });
+  });
+
+  // "Hakmo Son, Haggi Do and Jinwhan Kim*" -> canonical member names only.
+  function memberAuthors(value) {
+    const found = [];
+    String(value || "")
+      .split(/\s*,\s*|\s+and\s+/)
+      .forEach(function (raw) {
+        const canonical = authorLookup.get(normalizeName(raw.replace(/\*+$/, "")));
+        if (canonical && found.indexOf(canonical) === -1) found.push(canonical);
+      });
+    return found;
+  }
+
+  function rankOf(category, venue) {
+    const base = CATEGORY_ORDER.indexOf(category);
+    if (base === -1) return CATEGORY_ORDER.length + 1;
+    const top = category === "International Journals" && topVenueKeywords.some(function (keyword) {
+      return String(venue || "").indexOf(keyword) !== -1;
+    });
+    return top ? 0 : base + 1;
+  }
+
+  function isBetter(candidate, current) {
+    if (candidate.rank !== current.rank) return candidate.rank < current.rank;
+    if (Number(candidate.year) !== Number(current.year)) return Number(candidate.year) > Number(current.year);
+    return candidate.order < current.order;
+  }
+
+  // canonical member name -> the one paper to show on their card.
+  const bestByMember = new Map();
+  let order = 0;
+  CATEGORY_ORDER.forEach(function (category) {
+    (publicationData[category] || []).forEach(function (item) {
+      const entry = {
+        title: item.title,
+        venue: item.venue,
+        year: item.year,
+        rank: rankOf(category, item.venue),
+        order: order++
+      };
+      memberAuthors(item.authors).forEach(function (name) {
+        const current = bestByMember.get(name);
+        if (!current || isBetter(entry, current)) bestByMember.set(name, entry);
+      });
+    });
+  });
+
+  // Venue strings already end with the year; only add it when one is missing.
+  function venueLine(entry) {
+    const venue = String(entry.venue || "").trim();
+    if (!entry.year || venue.indexOf(entry.year) !== -1) return venue;
+    return venue.replace(/\.$/, "") + ", " + entry.year + ".";
+  }
+
+  // The heading also carries the homepage button and the affiliation note, so
+  // only its own text nodes are the name. `data-person` overrides it.
+  function cardName(card) {
+    const explicit = card.getAttribute("data-person");
+    if (explicit) return explicit;
+    const heading = card.querySelector(".person-name") || card.querySelector("h3");
+    if (!heading) return "";
+    return Array.prototype.filter
+      .call(heading.childNodes, function (node) { return node.nodeType === 3; })
+      .map(function (node) { return node.textContent; })
+      .join(" ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  document.querySelectorAll(".person-card, .director-card").forEach(function (card) {
+    const entry = bestByMember.get(authorLookup.get(normalizeName(cardName(card))));
+    if (!entry) return;
+
+    const target = card.classList.contains("director-card")
+      ? card.querySelector(":scope > div")
+      : card.querySelector(".person-info");
+    if (!target) return;
+
+    target.insertAdjacentHTML("beforeend", `
+          <div class="person-latest">
+            <span class="person-latest-label">Latest publication</span>
+            <p class="person-latest-title">${escapeHtml(entry.title)}</p>
+            <p class="person-latest-venue">${escapeHtml(venueLine(entry))}</p>
+          </div>`);
+  });
+});
+</script>
