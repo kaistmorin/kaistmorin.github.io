@@ -152,6 +152,13 @@ nav_order: 4
   box-shadow: inset 0 0 0 1px #d5c9f2;
 }
 
+/* Work that sits outside perception/planning/control. */
+.publication-area--other {
+  background: #edeff2;
+  color: #56606e;
+  box-shadow: inset 0 0 0 1px #d6dbe1;
+}
+
 .publications-empty {
   margin: 26px 0 0;
   color: var(--morin-muted);
@@ -344,8 +351,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Fixed order so the areas always read perception -> planning -> control.
-  const AREA_ORDER = ["Perception", "Planning", "Control"];
+  // Fixed order so the areas always read perception -> planning -> control -> other.
+  const AREA_ORDER = ["Perception", "Planning", "Control", "Other"];
 
   function areaOptions(entries) {
     const present = {};

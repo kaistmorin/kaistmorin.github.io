@@ -153,6 +153,7 @@
     authors: "Junwoo Jang, Jungwoo Han and Jinwhan Kim*"
     venue: "Expert Systems with Applications, Vol. 225, 2023."
     year: "2023"
+    area: "Other"
 
   - title: "Model Predictive Anti-Spin Thruster Control for Efficient Ship Propulsion in Irregular Waves"
     authors: "Changyu Lee and Jinwhan Kim*"
@@ -332,6 +333,7 @@
     authors: "Byunghyun Yoo and Jinwhan Kim*"
     venue: "Applied Ocean Research, Vol. 82, pp. 1-9, 2019."
     year: "2019"
+    area: "Other"
 
   - title: "In-Water Visual Ship Hull Inspection Using a Hover-Capable Underwater Vehicle with Stereo Vision"
     authors: "Seonghun Hong, Dongha Chung, Jinwhan Kim*, Youngji Kim, Ayoung Kim and Hyeon Kyu Yoon"
@@ -379,6 +381,7 @@
     authors: "Jeonghong Park, Minju Kang, Taeyun Kim, Sungchur Kwon, Jungwook Han, Jeonghyeon Wang, Sukmin Yoon, Byunghyun Yoo, Seonghun Hong, Yeonjoo Shim, Jisung Park and Jinwhan Kim*"
     venue: "Journal of Field Robotics, Vol. 34, No. 4, pp. 644-665, 2017."
     year: "2017"
+    area: "Other"
 
   - title: "Fast Underwater Image Mosaicing Through Submapping"
     authors: "Armagan Elibol*, Jinwhan Kim, Nuno Gracias and Rafael Garcia"
@@ -396,16 +399,19 @@
     authors: "Soohyun Nam, Dongyoung Lee, Dai Gil Lee* and Jinwhan Kim*"
     venue: "Composite Structures, Vol. 159, pp. 220-227, 2017."
     year: "2017"
+    area: "Other"
 
   - title: "Shape Optimization of the Corrugated Composite Bipolar Plate for Vanadium Redox Flow Batteries"
     authors: "Jaeheon Choe, Dongyoung Lee, Jinwhan Kim* and Dai Gil Lee*"
     venue: "Composite Structures, Vol. 158, pp. 333-339, 2016."
     year: "2016"
+    area: "Other"
 
   - title: "A Microwave Foaming Method for Fabricating Glass Fiber Reinforced Phenolic Foam"
     authors: "Jaeheon Choe, Minkook Kim, Jinwhan Kim and Dai Gil Lee*"
     venue: "Composite Structures, Vol. 152, pp. 239-246, 2016."
     year: "2016"
+    area: "Other"
 
   - title: "A Robust Loop-Closure Method for Visual SLAM in Unstructured Seafloor Environments"
     authors: "Seonghun Hong, Jinwhan Kim*, Juhyun Pyo and Son-Cheol Yu"
@@ -429,6 +435,7 @@
     authors: "Soohyun Nam, Dongyoung Lee, Jinwhan Kim and Dai Gil Lee*"
     venue: "Composite Structures, Vol. 145, pp. 113-118, 2016."
     year: "2016"
+    area: "Other"
 
   - title: "Mobile Robot Navigation Using Grid Line Patterns Via Probabilistic Measurement Modeling"
     authors: "Taeyun Kim, Jinwhan Kim* and Hyun-Taek Choi"
@@ -440,6 +447,7 @@
     authors: "Seongjin Yoon, Jinwhan Kim and Wooyoung Choi*"
     venue: "IEEE Journal of Oceanic Engineering, Vol. 41, No. 1, pp. 112-122, 2016."
     year: "2016"
+    area: "Other"
 
   - title: "Constrained Motion Planning for Robot Manipulators Using Local Geometric Information"
     authors: "Jeonghyeon Wang, Jujang Lee and Jinwhan Kim*"
@@ -451,11 +459,13 @@
     authors: "Jaeheon Choe, Jun Woo Lim, Jinwhan Kim and Dai Gil Lee*"
     venue: "Composite Structures, Vol. 134, pp. 106-113, 2015."
     year: "2015"
+    area: "Other"
 
   - title: "Development of the Light Weight Carbon Composite Tie Bar"
     authors: "Soohyun Nam, Dongyoung Lee, Jinwhan Kim and Dai Gil Lee*"
     venue: "Composite Structures, Vol. 134, pp. 124-131, 2015."
     year: "2015"
+    area: "Other"
 
   - title: "Coordinated Motion Control in Task Space of an Autonomous Underwater Vehicle-Manipulator System"
     authors: "M. Santhakumar and Jinwhan Kim*"
@@ -491,6 +501,7 @@
     authors: "Youngtae Noh, Uichin Lee, Seongwon Han, P. Wang, D. Torres, Jinwhan Kim and M. Gerla*"
     venue: "IEEE Transactions on Mobile Computing, Vol. 13, No. 4, pp. 766-782, 2014."
     year: "2014"
+    area: "Other"
 
   - title: "Task Space-Based Control of an Underwater Robotic System for Position Keeping in Ocean Currents"
     authors: "Yonghyun Kim, M. Santhakumar and Jinwhan Kim*"
@@ -526,6 +537,7 @@
     authors: "Jinwhan Kim*, M. Tandale and P.K. Menon"
     venue: "IEEE Transactions on Aerospace and Electronic Systems, Vol. 48, pp. 525-541, 2012."
     year: "2012"
+    area: "Other"
 
   - title: "Comparison Between Nonlinear Filtering Techniques for Spiraling Ballistic Missile State Estimation"
     authors: "Jinwhan Kim*, S.S. Vaddi, P.K. Menon and E.J. Ohlmeyer"
@@ -712,6 +724,7 @@
     authors: "Jungwoo Han and Jinwhan Kim*"
     venue: "22th International Conference on Control, Automation and Systems (ICCAS 2022), Busan, Korea, Nov. 2022."
     year: "2022"
+    area: "Other"
 
   - title: "Robust Path Tracking and Obstacle Avoidance Using Tube-Based Model Predictive Control for Surface Vehicles"
     authors: "Changyu Lee, Quoc Van Tran and Jinwhan Kim*"
@@ -897,6 +910,7 @@
     authors: "Byunghyun Yoo and Jinwhan Kim*"
     venue: "IFAC World Congress, Toulouse, France, Jul. 2017."
     year: "2017"
+    area: "Other"
 
   - title: "Efficient Task Allocation for Collaborative Route Planning with Multiple Unmanned Vehicles"
     authors: "Sukmin Yoon and Jinwhan Kim*"
@@ -1028,6 +1042,7 @@
     authors: "Minju Kang, Sungchur Kwon, Jeonghong Park, Taeyun Kim, Jungwook Han, Jeonghyeon Wang, Seonghun Hong, Yeonjoo Shim, Sukmin Yoon, Byunghyun Yoo and Jinwhan Kim*"
     venue: "10th IFAC Conference on Manoeuvring and Control of Marine Craft (MCMC), Copenhagen, Denmark, 2015."
     year: "2015"
+    area: "Other"
 
   - title: "Underwater Visual SLAM with Loop-Closure Using Image-to-Image Link Recovery"
     authors: "Seonghun Hong, Taeyun Kim and Jinwhan Kim*"
@@ -1117,6 +1132,7 @@
     authors: "Sungyeop Lim, Wooyoung Choi and Jinwhan Kim*"
     venue: "MTS/IEEE OCEANS, Yeosu, Korea, 2012."
     year: "2012"
+    area: "Other"
 
   - title: "On Data Assimilation in a Pseudo-Spectral Wave Prediction Model Using a Kalman Filter"
     authors: "Seongjin Yoon, Jinwhan Kim and Wooyoung Choi*"
@@ -1170,16 +1186,19 @@
     authors: "P.K. Menon*, M. Tandale, Jinwhan Kim and P. Sengupta"
     venue: "AIAA Guidance, Navigation, and Control Conference, Toronto, Canada, 2010."
     year: "2010"
+    area: "Other"
 
   - title: "Air-Traffic Uncertainty Models for Queuing Analysis"
     authors: "Jinwhan Kim*, M. Tandale and P.K. Menon"
     venue: "AIAA Aviation Technology, Integration, and Operations Conference (ATIO), Hilton Head, USA, 2009."
     year: "2009"
+    area: "Other"
 
   - title: "Queuing Models for Analyzing the Impact of Trajectory Uncertainties on the NAS Flow Efficiency"
     authors: "P. Sengupta*, M. Tandale, Jinwhan Kim and P.K. Menon"
     venue: "AIAA Aviation Technology, Integration, and Operations Conference (ATIO), Hilton Head, USA, 2009."
     year: "2009"
+    area: "Other"
 
   - title: "Nonlinear Fileter Formulation for Rapid Estimation of Damaged Aircraft Performance"
     authors: "Jinwhan Kim*, K. Palaniappan and P.K. Menon"
@@ -1191,6 +1210,7 @@
     authors: "Jinwhan Kim*, K. Palaniappan, P.K. Menon, M. Nag and K. Subbarao"
     venue: "AIAA Aviation Technology, Integration, and Operations Conference (ATIO), Anchorage, USA, 2008."
     year: "2008"
+    area: "Other"
 
   - title: "Comparison Between Three Spiraling Ballistic Missile State Estimators"
     authors: "Jinwhan Kim*, S.S. Vaddi and P.K. Menon"
