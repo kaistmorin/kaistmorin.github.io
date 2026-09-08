@@ -238,6 +238,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Publication data lives in _data/publications.yml (single source of truth,
   // shared with the home page's Research Highlights section).
   const publicationData = {{ site.data.publications | jsonify }};
+  // Author filter roster: lab members only, Korean and English spellings merged.
+  const authorRoster = {{ site.data.publication_authors | jsonify }};
   const catSelect = document.getElementById("publication-filter");
   const yearSelect = document.getElementById("publication-year-filter");
   const authorSelect = document.getElementById("publication-author-filter");
@@ -253,12 +255,32 @@ document.addEventListener("DOMContentLoaded", function () {
       .replace(/'/g, "&#039;");
   }
 
-  // "Hakmo Son, Haggi Do and Jinwhan Kim*" -> ["Hakmo Son", "Haggi Do", "Jinwhan Kim"]
-  function splitAuthors(value) {
-    return String(value || "")
+  // Ignore case, spaces, hyphens and periods when matching a spelling.
+  function normalizeName(value) {
+    return String(value || "").replace(/[\s\-.]/g, "").toLowerCase();
+  }
+
+  // spelling -> canonical member name, plus the "English (한글)" label to show.
+  const authorLookup = new Map();
+  const authorLabel = new Map();
+  authorRoster.forEach(function (person) {
+    authorLabel.set(person.name, person.korean ? person.name + " (" + person.korean + ")" : person.name);
+    [person.name].concat(person.korean || [], person.aliases || []).forEach(function (spelling) {
+      authorLookup.set(normalizeName(spelling), person.name);
+    });
+  });
+
+  // "Hakmo Son, Haggi Do and Jinwhan Kim*" -> canonical member names only;
+  // co-authors from outside the lab are deliberately left out of the filter.
+  function memberAuthors(value) {
+    const found = [];
+    String(value || "")
       .split(/\s*,\s*|\s+and\s+/)
-      .map(function (name) { return name.trim().replace(/\*+$/, "").trim(); })
-      .filter(Boolean);
+      .forEach(function (raw) {
+        const canonical = authorLookup.get(normalizeName(raw.replace(/\*+$/, "")));
+        if (canonical && found.indexOf(canonical) === -1) found.push(canonical);
+      });
+    return found;
   }
 
   // Flatten every category once, tagging each entry with the category it came from.
@@ -269,7 +291,7 @@ document.addEventListener("DOMContentLoaded", function () {
         category: category,
         title: item.title,
         authors: item.authors,
-        authorList: splitAuthors(item.authors),
+        authorList: memberAuthors(item.authors),
         venue: item.venue,
         year: item.year,
         note: item.note
@@ -309,16 +331,15 @@ document.addEventListener("DOMContentLoaded", function () {
   function authorOptions(entries) {
     const tally = new Map();
     entries.forEach(function (item) {
-      const seen = {};
       item.authorList.forEach(function (name) {
-        if (seen[name]) return;
-        seen[name] = true;
         tally.set(name, (tally.get(name) || 0) + 1);
       });
     });
     return Array.from(tally.keys())
       .sort(function (a, b) { return a.localeCompare(b, "en"); })
-      .map(function (name) { return { value: name, label: name + " (" + tally.get(name) + ")" }; });
+      .map(function (name) {
+        return { value: name, label: (authorLabel.get(name) || name) + " · " + tally.get(name) };
+      });
   }
 
   function render(entries, showCategory) {
