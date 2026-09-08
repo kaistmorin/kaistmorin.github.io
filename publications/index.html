@@ -60,6 +60,20 @@
   border-top: 0;
 }
 
+.publication-year {
+  margin: 34px 0 0;
+  padding: 0 0 7px;
+  border-bottom: 2px solid var(--morin-navy);
+  color: var(--morin-navy);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.publication-year:first-child {
+  margin-top: 4px;
+}
+
 .publication-item {
   padding: 17px 0 16px;
   border-bottom: 1px solid var(--morin-line);
@@ -2763,10 +2777,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const entries = [...(publicationData[category] || [])].sort((a, b) => Number(b.year) - Number(a.year));
     count.textContent = entries.length + (entries.length === 1 ? " entry" : " entries");
 
+    let currentYear = null;
+
     list.innerHTML = entries.map(function (item) {
-      return `
+      let heading = "";
+      if (item.year !== currentYear) {
+        currentYear = item.year;
+        heading = `<h2 class="publication-year">${escapeHtml(item.year)}</h2>`;
+      }
+      return heading + `
         <article class="publication-item">
-          <h2 class="publication-title">${escapeHtml(item.title)}</h2>
+          <h3 class="publication-title">${escapeHtml(item.title)}</h3>
           <p class="publication-authors">${escapeHtml(item.authors)}</p>
           <p class="publication-venue">${escapeHtml(item.venue)}</p>
           ${item.note ? `<p class="publication-note">${escapeHtml(item.note)}</p>` : ""}
