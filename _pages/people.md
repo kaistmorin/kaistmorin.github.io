@@ -173,16 +173,48 @@ nav_order: 3
 }
 
 .person-homepage {
-  margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 7px;
+  padding: 3px 10px;
+  border: 1px solid #c7d9f5;
+  border-radius: 999px;
+  background: #eaf1fd;
   color: var(--morin-blue);
-  font-size: .78em;
-  font-weight: 500;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+  line-height: 1.6;
   text-decoration: none;
-  vertical-align: 1px;
+  vertical-align: middle;
+  white-space: nowrap;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
 }
 
-.person-homepage:hover {
-  text-decoration: underline;
+.person-homepage:hover,
+.person-homepage:focus-visible {
+  border-color: var(--morin-blue);
+  background: var(--morin-blue);
+  color: #fff;
+  text-decoration: none;
+}
+
+.person-interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 9px 0 0;
+}
+
+.person-interest {
+  padding: 3px 9px;
+  border-radius: 5px;
+  background: #f3f4f6;
+  color: #4b5563;
+  font-size: .78rem;
+  line-height: 1.45;
+  white-space: nowrap;
 }
 
 .director-card {
@@ -296,7 +328,7 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/kyungseokim.png' | relative_url }}" alt="Kyungseo Kim"></div>
         <div class="person-info">
-          <h3 class="person-name">Kyungseo Kim <a class="person-homepage" href="https://example.com" target="_blank" rel="noopener">↗</a></h3>
+          <h3 class="person-name">Kyungseo Kim</h3>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST (2026)</p>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
           <p class="person-meta"><strong>B.S.</strong> KAIST</p>
@@ -307,7 +339,7 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/jinwookpark.png' | relative_url }}" alt="Jinwook Park"></div>
         <div class="person-info">
-          <h3 class="person-name">Jinwook Park <a class="person-homepage" href="https://example.com" target="_blank" rel="noopener">↗</a></h3>
+          <h3 class="person-name">Jinwook Park</h3>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST</p>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
           <p class="person-meta"><strong>B.S.</strong> KAIST</p>
@@ -318,7 +350,7 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/qianyizhang.png' | relative_url }}" alt="Qianyi Zhang"></div>
         <div class="person-info">
-          <h3 class="person-name">Qianyi Zhang <a class="person-homepage" href="https://example.com" target="_blank" rel="noopener">↗</a></h3>
+          <h3 class="person-name">Qianyi Zhang</h3>
           <p class="person-meta"><strong>Ph.D.</strong> KAIST</p>
           <p class="person-meta"><strong>M.S.</strong> Harbin Engineering University</p>
           <p class="person-meta"><strong>B.S.</strong> Harbin Engineering University</p>
@@ -337,8 +369,12 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/solhan.png' | relative_url }}" alt="Sol Han"></div>
         <div class="person-info">
-        <h3 class="person-name">Sol Han</h3>
+        <h3 class="person-name">Sol Han <a class="person-homepage" href="https://solhan.notion.site/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>Homepage</a></h3>
         <p class="person-meta"><strong>B.S.</strong> KAIST</p>
+        <div class="person-interests">
+          <span class="person-interest">Computer Vision</span>
+          <span class="person-interest">Sensor Fusion</span>
+        </div>
         <a class="person-email" >dream4future@kaist.ac.kr</a>
         </div>
       </article>
@@ -387,6 +423,10 @@ nav_order: 3
           <h3 class="person-name">Dongwook Lee</h3>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
           <p class="person-meta"><strong>B.S.</strong> Jacobs University Bremen</p>
+          <div class="person-interests">
+            <span class="person-interest">Deep Learning</span>
+            <span class="person-interest">UUV SLAM</span>
+          </div>
           <a class="person-email">dongwooklee1201@kaist.ac.kr</a>
         </div>
       </article>
@@ -428,16 +468,20 @@ nav_order: 3
           </h3>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
           <p class="person-meta"><strong>B.S.</strong> Hanyang University</p>
-          <a class="person-email">mkang@kaist.ac.kr</a>
+          <a class="person-email">khgapa@kaist.ac.kr</a>
         </div>
       </article>
 
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/yeonghashin.png' | relative_url }}" alt="Yeongha Shin"></div>
         <div class="person-info">
-          <h3 class="person-name">Yeongha Shin</h3>
+          <h3 class="person-name">Yeongha Shin <a class="person-homepage" href="https://www.linkedin.com/in/yeongha-shin-672665234/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>Homepage</a></h3>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
           <p class="person-meta"><strong>B.S.</strong> Korea Maritime University</p>
+          <div class="person-interests">
+            <span class="person-interest">Scene Understanding</span>
+            <span class="person-interest">Decision Making</span>
+          </div>
           <a class="person-email">yeongha.shin@kaist.ac.kr</a>
         </div>
       </article>
@@ -486,7 +530,7 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/jisookim.jpg' | relative_url }}" alt="Ji Soo Kim"></div>
         <div class="person-info">
-          <h3 class="person-name">Ji Soo Kim
+          <h3 class="person-name">Ji Soo Kim <a class="person-homepage" href="https://www.linkedin.com/in/ji-soo-kim-17824b161/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>Homepage</a>
           <span class="person-name-affiliation">
             (w/
             <a href="https://www.hd-ksoe.com/" target="_blank" rel="noopener">HD KSOE</a>
@@ -499,6 +543,9 @@ nav_order: 3
         -->
           <p class="person-meta"><strong>M.S.</strong> Inha University</p>
           <p class="person-meta"><strong>B.S.</strong> Inha University</p>
+          <div class="person-interests">
+            <span class="person-interest">Software-defined Vessel</span>
+          </div>
           <a class="person-email">kimjjs100@kaist.ac.kr</a>
         </div>
       </article>
@@ -517,6 +564,9 @@ nav_order: 3
         <div class="person-info">
           <h3 class="person-name">Tae Woo Lee</h3>
           <p class="person-meta"><strong>B.S.</strong> KAIST</p>
+          <div class="person-interests">
+            <span class="person-interest">Model Predictive Control</span>
+          </div>
           <a class="person-email">aimer1@kaist.ac.kr</a>
         </div>
       </article>
@@ -535,14 +585,14 @@ nav_order: 3
         <div class="person-info">
           <h3 class="person-name">Sang Won Park</h3>
           <p class="person-meta"><strong>B.S.</strong> Hanyang University</p>
-          <a class="person-email">rapael6696@kaist.ac.kr</a>
+          <a class="person-email">sangwon0730@kaist.ac.kr</a>
         </div>
       </article>
 
        <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/taeung.jpg' | relative_url }}" alt="Taeung Lee"></div>
         <div class="person-info">
-          <h3 class="person-name">Taeung Lee</h3>
+          <h3 class="person-name">Taeung Lee <a class="person-homepage" href="https://foodbanana.github.io/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>Homepage</a></h3>
           <p class="person-meta"><strong>B.S.</strong> Korea University</p>
           <a class="person-email">christy201@kaist.ac.kr</a>
         </div>
