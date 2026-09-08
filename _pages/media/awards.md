@@ -15,6 +15,7 @@ nav: false
 .archive-card a{display:block;color:inherit;text-decoration:none}.archive-card a:hover .media-title{text-decoration:underline;text-underline-offset:2px}
 .media-thumb{overflow:hidden;aspect-ratio:16/9;background:#f3f5f7}.media-thumb img{display:block;width:100%;height:100%;object-fit:cover}
 .archive-meta{padding:12px 13px 14px}.media-label{margin:0 0 5px;color:var(--morin-muted);font-size:.78rem}.media-title{margin:0;color:var(--morin-navy);font-size:1rem;font-weight:600;line-height:1.4}
+.media-title--plain{font-weight:400}.media-title--plain strong{font-weight:700}
 @media(max-width:850px){.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.media-archive{width:calc(100% - 30px)}.archive-grid{grid-template-columns:1fr}}
 </style>
@@ -33,7 +34,7 @@ nav: false
           </div>
           <div class="archive-meta">
             <p class="media-label">{{ item.label }}</p>
-            <h3 class="media-title">{{ item.title }}</h3>
+            <h3 class="media-title media-title--plain">{{ item.title_html }}</h3>
           </div>
         </a>
       </article>

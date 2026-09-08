@@ -65,9 +65,10 @@ nav_order: 4
   min-width: 0;
 }
 
-.publications-field--type { width: min(250px, 100%); }
-.publications-field--year { width: min(150px, 100%); }
-.publications-field--author { width: min(290px, 100%); }
+.publications-field--type { width: min(215px, 100%); }
+.publications-field--area { width: min(150px, 100%); }
+.publications-field--year { width: min(120px, 100%); }
+.publications-field--author { width: min(265px, 100%); }
 
 .publications-field-label {
   color: var(--morin-muted);
@@ -110,16 +111,45 @@ nav_order: 4
   color: #fff !important;
 }
 
-.publication-category {
+.publication-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 0;
+}
+
+.publication-category,
+.publication-area {
   display: inline-block;
-  margin: 6px 0 0;
   padding: 2px 8px;
   border-radius: 4px;
-  background: var(--morin-sky-tint);
-  color: var(--morin-sky);
   font-size: .74rem;
   font-weight: 600;
   letter-spacing: .02em;
+}
+
+.publication-category {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+/* One colour per research area, reused by the badge and the filter legend. */
+.publication-area--perception {
+  background: #e2f1f8;
+  color: #0f6f92;
+  box-shadow: inset 0 0 0 1px #bfdfed;
+}
+
+.publication-area--planning {
+  background: #fbeedd;
+  color: #99590a;
+  box-shadow: inset 0 0 0 1px #f0d7b4;
+}
+
+.publication-area--control {
+  background: #ece6fa;
+  color: #5c42ab;
+  box-shadow: inset 0 0 0 1px #d5c9f2;
 }
 
 .publications-empty {
@@ -202,7 +232,7 @@ nav_order: 4
   <h1>Publications</h1>
   <p class="publications-intro">
     Publications of the Mobile Robotics &amp; Intelligence Laboratory.
-    Filter by type, year or author. Publications are sorted by year, newest first.<br>
+    Filter by type, research area, year or author. Publications are sorted by year, newest first.<br>
     <span class="publications-note">* denotes the corresponding author.</span>
   </p>
 
@@ -217,6 +247,10 @@ nav_order: 4
           <option value="Domestic Journals">Domestic Journals</option>
           <option value="Domestic Conferences">Domestic Conferences</option>
         </select>
+      </label>
+      <label class="publications-field publications-field--area">
+        <span class="publications-field-label">Area</span>
+        <select id="publication-area-filter" class="publications-select"></select>
       </label>
       <label class="publications-field publications-field--year">
         <span class="publications-field-label">Year</span>
