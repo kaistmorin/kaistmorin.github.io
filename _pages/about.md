@@ -196,6 +196,99 @@ nav: false
     width: 210px;
   }
 }
+
+/* Research highlights (auto-generated from _data/publications.yml) */
+.morin-highlights {
+  width: min(1080px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 0 0 64px;
+}
+
+.morin-highlights-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.morin-highlights h2 {
+  color: var(--morin-navy);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.morin-highlights-more {
+  color: var(--morin-blue);
+  font-size: .95rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.morin-highlights-more:hover {
+  text-decoration: underline;
+}
+
+.morin-highlights-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #e6ebf0;
+}
+
+.morin-highlights-item {
+  position: relative;
+  padding: 16px 0 15px 20px;
+  border-bottom: 1px solid #e6ebf0;
+}
+
+.morin-highlights-item::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 25px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--morin-blue);
+}
+
+.morin-highlights-title {
+  margin: 0 0 4px;
+  color: var(--morin-navy);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.morin-highlights-authors {
+  margin: 0 0 2px;
+  color: var(--morin-text);
+  font-size: .9rem;
+  line-height: 1.45;
+}
+
+.morin-highlights-venue {
+  margin: 0;
+  color: #667085;
+  font-size: .88rem;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+@media (max-width: 640px) {
+  .morin-highlights-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .morin-highlights h2 {
+    font-size: 1.6rem;
+  }
+}
 </style>
 
 <div class="morin-home">
@@ -273,6 +366,45 @@ nav: false
       </div>
     </div>
 
+  </section>
+
+  <section class="morin-highlights">
+    <div class="morin-highlights-head">
+      <div>
+        <div class="morin-intro-rule"></div>
+        <h2>Research Highlights</h2>
+      </div>
+      <a class="morin-highlights-more" href="{{ '/publications/' | relative_url }}">All publications &rarr;</a>
+    </div>
+
+    <!-- Newest matching journal papers, pulled straight from _data/publications.yml.
+         Which venues qualify (and how many are shown) is set in _data/highlight_venues.yml. -->
+    <ul class="morin-highlights-list">
+      {%- assign hl = site.data.highlight_venues -%}
+      {%- assign highlight_pubs = site.data.publications[hl.category] -%}
+      {%- assign highlight_years = highlight_pubs | map: "year" | uniq | sort | reverse -%}
+      {%- assign highlight_shown = 0 -%}
+      {%- for hl_year in highlight_years -%}
+        {%- for pub in highlight_pubs -%}
+          {%- if highlight_shown < hl.count and pub.year == hl_year -%}
+            {%- assign hl_matched = false -%}
+            {%- for keyword in hl.match -%}
+              {%- if pub.venue contains keyword -%}
+                {%- assign hl_matched = true -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- if hl_matched -%}
+              {%- assign highlight_shown = highlight_shown | plus: 1 %}
+      <li class="morin-highlights-item">
+        <p class="morin-highlights-title">{{ pub.title | escape }}</p>
+        <p class="morin-highlights-authors">{{ pub.authors | escape }}</p>
+        <p class="morin-highlights-venue">{{ pub.venue | escape }}</p>
+      </li>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor %}
+    </ul>
   </section>
 
 </div>
