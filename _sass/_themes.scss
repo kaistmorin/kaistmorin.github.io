@@ -218,16 +218,23 @@ html[data-theme-setting="light"] {
 }
 
 /*******************************************************************************
- * LOCAL ADDITION - navigation bar accent colour.
+ * LOCAL ADDITION - site header accent colour.
  *
  * The gem's theme colour is magenta (light) / cyan (dark). We only want the
- * navigation tabs in sky blue, not the whole site, so instead of changing the
- * global token we redefine it *inside* the navbar. CSS custom properties
- * inherit, so every navbar rule that reads --global-theme-color or
- * --global-hover-color picks up the sky blue, and nothing outside .navbar is
- * affected.
+ * header chrome in sky blue, not the whole site, so instead of changing the
+ * global token we redefine it *inside* the header. CSS custom properties
+ * inherit, so every rule below it that reads --global-theme-color or
+ * --global-hover-color picks up the sky blue, and body text, links and
+ * publication headings keep the gem palette.
+ *
+ * `header` (not `.navbar`) is the scope because the scroll progress bar is a
+ * sibling of <nav>, not a child of it:
+ *   <header> <nav class="navbar">...</nav> <progress id="progress"> </header>
+ * so scoping on .navbar alone would leave the progress bar magenta. .navbar is
+ * kept in the selector as a safety net in case the header wrapper ever goes.
  ******************************************************************************/
 
+header,
 .navbar {
   --global-theme-color: #1f8fd0;
   --global-hover-color: #1573ad;
