@@ -293,11 +293,6 @@ nav_order: 3
   line-height: 1.42;
 }
 
-.director-card .person-latest {
-  max-width: 640px;
-  margin-top: 18px;
-}
-
 .director-card {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
@@ -877,14 +872,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // author filter (see the query-param handling in _pages/publications.md).
   const publicationsUrl = "{{ '/publications/' | relative_url }}";
 
-  document.querySelectorAll(".person-card, .director-card").forEach(function (card) {
+  // Member cards only: the director's own card deliberately has no latest paper.
+  document.querySelectorAll(".person-card").forEach(function (card) {
     const member = authorLookup.get(normalizeName(cardName(card)));
     const entry = bestByMember.get(member);
     if (!entry) return;
 
-    const target = card.classList.contains("director-card")
-      ? card.querySelector(":scope > div")
-      : card.querySelector(".person-info");
+    const target = card.querySelector(".person-info");
     if (!target) return;
 
     // <details> keeps the card compact: the paper shows only once the row is clicked.
