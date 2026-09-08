@@ -9,10 +9,15 @@ overrides:
     gem: al_folio_core
     gem_version: 1.0.15
     reason: >-
-      Navigation-bar accent colour. The gem theme colour is magenta (#b509ac light /
-      #2698ba dark); this site wants sky blue on the navbar tabs only. The file is a
-      verbatim copy of the gem source plus one appended `.navbar { --global-theme-color;
-      --global-hover-color }` block, so the rest of the site keeps the gem palette.
+      Site accent colour. The gem's light theme is magenta (#b509ac, from
+      $purple-color) and this site uses sky blue, so the light-theme
+      --global-theme-color, --global-hover-color and --global-code-bg-color are
+      repointed at a local $accent. The dark theme keeps the gem's cyan. The file is
+      otherwise a verbatim copy of the gem source. NOTE: a site-level
+      _sass/_variables.scss does NOT work for this - Sass resolves `@use "variables"`
+      relative to the importing file first, so the gem's partials always bind to the
+      gem's own _variables.scss. Only files reached from the gem's assets/css/main.scss
+      (like this one) can be shadowed from the site.
   - path: _sass/_navbar.scss
     gem: al_folio_core
     gem_version: 1.0.15
