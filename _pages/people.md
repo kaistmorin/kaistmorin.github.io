@@ -223,15 +223,58 @@ nav_order: 3
   border-top: 1px dashed var(--morin-line);
 }
 
-.person-latest .person-latest-label {
-  display: block;
-  margin: 0 0 4px;
+.person-latest > summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
   color: var(--morin-blue);
+  cursor: pointer;
   font-size: .71rem;
   font-weight: 700;
   letter-spacing: .05em;
   line-height: 1.4;
+  list-style: none;
   text-transform: uppercase;
+}
+
+/* Hide the native disclosure triangle; the caret below replaces it. */
+.person-latest > summary::-webkit-details-marker {
+  display: none;
+}
+
+.person-latest > summary:hover,
+.person-latest > summary:focus-visible {
+  color: var(--morin-navy);
+}
+
+.person-latest .person-latest-caret {
+  font-size: .6rem;
+  transition: transform .18s ease;
+}
+
+.person-latest[open] .person-latest-caret {
+  transform: rotate(180deg);
+}
+
+.person-latest .person-latest-body {
+  margin: 7px 0 0;
+}
+
+.person-latest .person-latest-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 7px;
+  color: var(--morin-blue);
+  font-size: .78rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.person-latest .person-latest-more:hover,
+.person-latest .person-latest-more:focus-visible {
+  text-decoration: underline;
 }
 
 .person-latest .person-latest-title {
@@ -830,8 +873,13 @@ document.addEventListener("DOMContentLoaded", function () {
       .trim();
   }
 
+  // Deep link into the Publications page with this member preselected in its
+  // author filter (see the query-param handling in _pages/publications.md).
+  const publicationsUrl = "{{ '/publications/' | relative_url }}";
+
   document.querySelectorAll(".person-card, .director-card").forEach(function (card) {
-    const entry = bestByMember.get(authorLookup.get(normalizeName(cardName(card))));
+    const member = authorLookup.get(normalizeName(cardName(card)));
+    const entry = bestByMember.get(member);
     if (!entry) return;
 
     const target = card.classList.contains("director-card")
@@ -839,12 +887,22 @@ document.addEventListener("DOMContentLoaded", function () {
       : card.querySelector(".person-info");
     if (!target) return;
 
+    // <details> keeps the card compact: the paper shows only once the row is clicked.
     target.insertAdjacentHTML("beforeend", `
-          <div class="person-latest">
-            <span class="person-latest-label">Latest publication</span>
-            <p class="person-latest-title">${escapeHtml(entry.title)}</p>
-            <p class="person-latest-venue">${escapeHtml(venueLine(entry))}</p>
-          </div>`);
+          <details class="person-latest">
+            <summary>
+              <span>Latest publication</span>
+              <i class="fa-solid fa-chevron-down person-latest-caret" aria-hidden="true"></i>
+            </summary>
+            <div class="person-latest-body">
+              <p class="person-latest-title">${escapeHtml(entry.title)}</p>
+              <p class="person-latest-venue">${escapeHtml(venueLine(entry))}</p>
+              <a class="person-latest-more" href="${publicationsUrl}?author=${encodeURIComponent(member)}">
+                More publications
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </details>`);
   });
 });
 </script>

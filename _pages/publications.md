@@ -441,6 +441,26 @@ document.addEventListener("DOMContentLoaded", function () {
     el.addEventListener("change", update);
   });
 
+  // Deep links: /publications/?author=Sol%20Han (also &type=, &area=, &year=).
+  // The People page links here so one member's papers can be browsed in full;
+  // asking for an author without a type widens the type filter to All Types.
+  // A select that is filled by update() needs a placeholder option first, or
+  // assigning its value would not stick.
+  function preselect(select, value) {
+    if (!value) return;
+    select.innerHTML = '<option value="' + escapeHtml(value) + '"></option>';
+    select.value = value;
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  const wantedType = params.get("type");
+  const wantedAuthor = params.get("author");
+  if (wantedType !== null) catSelect.value = wantedType;
+  else if (wantedAuthor) catSelect.value = "";
+  preselect(areaSelect, params.get("area"));
+  preselect(yearSelect, params.get("year"));
+  preselect(authorSelect, wantedAuthor);
+
   update();
 });
 </script>

@@ -1257,6 +1257,7 @@
     authors: "박지성, 정동하, 김진환*"
     venue: "대한조선학회지, Vol. 57, No. 3, pp. 7-11, 2020."
     year: "2020"
+    area: "Perception"
 
   - title: "확률 모델예측제어 알고리즘을 이용한 작동기 수가 부족한 무인잠수정 운동 제어"
     authors: "이찬규, 장준우, 김진환*"
@@ -1286,11 +1287,13 @@
     authors: "한정욱, 조용훈, 김진환*"
     venue: "제어로봇시스템학회 논문지, Vol. 25, No. 2, pp. 43-52, 2019."
     year: "2019"
+    area: "Perception"
 
   - title: "해상 장애물 추적을 위한 다중센서 융합 방법에 따른 성능비교"
     authors: "한정욱, 조용훈, 김진환*, 이필엽"
     venue: "제어로봇시스템학회 논문지, Vol. 25, pp. 551-556, 2019."
     year: "2019"
+    area: "Perception"
 
   - title: "국제해상충돌예방규칙을 고려한 확률적 속도 장애물 기반의 선박 충돌회피 알고리즘"
     authors: "조용훈, 한정욱, 김진환*, 이필엽"
@@ -1302,6 +1305,7 @@
     authors: "김영식, 김진하, 강국진, 한소령, 김진환*"
     venue: "한국해양공학회 논문지, Vol. 32, pp. 411-418, 2018."
     year: "2018"
+    area: "Control"
 
   - title: "노드 위치의 불확실성을 고려한 다수 운동체의 강인한 작업 할당 알고리즘"
     authors: "윤석민, 김진환*"
@@ -1380,7 +1384,7 @@
     authors: "이용회, 김진환*"
     venue: "제어로봇시스템학회, Jun. 2025."
     year: "2025"
-    area: "Perception"
+    area: "Control"
 
   - title: "잔디깎이 패턴 기반의 커버리지 경로 계획을 위한 효율적인 다각형 분할 기법"
     authors: "박준우, 김진환*"
@@ -1398,12 +1402,13 @@
     authors: "박기용, 이찬규, 김진환*"
     venue: "한국로봇종합학술대회, Feb. 2025."
     year: "2025"
-    area: "Perception"
+    area: "Control"
 
   - title: "쿠프만 심층 신경망을 활용한 수상선의 데이터 기반 모델링"
     authors: "최지용, 김진환*"
     venue: "한국로봇학회 한국로봇종합학술대회, Feb. 2025."
     year: "2025"
+    area: "Control"
 
   - title: "라이다 포인트 클라우드 기반 선박 재식별을 위한 경로 증강 신경망"
     authors: "이동욱, 김진환*"
@@ -1421,7 +1426,7 @@
     authors: "전지수, 홍대희, 김진환*"
     venue: "제어로봇시스템학회, Jul. 2024."
     year: "2024"
-    area: "Perception"
+    area: "Control"
 
   - title: "다개체 시스템의 탐색 임무 수행을 위한 효율적인 영역 분할"
     authors: "김경서, 유찬우, 김진환*"
@@ -1439,7 +1444,7 @@
     authors: "박기용, 이동욱, 한솔, 조현근, 김진환*"
     venue: "한국해양과학기술협의회 공동학술대회, May 2024."
     year: "2024"
-    area: "Perception"
+    area: "Control"
 
   - title: "다개체 시스템의 효율적인 탐색 임무 수행을 위한 임무계획기 기반 영역 할당 알고리즘"
     authors: "김경서, 김진환*"
@@ -1475,12 +1480,13 @@
     authors: "김종휘, 정동하, 이찬규, 김진환*"
     venue: "한국해양과학기술협의회 공동학술대회, May 2023."
     year: "2023"
-    area: "Perception"
+    area: "Planning"
 
   - title: "자율운항 연구를 위한 다중 센서 데이터 소개"
     authors: "정동하, 김종휘, 이찬규, 김진환*"
     venue: "한국해양과학기술협의회 공동학술대회, May 2023."
     year: "2023"
+    area: "Perception"
 
   - title: "해양 복합 무인 시스템 자율 운용을 위한 PDDL 기반의 모델 적응형 임무 계획기 설계"
     authors: "김동현, 장준우, 김진환*"
@@ -1564,7 +1570,7 @@
     authors: "이찬규, 김진환*"
     venue: "제어로봇시스템학회, Jun. 2022."
     year: "2022"
-    area: "Planning"
+    area: "Control"
 
   - title: "HNS 광역 탐지 및 모니터링 부유식 무인이동체 운용을 위한 시스템 안정화 및 시나리오 설계"
     authors: "박진욱, 김진식, 김진환*, 서동민, 이문진"
@@ -1600,6 +1606,7 @@
     authors: "김종휘, 정동하, 이찬규, 조용훈, 김진환*, 장왕석, 박세용"
     venue: "한국해양공학회 추계학술대회, Oct. 2021."
     year: "2021"
+    area: "Perception"
 
   - title: "불확실성 수렴도 예측을 통한 다개체 시스템의 협력적 매핑"
     authors: "김경서, 김진환*"
@@ -1635,6 +1642,7 @@
     authors: "정동하, 김진환*"
     venue: "한국로봇학회 한국로봇종합학술대회, May 2021."
     year: "2021"
+    area: "Perception"
 
   - title: "자가학습기반 단일 카메라 깊이 추정 알고리즘의 해상환경 적용"
     authors: "장준우, 김종휘, 김진환*"
@@ -1688,6 +1696,7 @@
     authors: "조용훈, 한정욱, 김종휘, 김진환*"
     venue: "한국로봇학회 한국로봇종합학술대회, Aug. 2020."
     year: "2020"
+    area: "Perception"
 
   - title: "HNS 광역 탐지 및 모니터링 부유식 무인이동체 통합 시스템 개발 및 검증"
     authors: "왕정현, 박진욱, 김진환*, 황태현, 이문진"
@@ -1711,7 +1720,7 @@
     authors: "김경서, 김진환*"
     venue: "제어로봇시스템학회, Jul. 2020."
     year: "2020"
-    area: "Perception"
+    area: "Planning"
 
   - title: "GPS 사용 제한 조건에서 무인선의 레이다를 활용한 동시적 위치추정 및 지도작성"
     authors: "한정욱, 김진환*"
@@ -1789,6 +1798,7 @@
     authors: "조용훈, 한정욱, 김진환*, 이필엽"
     venue: "한국해양과학기술협의회 공동학술대회, May 2018."
     year: "2018"
+    area: "Planning"
 
   - title: "부유식 무인이동체 기반 HNS 광역 탐지 및 모니터링 시스템 설계 구현"
     authors: "왕정현, Thorsteinn B. Jonsson, 김진환*, 황태현, 이문진"
@@ -1836,11 +1846,13 @@
     authors: "한정욱, 조용훈, 김종휘, 김진환*, 손남선"
     venue: "대한조선학회 추계학술대회 , 여수, Nov. 2017."
     year: "2017"
+    area: "Perception"
 
   - title: "환경 외란의 불확실성을 고려한 선박 항로 최적화 기법 연구"
     authors: "유병현, 김진환*"
     venue: "한국항해항만학회 추계학술대회 , 부산, Nov. 2017."
     year: "2017"
+    area: "Planning"
 
   - title: "무인선 - 무인기 협업 기반 스칼라장 복원을 위한 경로계획"
     authors: "우상욱, 김진환*"
@@ -1882,11 +1894,13 @@
     authors: "홍성훈, 정동하, 김진환*, 정찬익, 안성준, 이정우"
     venue: "한국해양과학기술협의회 공동학술대회, Apr. 2017."
     year: "2017"
+    area: "Perception"
 
   - title: "가도달성 분석 기반의 확률론적 운동체간 충돌위험성 평가"
     authors: "조용훈, 우상욱, 김진환*"
     venue: "한국로봇학회 한국로봇종합학술대회 , 평창, Feb. 2017."
     year: "2017"
+    area: "Planning"
 
   - title: "수중 로봇의 선체 상대 항법을 위한 스테레오 영상 기반의 선체 표면 법선 벡터 추정"
     authors: "정동하, 홍성훈, 김진환*"
@@ -1898,6 +1912,7 @@
     authors: "왕정현, 김진환*"
     venue: "한국로봇학회 한국로봇종합학술대회 , 평창, Feb. 2017."
     year: "2017"
+    area: "Perception"
 
   - title: "HNS 광역탐지 및 모니터링을 위한 무인이동체 시스템 설계 및 운용 기법 연구"
     authors: "왕정현, 박지성, 김진환*, 황태현, 이문진"
@@ -1909,6 +1924,7 @@
     authors: "유병현, 김진환*"
     venue: "한국해양공학회 추계학술대회 , 부산, Nov. 2016."
     year: "2016"
+    area: "Control"
 
   - title: "해양 자율 탐색을 위한 다수 이종 무인시스템의 임무계획"
     authors: "윤석민, 김진환*"
@@ -1920,6 +1936,7 @@
     authors: "김동환, 왕정현, 김진환*, 이문진"
     venue: "한국해양공학회 추계학술대회 , 부산, Nov. 2016."
     year: "2016"
+    area: "Perception"
 
   - title: "수중 구조물 검사를 위한 포즈 기반 정합 기법이 적용된 영상 모자이킹"
     authors: "홍성훈, 김진환*"
@@ -1931,16 +1948,19 @@
     authors: "박정홍, 김진환*"
     venue: "한국해양공학회 추계학술대회 , 부산, Nov. 2016."
     year: "2016"
+    area: "Planning"
 
   - title: "해양 재난사고 대응을 위한 다수 무인시스템의 협업운용기술 개발"
     authors: "윤석민, 우상욱, 김진환*, 김선영"
     venue: "한국항해항만학회 추계학술대회 , 여수, Nov. 2016."
     year: "2016"
+    area: "Planning"
 
   - title: "HNS 사고 긴급대응을 위한 무인이동체 시스템 개발"
     authors: "박지성, 김진환*"
     venue: "한국위험물학회 , 용인, Aug. 2016."
     year: "2016"
+    area: "Perception"
 
   - title: "GPS 사용이 제한되는 지역에서 무인선의 펄스레이더를 활용한 연안항법"
     authors: "한정욱, 김진환*"
@@ -1964,6 +1984,7 @@
     authors: "유병현, 김진환*, 김정중, 안영태"
     venue: "대한조선학회 춘계학술대회 , 부산, May 2016."
     year: "2016"
+    area: "Control"
 
   - title: "무인선의 자율운항을 위한 적외선 영상 기반의 선박 자동 탐지 및 추적"
     authors: "조용훈, 박정홍, 김진환*, 손남선"
@@ -2029,12 +2050,13 @@
     authors: "박정홍, 강민주, 조용훈, 김진환*"
     venue: "대한조선학회 추계학술대회 , 거제, Nov. 2015."
     year: "2015"
-    area: "Perception"
+    area: "Planning"
 
   - title: "무인선을 활용한 반잠수식 해양 구조물 3 차원 형상 복원"
     authors: "한정욱, 강민주, 김진환*"
     venue: "대한조선학회 추계학술대회 , 거제, Nov. 2015."
     year: "2015"
+    area: "Perception"
 
   - title: "카메라 기반 수중 검사를 위한 호버링 타입 AUV 시스템 개발"
     authors: "홍성훈, 박정홍, 김태윤, 윤석민, 김진환*"
@@ -2052,6 +2074,7 @@
     authors: "왕정현, 김진환*"
     venue: "한국해양공학회 춘계학술대회 , 제주, May 2015."
     year: "2015"
+    area: "Control"
 
   - title: "무인선의 펄스레이더를 이용한 장애물 자동탐지"
     authors: "한정욱, 김진환*, 손남선"
@@ -2069,6 +2092,7 @@
     authors: "강민주, 김진환*"
     venue: "한국해양공학회 춘계학술대회, 제주, 2015."
     year: "2015"
+    area: "Control"
 
   - title: "스캐닝 소나를 이용한 수중 구조물의 3 차원 형상복원"
     authors: "권성철, 김진환*"
@@ -2134,21 +2158,25 @@
     authors: "박지성, 김진환*"
     venue: "한국해양공학회 춘계학술대회, 부산, 2014."
     year: "2014"
+    area: "Perception"
 
   - title: "선박 추진용 외부장형 전자기유체 추진기에 관한 기초연구"
     authors: "이호장, Hiromichi Akimoto, 김진환*"
     venue: "대한조선학회 추계학술대회, 울산, 2013."
     year: "2013"
+    area: "Control"
 
   - title: "기계학습 기법을 이용한 실선 운항성능 분석 및 모델링"
     authors: "유병현, 김진환*, 김희정, 김정중"
     venue: "대한조선학회 추계학술대회, 울산, 2013."
     year: "2013"
+    area: "Control"
 
   - title: "무인선 센서 융합을 통한 교량 구조물의 3 차원 형상 복원"
     authors: "한정욱, 박정홍, 김태윤, 김진환*"
     venue: "한국해양공학회 추계학술대회, 서울, 2013."
     year: "2013"
+    area: "Perception"
 
   - title: "전역 정렬 과정에서의 스케일링 효과를 고려한 수중 영상 모자이킹"
     authors: "홍성훈, A. Elibol, 김진환*"
@@ -2184,6 +2212,7 @@
     authors: "김영현, 김진환*"
     venue: "한국해양공학회 추계학술대회, 부산, 2012."
     year: "2012"
+    area: "Control"
 
   - title: "Rao-Blackwellized 입자 필터를 이용한 지형참조 수중항법"
     authors: "김태윤, 김진환*"
