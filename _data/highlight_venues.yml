@@ -1,0 +1,13 @@
+# Controls the "Research Highlights" bullets on the home page (_pages/about.md).
+#
+# The home page walks _data/publications.yml -> "International Journals" newest
+# year first (source order preserved within a year) and shows the first `count`
+# entries whose `venue` contains any string in `match` (case-sensitive substring).
+#
+# Add a keyword here to widen the highlight filter; nothing else needs editing.
+count: 3
+category: "International Journals"
+match:
+  - "RA-L"
+  - "Robotics and Automation Letters"
+  - "Transactions"
