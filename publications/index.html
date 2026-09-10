@@ -257,11 +257,10 @@ document.addEventListener("DOMContentLoaded", function () {
     return String(value || "").replace(/[\s\-.]/g, "").toLowerCase();
   }
 
-  // spelling -> canonical member name, plus the "English (한글)" label to show.
+  // spelling -> canonical member name. Korean spellings still match, but the
+  // filter always shows the English name.
   const authorLookup = new Map();
-  const authorLabel = new Map();
   authorRoster.forEach(function (person) {
-    authorLabel.set(person.name, person.korean ? person.name + " (" + person.korean + ")" : person.name);
     [person.name].concat(person.korean || [], person.aliases || []).forEach(function (spelling) {
       authorLookup.set(normalizeName(spelling), person.name);
     });
@@ -351,7 +350,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return Array.from(names)
       .sort(function (a, b) { return a.localeCompare(b, "en"); })
       .map(function (name) {
-        return { value: name, label: authorLabel.get(name) || name };
+        return { value: name, label: name };
       });
   }
 
