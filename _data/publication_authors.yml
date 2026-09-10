@@ -2,7 +2,8 @@
 #
 # Only people listed on _pages/people.md (current members + alumni) appear here,
 # so outside co-authors are kept out of the filter. Korean and English spellings
-# of the same person are merged into one option, labelled "English (한글)".
+# of the same person are merged into one option, always labelled with the
+# English name.
 #
 # name    - English spelling, must match the name used on _pages/people.md
 # korean  - Korean spelling as it appears in _data/publications.yml (optional)

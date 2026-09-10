@@ -80,6 +80,9 @@ nav_order: 3
 }
 
 .person-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   border: 1px solid var(--morin-line);
   border-radius: 12px;
   background: #fff;
@@ -103,6 +106,9 @@ nav_order: 3
 }
 
 .person-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 17px 17px 19px;
 }
 
@@ -182,20 +188,18 @@ nav_order: 3
 .person-homepage {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
   margin-left: 7px;
-  padding: 3px 10px;
   border: 1px solid #c7d9f5;
   border-radius: 999px;
   background: #eaf1fd;
   color: var(--morin-blue);
-  font-size: .72rem;
-  font-weight: 600;
-  letter-spacing: .01em;
-  line-height: 1.6;
+  font-size: .68rem;
+  line-height: 1;
   text-decoration: none;
   vertical-align: middle;
-  white-space: nowrap;
   transition: background-color .15s ease, border-color .15s ease, color .15s ease;
 }
 
@@ -224,8 +228,14 @@ nav_order: 3
   white-space: nowrap;
 }
 
+.person-info-spacer {
+  flex: 1;
+  min-height: 12px;
+}
+
 .person-latest {
-  margin: 12px 0 0;
+  width: 100%;
+  margin: 0;
   padding: 11px 0 0;
   border-top: 1px dashed var(--morin-line);
 }
@@ -453,7 +463,7 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/solhan.png' | relative_url }}" alt="Sol Han"></div>
         <div class="person-info">
-        <h3 class="person-name">Sol Han <a class="person-homepage" href="https://solhan.notion.site/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>Homepage</a></h3>
+        <h3 class="person-name">Sol Han <a class="person-homepage" href="https://solhan.notion.site/" target="_blank" rel="noopener" aria-label="Homepage" title="Homepage"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
         <p class="person-meta"><strong>B.S.</strong> KAIST</p>
         <div class="person-interests">
           <span class="person-interest">Computer Vision</span>
@@ -560,11 +570,11 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/yeonghashin.png' | relative_url }}" alt="Yeongha Shin"></div>
         <div class="person-info">
-          <h3 class="person-name">Yeongha Shin <a class="person-homepage" href="https://www.linkedin.com/in/yeongha-shin-672665234/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>Homepage</a></h3>
+          <h3 class="person-name">Yeongha Shin <a class="person-homepage" href="https://www.linkedin.com/in/yeongha-shin-672665234/" target="_blank" rel="noopener" aria-label="Homepage" title="Homepage"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
           <p class="person-meta"><strong>M.S.</strong> KAIST</p>
-          <p class="person-meta"><strong>B.S.</strong> Korea Maritime and Ocean University</p>
+          <p class="person-meta"><strong>B.S.</strong> <span title="Korea Maritime and Ocean University">KMOU</span></p>
           <div class="person-interests">
-            <span class="person-interest">Scene Understanding</span>
+            <span class="person-interest" title="Scene Understanding">Scene Underst.</span>
             <span class="person-interest">Decision Making</span>
           </div>
           <a class="person-email">yeongha.shin@kaist.ac.kr</a>
@@ -619,7 +629,7 @@ nav_order: 3
       <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/jisookim.jpg' | relative_url }}" alt="Ji Soo Kim"></div>
         <div class="person-info">
-          <h3 class="person-name">Ji Soo Kim <a class="person-homepage" href="https://www.linkedin.com/in/ji-soo-kim-17824b161/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>Homepage</a>
+          <h3 class="person-name">Ji Soo Kim <a class="person-homepage" href="https://www.linkedin.com/in/ji-soo-kim-17824b161/" target="_blank" rel="noopener" aria-label="Homepage" title="Homepage"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           <span class="person-name-affiliation">
             (w/
             <a href="https://www.hd-ksoe.com/" target="_blank" rel="noopener">HD KSOE</a>
@@ -681,7 +691,7 @@ nav_order: 3
        <article class="person-card">
         <div class="person-photo"><img src="{{ '/assets/img/people/taeung.jpg' | relative_url }}" alt="Taeung Lee"></div>
         <div class="person-info">
-          <h3 class="person-name">Taeung Lee <a class="person-homepage" href="https://foodbanana.github.io/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>Homepage</a></h3>
+          <h3 class="person-name">Taeung Lee <a class="person-homepage" href="https://foodbanana.github.io/" target="_blank" rel="noopener" aria-label="Homepage" title="Homepage"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
           <p class="person-meta"><strong>B.S.</strong> Korea University</p>
           <a class="person-email">christy201@kaist.ac.kr</a>
         </div>
@@ -895,7 +905,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!target) return;
 
     // <details> keeps the card compact: the paper shows only once the row is clicked.
+    // The spacer eats the slack of an equal-height card so the row sits at the
+    // bottom while keeping its gap above the dashed rule.
     target.insertAdjacentHTML("beforeend", `
+          <div class="person-info-spacer"></div>
           <details class="person-latest">
             <summary>
               <span>Latest publication</span>
@@ -911,5 +924,40 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
           </details>`);
   });
+
+  // Every member card gets the same height, across sections too: CSS alone only
+  // equalises cards that share a grid row. Cards with an expanded "Latest
+  // publication" are skipped while measuring so opening one never ratchets the
+  // shared height up.
+  const cards = Array.from(document.querySelectorAll(".person-card"));
+
+  function equalizeCardHeights() {
+    cards.forEach(function (card) { card.style.minHeight = ""; });
+    let tallest = 0;
+    cards.forEach(function (card) {
+      if (card.querySelector(".person-latest[open]")) return;
+      tallest = Math.max(tallest, card.getBoundingClientRect().height);
+    });
+    if (!tallest) return;
+    cards.forEach(function (card) { card.style.minHeight = tallest + "px"; });
+  }
+
+  equalizeCardHeights();
+
+  // Re-measure on width changes; the details toggles are laid out inside the
+  // already-fixed height, so they don't need to trigger one.
+  let resizeTimer;
+  let lastWidth = window.innerWidth;
+  window.addEventListener("resize", function () {
+    if (window.innerWidth === lastWidth) return;
+    lastWidth = window.innerWidth;
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(equalizeCardHeights, 150);
+  });
+
+  // Webfonts land after this runs and can change text wrapping.
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(equalizeCardHeights);
+  }
 });
 </script>

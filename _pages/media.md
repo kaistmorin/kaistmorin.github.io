@@ -74,7 +74,7 @@ nav_order: 5
 
   <section class="media-section">
     <div class="media-section-head">
-      <h2>Awards</h2>
+      <h2>News</h2>
       <a class="media-view-all" href="{{ '/media/awards/' | relative_url }}">View all →</a>
     </div>
     <div class="media-grid">
