@@ -19,7 +19,7 @@
 
   - title: "CROCS: Camera-Radar Online Alignment via Conic-Section-Constrained Scalar Field Correlation"
     authors: "Sol Han and Jinwhan Kim*"
-    venue: "IEEE Robotics and Automation Letters (RA-L), Early Access, 2026."
+    venue: "IEEE Robotics and Automation Letters (RA-L), Vol. 11, No. 11, pp. 12424-12431, 2026."
     year: "2026"
     area: "Perception"
 
@@ -570,6 +570,24 @@
     area: "Control"
 
 "International Conferences":
+  - title: "Attention-Based Reinforcement Learning for Energy-Constrained Multi-Robot Task Allocation"
+    authors: "Hakmo Son, Haggi Do and Jinwhan Kim*"
+    venue: "International Symposium on Distributed Autonomous Robotic Systems (DARS), Tokyo, Japan, Oct. 2026."
+    year: "2026"
+    area: "Planning"
+
+  - title: "CRAD: Camera-Radar Alignment Dataset for Maritime Sensor Fusion"
+    authors: "Sol Han and Jinwhan Kim*"
+    venue: "MTS/IEEE OCEANS, Monterey, USA, Sep. 2026."
+    year: "2026"
+    area: "Perception"
+
+  - title: "Robust Trajectory Tracking for Unmanned Surface Vehicles via Disturbance Observer-Based MPC"
+    authors: "Kiyong Park, Changyu Lee and Jinwhan Kim*"
+    venue: "MTS/IEEE OCEANS, Monterey, USA, Sep. 2026."
+    year: "2026"
+    area: "Control"
+
   - title: "Data-Driven Modeling of Surface Vehicle Dynamics Using Deep Koopman Networks"
     authors: "Jiyong Choi and Jinwhan Kim*"
     venue: "IFAC World Congress, Busan, Korea, Aug. 2026."
@@ -603,6 +621,12 @@
   - title: "Enhancing Navigational Scene Understanding Using Integrated Language Models in Maritime Environments"
     authors: "Yeongha Shin and Jinwhan Kim*"
     venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Hangzhou, China, Oct. 2025."
+    year: "2025"
+    area: "Perception"
+
+  - title: "Data Association Leveraging Extrinsic Parameter Consistency for Multi-Object Detection in Maritime Environment"
+    authors: "Jonghwi Kim, Sol Han and Jinwhan Kim*"
+    venue: "Joint IFAC Symposium on Mechatronic Systems & Robotics, Paris, France, Jul. 2025 (Mechatronics paper)."
     year: "2025"
     area: "Perception"
 
@@ -1388,6 +1412,12 @@
     area: "Perception"
 
 "Domestic Conferences":
+  - title: "시간적 변화를 고려한 지자기장 지도 기반 수중 위치 추정 기법"
+    authors: "박상원, 조현근, 이동욱, 김진환*"
+    venue: "2026 한국해양과학기술협의회 공동학술대회 (대한조선학회), May 2026."
+    year: "2026"
+    area: "Perception"
+
   - title: "유무인 상호작용을 고려한 대형 언어모델 기반 자율운항선박 질의응답 프레임워크"
     authors: "신영하, 이찬규, 김진환*"
     venue: "2026 한국해양과학기술협의회 공동학술대회 (대한조선학회), May 2026."
