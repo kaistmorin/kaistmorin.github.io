@@ -1249,6 +1249,12 @@
     area: "Control"
 
 "Domestic Journals":
+  - title: "Multi-Ship Collision Avoidance Using Reinforcement Learning Based on Probabilistic Velocity Obstacles"
+    authors: "김건우, 박기용, 김주완, 김진환*"
+    venue: "제어로봇시스템학회 논문지, 2026."
+    year: "2026"
+    area: "Control"
+
   - title: "국제해상규칙이 반영된 속도장애물 기반 제어장벽함수를 활용한 선박 충돌회피 알고리즘"
     authors: "박진욱, 이찬규, 최지용, 김진환*"
     venue: "제어로봇시스템학회 논문지, Vol. 31, No. v, pp. 1271-1276, 2025."
