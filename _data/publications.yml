@@ -11,6 +11,12 @@
 # Fields: title, authors, venue, year (all strings). `note` is optional.
 
 "International Journals":
+  - title: "Hand Position-based L1-Model Predictive Control for Robust Trajectory Tracking of Underactuated Surface Vehicles"
+    authors: "Kiyong Park, Changyu Lee, Jiwan Kim and Jinwhan Kim*"
+    venue: "Ocean Engineering, 2026."
+    year: "2026"
+    area: "Control"
+
   - title: "Makespan Minimization for Multi-Robot Task Allocation with Balance-Aware Pointerformer"
     authors: "Hakmo Son, Haggi Do and Jinwhan Kim*"
     venue: "IEEE Robotics and Automation Letters (RA-L), Early Access, 2026."
