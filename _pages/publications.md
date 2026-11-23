@@ -211,6 +211,27 @@ nav_order: 4
   font-style: italic;
 }
 
+.publication-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border: 1px solid var(--morin-navy);
+  border-radius: 999px;
+  color: var(--morin-navy);
+  font-size: .76rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background-color .15s ease, color .15s ease;
+}
+
+.publication-link:hover,
+.publication-link:focus-visible {
+  background: var(--morin-navy);
+  color: #fff;
+  text-decoration: none;
+}
+
 .publication-count {
   margin: 14px 0 0;
   color: var(--morin-muted);
@@ -336,7 +357,8 @@ document.addEventListener("DOMContentLoaded", function () {
         venue: item.venue,
         year: item.year,
         area: item.area || "",
-        note: item.note
+        note: item.note,
+        url: /^https?:\/\//.test(item.url || "") ? item.url : ""
       });
     });
   });
@@ -422,9 +444,10 @@ document.addEventListener("DOMContentLoaded", function () {
           <p class="publication-authors">${escapeHtml(item.authors)}</p>
           <p class="publication-venue">${escapeHtml(item.venue)}</p>
           ${item.note ? `<p class="publication-note">${escapeHtml(item.note)}</p>` : ""}
-          ${item.area || showCategory ? `<div class="publication-tags">
+          ${item.area || showCategory || item.url ? `<div class="publication-tags">
             ${item.area ? `<span class="${areaClass(item.area)}">${escapeHtml(item.area)}</span>` : ""}
             ${showCategory ? `<span class="publication-category">${escapeHtml(item.category)}</span>` : ""}
+            ${item.url ? `<a class="publication-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">Paper &#8599;</a>` : ""}
           </div>` : ""}
         </article>`;
     }).join("");
