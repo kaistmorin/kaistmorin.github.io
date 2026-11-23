@@ -28,7 +28,8 @@
 
   - title: "Hand Position-based L1-Model Predictive Control for Robust Trajectory Tracking of Underactuated Surface Vehicles"
     authors: "Kiyong Park, Changyu Lee, Jiwan Kim and Jinwhan Kim*"
-    venue: "Ocean Engineering, 2026."
+    venue: "Ocean Engineering, Vol. 368, Art. 128113, 2026."
+    url: "https://doi.org/10.1016/j.oceaneng.2026.128113"
     year: "2026"
     area: "Control"
 
@@ -98,6 +99,7 @@
   - title: "Data Association Leveraging Extrinsic Parameter Consistency for Multi-Object Detection in Maritime Environment"
     authors: "Jonghwi Kim, Sol Han and Jinwhan Kim*"
     venue: "Mechatronics, Vol. 108, 2025."
+    url: "https://doi.org/10.1016/j.mechatronics.2025.103318"
     year: "2025"
     area: "Perception"
 
@@ -202,6 +204,7 @@
   - title: "Model Predictive Anti-Spin Thruster Control for Efficient Ship Propulsion in Irregular Waves"
     authors: "Changyu Lee and Jinwhan Kim*"
     venue: "Control Engineering Practice, Vol. 136, 2023."
+    url: "https://doi.org/10.1016/j.conengprac.2023.105533"
     year: "2023"
     area: "Control"
 
@@ -514,6 +517,7 @@
   - title: "Path Optimization for Marine Vehicles in Ocean Currents Using Reinforcement Learning"
     authors: "Byunghyun Yoo and Jinwhan Kim*"
     venue: "Journal of Marine Science and Technology, Vol. 21, No. 2, pp. 334-343, 2016."
+    url: "https://doi.org/10.1007/s00773-015-0355-9"
     year: "2016"
     area: "Planning"
 
@@ -657,6 +661,7 @@
   - title: "Particle Filter for Ballistic Target Tracking with Glint Noise"
     authors: "Jinwhan Kim*, M. Tandale and P.K. Menon"
     venue: "Journal of Guidance, Control and Dynamics, Vol. 33, No. 6, pp. 1918-1921, 2010."
+    url: "https://doi.org/10.2514/1.51000"
     year: "2010"
     area: "Perception"
 
@@ -744,6 +749,7 @@
   - title: "Data Association Leveraging Extrinsic Parameter Consistency for Multi-Object Detection in Maritime Environment"
     authors: "Jonghwi Kim, Sol Han and Jinwhan Kim*"
     venue: "Joint IFAC Symposium on Mechatronic Systems & Robotics, Paris, France, Jul. 2025 (Mechatronics paper)."
+    url: "https://doi.org/10.1016/j.mechatronics.2025.103318"
     year: "2025"
     area: "Perception"
 
@@ -1356,6 +1362,7 @@
   - title: "On Data Assimilation in a Pseudo-Spectral Wave Prediction Model Using a Kalman Filter"
     authors: "Seongjin Yoon, Jinwhan Kim and Wooyoung Choi*"
     venue: "MTS/IEEE OCEANS, Yeosu, Korea, 2012."
+    url: "https://doi.org/10.1109/oceans-yeosu.2012.6263591"
     year: "2012"
     area: "Perception"
 
