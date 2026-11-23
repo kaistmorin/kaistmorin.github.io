@@ -11,6 +11,18 @@
 # Fields: title, authors, venue, year (all strings). `note` is optional.
 
 "International Journals":
+  - title: "Efficient Graph-Based Area Partitioning for Balanced Multi-Robot Coverage Path Planning"
+    authors: "Kyungseo Kim and Jinwhan Kim*"
+    venue: "Robotics and Autonomous Systems, Art. 105445, 2026."
+    year: "2026"
+    area: "Planning"
+
+  - title: "Spatiotemporal Geomagnetic Intensity Mapping Using Gaussian Process for Underwater Vehicle Localization"
+    authors: "Dongwook Lee, Hyunkeun Cho and Jinwhan Kim*"
+    venue: "Journal of Ocean Engineering and Technology (JOET), Vol. 40, No. 2, pp. 227-237, 2026."
+    year: "2026"
+    area: "Perception"
+
   - title: "Hand Position-based L1-Model Predictive Control for Robust Trajectory Tracking of Underactuated Surface Vehicles"
     authors: "Kiyong Park, Changyu Lee, Jiwan Kim and Jinwhan Kim*"
     venue: "Ocean Engineering, 2026."
@@ -599,6 +611,12 @@
     venue: "IFAC World Congress, Busan, Korea, Aug. 2026."
     year: "2026"
     area: "Control"
+
+  - title: "Gaussian Process-Based Underwater Geomagnetic Mapping Under Inertial Navigation Drift"
+    authors: "Dongwook Lee, Hyunkeun Cho and Jinwhan Kim*"
+    venue: "International Conference on Ubiquitous Robots (UR), Osaka, Japan, Jul. 2026."
+    year: "2026"
+    area: "Perception"
 
   - title: "ID(O): Mapping Data Quantization for Bathymetric Collaborative SLAM"
     authors: "Qianyi Zhang and Jinwhan Kim*"
@@ -1424,8 +1442,32 @@
     area: "Perception"
 
 "Domestic Conferences":
+  - title: "의도 추론 기반 해밀턴-야코비 안전 필터를 이용한 무인수상정 충돌회피"
+    authors: "강경모, 김진환*"
+    venue: "2026 한국군사과학기술학회 추계학술대회, Nov. 2026."
+    year: "2026"
+    area: "Control"
+
+  - title: "피드백 기반 인식 정제를 통한 열악한 해상 환경에서의 강인한 카메라–레이다 융합"
+    authors: "신영하, 김진환*"
+    venue: "2026 한국해양로봇기술연구회(KMRTS) 추계학술대회, Nov. 2026."
+    year: "2026"
+    area: "Perception"
+
+  - title: "해상 자율운항을 위한 피드백 기반 인식 정제 카메라–레이더 융합 기법"
+    authors: "신영하, 김진환*"
+    venue: "2026 한국항해항만학회 추계학술대회, Nov. 2026."
+    year: "2026"
+    area: "Perception"
+
   - title: "시간적 변화를 고려한 지자기장 지도 기반 수중 위치 추정 기법"
     authors: "박상원, 조현근, 이동욱, 김진환*"
+    venue: "2026 한국해양과학기술협의회 공동학술대회 (대한조선학회), May 2026."
+    year: "2026"
+    area: "Perception"
+
+  - title: "가우시안 프로세스 회귀 기반 수중 지자기장 지도작성"
+    authors: "이동욱, 조현근, 김진환*"
     venue: "2026 한국해양과학기술협의회 공동학술대회 (대한조선학회), May 2026."
     year: "2026"
     area: "Perception"
@@ -1439,6 +1481,12 @@
   - title: "대형 언어 모델과 시각 언어 모델을 활용한 해양 상황 인지 알고리즘"
     authors: "신영하, 김진환*"
     venue: "2025 한국항해항만학회 추계학술대회, Nov. 2025."
+    year: "2025"
+    area: "Perception"
+
+  - title: "대형 언어 모델과 시각 언어 모델을 활용한 복합 해양 상황 인지 알고리즘"
+    authors: "신영하, 김진환*"
+    venue: "2025 스마트 • 전기선박연구회 하계 학술발표회, Aug. 2025."
     year: "2025"
     area: "Perception"
 
@@ -1462,6 +1510,12 @@
 
   - title: "다중 이동 모드 수중 로봇을 이용한 해저 탐사를 위한 커버리지 경로 계획"
     authors: "전지수, 김진환*"
+    venue: "한국해양과학기술협의회 공동학술대회, May 2025."
+    year: "2025"
+    area: "Planning"
+
+  - title: "Development of an Operational Framework for Multi-Robot Systems in Marine Environment Exploration Missions"
+    authors: "김경서, 김진환*"
     venue: "한국해양과학기술협의회 공동학술대회, May 2025."
     year: "2025"
     area: "Planning"

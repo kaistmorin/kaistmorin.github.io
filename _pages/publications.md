@@ -248,8 +248,8 @@ nav_order: 4
       <label class="publications-field publications-field--type">
         <span class="publications-field-label">Type</span>
         <select id="publication-filter" class="publications-select">
-          <option value="">All Types</option>
-          <option value="International Journals" selected>International Journals</option>
+          <option value="" selected>All Types</option>
+          <option value="International Journals">International Journals</option>
           <option value="International Conferences">International Conferences</option>
           <option value="Domestic Journals">Domestic Journals</option>
           <option value="Domestic Conferences">Domestic Conferences</option>
@@ -448,8 +448,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Deep links: /publications/?author=Sol%20Han (also &type=, &area=, &year=).
-  // The People page links here so one member's papers can be browsed in full;
-  // asking for an author without a type widens the type filter to All Types.
+  // The People page links here so one member's papers can be browsed in full.
+  // The type filter defaults to All Types.
   // A select that is filled by update() needs a placeholder option first, or
   // assigning its value would not stick.
   function preselect(select, value) {
@@ -462,7 +462,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const wantedType = params.get("type");
   const wantedAuthor = params.get("author");
   if (wantedType !== null) catSelect.value = wantedType;
-  else if (wantedAuthor) catSelect.value = "";
   preselect(areaSelect, params.get("area"));
   preselect(yearSelect, params.get("year"));
   preselect(authorSelect, wantedAuthor);
