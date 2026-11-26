@@ -12,6 +12,20 @@
 # `url` is optional: a link to the paper (prefer https://doi.org/<DOI>); it adds a "Paper" button.
 
 "International Journals":
+  - title: "Efficient COLREGs-compliant Collision Avoidance Using Turning Circle-Based Control Barrier Function"
+    authors: "Changyu Lee, Jinwook Park and Jinwhan Kim*"
+    venue: "Mechatronics, Vol. 117, Art. 103495, 2026."
+    url: "https://doi.org/10.1016/j.mechatronics.2026.103495"
+    year: "2026"
+    area: "Control"
+
+  - title: "Safety-Enhanced Berthing Control Strategy for Surface Ships Using Backward and Forward Reachability Analysis"
+    authors: "Jinwook Park, Changyu Lee and Jinwhan Kim*"
+    venue: "International Journal of Control, Automation, and Systems (IJCAS), Vol. 24, No. 8, pp. 1916-1931, 2026."
+    url: "https://doi.org/10.1007/s12555-026-00133-3"
+    year: "2026"
+    area: "Control"
+
   - title: "Efficient Graph-Based Area Partitioning for Balanced Multi-Robot Coverage Path Planning"
     authors: "Kyungseo Kim and Jinwhan Kim*"
     venue: "Robotics and Autonomous Systems, Art. 105445, 2026."
